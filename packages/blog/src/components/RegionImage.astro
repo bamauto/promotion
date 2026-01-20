@@ -45,9 +45,15 @@ const { src, alt, width, height, loading = 'lazy', class: className } = Astro.pr
     margin: 0 0 2rem 0;
   }
 
+  .region-image.featured {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .region-image.featured img {
     border-radius: 12px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     object-fit: contain;
   }

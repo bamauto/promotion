@@ -2,6 +2,7 @@
 import type { RegionId } from '../lib/regions';
 import { REGIONS, getRegionDomain } from '../lib/regions';
 import SEOHead from '../components/SEOHead.astro';
+import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
 
 interface Props {
   title: string;
@@ -9,6 +10,9 @@ interface Props {
   region: RegionId;
   canonicalPath?: string;
   ogImage?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
+  slug?: string;
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -17,7 +21,7 @@ interface Props {
   };
 }
 
-const { title, description, region, canonicalPath, ogImage, article } = Astro.props;
+const { title, description, region, canonicalPath, ogImage, ogImageWidth, ogImageHeight, slug, article } = Astro.props;
 const regionData = REGIONS[region];
 const baseUrl = getRegionDomain(region);
 const canonical = canonicalPath ? `${baseUrl}${canonicalPath}` : Astro.url.href;
@@ -27,16 +31,20 @@ const canonical = canonicalPath ? `${baseUrl}${canonicalPath}` : Astro.url.href;
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <SEOHead
       title={title}
       description={description}
       canonical={canonical}
       ogImage={ogImage}
+      ogImageWidth={ogImageWidth}
+      ogImageHeight={ogImageHeight}
       region={region}
+      slug={slug}
       article={article}
     />
+    <LocalBusinessSchema region={region} />
     <style is:global>
       :root {
         --color-primary: #1a1a2e;

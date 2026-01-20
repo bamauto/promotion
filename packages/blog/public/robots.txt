@@ -1,0 +1,20 @@
+# Robots.txt for promotion blog
+# Allow all search engine crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemaps for each region
+Sitemap: https://bundanghipublic.com/blog/sitemap.xml
+Sitemap: https://dongtankaraoke.net/blog/sitemap.xml
+Sitemap: https://ingedongkaraoke.com/blog/sitemap.xml
+Sitemap: https://jengjakaraoke.com/blog/sitemap.xml
+Sitemap: https://suwon.vip/blog/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin and API paths
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /.vercel/

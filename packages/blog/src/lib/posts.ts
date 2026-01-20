@@ -48,11 +48,13 @@ type ImageQueryResult = {
  * Get all published posts for a specific region
  */
 export async function getPostsForRegion(region: RegionId): Promise<PostListItem[]> {
+  const now = new Date().toISOString();
   const { data: posts, error } = await supabase
     .from('blog_posts')
     .select('slug, title, excerpt, category, tags, published_at')
     .contains('regions', [region])
     .eq('status', 'published')
+    .lte('published_at', now)
     .order('published_at', { ascending: false });
 
   if (error) {
@@ -110,12 +112,14 @@ export async function getPostsForRegion(region: RegionId): Promise<PostListItem[
  * Get a single post by slug for a specific region
  */
 export async function getPostBySlug(region: RegionId, slug: string): Promise<PostDetail | null> {
+  const now = new Date().toISOString();
   const { data: post, error } = await supabase
     .from('blog_posts')
     .select('*')
     .contains('regions', [region])
     .eq('slug', slug)
     .eq('status', 'published')
+    .lte('published_at', now)
     .single();
 
   if (error || !post) {
@@ -173,11 +177,13 @@ export async function getPostBySlug(region: RegionId, slug: string): Promise<Pos
  * Get all slugs for a region (for static path generation)
  */
 export async function getAllSlugsForRegion(region: RegionId): Promise<string[]> {
+  const now = new Date().toISOString();
   const { data, error } = await supabase
     .from('blog_posts')
     .select('slug')
     .contains('regions', [region])
-    .eq('status', 'published');
+    .eq('status', 'published')
+    .lte('published_at', now);
 
   if (error) {
     console.error('Error fetching slugs:', error);
@@ -192,10 +198,12 @@ export async function getAllSlugsForRegion(region: RegionId): Promise<string[]> 
  * Get all published posts with their regions (for sitemap generation)
  */
 export async function getAllPublishedPosts(): Promise<Array<{ slug: string; regions: string[]; published_at: string | null }>> {
+  const now = new Date().toISOString();
   const { data, error } = await supabase
     .from('blog_posts')
     .select('slug, regions, published_at')
     .eq('status', 'published')
+    .lte('published_at', now)
     .order('published_at', { ascending: false });
 
   if (error) {
@@ -210,12 +218,14 @@ export async function getAllPublishedPosts(): Promise<Array<{ slug: string; regi
  * Get posts by category for a region
  */
 export async function getPostsByCategory(region: RegionId, category: string): Promise<PostListItem[]> {
+  const now = new Date().toISOString();
   const { data: posts, error } = await supabase
     .from('blog_posts')
     .select('slug, title, excerpt, category, tags, published_at')
     .contains('regions', [region])
     .eq('status', 'published')
     .eq('category', category)
+    .lte('published_at', now)
     .order('published_at', { ascending: false });
 
   if (error) {
@@ -240,11 +250,13 @@ export async function getRelatedPosts(
   category: string | null,
   limit: number = 3
 ): Promise<PostListItem[]> {
+  const now = new Date().toISOString();
   let query = supabase
     .from('blog_posts')
     .select('slug, title, excerpt, category, tags, published_at')
     .contains('regions', [region])
     .eq('status', 'published')
+    .lte('published_at', now)
     .neq('slug', currentSlug)
     .limit(limit);
 

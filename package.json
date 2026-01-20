@@ -10,11 +10,19 @@
     "build:bundang": "turbo run build --filter=@promotion/bundang",
     "build:suwon": "turbo run build --filter=@promotion/suwon",
     "build:dongtan": "turbo run build --filter=@promotion/dongtan",
+    "build:blog": "turbo run build --filter=@promotion/blog",
     "dev:jengja": "turbo run dev --filter=@promotion/jengja",
     "dev:ingedong": "turbo run dev --filter=@promotion/ingedong",
     "dev:bundang": "turbo run dev --filter=@promotion/bundang",
     "dev:suwon": "turbo run dev --filter=@promotion/suwon",
-    "dev:dongtan": "turbo run dev --filter=@promotion/dongtan"
+    "dev:dongtan": "turbo run dev --filter=@promotion/dongtan",
+    "dev:blog": "turbo run dev --filter=@promotion/blog",
+    "generate": "pnpm --filter @promotion/content-generator generate",
+    "generate:dry": "pnpm --filter @promotion/content-generator generate -- --dry-run",
+    "generator:status": "pnpm --filter @promotion/content-generator dev status",
+    "generator:test": "pnpm --filter @promotion/content-generator dev test",
+    "seed:keywords": "pnpm --filter @promotion/content-generator seed-keywords",
+    "seed:images": "pnpm --filter @promotion/content-generator seed-images"
   },
   "devDependencies": {
     "turbo": "^2.3.0"

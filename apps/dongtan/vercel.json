@@ -1,5 +1,20 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/blog",
+      "destination": "https://promotion-blog.vercel.app/dongtan"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://promotion-blog.vercel.app/dongtan/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://promotion-blog.vercel.app/dongtan/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog|sitemap-blog).*)",
+      "destination": "/index.html"
+    }
   ]
 }

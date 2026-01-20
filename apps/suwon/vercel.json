@@ -1,5 +1,20 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/blog",
+      "destination": "https://promotion-blog.vercel.app/suwon"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://promotion-blog.vercel.app/suwon/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://promotion-blog.vercel.app/suwon/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog|sitemap-blog).*)",
+      "destination": "/index.html"
+    }
   ]
 }

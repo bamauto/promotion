@@ -4,6 +4,7 @@ import SchemaJsonLd, { generateLocalBusinessSchema, generateOrganizationSchema }
 import { ArrowRight, Star, MapPin, Phone, Shield, Clock, Users, Zap, CheckCircle, Menu, X, ChevronDown, ChevronUp, Crown, ShieldCheck, Car, GlassWater, MessageCircle, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import HotEventSection from '../components/HotEventSection';
+import BlogSection from '../components/BlogSection';
 
 const SectionTitle = ({ title, subtitle }) => (
     <div className="text-center mb-16 relative">
@@ -225,6 +226,9 @@ const Home = () => {
 
             {/* Hot Event Section */}
             <HotEventSection />
+
+            {/* Blog Section */}
+            <BlogSection />
 
             {/* Venue Preview - Horizontal Accordion */}
             <section className="py-24 container mx-auto px-4">

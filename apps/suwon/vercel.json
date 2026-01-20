@@ -25,7 +25,7 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/suwon/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog|suwon).*)",
+      "source": "/((?!blog|sitemap-blog|suwon|_astro).*)",
       "destination": "/index.html"
     }
   ]

@@ -25,7 +25,7 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/ingedong/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog|ingedong).*)",
+      "source": "/((?!blog|sitemap-blog|ingedong|_astro).*)",
       "destination": "/index.html"
     }
   ]

@@ -25,7 +25,7 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/dongtan/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog|dongtan).*)",
+      "source": "/((?!blog|sitemap-blog|dongtan|_astro).*)",
       "destination": "/index.html"
     }
   ]

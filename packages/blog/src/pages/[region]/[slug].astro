@@ -18,7 +18,7 @@ const regionId = region as RegionId;
 const post = await getPostBySlug(regionId, slug);
 
 if (!post) {
-  return Astro.redirect(`/${region}/`);
+  return Astro.redirect('/blog');
 }
 
 const regionData = REGIONS[regionId];
@@ -94,7 +94,7 @@ const breadcrumbSchema = {
             <span aria-hidden="true">/</span>
           </li>
           <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a href={`/${region}/`} itemprop="item">
+            <a href="/blog" itemprop="item">
               <span itemprop="name">블로그</span>
             </a>
             <meta itemprop="position" content="2" />

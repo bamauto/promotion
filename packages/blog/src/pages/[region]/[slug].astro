@@ -34,7 +34,7 @@ const formattedDate = post.published_at
   : null;
 
 const title = post.meta_title || `${post.title} | ${regionData.name} 블로그`;
-const description = post.meta_description || post.excerpt || `${regionData.name} 지역 프로모션 정보`;
+const description = post.meta_description || post.excerpt || `${regionData.name} ${regionData.keyword} 가라오케 정보`;
 
 // BreadcrumbList schema
 const breadcrumbSchema = {

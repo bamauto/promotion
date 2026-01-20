@@ -61,7 +61,7 @@ const hreflangAlternates = slug
 {ogImageWidth && <meta property="og:image:width" content={String(ogImageWidth)} />}
 {ogImageHeight && <meta property="og:image:height" content={String(ogImageHeight)} />}
 <meta property="og:image:alt" content={title} />
-<meta property="og:site_name" content={`${regionData.name} 프로모션`} />
+<meta property="og:site_name" content={`${regionData.name} ${regionData.keyword}`} />
 <meta property="og:locale" content="ko_KR" />
 
 <!-- Twitter -->
@@ -107,7 +107,7 @@ const hreflangAlternates = slug
         },
         publisher: {
           '@type': 'Organization',
-          name: `${regionData.name} 프로모션`,
+          name: `${regionData.name} ${regionData.keyword}`,
           logo: {
             '@type': 'ImageObject',
             url: `${baseUrl}/favicon.png`,
@@ -122,13 +122,13 @@ const hreflangAlternates = slug
     : {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: `${regionData.name} 프로모션 블로그`,
+        name: `${regionData.name} ${regionData.keyword} 블로그`,
         description: description,
         url: canonical,
         inLanguage: 'ko-KR',
         publisher: {
           '@type': 'Organization',
-          name: `${regionData.name} 프로모션`,
+          name: `${regionData.name} ${regionData.keyword}`,
         },
       }
 )} />

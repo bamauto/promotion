@@ -93,7 +93,7 @@ const canonical = canonicalPath ? `${baseUrl}${canonicalPath}` : Astro.url.href;
     <header class="header">
       <div class="header-container">
         <a href={`${baseUrl}/`} class="logo">
-          {regionData.name} 프로모션
+          {regionData.name} {regionData.keyword}
         </a>
         <nav class="nav">
           <a href={`${baseUrl}/`}>홈</a>
@@ -108,7 +108,7 @@ const canonical = canonicalPath ? `${baseUrl}${canonicalPath}` : Astro.url.href;
 
     <footer class="footer">
       <div class="footer-container">
-        <p>&copy; {new Date().getFullYear()} {regionData.name} 프로모션. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} {regionData.name} {regionData.keyword}. All rights reserved.</p>
         <nav class="footer-nav">
           <a href={`${baseUrl}/privacy`}>개인정보처리방침</a>
           <a href={`${baseUrl}/terms`}>이용약관</a>

@@ -1,0 +1,57 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  width?: number | null;
+  height?: number | null;
+  loading?: 'lazy' | 'eager';
+  class?: string;
+}
+
+const { src, alt, width, height, loading = 'lazy', class: className } = Astro.props;
+---
+
+<figure class:list={['region-image', className]}>
+  <img
+    src={src}
+    alt={alt}
+    width={width || undefined}
+    height={height || undefined}
+    loading={loading}
+  />
+  {alt && <figcaption>{alt}</figcaption>}
+</figure>
+
+<style>
+  .region-image {
+    margin: 1.5rem 0;
+  }
+
+  .region-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .region-image figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+
+  .region-image.featured {
+    margin: 0 0 2rem 0;
+  }
+
+  .region-image.featured img {
+    border-radius: 12px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .region-image.featured figcaption {
+    display: none;
+  }
+</style>

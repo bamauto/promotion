@@ -1,0 +1,115 @@
+name: Content Generator
+
+on:
+  schedule:
+    # Run daily at 10:00 KST (01:00 UTC)
+    - cron: '0 1 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Posts per region'
+        required: false
+        default: '5'
+      dry_run:
+        description: 'Dry run (no publishing)'
+        required: false
+        type: boolean
+        default: false
+      region:
+        description: 'Specific region (leave empty for all)'
+        required: false
+        default: ''
+
+env:
+  SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+  SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+  QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+  VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+      
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      
+      - name: Run content generator
+        run: |
+          cd packages/content-generator
+          
+          # Build arguments
+          ARGS=""
+          
+          # Check for specific region
+          if [ -n "${{ github.event.inputs.region }}" ]; then
+            ARGS="--region ${{ github.event.inputs.region }}"
+          else
+            ARGS="--all"
+          fi
+          
+          # Add count
+          COUNT="${{ github.event.inputs.count }}"
+          if [ -z "$COUNT" ]; then
+            COUNT="5"
+          fi
+          ARGS="$ARGS --count $COUNT"
+          
+          # Add dry run flag
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          
+          echo "Running: pnpm dev generate $ARGS"
+          pnpm dev generate $ARGS
+      
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generator-logs-${{ github.run_id }}
+          path: |
+            packages/content-generator/*.log
+          retention-days: 7
+          if-no-files-found: ignore
+
+  notify-on-failure:
+    runs-on: ubuntu-latest
+    needs: generate
+    if: failure()
+    
+    steps:
+      - name: Report failure
+        run: |
+          echo "Content generation failed!"
+          echo "Check the workflow logs for details."
+          # Add notification integration here (Slack, Discord, etc.)

@@ -1,0 +1,23 @@
+{
+  "name": "@promotion/blog",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/vercel": "^8.0.3",
+    "@supabase/supabase-js": "^2.47.10",
+    "astro": "^5.1.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  }
+}

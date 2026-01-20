@@ -1,0 +1,203 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import PostContent from '../../components/PostContent.astro';
+import RegionImage from '../../components/RegionImage.astro';
+import RelatedPosts from '../../components/RelatedPosts.astro';
+import { getPostBySlug, getAllSlugsForRegion, getRelatedPosts } from '../../lib/posts';
+import { REGIONS, isValidRegion, getAllRegionIds, getRegionDomain } from '../../lib/regions';
+import type { RegionId } from '../../lib/regions';
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const region of getAllRegionIds()) {
+    const slugs = await getAllSlugsForRegion(region);
+    for (const slug of slugs) {
+      paths.push({
+        params: { region, slug },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { region, slug } = Astro.params;
+
+if (!isValidRegion(region)) {
+  return Astro.redirect('/');
+}
+
+const regionId = region as RegionId;
+const post = await getPostBySlug(regionId, slug);
+
+if (!post) {
+  return Astro.redirect(`/${region}/`);
+}
+
+const regionData = REGIONS[regionId];
+const relatedPosts = await getRelatedPosts(regionId, slug, post.category, 3);
+const baseUrl = getRegionDomain(regionId);
+
+const formattedDate = post.published_at
+  ? new Date(post.published_at).toLocaleDateString('ko-KR', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  : null;
+
+const title = post.meta_title || `${post.title} | ${regionData.name} 블로그`;
+const description = post.meta_description || post.excerpt || `${regionData.name} 지역 프로모션 정보`;
+---
+
+<BlogLayout
+  title={title}
+  description={description}
+  region={regionId}
+  canonicalPath={`/blog/${slug}`}
+  ogImage={post.featuredImage?.url}
+  article={{
+    publishedTime: post.published_at || undefined,
+    modifiedTime: post.updated_at,
+    author: post.author,
+    tags: post.tags,
+  }}
+>
+  <article class="post-container">
+    <header class="post-header">
+      <nav class="breadcrumb">
+        <a href={`${baseUrl}/`}>홈</a>
+        <span>/</span>
+        <a href={`/${region}/`}>블로그</a>
+        <span>/</span>
+        <span>{post.title}</span>
+      </nav>
+
+      {post.category && <span class="post-category">{post.category}</span>}
+
+      <h1>{post.title}</h1>
+
+      <div class="post-meta">
+        {formattedDate && (
+          <time datetime={post.published_at || ''}>
+            📅 {formattedDate}
+          </time>
+        )}
+        {post.author && <span>✍️ {post.author}</span>}
+      </div>
+
+      {post.tags && post.tags.length > 0 && (
+        <div class="post-tags">
+          {post.tags.map((tag) => (
+            <span class="tag">#{tag}</span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    {post.featuredImage && (
+      <RegionImage
+        src={post.featuredImage.url}
+        alt={post.featuredImage.alt}
+        width={post.featuredImage.width}
+        height={post.featuredImage.height}
+        loading="eager"
+        class="featured"
+      />
+    )}
+
+    <PostContent content={post.content} />
+
+    <RelatedPosts posts={relatedPosts} region={regionId} />
+  </article>
+</BlogLayout>
+
+<style>
+  .post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .breadcrumb a {
+    color: var(--color-text-muted);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--color-accent);
+  }
+
+  .breadcrumb span:not(:last-child) {
+    color: var(--color-text-muted);
+  }
+
+  .breadcrumb span:last-child {
+    color: var(--color-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-category {
+    display: inline-block;
+    background: var(--color-accent);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .post-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background: var(--color-secondary);
+    color: var(--color-text-muted);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 640px) {
+    .post-header h1 {
+      font-size: 1.75rem;
+    }
+  }
+</style>

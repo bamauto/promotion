@@ -1,0 +1,112 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getPostsForRegion } from '../../lib/posts';
+import { REGIONS, isValidRegion, getAllRegionIds } from '../../lib/regions';
+import type { RegionId } from '../../lib/regions';
+
+export function getStaticPaths() {
+  return getAllRegionIds().map((region) => ({
+    params: { region },
+  }));
+}
+
+const { region } = Astro.params;
+
+if (!isValidRegion(region)) {
+  return Astro.redirect('/');
+}
+
+const regionId = region as RegionId;
+const regionData = REGIONS[regionId];
+const posts = await getPostsForRegion(regionId);
+
+const title = `${regionData.name} 블로그 | ${regionData.name} 프로모션`;
+const description = `${regionData.name} 지역 프로모션, 이벤트, 가이드 정보를 제공하는 블로그입니다.`;
+---
+
+<BlogLayout title={title} description={description} region={regionId} canonicalPath="/blog">
+  <div class="blog-container">
+    <header class="blog-header">
+      <h1>{regionData.name} 블로그</h1>
+      <p>{regionData.description}</p>
+    </header>
+
+    {posts.length > 0 ? (
+      <div class="posts-grid">
+        {posts.map((post) => (
+          <PostCard
+            slug={post.slug}
+            title={post.title}
+            excerpt={post.excerpt}
+            category={post.category}
+            publishedAt={post.published_at}
+            featuredImage={post.featuredImage}
+            region={regionId}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="no-posts">
+        <p>아직 게시된 글이 없습니다.</p>
+        <p>곧 새로운 콘텐츠가 업데이트될 예정입니다.</p>
+      </div>
+    )}
+  </div>
+</BlogLayout>
+
+<style>
+  .blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .blog-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, var(--color-text), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .blog-header p {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+  }
+
+  .no-posts {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--color-card);
+    border-radius: 12px;
+  }
+
+  .no-posts p {
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .blog-header h1 {
+      font-size: 2rem;
+    }
+
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

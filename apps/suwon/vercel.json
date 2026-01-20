@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://promotion-blog.vercel.app/suwon"
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://promotion-blog.vercel.app/suwon/:path*"
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon/:path*"
     },
     {
       "source": "/sitemap-blog.xml",
-      "destination": "https://promotion-blog.vercel.app/suwon/sitemap.xml"
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon/sitemap.xml"
     },
     {
       "source": "/((?!blog|sitemap-blog).*)",

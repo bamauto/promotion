@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://promotion-blog.vercel.app/dongtan"
+      "destination": "https://blog-seven-gilt-10.vercel.app/dongtan"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://promotion-blog.vercel.app/dongtan/:path*"
+      "destination": "https://blog-seven-gilt-10.vercel.app/dongtan/:path*"
     },
     {
       "source": "/sitemap-blog.xml",
-      "destination": "https://promotion-blog.vercel.app/dongtan/sitemap.xml"
+      "destination": "https://blog-seven-gilt-10.vercel.app/dongtan/sitemap.xml"
     },
     {
       "source": "/((?!blog|sitemap-blog).*)",

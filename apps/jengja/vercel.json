@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://promotion-blog.vercel.app/jengja"
+      "destination": "https://blog-seven-gilt-10.vercel.app/jengja"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://promotion-blog.vercel.app/jengja/:path*"
+      "destination": "https://blog-seven-gilt-10.vercel.app/jengja/:path*"
     },
     {
       "source": "/sitemap-blog.xml",
-      "destination": "https://promotion-blog.vercel.app/jengja/sitemap.xml"
+      "destination": "https://blog-seven-gilt-10.vercel.app/jengja/sitemap.xml"
     },
     {
       "source": "/((?!blog|sitemap-blog).*)",

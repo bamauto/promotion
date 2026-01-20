@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://promotion-blog.vercel.app/bundang"
+      "destination": "https://blog-seven-gilt-10.vercel.app/bundang"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://promotion-blog.vercel.app/bundang/:path*"
+      "destination": "https://blog-seven-gilt-10.vercel.app/bundang/:path*"
     },
     {
       "source": "/sitemap-blog.xml",
-      "destination": "https://promotion-blog.vercel.app/bundang/sitemap.xml"
+      "destination": "https://blog-seven-gilt-10.vercel.app/bundang/sitemap.xml"
     },
     {
       "source": "/((?!blog|sitemap-blog).*)",

@@ -2,15 +2,15 @@
   "rewrites": [
     {
       "source": "/blog",
-      "destination": "https://promotion-blog.vercel.app/ingedong"
+      "destination": "https://blog-seven-gilt-10.vercel.app/ingedong"
     },
     {
       "source": "/blog/:path*",
-      "destination": "https://promotion-blog.vercel.app/ingedong/:path*"
+      "destination": "https://blog-seven-gilt-10.vercel.app/ingedong/:path*"
     },
     {
       "source": "/sitemap-blog.xml",
-      "destination": "https://promotion-blog.vercel.app/ingedong/sitemap.xml"
+      "destination": "https://blog-seven-gilt-10.vercel.app/ingedong/sitemap.xml"
     },
     {
       "source": "/((?!blog|sitemap-blog).*)",

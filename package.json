@@ -1,0 +1,26 @@
+{
+  "name": "promotion",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "build:jengja": "turbo run build --filter=@promotion/jengja",
+    "build:ingedong": "turbo run build --filter=@promotion/ingedong",
+    "build:bundang": "turbo run build --filter=@promotion/bundang",
+    "build:suwon": "turbo run build --filter=@promotion/suwon",
+    "build:dongtan": "turbo run build --filter=@promotion/dongtan",
+    "dev:jengja": "turbo run dev --filter=@promotion/jengja",
+    "dev:ingedong": "turbo run dev --filter=@promotion/ingedong",
+    "dev:bundang": "turbo run dev --filter=@promotion/bundang",
+    "dev:suwon": "turbo run dev --filter=@promotion/suwon",
+    "dev:dongtan": "turbo run dev --filter=@promotion/dongtan"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -3,28 +3,14 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 import PostContent from '../../components/PostContent.astro';
 import RegionImage from '../../components/RegionImage.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
-import { getPostBySlug, getAllSlugsForRegion, getRelatedPosts } from '../../lib/posts';
-import { REGIONS, isValidRegion, getAllRegionIds, getRegionDomain } from '../../lib/regions';
+import { getPostBySlug, getRelatedPosts } from '../../lib/posts';
+import { REGIONS, isValidRegion, getRegionDomain } from '../../lib/regions';
 import type { RegionId } from '../../lib/regions';
 
-export async function getStaticPaths() {
-  const paths = [];
-
-  for (const region of getAllRegionIds()) {
-    const slugs = await getAllSlugsForRegion(region);
-    for (const slug of slugs) {
-      paths.push({
-        params: { region, slug },
-      });
-    }
-  }
-
-  return paths;
-}
-
+// SSR: Dynamic routing with date-based filtering
 const { region, slug } = Astro.params;
 
-if (!isValidRegion(region)) {
+if (!region || !slug || !isValidRegion(region)) {
   return Astro.redirect('/');
 }
 

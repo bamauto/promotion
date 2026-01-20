@@ -12,10 +12,13 @@ const REGION_DOMAINS = {
 };
 
 export default defineConfig({
-  output: 'static',
+  output: 'server',  // SSR for date-based content filtering
   adapter: vercel({
     webAnalytics: { enabled: true },
     imageService: true,
+    isr: {
+      expiration: 3600,  // Revalidate every hour
+    },
   }),
   site: 'https://promotion-blog.vercel.app',
   integrations: [

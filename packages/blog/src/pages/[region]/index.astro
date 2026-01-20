@@ -2,18 +2,13 @@
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import { getPostsForRegion } from '../../lib/posts';
-import { REGIONS, isValidRegion, getAllRegionIds } from '../../lib/regions';
+import { REGIONS, isValidRegion } from '../../lib/regions';
 import type { RegionId } from '../../lib/regions';
 
-export function getStaticPaths() {
-  return getAllRegionIds().map((region) => ({
-    params: { region },
-  }));
-}
-
+// SSR: Dynamic routing with date-based filtering
 const { region } = Astro.params;
 
-if (!isValidRegion(region)) {
+if (!region || !isValidRegion(region)) {
   return Astro.redirect('/');
 }
 

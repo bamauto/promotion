@@ -1,14 +1,9 @@
 import type { APIRoute } from 'astro';
 import { getAllSlugsForRegion } from '../../lib/posts';
-import { isValidRegion, getRegionDomain, getAllRegionIds } from '../../lib/regions';
+import { isValidRegion, getRegionDomain } from '../../lib/regions';
 import type { RegionId } from '../../lib/regions';
 
-export function getStaticPaths() {
-  return getAllRegionIds().map((region) => ({
-    params: { region },
-  }));
-}
-
+// SSR: Dynamic sitemap generation
 export const GET: APIRoute = async ({ params }) => {
   const region = params.region;
 

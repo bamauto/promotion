@@ -81,13 +81,26 @@ export async function getPostsForRegion(region: RegionId): Promise<PostListItem[
         };
       }
 
-      const { data: images } = await supabase
+      // First try region-specific image
+      let { data: images } = await supabase
         .from('blog_images')
         .select('storage_path, alt_text')
         .eq('region', region)
         .eq('image_type', 'featured')
         .eq('post_id', (postData as { id: string }).id)
         .limit(1);
+
+      // If no region-specific image, try shared images
+      if (!images || images.length === 0) {
+        const { data: sharedImages } = await supabase
+          .from('blog_images')
+          .select('storage_path, alt_text')
+          .eq('region', 'shared')
+          .eq('image_type', 'featured')
+          .eq('post_id', (postData as { id: string }).id)
+          .limit(1);
+        images = sharedImages;
+      }
 
       const typedImages = (images || []) as ImageQueryResult[];
 

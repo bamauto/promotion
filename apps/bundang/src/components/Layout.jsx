@@ -72,6 +72,10 @@ const Layout = ({ children }) => {
                         <NavLink to="/bundang-room-salon-guide" label="룸살롱" currentPath={location.pathname} />
                         <NavLink to="/bundang-hostbar-guide" label="호빠" currentPath={location.pathname} />
                         <div className="w-px h-4 bg-slate-800 my-auto mx-2"></div>
+                        <a href="/blog" className="relative px-4 py-2 text-sm md:text-base font-medium transition-all duration-300 group text-slate-400 hover:text-white">
+                            <span className="relative z-10">블로그</span>
+                            <span className="absolute bottom-0 left-0 h-[2px] bg-amber-500 transition-all duration-300 w-0 group-hover:w-full"></span>
+                        </a>
                         <NavLink to="/contact" label="문의하기" currentPath={location.pathname} />
                     </nav>
 
@@ -91,6 +95,10 @@ const Layout = ({ children }) => {
                         <NavLink to="/bundang-kimono-room-guide" label="기모노룸" currentPath={location.pathname} />
                         <NavLink to="/bundang-room-salon-guide" label="룸살롱" currentPath={location.pathname} />
                         <NavLink to="/bundang-hostbar-guide" label="호빠" currentPath={location.pathname} />
+                        <a href="/blog" className="relative px-4 py-2 text-sm md:text-base font-medium transition-all duration-300 group text-slate-400 hover:text-white">
+                            <span className="relative z-10">블로그</span>
+                            <span className="absolute bottom-0 left-0 h-[2px] bg-amber-500 transition-all duration-300 w-0 group-hover:w-full"></span>
+                        </a>
                         <NavLink to="/contact" label="문의하기" currentPath={location.pathname} />
                     </nav>
                 </div>

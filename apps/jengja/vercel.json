@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
       "source": "/blog",
       "destination": "https://blog-seven-gilt-10.vercel.app/jengja"
     },

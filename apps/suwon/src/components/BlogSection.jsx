@@ -95,10 +95,10 @@ const BlogSection = () => {
         <div className="text-center mb-16 relative">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl"></div>
           <span className="text-amber-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-3 block">
-            BLOG & NEWS
+            수원 유흥 정보
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 drop-shadow-sm">
-            최신 블로그
+            수원 하이퍼블릭 블로그
           </h2>
           <div className="w-1 h-12 bg-gradient-to-b from-amber-500 to-transparent mx-auto mt-6"></div>
         </div>

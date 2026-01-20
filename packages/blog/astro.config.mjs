@@ -13,6 +13,7 @@ const REGION_DOMAINS = {
 
 export default defineConfig({
   output: 'server',  // SSR for date-based content filtering
+  trailingSlash: 'ignore',  // Handle both /slug and /slug/
   adapter: vercel({
     webAnalytics: { enabled: true },
     imageService: true,

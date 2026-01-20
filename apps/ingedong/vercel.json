@@ -9,11 +9,19 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/ingedong/:path*"
     },
     {
+      "source": "/ingedong",
+      "destination": "https://blog-seven-gilt-10.vercel.app/ingedong"
+    },
+    {
+      "source": "/ingedong/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/ingedong/:path*"
+    },
+    {
       "source": "/sitemap-blog.xml",
       "destination": "https://blog-seven-gilt-10.vercel.app/ingedong/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog).*)",
+      "source": "/((?!blog|sitemap-blog|ingedong).*)",
       "destination": "/index.html"
     }
   ]

@@ -9,11 +9,19 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/jengja/:path*"
     },
     {
+      "source": "/jengja",
+      "destination": "https://blog-seven-gilt-10.vercel.app/jengja"
+    },
+    {
+      "source": "/jengja/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/jengja/:path*"
+    },
+    {
       "source": "/sitemap-blog.xml",
       "destination": "https://blog-seven-gilt-10.vercel.app/jengja/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog).*)",
+      "source": "/((?!blog|sitemap-blog|jengja).*)",
       "destination": "/index.html"
     }
   ]

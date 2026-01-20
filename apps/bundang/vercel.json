@@ -9,11 +9,19 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/bundang/:path*"
     },
     {
+      "source": "/bundang",
+      "destination": "https://blog-seven-gilt-10.vercel.app/bundang"
+    },
+    {
+      "source": "/bundang/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/bundang/:path*"
+    },
+    {
       "source": "/sitemap-blog.xml",
       "destination": "https://blog-seven-gilt-10.vercel.app/bundang/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog).*)",
+      "source": "/((?!blog|sitemap-blog|bundang).*)",
       "destination": "/index.html"
     }
   ]

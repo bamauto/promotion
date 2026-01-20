@@ -9,11 +9,19 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/dongtan/:path*"
     },
     {
+      "source": "/dongtan",
+      "destination": "https://blog-seven-gilt-10.vercel.app/dongtan"
+    },
+    {
+      "source": "/dongtan/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/dongtan/:path*"
+    },
+    {
       "source": "/sitemap-blog.xml",
       "destination": "https://blog-seven-gilt-10.vercel.app/dongtan/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog).*)",
+      "source": "/((?!blog|sitemap-blog|dongtan).*)",
       "destination": "/index.html"
     }
   ]

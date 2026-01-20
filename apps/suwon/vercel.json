@@ -9,11 +9,19 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/suwon/:path*"
     },
     {
+      "source": "/suwon",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon"
+    },
+    {
+      "source": "/suwon/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon/:path*"
+    },
+    {
       "source": "/sitemap-blog.xml",
       "destination": "https://blog-seven-gilt-10.vercel.app/suwon/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog).*)",
+      "source": "/((?!blog|sitemap-blog|suwon).*)",
       "destination": "/index.html"
     }
   ]

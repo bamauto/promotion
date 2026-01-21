@@ -239,6 +239,76 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 정자 특화 콘텐츠 섹션 - SEO 최적화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div className="container mx-auto px-4">
+                    <SectionTitle title="왜 정자인가?" subtitle="지역 특화 분석" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        {/* 네이버 본사 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Zap className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">네이버 본사 인접</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">네이버·라인·NHN</strong> 본사가 위치한 정자역 인근은
+                                대한민국 IT 산업의 심장부입니다. 고소득 개발자·기획자들의
+                                <strong className="text-white">세련된 접대 문화</strong>가 형성되어 있습니다.
+                            </p>
+                        </article>
+
+                        {/* 더블역세권 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">분당선·신분당선 환승</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">분당선·신분당선</strong> 환승역으로
+                                강남 15분, 판교 5분의 최적 접근성.
+                                <strong className="text-white">카페거리·맛집골목</strong> 인근에서
+                                1차부터 2차까지 완벽한 동선을 제안합니다.
+                            </p>
+                        </article>
+
+                        {/* 젊은 전문직 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Users className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">2030 IT 전문직 밀집</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                평균 연령 <strong className="text-amber-400">28~35세</strong> IT 전문직이 밀집한 정자동.
+                                트렌디하고 모던한 분위기를 선호하는 고객층에 맞춰
+                                <strong className="text-white">감각적인 인테리어</strong>의 업소들이 모여 있습니다.
+                            </p>
+                        </article>
+
+                        {/* 비즈니스 미팅 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Crown className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">스타트업 네트워킹</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                정자동은 <strong className="text-amber-400">스타트업 투자 미팅·협력사 접대</strong>의 핫플레이스.
+                                <strong className="text-white">프라이빗한 VIP룸</strong>에서
+                                비즈니스 성공을 위한 네트워킹을 즐기세요.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             {/* Hot Event Section */}
             <HotEventSection />
 

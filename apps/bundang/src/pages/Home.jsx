@@ -224,6 +224,78 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 분당 특화 콘텐츠 섹션 - SEO 최적화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div className="container mx-auto px-4">
+                    <SectionTitle title="왜 분당인가?" subtitle="지역 특화 분석" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        {/* IT벨리 중심지 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Zap className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">판교 IT벨리 중심지</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">네이버·카카오·NHN</strong> 등 국내 대표 IT기업이 밀집한
+                                판교테크노밸리 인접 지역으로, 고소득 IT 종사자들의 프리미엄 접대 문화가 발달했습니다.
+                                <strong className="text-white">강남급 품격</strong>을 합리적 가격에 경험하세요.
+                            </p>
+                        </article>
+
+                        {/* 1기 신도시 프리미엄 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Crown className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">1기 신도시 프리미엄</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                30년 역사의 <strong className="text-amber-400">대한민국 1기 신도시</strong> 분당은
+                                안정적인 고소득층이 밀집해 있습니다. 서현역·야탑역 상권에는
+                                <strong className="text-white">오랜 경험의 프리미엄 업소</strong>들이
+                                검증된 서비스를 제공합니다.
+                            </p>
+                        </article>
+
+                        {/* 교통 접근성 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">분당선·신분당선 더블역세권</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">분당선·신분당선</strong> 더블역세권으로
+                                강남까지 15분, 판교까지 5분의 최적 접근성.
+                                서현역·정자역 인근 <strong className="text-white">핵심 상권</strong>에서
+                                편리하게 픽업 서비스를 이용하세요.
+                            </p>
+                        </article>
+
+                        {/* 비즈니스 문화 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Users className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">격조 높은 비즈니스 접대</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                대기업 임원진·스타트업 CEO들의 <strong className="text-amber-400">비즈니스 접대</strong>가
+                                일상인 분당에서는 품격과 프라이버시를 최우선으로 합니다.
+                                <strong className="text-white">VIP룸·시크릿 입구</strong> 등
+                                철저한 보안이 보장됩니다.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             {/* Hot Event Section */}
             <HotEventSection />
 

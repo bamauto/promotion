@@ -224,6 +224,75 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 수원 특화 콘텐츠 섹션 - SEO 최적화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div className="container mx-auto px-4">
+                    <SectionTitle title="왜 수원인가?" subtitle="지역 특화 분석" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        {/* 경기남부 중심 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Crown className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">경기남부 130만 중심도시</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                인구 <strong className="text-amber-400">130만 경기남부 최대 도시</strong> 수원은
+                                인계동·영통·광교 등 다양한 유흥 상권이 발달해 있습니다.
+                                <strong className="text-white">취향과 예산에 맞는 선택지</strong>가 풍부합니다.
+                            </p>
+                        </article>
+
+                        {/* 교통 허브 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">수원역 5개 노선 환승</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">1호선·분당선·수인선·KTX·GTX-C</strong> 5개 노선이 만나는
+                                수원역은 경기남부 최대 교통 허브입니다.
+                                <strong className="text-white">안양·평택·용인</strong>에서도 쉽게 접근 가능합니다.
+                            </p>
+                        </article>
+
+                        {/* 삼성 배후도시 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Zap className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">삼성전자 배후도시</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                삼성전자 <strong className="text-amber-400">수원·화성·평택 캠퍼스</strong> 10만 임직원의
+                                배후 도시로서 고소득 직장인 수요가 집중됩니다.
+                                <strong className="text-white">법인카드 접대 문화</strong>가 발달한 프리미엄 시장입니다.
+                            </p>
+                        </article>
+
+                        {/* 다양한 선택지 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Users className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">예산별 맞춤 추천</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">인계동 가성비</strong>부터 <strong className="text-amber-400">광교 프리미엄</strong>까지
+                                예산과 취향에 맞는 다양한 선택지를 제안합니다.
+                                서우실장이 <strong className="text-white">최적의 장소</strong>를 매칭해 드립니다.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             {/* Hot Event Section */}
             <HotEventSection />
 

@@ -239,6 +239,77 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 영통 특화 콘텐츠 섹션 - SEO 최적화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div className="container mx-auto px-4">
+                    <SectionTitle title="왜 영통인가?" subtitle="지역 특화 분석" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        {/* 삼성전자 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Zap className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">삼성전자 수원캠퍼스</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">삼성전자 디지털시티</strong> 3만여 임직원이 근무하는 영통.
+                                R&D 연구원·엔지니어들의 회식 수요가 집중되어
+                                <strong className="text-white">고품격 비즈니스 접대 문화</strong>가 발달했습니다.
+                            </p>
+                        </article>
+
+                        {/* 분당선 접근성 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">분당선 영통역 도보권</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">분당선 영통역</strong>에서 도보 5분 거리에
+                                유흥 상권이 형성되어 있습니다.
+                                수원역·분당·광교까지 <strong className="text-white">환승 없이 직통</strong>으로
+                                광역 고객층의 접근이 편리합니다.
+                            </p>
+                        </article>
+
+                        {/* 젊은 직장인 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Users className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">20~30대 직장인 타운</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                영통 거주자 평균 연령 <strong className="text-amber-400">30대 초반</strong>.
+                                젊고 활기찬 분위기를 선호하는 직장인들이 많아
+                                <strong className="text-white">트렌디한 컨셉</strong>의 업소들이 인기입니다.
+                            </p>
+                        </article>
+
+                        {/* 가성비 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <ShieldCheck className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">합리적 가격의 프리미엄</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                분당·강남 대비 <strong className="text-amber-400">20~30% 저렴</strong>한 가격에
+                                동급 서비스를 제공합니다.
+                                <strong className="text-white">100% 정찰제</strong>로 운영되어
+                                가격 부담 없이 프리미엄을 경험하세요.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             {/* Hot Event Section */}
             <HotEventSection />
 

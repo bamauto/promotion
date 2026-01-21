@@ -239,6 +239,77 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 광교 특화 콘텐츠 섹션 - SEO 최적화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div className="container mx-auto px-4">
+                    <SectionTitle title="왜 광교인가?" subtitle="지역 특화 분석" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        {/* 테크노밸리 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Zap className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">광교테크노밸리 핵심</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">경기도청·법조타운·삼성전자 연구소</strong>가 위치한
+                                광교테크노밸리는 고소득 전문직 종사자들의 밀집 지역입니다.
+                                품격 높은 접대 문화가 형성되어 <strong className="text-white">프리미엄 업소</strong>가 모여 있습니다.
+                            </p>
+                        </article>
+
+                        {/* 신분당선 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">신분당선 광교중앙역</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">신분당선</strong>으로 강남까지 30분 직통.
+                                광교중앙역·상현역 인근 <strong className="text-white">갤러리아백화점·아브뉴프랑</strong> 상권에서
+                                서울 못지않은 프리미엄 유흥 문화를 경험하세요.
+                            </p>
+                        </article>
+
+                        {/* 호수공원 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Star className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">광교호수공원 힐링</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                국내 최대 규모 <strong className="text-amber-400">광교호수공원</strong> 인접 지역으로
+                                자연과 도심이 조화된 프리미엄 환경.
+                                <strong className="text-white">호수뷰 레스토랑</strong>에서 2차까지
+                                완벽한 동선을 제안합니다.
+                            </p>
+                        </article>
+
+                        {/* 젊은 고소득층 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Users className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">30대 고소득 신혼부부</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                광교신도시 평균 연령 <strong className="text-amber-400">30대 초반</strong>,
+                                맞벌이 고소득 신혼부부가 밀집한 지역.
+                                <strong className="text-white">트렌디하고 세련된</strong> 분위기의 업소들이
+                                젊은 감각의 서비스를 제공합니다.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             {/* Hot Event Section */}
             <HotEventSection />
 

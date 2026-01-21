@@ -8,6 +8,23 @@
 git push https://{GITHUB_TOKEN}@github.com/bamauto/promotion.git main
 ```
 
+## Vercel API 토큰
+
+```
+SSxhOnGY9JbbPEEgkg85poIE
+```
+
+**사용 예시:**
+```bash
+# 프로젝트 설정 조회
+curl -H "Authorization: Bearer SSxhOnGY9JbbPEEgkg85poIE" "https://api.vercel.com/v9/projects/{PROJECT_ID}?teamId=ymimis-projects"
+
+# 배포 트리거
+curl -X POST -H "Authorization: Bearer SSxhOnGY9JbbPEEgkg85poIE" -H "Content-Type: application/json" \
+  -d '{"name":"{프로젝트명}","target":"production","gitSource":{"type":"github","org":"bamauto","repo":"promotion","ref":"main"}}' \
+  "https://api.vercel.com/v13/deployments?teamId=ymimis-projects"
+```
+
 ## 지역별 도메인
 
 | 지역 | ID | 도메인 |

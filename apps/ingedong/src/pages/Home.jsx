@@ -224,6 +224,78 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 인계동 특화 콘텐츠 섹션 - SEO 최적화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+                <div className="container mx-auto px-4">
+                    <SectionTitle title="왜 인계동인가?" subtitle="지역 특화 분석" />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                        {/* 수원 대표 유흥가 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Crown className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">수원 대표 유흥 상권</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">경기남부 최대 유흥 상권</strong> 인계동은
+                                30년 역사의 검증된 업소들이 밀집해 있습니다.
+                                <strong className="text-white">다양한 컨셉과 가격대</strong>의 업소를 한 곳에서 비교하고
+                                선택할 수 있는 원스톱 유흥 타운입니다.
+                            </p>
+                        </article>
+
+                        {/* 먹자골목 연계 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <GlassWater className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">인계동 먹자골목 연계</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                유명 <strong className="text-amber-400">맛집·이자카야·와인바</strong>가 즐비한
+                                인계동 먹자골목과 연계된 완벽한 코스.
+                                1차 식사부터 2차 유흥까지 <strong className="text-white">도보 5분 내 해결</strong>되는
+                                최적의 동선을 제안합니다.
+                            </p>
+                        </article>
+
+                        {/* 접근성 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">수원역 10분 접근성</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">1호선 수원역</strong>에서 택시 10분,
+                                영통·광교에서 15분 거리의 최적 접근성.
+                                <strong className="text-white">넓은 주차 공간</strong>과 대리운전 콜센터가
+                                24시간 대기하여 편리한 귀가를 보장합니다.
+                            </p>
+                        </article>
+
+                        {/* 가성비 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <ShieldCheck className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">강남 대비 30% 절약</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                동일 수준 서비스를 <strong className="text-amber-400">강남 대비 30% 저렴</strong>하게 즐기세요.
+                                가격 거품 없는 <strong className="text-white">100% 정찰제</strong>로 운영되며,
+                                사전 견적 안내로 예상치 못한 추가금을 방지합니다.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             {/* Hot Event Section */}
             <HotEventSection />
 

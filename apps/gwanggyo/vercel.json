@@ -26,7 +26,7 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/gwanggyo/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog|gwanggyo|_astro).*)",
+      "source": "/((?!blog(?:/|$)|sitemap-blog|gwanggyo(?:/|$)|_astro(?:/|$)).*)",
       "destination": "/index.html"
     }
   ]

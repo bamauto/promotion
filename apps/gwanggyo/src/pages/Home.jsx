@@ -152,14 +152,20 @@ const Home = () => {
                     <div className="flex animate-infinite-scroll whitespace-nowrap group hover:[animation-play-state:paused]">
                         {/* Double the images for seamless loop */}
                         {[
-                            { src: '/partner/home-partner-01.webp', alt: '광교 가라오케 프리미엄 매니저 - 광교중앙역 VIP 서비스' },
-                            { src: '/partner/home-partner-02.webp', alt: '광교 하이퍼블릭 최고급 매니저 - 광교호수공원 럭셔리' },
-                            { src: '/partner/home-partner-03.webp', alt: '광교 가라오케 VIP 매니저 - 수원시 프리미엄 파트너' },
-                            { src: '/partner/home-partner-04.webp', alt: '광교 하이퍼블릭 엄선 파트너 - 영통구 베스트 초이스' },
-                            { src: '/partner/home-partner-01.webp', alt: '광교 가라오케 프리미엄 매니저 - 광교중앙역 VIP 서비스' },
-                            { src: '/partner/home-partner-02.webp', alt: '광교 하이퍼블릭 최고급 매니저 - 광교호수공원 럭셔리' },
-                            { src: '/partner/home-partner-03.webp', alt: '광교 가라오케 VIP 매니저 - 수원시 프리미엄 파트너' },
-                            { src: '/partner/home-partner-04.webp', alt: '광교 하이퍼블릭 엄선 파트너 - 영통구 베스트 초이스' },
+                            { src: '/partner/partner-01.webp', alt: '광교 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
+                            { src: '/partner/partner-02.webp', alt: '광교 하이퍼블릭 최고급 매니저 - 광교동 서우실장 추천' },
+                            { src: '/partner/partner-03.webp', alt: '광교 가라오케 VIP 매니저 - 분당 광교 서우실장' },
+                            { src: '/partner/partner-04.webp', alt: '광교 하이퍼블릭 프리미엄 파트너 - 광교중앙역 서우실장' },
+                            { src: '/partner/partner-05.webp', alt: '광교 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
+                            { src: '/partner/partner-06.webp', alt: '광교 하이퍼블릭 엄선 매니저 - 광교 서우실장' },
+                            { src: '/partner/partner-07.webp', alt: '광교 가라오케 TOP 매니저 - 광교동 서우실장 추천' },
+                            { src: '/partner/partner-01.webp', alt: '광교 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
+                            { src: '/partner/partner-02.webp', alt: '광교 하이퍼블릭 최고급 매니저 - 광교동 서우실장 추천' },
+                            { src: '/partner/partner-03.webp', alt: '광교 가라오케 VIP 매니저 - 분당 광교 서우실장' },
+                            { src: '/partner/partner-04.webp', alt: '광교 하이퍼블릭 프리미엄 파트너 - 광교중앙역 서우실장' },
+                            { src: '/partner/partner-05.webp', alt: '광교 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
+                            { src: '/partner/partner-06.webp', alt: '광교 하이퍼블릭 엄선 매니저 - 광교 서우실장' },
+                            { src: '/partner/partner-07.webp', alt: '광교 가라오케 TOP 매니저 - 광교동 서우실장 추천' },
                         ].map((img, idx) => (
                             <div key={idx} className="inline-block px-4">
                                 <div className="w-[300px] h-[450px] md:w-[400px] md:h-[600px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group/card">

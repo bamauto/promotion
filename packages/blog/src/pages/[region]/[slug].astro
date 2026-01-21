@@ -1,6 +1,7 @@
 ---
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import PostContent from '../../components/PostContent.astro';
+import PostFooterCTA from '../../components/PostFooterCTA.astro';
 import RegionImage from '../../components/RegionImage.astro';
 import RelatedPosts from '../../components/RelatedPosts.astro';
 import { getPostBySlug, getRelatedPosts } from '../../lib/posts';
@@ -140,7 +141,9 @@ const breadcrumbSchema = {
       />
     )}
 
-    <PostContent content={post.content} />
+    <PostContent content={post.content} region={regionId} />
+
+    <PostFooterCTA region={regionId} />
 
     <RelatedPosts posts={relatedPosts} region={regionId} />
   </article>

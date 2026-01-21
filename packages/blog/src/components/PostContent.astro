@@ -1,12 +1,21 @@
 ---
+import { processContentLinks } from '../lib/content-processor';
+import type { RegionId } from '../lib/regions';
+
 interface Props {
   content: string;
+  region?: RegionId;
 }
 
-const { content } = Astro.props;
+const { content, region } = Astro.props;
+
+// 지역이 제공되면 콘텐츠 내 키워드를 링크로 변환
+const processedContent = region
+  ? processContentLinks(content, region, 3)
+  : content;
 ---
 
-<div class="post-content" set:html={content} />
+<div class="post-content" set:html={processedContent} />
 
 <style>
   .post-content {
@@ -121,5 +130,18 @@ const { content } = Astro.props;
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
     margin: 2rem 0;
+  }
+
+  /* 내부 링크 스타일 */
+  .post-content :global(.content-internal-link) {
+    color: var(--color-accent);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--color-accent);
+    transition: all 0.2s ease;
+  }
+
+  .post-content :global(.content-internal-link:hover) {
+    border-bottom-style: solid;
+    opacity: 0.9;
   }
 </style>

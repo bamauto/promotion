@@ -55,6 +55,14 @@ export const REGIONS = {
     keyword: '가라오케',
     description: '영통 가라오케 하이퍼블릭 정보',
   },
+  anyang: {
+    id: 'anyang',
+    name: '안양',
+    nameEn: 'Anyang',
+    domain: 'anyangkaraoke.com',
+    keyword: '가라오케',
+    description: '안양 가라오케 하이퍼블릭 정보',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;
@@ -78,3 +86,30 @@ export function getAllRegionIds(): RegionId[] {
 export function getRegionDomain(regionId: RegionId): string {
   return `https://${REGIONS[regionId].domain}`;
 }
+
+// 서비스 경로 정의
+export const SERVICE_PATHS = {
+  hyperpublic: '/hyperpublic',
+  karaoke: '/karaoke',
+  shirtsroom: '/shirtsroom',
+  roomsalon: '/roomsalon',
+  kimonoroom: '/kimonoroom',
+  price: '/price-guide',
+  beginner: '/beginner-guide',
+} as const;
+
+export type ServicePath = keyof typeof SERVICE_PATHS;
+
+// 지역별 키워드 매핑 (콘텐츠 내 링크 생성용)
+export const LINK_KEYWORDS: Record<string, { path: string; priority: number }> = {
+  '하이퍼블릭': { path: SERVICE_PATHS.hyperpublic, priority: 1 },
+  '가라오케': { path: SERVICE_PATHS.karaoke, priority: 2 },
+  '노래방': { path: SERVICE_PATHS.karaoke, priority: 3 },
+  '셔츠룸': { path: SERVICE_PATHS.shirtsroom, priority: 4 },
+  '룸살롱': { path: SERVICE_PATHS.roomsalon, priority: 5 },
+  '기모노룸': { path: SERVICE_PATHS.kimonoroom, priority: 6 },
+  '가격': { path: SERVICE_PATHS.price, priority: 7 },
+  '요금': { path: SERVICE_PATHS.price, priority: 8 },
+  '초보자': { path: SERVICE_PATHS.beginner, priority: 9 },
+  '처음': { path: SERVICE_PATHS.beginner, priority: 10 },
+};

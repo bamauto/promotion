@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yeongtongkaraoke.com/sitemap.xml
+Sitemap: https://yeongtongkaraoke.com/sitemap-blog.xml

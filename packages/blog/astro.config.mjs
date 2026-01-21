@@ -20,7 +20,7 @@ export default defineConfig({
     webAnalytics: { enabled: true },
     imageService: true,
     isr: {
-      expiration: 300,  // Revalidate every 5 minutes
+      expiration: 600,  // Revalidate every 10 minutes
     },
   }),
   site: 'https://promotion-blog.vercel.app',

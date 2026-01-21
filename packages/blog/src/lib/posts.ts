@@ -46,12 +46,15 @@ type ImageQueryResult = {
 
 /**
  * Get all published posts for a specific region
+ * Optimized: Single query with ID, then batch image fetch
  */
 export async function getPostsForRegion(region: RegionId): Promise<PostListItem[]> {
   const now = new Date().toISOString();
+
+  // Get posts with ID in single query
   const { data: posts, error } = await supabase
     .from('blog_posts')
-    .select('slug, title, excerpt, category, tags, published_at')
+    .select('id, slug, title, excerpt, category, tags, published_at')
     .contains('regions', [region])
     .eq('status', 'published')
     .lte('published_at', now)
@@ -62,67 +65,54 @@ export async function getPostsForRegion(region: RegionId): Promise<PostListItem[
     return [];
   }
 
-  const typedPosts = (posts || []) as PostListQueryResult[];
+  const typedPosts = (posts || []) as (PostListQueryResult & { id: string })[];
 
-  // Fetch featured images for each post
-  const postsWithImages: PostListItem[] = await Promise.all(
-    typedPosts.map(async (post) => {
-      // First get the post ID
-      const { data: postData } = await supabase
-        .from('blog_posts')
-        .select('id')
-        .eq('slug', post.slug)
-        .single();
+  if (typedPosts.length === 0) {
+    return [];
+  }
 
-      if (!postData) {
-        return {
-          ...post,
-          featuredImage: null,
-        };
-      }
+  // Batch fetch all featured images in ONE query
+  const postIds = typedPosts.map(p => p.id);
+  const { data: allImages } = await supabase
+    .from('blog_images')
+    .select('post_id, storage_path, alt_text, region')
+    .in('post_id', postIds)
+    .eq('image_type', 'featured')
+    .in('region', [region, 'shared']);
 
-      // First try region-specific image
-      let { data: images } = await supabase
-        .from('blog_images')
-        .select('storage_path, alt_text')
-        .eq('region', region)
-        .eq('image_type', 'featured')
-        .eq('post_id', (postData as { id: string }).id)
-        .limit(1);
+  // Create image lookup map (prefer region-specific over shared)
+  const imageMap = new Map<string, ImageQueryResult>();
+  for (const img of (allImages || []) as (ImageQueryResult & { post_id: string; region: string })[]) {
+    const existing = imageMap.get(img.post_id);
+    // Prefer region-specific image over shared
+    if (!existing || img.region === region) {
+      imageMap.set(img.post_id, img);
+    }
+  }
 
-      // If no region-specific image, try shared images
-      if (!images || images.length === 0) {
-        const { data: sharedImages } = await supabase
-          .from('blog_images')
-          .select('storage_path, alt_text')
-          .eq('region', 'shared')
-          .eq('image_type', 'featured')
-          .eq('post_id', (postData as { id: string }).id)
-          .limit(1);
-        images = sharedImages;
-      }
-
-      const typedImages = (images || []) as ImageQueryResult[];
-
-      const featuredImage = typedImages[0]
+  // Map posts with images from memory (no additional queries)
+  return typedPosts.map((post) => {
+    const image = imageMap.get(post.id);
+    return {
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      category: post.category,
+      tags: post.tags,
+      published_at: post.published_at,
+      featuredImage: image
         ? {
-            url: getStorageUrl(typedImages[0].storage_path),
-            alt: typedImages[0].alt_text || post.title,
+            url: getStorageUrl(image.storage_path),
+            alt: image.alt_text || post.title,
           }
-        : null;
-
-      return {
-        ...post,
-        featuredImage,
-      };
-    })
-  );
-
-  return postsWithImages;
+        : null,
+    };
+  });
 }
 
 /**
  * Get a single post by slug for a specific region
+ * Optimized: Fetch images in single query with both region and shared
  */
 export async function getPostBySlug(region: RegionId, slug: string): Promise<PostDetail | null> {
   const now = new Date().toISOString();
@@ -142,30 +132,23 @@ export async function getPostBySlug(region: RegionId, slug: string): Promise<Pos
 
   const typedPost = post as BlogPost;
 
-  // Fetch images for this post and region
-  const { data: images } = await supabase
+  // Fetch both region-specific and shared images in ONE query
+  const { data: allImages } = await supabase
     .from('blog_images')
     .select('*')
     .eq('post_id', typedPost.id)
-    .eq('region', region)
+    .in('region', [region, 'shared'])
     .order('display_order', { ascending: true });
 
-  let regionImages = (images || []) as BlogImage[];
+  const typedImages = (allImages || []) as BlogImage[];
 
-  // If no region-specific images, try shared images
-  if (regionImages.length === 0) {
-    const { data: sharedImages } = await supabase
-      .from('blog_images')
-      .select('*')
-      .eq('post_id', typedPost.id)
-      .eq('region', 'shared')
-      .order('display_order', { ascending: true });
+  // Prefer region-specific images, fallback to shared
+  const regionImages = typedImages.filter(img => img.region === region);
+  const sharedImages = typedImages.filter(img => img.region === 'shared');
+  const imagesToUse = regionImages.length > 0 ? regionImages : sharedImages;
 
-    regionImages = (sharedImages || []) as BlogImage[];
-  }
-
-  const featuredImage = regionImages.find((img) => img.image_type === 'featured');
-  const contentImages = regionImages.filter((img) => img.image_type === 'content');
+  const featuredImage = imagesToUse.find((img) => img.image_type === 'featured');
+  const contentImages = imagesToUse.filter((img) => img.image_type === 'content');
 
   return {
     ...typedPost,

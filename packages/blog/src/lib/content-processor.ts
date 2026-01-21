@@ -1,9 +1,9 @@
-import { getRegionDomain, LINK_KEYWORDS } from './regions';
-import type { RegionId } from './regions';
+import { getRegionDomain, getServicePath, LINK_KEYWORDS } from './regions';
+import type { RegionId, ServiceType } from './regions';
 
 interface LinkMatch {
   keyword: string;
-  path: string;
+  service: ServiceType;
   priority: number;
   index: number;
 }
@@ -41,7 +41,7 @@ export function processContentLinks(
     .sort((a, b) => a[1].priority - b[1].priority);
 
   for (const [keyword, config] of sortedKeywords) {
-    if (processedKeywords.has(config.path)) continue; // 같은 경로의 키워드는 건너뜀
+    if (processedKeywords.has(config.service)) continue; // 같은 서비스의 키워드는 건너뜀
 
     // 키워드 검색 (대소문자 구분 없음)
     const keywordRegex = new RegExp(escapeRegex(keyword), 'gi');
@@ -58,11 +58,11 @@ export function processContentLinks(
       if (!isInsideLink) {
         matches.push({
           keyword: match[0], // 원본 케이스 유지
-          path: config.path,
+          service: config.service,
           priority: config.priority,
           index,
         });
-        processedKeywords.add(config.path);
+        processedKeywords.add(config.service);
         break; // 이 키워드의 첫 번째 발견만 처리
       }
     }
@@ -76,7 +76,8 @@ export function processContentLinks(
   // 링크로 치환
   let processedContent = content;
   for (const match of matches) {
-    const linkHtml = `<a href="${baseUrl}${match.path}" class="content-internal-link">${match.keyword}</a>`;
+    const servicePath = getServicePath(regionId, match.service);
+    const linkHtml = `<a href="${baseUrl}${servicePath}" class="content-internal-link">${match.keyword}</a>`;
     processedContent =
       processedContent.slice(0, match.index) +
       linkHtml +

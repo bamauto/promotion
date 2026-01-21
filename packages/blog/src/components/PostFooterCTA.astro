@@ -1,5 +1,5 @@
 ---
-import { REGIONS, getRegionDomain } from '../lib/regions';
+import { REGIONS, getRegionDomain, getServicePath } from '../lib/regions';
 import type { RegionId } from '../lib/regions';
 
 interface Props {
@@ -9,6 +9,8 @@ interface Props {
 const { region } = Astro.props;
 const regionData = REGIONS[region];
 const baseUrl = getRegionDomain(region);
+const pricePath = getServicePath(region, 'price');
+const beginnerPath = getServicePath(region, 'beginner');
 
 // 지역별 전화번호 매핑
 const PHONE_NUMBERS: Record<RegionId, string> = {
@@ -75,8 +77,8 @@ const kakaoId = KAKAO_IDS[region];
       <span class="cta-links-title">바로가기</span>
       <nav class="cta-nav">
         <a href={`${baseUrl}/`}>{regionData.name} {regionData.keyword}</a>
-        <a href={`${baseUrl}/price-guide`}>가격 안내</a>
-        <a href={`${baseUrl}/beginner-guide`}>초보자 가이드</a>
+        <a href={`${baseUrl}${pricePath}`}>가격 안내</a>
+        <a href={`${baseUrl}${beginnerPath}`}>초보자 가이드</a>
       </nav>
     </div>
   </div>

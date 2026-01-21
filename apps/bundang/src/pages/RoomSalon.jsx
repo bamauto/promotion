@@ -131,7 +131,7 @@ const RoomSalon = () => {
     const serviceSchema = generateServiceSchema(
         "Bundang Room Salon",
         "분당 최고급 정통 룸살롱 예약 및 비즈니스 접대 가이드.",
-        "https://bundanghipublic.com/bundang-room-salon-guide",
+        "https://www.bundanghipublic.com/bundang-room-salon-guide",
         "200000"
     );
 
@@ -145,7 +145,7 @@ const RoomSalon = () => {
                 <meta name="keywords" content="분당 룸살롱, 분당 룸살롱 가격, 분당 룸살롱 예약, 분당 접대, 분당 비즈니스 접대, 정자동 룸살롱, 서현 룸살롱" />
                 <meta property="og:title" content="분당 룸살롱 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="VVIP 비즈니스 접대 | 프리미엄 인테리어 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-room-salon.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-room-salon.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="분당 룸살롱 비즈니스 접대 가이드" />
@@ -154,8 +154,8 @@ const RoomSalon = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 룸살롱 | NO.1 서우실장" />
                 <meta property="twitter:description" content="VVIP 비즈니스 접대 | 프리미엄 인테리어 | 24시간 예약" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-room-salon.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-room-salon-guide" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-room-salon.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-room-salon-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

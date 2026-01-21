@@ -133,7 +133,7 @@ const Hostbar = () => {
     const serviceSchema = generateServiceSchema(
         "Host Bar",
         "수원 호스트바 추천 및 가격. 여성 전용 프라이빗 룸 및 픽업 서비스.",
-        "https://suwon.vip/suwon-hostbar-guide",
+        "https://www.suwon.vip/suwon-hostbar-guide",
         "150000"
     );
 
@@ -147,7 +147,7 @@ const Hostbar = () => {
                 <meta name="keywords" content="수원 호스트바 가이드, 여성 라운지 문화, 호스트바 이해, 라운지 경험, 여성 친화 클럽, 호스트바 매너, 안전한 라운지, 라운지 에티켓, 비용 기준, 선택 가이드" />
                 <meta property="og:title" content="수원 호스트바 문화 가이드 | 여성 라운지 선택" />
                 <meta property="og:description" content="호스트바 문화 이해 | 안전한 이용 가이드 | 에티켓과 팁" />
-                <meta property="og:image" content="https://suwon.vip/og-hostbar.jpg" />
+                <meta property="og:image" content="https://www.suwon.vip/og-hostbar.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -155,8 +155,8 @@ const Hostbar = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="수원 호스트바 문화 가이드" />
                 <meta property="twitter:description" content="여성 라운지 선택 | 안전 이용 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://suwon.vip/og-hostbar.jpg" />
-                <link rel="canonical" href="https://suwon.vip/suwon-hostbar-guide" />
+                <meta property="twitter:image" content="https://www.suwon.vip/og-hostbar.jpg" />
+                <link rel="canonical" href="https://www.suwon.vip/suwon-hostbar-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

@@ -154,7 +154,7 @@ const Hostbar = () => {
     const serviceSchema = generateServiceSchema(
         "Host Bar",
         "분당 호스트바 추천 및 가격. 여성 전용 프라이빗 룸 및 픽업 서비스.",
-        "https://bundanghipublic.com/bundang-hostbar-guide",
+        "https://www.bundanghipublic.com/bundang-hostbar-guide",
         "150000"
     );
 
@@ -168,7 +168,7 @@ const Hostbar = () => {
                 <meta name="keywords" content="분당 호빠, 분당 호스트바, 분당 호빠 가격, 분당 호빠 예약, 여성전용 클럽, 분당 정빠" />
                 <meta property="og:title" content="분당 호빠 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="여성 전용 프리미엄 클럽 | 모델급 선수 무한 초이스 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-hostbar.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-hostbar.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -176,8 +176,8 @@ const Hostbar = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 호빠 | NO.1 서우실장" />
                 <meta property="twitter:description" content="여성 전용 클럽 | 모델급 선수 | 비밀 보장 | 24시간 예약" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-hostbar.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-hostbar-guide" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-hostbar.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-hostbar-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

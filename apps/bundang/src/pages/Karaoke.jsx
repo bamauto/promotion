@@ -177,7 +177,7 @@ const Karaoke = () => {
     const serviceSchema = generateServiceSchema(
         "Karaoke",
         "분당 가라오케 추천 및 가격표. 최신 음향 시설과 대형 룸 완비.",
-        "https://bundanghipublic.com/bundang-karaoke-guide",
+        "https://www.bundanghipublic.com/bundang-karaoke-guide",
         "100000"
     );
 
@@ -191,7 +191,7 @@ const Karaoke = () => {
                 <meta name="keywords" content="분당 가라오케, 분당 가라오케 가격, 분당 가라오케 예약, 정자동 가라오케, 서현 가라오케, 분당 파티룸, 분당 노래방" />
                 <meta property="og:title" content="분당 가라오케 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="정자·서현 TOP 6 | 고급 음향시설 | 파티룸·VIP룸 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-karaoke.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="분당 가라오케 가격 및 예약 가이드" />
@@ -200,8 +200,8 @@ const Karaoke = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 가라오케 | NO.1 서우실장" />
                 <meta property="twitter:description" content="정자·서현 TOP 6 | 고급 음향시설 | 24시간 예약" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-karaoke.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-karaoke-guide" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-karaoke.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-karaoke-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

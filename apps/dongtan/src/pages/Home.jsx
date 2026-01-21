@@ -60,7 +60,7 @@ const Home = () => {
                 <meta name="keywords" content="동탄 가라오케, 동탄 하이퍼블릭, 동탄 룸살롱, 동탄역 가라오케, 동탄2 하이퍼블릭, 반송동 유흥, 영천동 룸살롱, 동탄 호빠, 동탄 셔츠룸, 동탄 반도체인 회식, 동탄 신혼부부 데이트, 메타폴리스 상권, 동탄역 GTX 직장인, 동탄호수공원 근처, 능동 가라오케" />
                 <meta property="og:title" content="동탄 가라오케·하이퍼블릭·호빠 완벽 가이드 | 서우실장" />
                 <meta property="og:description" content="동탄 신도시 반도체 직장인·신혼부부 맞춤 유흥. GTX-A 동탄역 접근성, 메타폴리스·로데오거리 프리미엄 업소. 100% 정찰제 | 24시간 픽업" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-home.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 가라오케 서우실장 - 프리미엄 유흥 가이드" />
@@ -70,8 +70,8 @@ const Home = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 가라오케 하이퍼블릭 | NO.1 서우실장" />
                 <meta property="twitter:description" content="100% 정찰제 | 동탄역·동탄2·반송동 전지역 픽업 | 24시간 예약" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-home.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-home.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net" />
             </Helmet>
             <SchemaJsonLd data={[generateLocalBusinessSchema(), generateOrganizationSchema()]} />
 

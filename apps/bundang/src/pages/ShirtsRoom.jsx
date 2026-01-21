@@ -154,7 +154,7 @@ const ShirtsRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Shirts Room Club",
         "분당 셔츠룸 가격 및 시스템 안내. 비즈니스 접대에 최적화된 화이트 셔츠 컨셉.",
-        "https://bundanghipublic.com/bundang-shirtsroom-guide",
+        "https://www.bundanghipublic.com/bundang-shirtsroom-guide",
         "130000"
     );
 
@@ -168,7 +168,7 @@ const ShirtsRoom = () => {
                 <meta name="keywords" content="분당 셔츠룸, 분당 셔츠룸 가격, 분당 셔츠룸 예약, 정자동 셔츠룸, 서현 셔츠룸, 분당 이색 유흥" />
                 <meta property="og:title" content="분당 셔츠룸 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="화이트셔츠 이색 컨셉 | 프라이빗 룸 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-shirtsroom.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-shirtsroom.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -176,8 +176,8 @@ const ShirtsRoom = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 셔츠룸 | NO.1 서우실장" />
                 <meta property="twitter:description" content="화이트셔츠 이색 컨셉 | 프라이빗 룸 | 24시간 예약" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-shirtsroom.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-shirtsroom-guide" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-shirtsroom.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-shirtsroom-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

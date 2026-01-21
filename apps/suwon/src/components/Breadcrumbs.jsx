@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://suwon.vip/"
+            "item": "https://www.suwon.vip/"
         }
     ];
 
@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": index + 2,
             "name": routeName,
-            "item": `https://suwon.vip${routeTo}`
+            "item": `https://www.suwon.vip${routeTo}`
         });
     });
 

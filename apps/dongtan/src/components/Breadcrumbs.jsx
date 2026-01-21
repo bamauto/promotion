@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dongtankaraoke.net/"
+            "item": "https://www.dongtankaraoke.net/"
         }
     ];
 
@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": index + 2,
             "name": routeName,
-            "item": `https://dongtankaraoke.net${routeTo}`
+            "item": `https://www.dongtankaraoke.net${routeTo}`
         });
     });
 

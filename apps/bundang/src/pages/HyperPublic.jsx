@@ -158,7 +158,7 @@ const HyperPublic = () => {
     const serviceSchema = generateServiceSchema(
         "HyperPublic Club",
         "분당 하이퍼블릭 예약 및 가격 안내. 24시간 픽업 서비스 및 최신 시설 완비.",
-        "https://bundanghipublic.com/bundang-hyperpub-guide",
+        "https://www.bundanghipublic.com/bundang-hyperpub-guide",
         "130000"
     );
 
@@ -172,7 +172,7 @@ const HyperPublic = () => {
                 <meta name="keywords" content="분당 하이퍼블릭, 분당 하이퍼블릭 가격, 분당 하이퍼블릭 예약, 정자동 하이퍼블릭, 서현 하이퍼블릭, 판교 하이퍼블릭, 분당 룸살롱, 분당 유흥" />
                 <meta property="og:title" content="분당 하이퍼블릭 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="정자·서현·판교 TOP 4 | 무한초이스 | 100% 정찰제 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-hyperpub.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-hyperpub.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="분당 하이퍼블릭 가격 및 예약 가이드" />
@@ -181,8 +181,8 @@ const HyperPublic = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 하이퍼블릭 | NO.1 서우실장" />
                 <meta property="twitter:description" content="정자·서현·판교 TOP 4 | 무한초이스 | 100% 정찰제" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-hyperpub.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-hyperpub-guide" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-hyperpub.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-hyperpub-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

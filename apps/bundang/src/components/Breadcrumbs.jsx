@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://bundanghipublic.com/"
+            "item": "https://www.bundanghipublic.com/"
         }
     ];
 
@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": index + 2,
             "name": routeName,
-            "item": `https://bundanghipublic.com${routeTo}`
+            "item": `https://www.bundanghipublic.com${routeTo}`
         });
     });
 

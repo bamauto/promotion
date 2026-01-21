@@ -60,7 +60,7 @@ const Home = () => {
                 <meta name="keywords" content="수원 프라이빗 펍, 수원 가라오케 비교, 수원 라운지 가이드, 인계동 펍, 영통 라운지, 광교 바, 수원 유흥 문화, 수원 술집 추천, 펍 선택 가이드, 가라오케 이용법, 라운지 에티켓, 수원 밤문화" />
                 <meta property="og:title" content="수원 유흥 완벽 가이드 | 프라이빗 펍·가라오케·라운지 비교" />
                 <meta property="og:description" content="수원 지역 유흥문화 종합 가이드 | 지역별·용도별 선택 기준 | 초보자 이용 팁" />
-                <meta property="og:image" content="https://suwon.vip/og-home.jpg" />
+                <meta property="og:image" content="https://www.suwon.vip/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="수원 유흥 문화 종합 가이드" />
@@ -70,8 +70,8 @@ const Home = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="수원 유흥 완벽 가이드 | 프라이빗 펍·가라오케" />
                 <meta property="twitter:description" content="지역별·용도별 선택 가이드 | 초보자 이용 팁 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://suwon.vip/og-home.jpg" />
-                <link rel="canonical" href="https://suwon.vip" />
+                <meta property="twitter:image" content="https://www.suwon.vip/og-home.jpg" />
+                <link rel="canonical" href="https://www.suwon.vip" />
             </Helmet>
             <SchemaJsonLd data={[generateLocalBusinessSchema(), generateOrganizationSchema()]} />
 

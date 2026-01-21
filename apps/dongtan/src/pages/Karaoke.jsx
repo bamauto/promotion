@@ -175,7 +175,7 @@ const Karaoke = () => {
     const serviceSchema = generateServiceSchema(
         "Karaoke",
         "동탄 가라오케 추천 및 가격표. 최신 음향 시설과 대형 룸 완비.",
-        "https://dongtankaraoke.net/dongtan-karaoke-guide",
+        "https://www.dongtankaraoke.net/dongtan-karaoke-guide",
         "100000"
     );
 
@@ -189,7 +189,7 @@ const Karaoke = () => {
                 <meta name="keywords" content="동탄 가라오케, 동탄 가라오케 가격, 동탄 가라오케 예약, 동탄역 가라오케, 동탄2 가라오케, 동탄 파티룸, 동탄 노래방" />
                 <meta property="og:title" content="동탄 가라오케 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="동탄역·동탄2 TOP 6 | 고급 음향시설 | 파티룸·VIP룸 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-karaoke.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 가라오케 가격 및 예약 가이드" />
@@ -198,8 +198,8 @@ const Karaoke = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 가라오케 | NO.1 서우실장" />
                 <meta property="twitter:description" content="동탄역·동탄2 TOP 6 | 고급 음향시설 | 24시간 예약" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-karaoke.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-karaoke-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-karaoke.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-karaoke-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

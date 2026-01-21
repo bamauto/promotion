@@ -153,7 +153,7 @@ const HighPublic = () => {
     const serviceSchema = generateServiceSchema(
         "HighPublic Club",
         "동탄 하이퍼블릭 예약 및 가격 안내. 24시간 픽업 서비스 및 최신 시설 완비.",
-        "https://dongtankaraoke.net/dongtan-highpub-guide",
+        "https://www.dongtankaraoke.net/dongtan-highpub-guide",
         "130000"
     );
 
@@ -167,7 +167,7 @@ const HighPublic = () => {
                 <meta name="keywords" content="동탄 하이퍼블릭, 동탄 하이퍼블릭 가격, 동탄 하이퍼블릭 예약, 동탄역 하이엔드 펍, 동탄2 신도시 명품 펍, 반송동 프라이빗펍, 동탄 반도체인 회식, 동탄 IT업 접대, 메타폴리스 상권 펍, 동탄 무한초이스, 동탄 정찰제 펍" />
                 <meta property="og:title" content="동탄 하이퍼블릭 가격·시스템 완벽가이드 | 서우실장" />
                 <meta property="og:description" content="동탄역·동탄2·반송동·영천동 TOP 4 업소 비교. 반도체 직장인·신혼부부 맞춤. 무한초이스·매직미러 | 100% 정찰제" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-highpub.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-highpub.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 하이퍼블릭 가격 및 예약 가이드" />
@@ -176,8 +176,8 @@ const HighPublic = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 하이퍼블릭 | NO.1 서우실장" />
                 <meta property="twitter:description" content="동탄역·동탄2·반송동 TOP 4 | 무한초이스 | 100% 정찰제" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-highpub.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-highpub-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-highpub.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-highpub-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

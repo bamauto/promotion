@@ -131,7 +131,7 @@ const RoomSalon = () => {
     const serviceSchema = generateServiceSchema(
         "Dongtan Room Salon",
         "동탄 최고급 정통 룸살롱 예약 및 비즈니스 접대 가이드.",
-        "https://dongtankaraoke.net/dongtan-room-salon-guide",
+        "https://www.dongtankaraoke.net/dongtan-room-salon-guide",
         "200000"
     );
 
@@ -145,7 +145,7 @@ const RoomSalon = () => {
                 <meta name="keywords" content="동탄 룸살롱, 동탄 룸살롱 가격, 동탄 VVIP 접대, 동탄 바이어접대, 동탄 계약잔치, 반도체기업 임원 회식, 동탄 회원제 클럽, 동탄 임원급 접대, 동탄 고급 양주라인업, 동탄역 룸살롱" />
                 <meta property="og:title" content="동탄 룸살롱·VVIP접대 완벽가이드 | 서우실장" />
                 <meta property="og:description" content="삼성전자·SK하이닉스 임원급 비즈니스 접대. VVIP룸·통역매니저·법인카드 | 보안철저" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-room-salon.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-room-salon.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 룸살롱 비즈니스 접대 가이드" />
@@ -154,8 +154,8 @@ const RoomSalon = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 룸살롱 | NO.1 서우실장" />
                 <meta property="twitter:description" content="VVIP 비즈니스 접대 | 프리미엄 인테리어 | 24시간 예약" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-room-salon.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-room-salon-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-room-salon.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-room-salon-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

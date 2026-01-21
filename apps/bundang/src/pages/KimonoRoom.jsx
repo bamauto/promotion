@@ -132,7 +132,7 @@ const KimonoRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Kimono Room",
         "분당 기모노룸 예약 및 가격. 기모노 의상 테마의 이색 프리미엄 룸살롱.",
-        "https://bundanghipublic.com/bundang-kimono-room-guide",
+        "https://www.bundanghipublic.com/bundang-kimono-room-guide",
         "160000"
     );
 
@@ -146,7 +146,7 @@ const KimonoRoom = () => {
                 <meta name="keywords" content="분당 기모노룸, 분당 기모노 가격, 분당 기모노 예약, 분당 일본식 테마, 분당 이색 유흥, 분당 유카타" />
                 <meta property="og:title" content="분당 기모노룸 가격 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="기모노·유카타 의상 테마 | 매혹적인 일본 감성 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-kimono-room.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-kimono-room.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -154,8 +154,8 @@ const KimonoRoom = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 기모노룸 | NO.1 서우실장" />
                 <meta property="twitter:description" content="기모노·유카타 의상 테마 | 매혹적인 감성 | 24시간 예약" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-kimono-room.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-kimono-room-guide" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-kimono-room.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-kimono-room-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

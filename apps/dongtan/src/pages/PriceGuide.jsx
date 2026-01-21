@@ -12,7 +12,7 @@ const PriceGuide = () => {
                 <meta name="keywords" content="동탄 유흥 가격, 동탄 룸살롱 가격, 하이퍼블릭 주대, 가라오케 비용, 셔츠룸 시스템 가격, 동탄 TC 가격" />
                 <meta property="og:title" content="동탄 유흥 가격비교 2026 | 정찰제 가격표 공개" />
                 <meta property="og:description" content="하이퍼블릭·룸살롱·가라오케 주대 비교 | 바가지 ZERO | 100% 정찰제" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-price.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-price.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 유흥 가격 비교표" />
@@ -21,8 +21,8 @@ const PriceGuide = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 유흥 가격비교 | 정찰제 가격표" />
                 <meta property="twitter:description" content="하이퍼블릭·룸살롱·가라오케 주대 비교 | 바가지 ZERO" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-price.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-entertainment-price-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-price.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-entertainment-price-guide" />
             </Helmet>
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950 px-4 pb-20">

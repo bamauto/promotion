@@ -46,7 +46,7 @@ const Contact = () => {
                 <meta name="keywords" content="인계동 예약, 인계동 상담, 인계동 가라오케 예약, 서우실장 연락처, 인계동 유흥 문의, 인계동 예약 문의" />
                 <meta property="og:title" content="24시간 실시간 예약 | 인계동 서우실장 ☎ 010-2626-4833" />
                 <meta property="og:description" content="인계동 가라오케·하이퍼블릭 | 1분 내 빠른 답변 | 전화·카톡·텔레그램" />
-                <meta property="og:image" content="https://ingedongkaraoke.com/og-contact.jpg" />
+                <meta property="og:image" content="https://www.ingedongkaraoke.com/og-contact.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="인계동 서우실장 24시간 예약 상담" />
@@ -55,15 +55,15 @@ const Contact = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="24시간 예약 | 인계동 서우실장" />
                 <meta property="twitter:description" content="1분 내 빠른 답변 | 전화·카톡·텔레그램 @pbsewoo" />
-                <meta property="twitter:image" content="https://ingedongkaraoke.com/og-contact.jpg" />
-                <link rel="canonical" href="https://ingedongkaraoke.com/contact" />
+                <meta property="twitter:image" content="https://www.ingedongkaraoke.com/og-contact.jpg" />
+                <link rel="canonical" href="https://www.ingedongkaraoke.com/contact" />
             </Helmet>
             <SchemaJsonLd data={{
                 "@context": "https://schema.org",
                 "@type": "ContactPage",
                 "name": "인계동 서우실장 예약 문의",
                 "description": "24시간 실시간 예약 및 견적 상담",
-                "url": "https://ingedongkaraoke.com/contact"
+                "url": "https://www.ingedongkaraoke.com/contact"
             }} />
 
             <div className="pt-28 md:pt-36 min-h-screen bg-slate-950 relative overflow-hidden">

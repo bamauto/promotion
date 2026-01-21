@@ -20,9 +20,9 @@ export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "동탄 가라오케 서우실장",
-    "image": "https://dongtankaraoke.net/og-image.jpg",
+    "image": "https://www.dongtankaraoke.net/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://dongtankaraoke.net/",
+    "url": "https://www.dongtankaraoke.net/",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "동탄대로",
@@ -68,7 +68,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "provider": {
         "@type": "LocalBusiness",
         "name": "동탄 가라오케 서우실장",
-        "image": "https://dongtankaraoke.net/og-image.jpg",
+        "image": "https://www.dongtankaraoke.net/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -114,9 +114,9 @@ export const generateOrganizationSchema = () => ({
     "@type": "Organization",
     "name": "서우실장 동탄 가라오케",
     "alternateName": "동탄 서우실장",
-    "url": "https://dongtankaraoke.net",
-    "logo": "https://dongtankaraoke.net/logo.png",
-    "image": "https://dongtankaraoke.net/og-home.jpg",
+    "url": "https://www.dongtankaraoke.net",
+    "logo": "https://www.dongtankaraoke.net/logo.png",
+    "image": "https://www.dongtankaraoke.net/og-home.jpg",
     "description": "동탄 최고급 가라오케, 하이퍼블릭, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [

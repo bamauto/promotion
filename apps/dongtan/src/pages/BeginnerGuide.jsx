@@ -16,36 +16,36 @@ const BeginnerGuide = () => {
                 "@type": "HowToStep",
                 "name": "전화 예약 및 견적 문의",
                 "text": "방문 전 담당 실장에게 전화를 걸어 인원수, 방문 시간, 원하는 스타일(업종)을 말하고 견적을 확인합니다.",
-                "image": "https://dongtankaraoke.net/step1-call.jpg",
-                "url": "https://dongtankaraoke.net/dongtan-entertainment-beginner-guide#step1"
+                "image": "https://www.dongtankaraoke.net/step1-call.jpg",
+                "url": "https://www.dongtankaraoke.net/dongtan-entertainment-beginner-guide#step1"
             },
             {
                 "@type": "HowToStep",
                 "name": "업소 방문 및 룸 배정",
                 "text": "약속된 시간에 업소에 도착하여 담당 실장을 찾습니다. 인원에 맞는 룸으로 안내받습니다.",
-                "image": "https://dongtankaraoke.net/step2-room.jpg",
-                "url": "https://dongtankaraoke.net/dongtan-entertainment-beginner-guide#step2"
+                "image": "https://www.dongtankaraoke.net/step2-room.jpg",
+                "url": "https://www.dongtankaraoke.net/dongtan-entertainment-beginner-guide#step2"
             },
             {
                 "@type": "HowToStep",
                 "name": "초이스(Choice) 진행",
                 "text": "담당 실장이 매니저들을 보여드립니다(매직미러 또는 조별 입장). 마음에 드는 파트너를 선택합니다.",
-                "image": "https://dongtankaraoke.net/step3-choice.jpg",
-                "url": "https://dongtankaraoke.net/dongtan-entertainment-beginner-guide#step3"
+                "image": "https://www.dongtankaraoke.net/step3-choice.jpg",
+                "url": "https://www.dongtankaraoke.net/dongtan-entertainment-beginner-guide#step3"
             },
             {
                 "@type": "HowToStep",
                 "name": "음주가무 및 파트너 케어",
                 "text": "정해진 시간 동안 술과 노래를 즐기며 파트너와 즐거운 시간을 보냅니다.",
-                "image": "https://dongtankaraoke.net/step4-party.jpg",
-                "url": "https://dongtankaraoke.net/dongtan-entertainment-beginner-guide#step4"
+                "image": "https://www.dongtankaraoke.net/step4-party.jpg",
+                "url": "https://www.dongtankaraoke.net/dongtan-entertainment-beginner-guide#step4"
             },
             {
                 "@type": "HowToStep",
                 "name": "계산 및 귀가",
                 "text": "시간이 종료되면 계산서를 확인하고 결제합니다. 대리운전이나 픽업 차량을 요청하여 안전하게 귀가합니다.",
-                "image": "https://dongtankaraoke.net/step5-pay.jpg",
-                "url": "https://dongtankaraoke.net/dongtan-entertainment-beginner-guide#step5"
+                "image": "https://www.dongtankaraoke.net/step5-pay.jpg",
+                "url": "https://www.dongtankaraoke.net/dongtan-entertainment-beginner-guide#step5"
             }
         ]
     };
@@ -58,7 +58,7 @@ const BeginnerGuide = () => {
                 <meta name="keywords" content="룸살롱 이용방법, 하이퍼블릭 초이스 팁, 룸살롱 매너, 유흥업소 초보 가이드, 동탄 유흥 처음" />
                 <meta property="og:title" content="동탄 유흥 초보 가이드 | 완벽 이용 매뉴얼" />
                 <meta property="og:description" content="예약→초이스→결제 단계별 가이드 | 초보자 필독 | 내상 ZERO 비법" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-beginner.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-beginner.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 유흥 초보자 가이드" />
@@ -67,8 +67,8 @@ const BeginnerGuide = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="유흥 초보 가이드 | 완벽 매뉴얼" />
                 <meta property="twitter:description" content="예약→초이스→결제 | 초보자 필독 꿀팁" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-beginner.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-entertainment-beginner-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-beginner.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-entertainment-beginner-guide" />
             </Helmet>
             <SchemaJsonLd data={howToSchema} />
 

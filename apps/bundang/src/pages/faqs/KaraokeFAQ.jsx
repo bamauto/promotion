@@ -69,7 +69,7 @@ const KaraokeFAQ = () => {
                 <title>분당 가라오케 이용 팁 & FAQ | 가격, 파티, 여성 이용 안내</title>
                 <meta name="description" content="분당 가라오케 이용에 대한 모든 궁금증 해결! 가격, 안주, 생일 파티 혜택, 여성 고객 우대, 혼술 가능 여부까지 상세하게 안내해 드립니다." />
                 <meta name="keywords" content="분당 가라오케 가격, 분당 가라오케 파티, 분당 가라오케 혼술, 분당 가라오케 여성전용" />
-                <link rel="canonical" href="https://bundanghipublic.com/bundang-karaoke-guide/faq" />
+                <link rel="canonical" href="https://www.bundanghipublic.com/bundang-karaoke-guide/faq" />
             </Helmet>
             <SchemaJsonLd data={faqSchema} />
 

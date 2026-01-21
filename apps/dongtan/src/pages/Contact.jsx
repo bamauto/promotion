@@ -46,7 +46,7 @@ const Contact = () => {
                 <meta name="keywords" content="동탄 예약, 동탄 상담, 동탄 가라오케 예약, 서우실장 연락처, 동탄 유흥 문의, 동탄 가라오케 예약" />
                 <meta property="og:title" content="24시간 실시간 예약 | 동탄 서우실장 ☎ 010-2626-4833" />
                 <meta property="og:description" content="동탄 가라오케·가라오케 | 1분 내 빠른 답변 | 전화·카톡·텔레그램" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-contact.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-contact.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="동탄 서우실장 24시간 예약 상담" />
@@ -55,15 +55,15 @@ const Contact = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="24시간 예약 | 동탄 서우실장" />
                 <meta property="twitter:description" content="1분 내 빠른 답변 | 전화·카톡·텔레그램 @pbsewoo" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-contact.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/contact" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-contact.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/contact" />
             </Helmet>
             <SchemaJsonLd data={{
                 "@context": "https://schema.org",
                 "@type": "ContactPage",
                 "name": "동탄 서우실장 예약 문의",
                 "description": "24시간 실시간 예약 및 견적 상담",
-                "url": "https://dongtankaraoke.net/contact"
+                "url": "https://www.dongtankaraoke.net/contact"
             }} />
 
             <div className="pt-28 md:pt-36 min-h-screen bg-slate-950 relative overflow-hidden">

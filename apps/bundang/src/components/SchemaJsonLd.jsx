@@ -20,9 +20,9 @@ export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "분당 하이퍼블릭 서우실장",
-    "image": "https://bundanghipublic.com/og-image.jpg",
+    "image": "https://www.bundanghipublic.com/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://bundanghipublic.com/",
+    "url": "https://www.bundanghipublic.com/",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "분당구 황새울로",
@@ -68,7 +68,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "provider": {
         "@type": "LocalBusiness",
         "name": "분당 하이퍼블릭 서우실장",
-        "image": "https://bundanghipublic.com/og-image.jpg",
+        "image": "https://www.bundanghipublic.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -114,9 +114,9 @@ export const generateOrganizationSchema = () => ({
     "@type": "Organization",
     "name": "서우실장 분당 하이퍼블릭",
     "alternateName": "분당 서우실장",
-    "url": "https://bundanghipublic.com",
-    "logo": "https://bundanghipublic.com/logo.png",
-    "image": "https://bundanghipublic.com/og-home.jpg",
+    "url": "https://www.bundanghipublic.com",
+    "logo": "https://www.bundanghipublic.com/logo.png",
+    "image": "https://www.bundanghipublic.com/og-home.jpg",
     "description": "분당 최고급 하이퍼블릭, 가라오케, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [

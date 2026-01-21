@@ -152,7 +152,7 @@ const ShirtsRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Shirts Room Club",
         "동탄 셔츠룸 가격 및 시스템 안내. 비즈니스 접대에 최적화된 화이트 셔츠 컨셉.",
-        "https://dongtankaraoke.net/dongtan-shirtsroom-guide",
+        "https://www.dongtankaraoke.net/dongtan-shirtsroom-guide",
         "130000"
     );
 
@@ -166,7 +166,7 @@ const ShirtsRoom = () => {
                 <meta name="keywords" content="동탄 셔츠룸, 동탄 셔츠룸 가격, 동탄 화이트셔츠, 동탄 비즈니스 셔츠룸, 동탄역 셔츠룸, 동탄2 신도시 셔츠룸, 반송동 셔츠룸, 동탄 젊은층 셔츠룸, 동탄 모델급 셔츠룸" />
                 <meta property="og:title" content="동탄 셔츠룸·화이트셔츠 완벽가이드 | 서우실장" />
                 <meta property="og:description" content="화이트셔츠 컨셉·이색감성. 반도체 직장인 비즈니스접대·회식 맞춤. 투명한정찰제" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-shirtsroom.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-shirtsroom.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -174,8 +174,8 @@ const ShirtsRoom = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 셔츠룸 | NO.1 서우실장" />
                 <meta property="twitter:description" content="화이트셔츠 이색 컨셉 | 프라이빗 룸 | 24시간 예약" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-shirtsroom.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-shirtsroom-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-shirtsroom.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-shirtsroom-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

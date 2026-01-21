@@ -69,7 +69,7 @@ const RoomSalonFAQ = () => {
                 <title>수원 룸살롱 비즈니스 접대 FAQ | 법인 결제, 지명 예약, 견적 문의</title>
                 <meta name="description" content="성공적인 비즈니스 접대를 위한 수원 룸살롱 이용 가이드. 법인 비용 처리, 외국어 가능 매니저, 프라이빗 보안 시스템 등 접대 담당자가 가장 궁금해하는 10가지 질문에 답해드립니다." />
                 <meta name="keywords" content="수원 룸살롱 접대, 수원 룸살롱 법인카드, 수원 룸살롱 가격, 강남 수원 룸살롱 비교" />
-                <link rel="canonical" href="https://suwon.vip/suwon-room-salon-guide/faq" />
+                <link rel="canonical" href="https://www.suwon.vip/suwon-room-salon-guide/faq" />
             </Helmet>
             <SchemaJsonLd data={faqSchema} />
 

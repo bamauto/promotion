@@ -134,7 +134,7 @@ const Karaoke = () => {
     const serviceSchema = generateServiceSchema(
         "Karaoke",
         "수원 가라오케 추천 및 가격표. 최신 음향 시설과 대형 룸 완비.",
-        "https://suwon.vip/suwon-karaoke-guide",
+        "https://www.suwon.vip/suwon-karaoke-guide",
         "100000"
     );
 
@@ -148,7 +148,7 @@ const Karaoke = () => {
                 <meta name="keywords" content="수원 가라오케 비교, 가라오케 선택 가이드, 인계동 노래방, 영통 파티룸, 수원 단체 회식, 가라오케 문화, 노래방 에티켓, 음향시설 비교, 룸 크기별 추천, 생일파티 장소, 가성비 가라오케" />
                 <meta property="og:title" content="수원 가라오케 장소 선택 가이드 | 용도별 추천" />
                 <meta property="og:description" content="회식·생일파티·데이트별 선택 기준 | 음향·분위기·가격 비교 | 초보자 가이드" />
-                <meta property="og:image" content="https://suwon.vip/og-karaoke.jpg" />
+                <meta property="og:image" content="https://www.suwon.vip/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="수원 가라오케 장소 선택 가이드" />
@@ -157,8 +157,8 @@ const Karaoke = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="수원 가라오케 선택 가이드" />
                 <meta property="twitter:description" content="용도별·분위기별 추천 | 음향 비교 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://suwon.vip/og-karaoke.jpg" />
-                <link rel="canonical" href="https://suwon.vip/suwon-karaoke-guide" />
+                <meta property="twitter:image" content="https://www.suwon.vip/og-karaoke.jpg" />
+                <link rel="canonical" href="https://www.suwon.vip/suwon-karaoke-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

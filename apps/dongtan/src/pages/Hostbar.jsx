@@ -152,7 +152,7 @@ const Hostbar = () => {
     const serviceSchema = generateServiceSchema(
         "Host Bar",
         "동탄 호스트바 추천 및 가격. 여성 전용 프라이빗 룸 및 픽업 서비스.",
-        "https://dongtankaraoke.net/dongtan-hostbar-guide",
+        "https://www.dongtankaraoke.net/dongtan-hostbar-guide",
         "150000"
     );
 
@@ -166,7 +166,7 @@ const Hostbar = () => {
                 <meta name="keywords" content="동탄 호빠, 동탄 호스트바, 동탄 여성클럽, 동탄 정빠, 동탄2 호빠, 동탄역 호빠, 여직원회식, 걸스파티, 브라이덜샤워, 동탄 신혼부부" />
                 <meta property="og:title" content="동탄 호빠·여성클럽 | 신혼부부·걸스파티 BEST" />
                 <meta property="og:description" content="동탄2 신도시 여성전용 프리미엄. 아이돌급 선수 무한초이스·GTX-A 픽업 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://dongtankaraoke.net/og-hostbar.jpg" />
+                <meta property="og:image" content="https://www.dongtankaraoke.net/og-hostbar.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -174,8 +174,8 @@ const Hostbar = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="동탄 호빠 | 신혼부부·걸스파티 BEST 4곳" />
                 <meta property="twitter:description" content="동탄2 여성전용 클럽 | 아이돌급 선수 | 비밀보장 | GTX-A 픽업" />
-                <meta property="twitter:image" content="https://dongtankaraoke.net/og-hostbar.jpg" />
-                <link rel="canonical" href="https://dongtankaraoke.net/dongtan-hostbar-guide" />
+                <meta property="twitter:image" content="https://www.dongtankaraoke.net/og-hostbar.jpg" />
+                <link rel="canonical" href="https://www.dongtankaraoke.net/dongtan-hostbar-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

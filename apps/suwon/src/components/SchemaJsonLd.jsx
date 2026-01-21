@@ -20,9 +20,9 @@ export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "수원 하이퍼블릭 서우실장",
-    "image": "https://suwon.vip/og-image.jpg",
+    "image": "https://www.suwon.vip/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://suwon.vip/",
+    "url": "https://www.suwon.vip/",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "인계동",
@@ -68,7 +68,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "provider": {
         "@type": "LocalBusiness",
         "name": "수원 하이퍼블릭 서우실장",
-        "image": "https://suwon.vip/og-image.jpg",
+        "image": "https://www.suwon.vip/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -114,9 +114,9 @@ export const generateOrganizationSchema = () => ({
     "@type": "Organization",
     "name": "서우실장 수원 하이퍼블릭",
     "alternateName": "수원 서우실장",
-    "url": "https://suwon.vip",
-    "logo": "https://suwon.vip/logo.png",
-    "image": "https://suwon.vip/og-home.jpg",
+    "url": "https://www.suwon.vip",
+    "logo": "https://www.suwon.vip/logo.png",
+    "image": "https://www.suwon.vip/og-home.jpg",
     "description": "수원 최고급 하이퍼블릭, 가라오케, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [

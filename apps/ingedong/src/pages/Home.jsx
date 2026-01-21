@@ -60,7 +60,7 @@ const Home = () => {
                 <meta name="keywords" content="인계동 가라오케, 인계동 하이퍼블릭, 인계동 유흥, 인계동 노래방, 영통 가라오케, 광교 유흥, 인계동 룸살롱, 서우실장" />
                 <meta property="og:title" content="인계동 가라오케 완벽 가이드 | 프리미엄 엔터테인먼트" />
                 <meta property="og:description" content="인계동 가라오케·하이퍼블릭 종합 가이드 | 지역별·용도별 선택 기준 | 초보자 이용 팁" />
-                <meta property="og:image" content="https://ingedongkaraoke.com/og-home.jpg" />
+                <meta property="og:image" content="https://www.ingedongkaraoke.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="인계동 가라오케 프리미엄 가이드" />
@@ -70,8 +70,8 @@ const Home = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="인계동 가라오케 완벽 가이드 | 프리미엄 엔터테인먼트" />
                 <meta property="twitter:description" content="지역별·용도별 선택 가이드 | 초보자 이용 팁 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://ingedongkaraoke.com/og-home.jpg" />
-                <link rel="canonical" href="https://ingedongkaraoke.com" />
+                <meta property="twitter:image" content="https://www.ingedongkaraoke.com/og-home.jpg" />
+                <link rel="canonical" href="https://www.ingedongkaraoke.com" />
             </Helmet>
             <SchemaJsonLd data={[generateLocalBusinessSchema(), generateOrganizationSchema()]} />
 

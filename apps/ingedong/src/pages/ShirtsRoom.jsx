@@ -133,7 +133,7 @@ const ShirtsRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Shirts Room Club",
         "인계동 셔츠룸 가격 및 시스템 안내. 비즈니스 접대에 최적화된 화이트 셔츠 컨셉.",
-        "https://ingedongkaraoke.com/ingedong-shirtsroom-guide",
+        "https://www.ingedongkaraoke.com/ingedong-shirtsroom-guide",
         "130000"
     );
 
@@ -147,7 +147,7 @@ const ShirtsRoom = () => {
                 <meta name="keywords" content="인계동 셔츠룸, 셔츠룸 컨셉, 라운지 문화, 이색 바, 테마 라운지, 셔츠룸 차이, 라운지 비교, 문화 이해, 새로운 경험, 취향별 선택" />
                 <meta property="og:title" content="인계동 셔츠룸 문화 가이드 | 이색 라운지 이해" />
                 <meta property="og:description" content="셔츠룸 컨셉 이해 | 다른 라운지와 비교 | 이용 가이드" />
-                <meta property="og:image" content="https://ingedongkaraoke.com/og-shirtsroom.jpg" />
+                <meta property="og:image" content="https://www.ingedongkaraoke.com/og-shirtsroom.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -155,8 +155,8 @@ const ShirtsRoom = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="인계동 셔츠룸 문화 가이드" />
                 <meta property="twitter:description" content="이색 라운지 이해 | 컨셉 비교 | 이용 가이드" />
-                <meta property="twitter:image" content="https://ingedongkaraoke.com/og-shirtsroom.jpg" />
-                <link rel="canonical" href="https://ingedongkaraoke.com/ingedong-shirtsroom-guide" />
+                <meta property="twitter:image" content="https://www.ingedongkaraoke.com/og-shirtsroom.jpg" />
+                <link rel="canonical" href="https://www.ingedongkaraoke.com/ingedong-shirtsroom-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

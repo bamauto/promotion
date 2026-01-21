@@ -20,9 +20,9 @@ export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "인계동 가라오케 서우실장",
-    "image": "https://ingedongkaraoke.com/og-image.jpg",
+    "image": "https://www.ingedongkaraoke.com/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://ingedongkaraoke.com/",
+    "url": "https://www.ingedongkaraoke.com/",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "인계동",
@@ -68,7 +68,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "provider": {
         "@type": "LocalBusiness",
         "name": "인계동 가라오케 서우실장",
-        "image": "https://ingedongkaraoke.com/og-image.jpg",
+        "image": "https://www.ingedongkaraoke.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -114,9 +114,9 @@ export const generateOrganizationSchema = () => ({
     "@type": "Organization",
     "name": "서우실장 인계동 가라오케",
     "alternateName": "인계동 서우실장",
-    "url": "https://ingedongkaraoke.com",
-    "logo": "https://ingedongkaraoke.com/logo.png",
-    "image": "https://ingedongkaraoke.com/og-home.jpg",
+    "url": "https://www.ingedongkaraoke.com",
+    "logo": "https://www.ingedongkaraoke.com/logo.png",
+    "image": "https://www.ingedongkaraoke.com/og-home.jpg",
     "description": "인계동 최고급 가라오케, 하이퍼블릭, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [

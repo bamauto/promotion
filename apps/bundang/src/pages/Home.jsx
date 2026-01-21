@@ -60,7 +60,7 @@ const Home = () => {
                 <meta name="keywords" content="분당 하이퍼블릭, 분당 가라오케, 분당 룸살롱, 분당 호빠, 분당 셔츠룸, 분당 유흥, 분당 접대, 정자동 하이퍼블릭, 서현역 가라오케, 판교 유흥, 서우실장" />
                 <meta property="og:title" content="분당 하이퍼블릭 가라오케 예약 | NO.1 서우실장" />
                 <meta property="og:description" content="분당 최고급 하이퍼블릭·가라오케 | 100% 정찰제 | 정자·서현·판교 전지역 픽업 | 24시간 예약 ☎ 010-2626-4833" />
-                <meta property="og:image" content="https://bundanghipublic.com/og-home.jpg" />
+                <meta property="og:image" content="https://www.bundanghipublic.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="분당 하이퍼블릭 서우실장 - 프리미엄 유흥 가이드" />
@@ -70,8 +70,8 @@ const Home = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="분당 하이퍼블릭 가라오케 | NO.1 서우실장" />
                 <meta property="twitter:description" content="100% 정찰제 | 정자·서현·판교 전지역 픽업 | 24시간 예약" />
-                <meta property="twitter:image" content="https://bundanghipublic.com/og-home.jpg" />
-                <link rel="canonical" href="https://bundanghipublic.com" />
+                <meta property="twitter:image" content="https://www.bundanghipublic.com/og-home.jpg" />
+                <link rel="canonical" href="https://www.bundanghipublic.com" />
             </Helmet>
             <SchemaJsonLd data={[generateLocalBusinessSchema(), generateOrganizationSchema()]} />
 

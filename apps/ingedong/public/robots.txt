@@ -1,12 +1,13 @@
-# Robots.txt for suwon.vip
-# Generated: 2026-01-18
+# Robots.txt for ingedongkaraoke.com
+# Generated: 2026-01-22
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://suwon.vip/sitemap.xml
+Sitemap: https://ingedongkaraoke.com/sitemap.xml
+Sitemap: https://ingedongkaraoke.com/sitemap-blog.xml
 
 # Disallow sensitive paths (none currently)
 # Disallow: /api/

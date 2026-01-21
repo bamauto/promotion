@@ -7,6 +7,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://anyangkaraoke.com/sitemap.xml
+Sitemap: https://anyangkaraoke.com/sitemap-blog.xml
 
 # Disallow sensitive paths (none currently)
 # Disallow: /api/

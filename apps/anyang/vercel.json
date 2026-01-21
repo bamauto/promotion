@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/anyang"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/anyang/:path*"
+    },
+    {
+      "source": "/anyang",
+      "destination": "https://blog-seven-gilt-10.vercel.app/anyang"
+    },
+    {
+      "source": "/anyang/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/anyang/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/anyang/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog|sitemap-blog|anyang|_astro).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

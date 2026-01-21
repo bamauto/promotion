@@ -19,6 +19,7 @@ git push https://{GITHUB_TOKEN}@github.com/bamauto/promotion.git main
 | 광교 | gwanggyo | gwanggyokaraoke.com |
 | 영통 | yeongtong | yeongtongkaraoke.com |
 | 수원 | suwon | suwon.vip |
+| 안양 | anyang | anyangkaraoke.com |
 
 ## 프로젝트 구조
 
@@ -104,8 +105,11 @@ magick {원본이미지}.jpg -resize 32x32 -gravity center -background white -ex
 magick {원본이미지}.jpg -resize 16x16 -gravity center -background white -extent 16x16 public/favicon-16x16.png
 ```
 
-### 5단계: 블로그 지역 등록
-`packages/blog/src/lib/regions.ts`에 새 지역 추가:
+### 5단계: 블로그 지역 등록 (⚠️ 중요 - 모든 파일 수정 필수!)
+
+**반드시 아래 3개 파일 모두 수정해야 함! 누락 시 Internal Server Error 발생**
+
+#### 5-1. `packages/blog/src/lib/regions.ts`
 ```typescript
 {새지역ID}: {
   id: '{새지역ID}',
@@ -114,8 +118,35 @@ magick {원본이미지}.jpg -resize 16x16 -gravity center -background white -ex
   domain: '{도메인}',
   keyword: '가라오케',
   description: '{지역명} 가라오케 하이퍼블릭 정보',
+  urlPrefix: '{새지역ID}',
+  hyperpubSlug: 'highpub',
+  pricePrefix: 'entertainment-',
 },
 ```
+
+#### 5-2. `packages/blog/src/components/PostFooterCTA.astro`
+```typescript
+// PHONE_NUMBERS 객체에 추가
+{새지역ID}: '010-5765-8553',
+
+// KAKAO_IDS 객체에 추가
+{새지역ID}: 'abcd1234',
+```
+
+#### 5-3. `packages/blog/src/components/LocalBusinessSchema.astro`
+```typescript
+// businessInfo 객체에 추가
+{새지역ID}: {
+  address: '경기도 {시} {구/동}',
+  areaServed: '{지역명}, {인근지역}',
+  geo: { lat: {위도}, lng: {경도} }
+},
+```
+
+#### 체크리스트
+- [ ] `regions.ts` - 기본 지역 정보
+- [ ] `PostFooterCTA.astro` - PHONE_NUMBERS, KAKAO_IDS
+- [ ] `LocalBusinessSchema.astro` - businessInfo
 
 ### 6단계: pnpm 설치 및 빌드
 ```bash
@@ -197,8 +228,14 @@ DNS 설정 (도메인 제공업체에서):
 
 ---
 
-## Vercel API 토큰
-토큰 위치: `~/Library/Application Support/com.vercel.cli/auth.json`
+## API 토큰
+
+| 서비스 | 토큰 |
+|--------|------|
+| Vercel | `SSxhOnGY9JbbPEEgkg85poIE` |
+| GitHub | `hPt5LefjCd2YxlH5nOLOgTdR` |
+
+> Vercel CLI 토큰 위치: `~/Library/Application Support/com.vercel.cli/auth.json`
 
 ## 주의사항
 - sitemap.xml, robots.txt의 도메인 철자 정확히 확인

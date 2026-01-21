@@ -218,12 +218,11 @@ const ShirtsRoom = () => {
                             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                                 <Sparkles className="text-blue-500" /> 영통 셔츠룸 갤러리
                             </h3>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-3 gap-4">
                                 {[
-                                    { src: '/partner/sr-gallery-01.webp', alt: '영통 셔츠룸 화이트셔츠 매니저 - 영통동 서우실장' },
-                                    { src: '/partner/sr-gallery-02.webp', alt: '영통 셔츠룸 프리미엄 파트너 - 수원 영통 접대' },
-                                    { src: '/partner/sr-gallery-03.webp', alt: '영통 셔츠룸 VIP 매니저 - 영통역 비즈니스 접대' },
-                                    { src: '/partner/sr-gallery-04.webp', alt: '영통 셔츠룸 최고급 서비스 - 영통동 화이트 컨셉' },
+                                    { src: '/partner/sr-gallery-01.webp', alt: '영통 셔츠룸 프리미엄 매니저 - 영통역 VIP 서비스' },
+                                    { src: '/partner/sr-gallery-02.webp', alt: '영통 셔츠룸 최고급 파트너 - 영통동 럭셔리 룸' },
+                                    { src: '/partner/sr-gallery-03.webp', alt: '영통 셔츠룸 VIP 매니저 - 수원시 프리미엄' },
                                 ].map((img, idx) => (
                                     <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group">
                                         <img

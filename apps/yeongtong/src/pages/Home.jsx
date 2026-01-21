@@ -152,20 +152,14 @@ const Home = () => {
                     <div className="flex animate-infinite-scroll whitespace-nowrap group hover:[animation-play-state:paused]">
                         {/* Double the images for seamless loop */}
                         {[
-                            { src: '/partner/partner-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
-                            { src: '/partner/partner-02.webp', alt: '영통 하이퍼블릭 최고급 매니저 - 영통동 서우실장 추천' },
-                            { src: '/partner/partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원 영통 서우실장' },
-                            { src: '/partner/partner-04.webp', alt: '영통 하이퍼블릭 프리미엄 파트너 - 영통역 서우실장' },
-                            { src: '/partner/partner-05.webp', alt: '영통 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
-                            { src: '/partner/partner-06.webp', alt: '영통 하이퍼블릭 엄선 매니저 - 영통 서우실장' },
-                            { src: '/partner/partner-07.webp', alt: '영통 가라오케 TOP 매니저 - 영통동 서우실장 추천' },
-                            { src: '/partner/partner-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
-                            { src: '/partner/partner-02.webp', alt: '영통 하이퍼블릭 최고급 매니저 - 영통동 서우실장 추천' },
-                            { src: '/partner/partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원 영통 서우실장' },
-                            { src: '/partner/partner-04.webp', alt: '영통 하이퍼블릭 프리미엄 파트너 - 영통역 서우실장' },
-                            { src: '/partner/partner-05.webp', alt: '영통 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
-                            { src: '/partner/partner-06.webp', alt: '영통 하이퍼블릭 엄선 매니저 - 영통 서우실장' },
-                            { src: '/partner/partner-07.webp', alt: '영통 가라오케 TOP 매니저 - 영통동 서우실장 추천' },
+                            { src: '/partner/home-partner-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 영통역 VIP 서비스' },
+                            { src: '/partner/home-partner-02.webp', alt: '영통 하이퍼블릭 최고급 매니저 - 영통동 럭셔리' },
+                            { src: '/partner/home-partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원시 프리미엄 파트너' },
+                            { src: '/partner/home-partner-04.webp', alt: '영통 하이퍼블릭 엄선 파트너 - 망포역 베스트 초이스' },
+                            { src: '/partner/home-partner-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 영통역 VIP 서비스' },
+                            { src: '/partner/home-partner-02.webp', alt: '영통 하이퍼블릭 최고급 매니저 - 영통동 럭셔리' },
+                            { src: '/partner/home-partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원시 프리미엄 파트너' },
+                            { src: '/partner/home-partner-04.webp', alt: '영통 하이퍼블릭 엄선 파트너 - 망포역 베스트 초이스' },
                         ].map((img, idx) => (
                             <div key={idx} className="inline-block px-4">
                                 <div className="w-[300px] h-[450px] md:w-[400px] md:h-[600px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group/card">

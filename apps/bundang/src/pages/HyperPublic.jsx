@@ -237,6 +237,33 @@ const HyperPublic = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                             {venues.hyperPublic.map(venue => <VenueCard key={venue.id} venue={venue} />)}
                         </div>
+
+                        {/* Gallery Section */}
+                        <div className="mt-16">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <Sparkles className="text-amber-500" /> 분당 하이퍼블릭 갤러리
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {[
+                                    { src: '/partner/hp-gallery-01.webp', alt: '분당 하이퍼블릭 프리미엄 매니저 - 정자동 VIP 서비스' },
+                                    { src: '/partner/hp-gallery-02.webp', alt: '분당 하이퍼블릭 최고급 파트너 - 서현역 럭셔리 룸' },
+                                    { src: '/partner/hp-gallery-03.webp', alt: '분당 하이퍼블릭 VIP 매니저 - 분당역 프리미엄' },
+                                    { src: '/partner/hp-gallery-04.webp', alt: '분당 하이퍼블릭 프리미엄 서비스 - 분당 24시간' },
+                                ].map((img, idx) => (
+                                    <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 group">
+                                        <img
+                                            src={img.src}
+                                            alt={img.alt}
+                                            title="분당 하이퍼블릭 프리미엄 매니저"
+                                            loading="lazy"
+                                            width="300"
+                                            height="400"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
                     {/* 3. System Guide */}

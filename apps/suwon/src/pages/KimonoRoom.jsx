@@ -208,6 +208,27 @@ const KimonoRoom = () => {
                         </div>
                     </div>
 
+                    {/* Gallery Section */}
+                    <div className="mt-16">
+                        <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                            <Sparkles className="text-rose-500" /> 수원 기모노룸 갤러리
+                        </h3>
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                            {[
+                                { src: '/partner/km-gallery-01.webp', alt: '수원 기모노룸 전통 의상 매니저 - 수원역 테마룸' },
+                                { src: '/partner/km-gallery-02.webp', alt: '수원 기모노룸 프리미엄 서비스 - 팔달문 유카타 컨셉' },
+                                { src: '/partner/km-gallery-03.webp', alt: '수원 기모노룸 VIP 파트너 - 팔달구 이색 체험' },
+                                { src: '/partner/km-gallery-04.webp', alt: '수원 기모노룸 최고급 매니저 - 수원시청 일본풍 테마' },
+                                { src: '/partner/km-gallery-05.webp', alt: '수원 기모노룸 럭셔리 서비스 - 수원 프리미엄' },
+                            ].map((img, idx) => (
+                                <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-rose-500/50 transition-all duration-300 group">
+                                    <img src={img.src} alt={img.alt} title="수원 기모노룸 프리미엄 매니저" loading="lazy" width="300" height="400"
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                     {/* 3. System & Pricing */}
                     <ContentBlock id="system" title="3. 이용 시스템 및 서비스">
                         <p>

@@ -212,12 +212,13 @@ const KimonoRoom = () => {
                             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                                 <Sparkles className="text-rose-500" /> 영통 기모노룸 갤러리
                             </h3>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                                 {[
-                                    { src: '/partner/km-gallery-01.webp', alt: '영통 기모노룸 전통 의상 매니저 - 영통동 테마룸' },
-                                    { src: '/partner/km-gallery-02.webp', alt: '영통 기모노룸 프리미엄 서비스 - 영통 유카타 컨셉' },
-                                    { src: '/partner/km-gallery-03.webp', alt: '영통 기모노룸 VIP 파트너 - 수원 영통역 이색 체험' },
-                                    { src: '/partner/km-gallery-04.webp', alt: '영통 기모노룸 최고급 매니저 - 영통동 일본풍 테마' },
+                                    { src: '/partner/km-gallery-01.webp', alt: '영통 기모노룸 전통 의상 매니저 - 영통역 테마룸' },
+                                    { src: '/partner/km-gallery-02.webp', alt: '영통 기모노룸 프리미엄 서비스 - 영통동 유카타 컨셉' },
+                                    { src: '/partner/km-gallery-03.webp', alt: '영통 기모노룸 VIP 파트너 - 수원시 이색 체험' },
+                                    { src: '/partner/km-gallery-04.webp', alt: '영통 기모노룸 최고급 매니저 - 망포역 일본풍 테마' },
+                                    { src: '/partner/km-gallery-05.webp', alt: '영통 기모노룸 럭셔리 서비스 - 영통 프리미엄' },
                                 ].map((img, idx) => (
                                     <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-rose-500/50 transition-all duration-300 group">
                                         <img

@@ -210,6 +210,32 @@ const RoomSalon = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                             {venues.roomSalon.map(venue => <VenueCard key={venue.id} venue={venue} />)}
                         </div>
+
+                        {/* Gallery Section */}
+                        <div className="mt-16">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <Sparkles className="text-amber-500" /> 분당 룸살롱 갤러리
+                            </h3>
+                            <div className="grid grid-cols-3 gap-4">
+                                {[
+                                    { src: '/partner/rs-gallery-01.webp', alt: '분당 룸살롱 VIP 매니저 - 정자동 비즈니스 접대' },
+                                    { src: '/partner/rs-gallery-02.webp', alt: '분당 룸살롱 최고급 파트너 - 서현역 프리미엄 룸' },
+                                    { src: '/partner/rs-gallery-03.webp', alt: '분당 룸살롱 프리미엄 서비스 - 분당 정통 룸살롱' },
+                                ].map((img, idx) => (
+                                    <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 group">
+                                        <img
+                                            src={img.src}
+                                            alt={img.alt}
+                                            title="분당 룸살롱 프리미엄 매니저"
+                                            loading="lazy"
+                                            width="300"
+                                            height="400"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
                     {/* 3. System Guide */}

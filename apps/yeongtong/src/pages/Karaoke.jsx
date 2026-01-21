@@ -231,6 +231,33 @@ const Karaoke = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                             {venues.karaoke.map(venue => <VenueCard key={venue.id} venue={venue} />)}
                         </div>
+
+                        {/* Gallery Section */}
+                        <div className="mt-16">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <Sparkles className="text-purple-500" /> 영통 가라오케 갤러리
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {[
+                                    { src: '/partner/kr-gallery-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 영통역 VIP 서비스' },
+                                    { src: '/partner/kr-gallery-02.webp', alt: '영통 가라오케 최고급 파트너 - 영통동 럭셔리 룸' },
+                                    { src: '/partner/kr-gallery-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원시 프리미엄' },
+                                    { src: '/partner/kr-gallery-04.webp', alt: '영통 가라오케 프리미엄 서비스 - 망포역 24시간' },
+                                ].map((img, idx) => (
+                                    <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group">
+                                        <img
+                                            src={img.src}
+                                            alt={img.alt}
+                                            title="영통 가라오케 프리미엄 매니저"
+                                            loading="lazy"
+                                            width="300"
+                                            height="400"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
                     {/* 3. Pricing & System */}

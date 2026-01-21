@@ -1,16 +1,5 @@
-# Robots.txt for suwon.vip
-# Generated: 2026-01-18
-
-# Allow all crawlers
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://suwon.vip/sitemap.xml
-
-# Disallow sensitive paths (none currently)
-# Disallow: /api/
-# Disallow: /admin/
-
-# Crawl delay for politeness (optional)
-# Crawl-delay: 1
+Sitemap: https://jeongjakaraoke.com/sitemap.xml
+Sitemap: https://jeongjakaraoke.com/sitemap-blog.xml

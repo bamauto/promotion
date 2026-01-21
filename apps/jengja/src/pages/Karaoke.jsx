@@ -143,10 +143,10 @@ const Karaoke = () => {
     return (
         <>
             <Helmet>
-                <title>정자 가라오케 장소 선택 기준 | 파티·모임·회식별 추천 가이드</title>
-                <meta name="description" content="정자 프리미엄 가라오케 장소 추천 TOP 6 | 회식·생일파티·소규모 데이트·대형 단체 행사별 선택 기준 | 음향 시설·분위기·가격대 비교분석 | 초보자를 위한 기본 예절 및 팁" />
-                <meta name="keywords" content="정자 가라오케 비교, 가라오케 선택 가이드, 정자동 노래방, 분당 파티룸, 정자 단체 회식, 가라오케 문화, 노래방 에티켓, 음향시설 비교, 룸 크기별 추천, 생일파티 장소, 가성비 가라오케" />
-                <meta property="og:title" content="정자 가라오케 장소 선택 가이드 | 용도별 추천" />
+                <title>정자역 가라오케 선택 가이드 | 회식·파티·데이트별 추천</title>
+                <meta name="description" content="정자역·정자동 프리미엄 가라오케 장소 추천 TOP 6 | 회식·생일파티·소규모 데이트·대형 단체 행사별 선택 기준 | 음향 시설·분위기·가격대 비교분석 | 초보자를 위한 기본 예절 및 팁" />
+                <meta name="keywords" content="정자역 가라오케, 정자역 노래방, 정자역 파티룸, 정자 가라오케 비교, 가라오케 선택 가이드, 정자동 노래방, 분당 파티룸, 정자 단체 회식, 가라오케 문화, 노래방 에티켓, 음향시설 비교, 룸 크기별 추천, 생일파티 장소, 가성비 가라오케" />
+                <meta property="og:title" content="정자역 가라오케 선택 가이드 | 용도별 추천" />
                 <meta property="og:description" content="회식·생일파티·데이트별 선택 기준 | 음향·분위기·가격 비교 | 초보자 가이드" />
                 <meta property="og:image" content="https://jeongja.vip/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />

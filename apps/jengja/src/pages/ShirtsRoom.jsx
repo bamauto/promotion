@@ -142,10 +142,10 @@ const ShirtsRoom = () => {
     return (
         <>
             <Helmet>
-                <title>셔츠룸 문화 이해 및 선택 가이드 | 정자 이색 라운지</title>
-                <meta name="description" content="셔츠룸 컨셉과 경험 완벽 정복 | 기존 라운지와의 차이점·분위기·비용 비교 | 초보자를 위한 이용 가이드 및 기본 에티켓 | 다양한 라운지 문화 이해하기" />
-                <meta name="keywords" content="셔츠룸 컨셉, 라운지 문화, 이색 바, 테마 라운지, 셔츠룸 차이, 라운지 비교, 문화 이해, 새로운 경험, 취향별 선택, 라운지 트렌드" />
-                <meta property="og:title" content="셔츠룸 문화 가이드 | 이색 라운지 이해" />
+                <title>정자 셔츠룸 완벽 가이드 | 정자역 이색 라운지 추천</title>
+                <meta name="description" content="정자역·정자동 셔츠룸 컨셉과 경험 완벽 정복 | 기존 라운지와의 차이점·분위기·비용 비교 | 초보자를 위한 이용 가이드 및 기본 에티켓 | 다양한 라운지 문화 이해하기" />
+                <meta name="keywords" content="정자역 셔츠룸, 정자역 라운지, 정자 셔츠룸, 셔츠룸 컨셉, 라운지 문화, 이색 바, 테마 라운지, 셔츠룸 차이, 라운지 비교, 문화 이해, 새로운 경험, 취향별 선택, 라운지 트렌드" />
+                <meta property="og:title" content="정자 셔츠룸 완벽 가이드 | 정자역 이색 라운지 추천" />
                 <meta property="og:description" content="셔츠룸 컨셉 이해 | 다른 라운지와 비교 | 이용 가이드" />
                 <meta property="og:image" content="https://jeongja.vip/og-shirtsroom.jpg" />
                 <meta property="og:image:width" content="1200" />
@@ -211,6 +211,33 @@ const ShirtsRoom = () => {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                             {venues.shirtsRoom.map(venue => <VenueCard key={venue.id} venue={venue} />)}
+                        </div>
+
+                        {/* Gallery Section */}
+                        <div className="mt-16">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <Sparkles className="text-blue-500" /> 정자 셔츠룸 갤러리
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {[
+                                    { src: '/partner/sr-gallery-01.webp', alt: '정자 셔츠룸 화이트셔츠 매니저 - 정자동 서우실장' },
+                                    { src: '/partner/sr-gallery-02.webp', alt: '정자 셔츠룸 프리미엄 파트너 - 분당 정자 접대' },
+                                    { src: '/partner/sr-gallery-03.webp', alt: '정자 셔츠룸 VIP 매니저 - 정자역 비즈니스 접대' },
+                                    { src: '/partner/sr-gallery-04.webp', alt: '정자 셔츠룸 최고급 서비스 - 정자동 화이트 컨셉' },
+                                ].map((img, idx) => (
+                                    <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group">
+                                        <img
+                                            src={img.src}
+                                            alt={img.alt}
+                                            title="정자 셔츠룸 프리미엄 매니저"
+                                            loading="lazy"
+                                            width="300"
+                                            height="400"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 

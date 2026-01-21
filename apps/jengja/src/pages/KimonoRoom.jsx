@@ -142,10 +142,10 @@ const KimonoRoom = () => {
     return (
         <>
             <Helmet>
-                <title>기모노 라운지 문화 탐색 | 정자 테마 경험 가이드</title>
-                <meta name="description" content="기모노 테마 라운지 경험 완벽 가이드 | 컨셉 이해·분위기·가격·이용 방법 비교 | 테마 라운지 문화 탐색 | 색다른 경험을 위한 선택 팁" />
-                <meta name="keywords" content="테마 라운지, 문화 경험, 특색 있는 바, 이색 체험, 라운지 컨셉, 테마별 라운지, 새로운 경험, 라운지 선택, 특별한 밤, 컨셉 라운지 이용법" />
-                <meta property="og:title" content="기모노 라운지 문화 가이드 | 테마 경험" />
+                <title>정자 기모노룸 테마 라운지 가이드 | 정자역 이색 체험</title>
+                <meta name="description" content="정자역·정자동 기모노 테마 라운지 경험 완벽 가이드 | 컨셉 이해·분위기·가격·이용 방법 비교 | 테마 라운지 문화 탐색 | 색다른 경험을 위한 선택 팁" />
+                <meta name="keywords" content="정자역 기모노룸, 정자역 테마라운지, 정자 기모노룸, 테마 라운지, 문화 경험, 특색 있는 바, 이색 체험, 라운지 컨셉, 테마별 라운지, 새로운 경험, 라운지 선택, 특별한 밤, 컨셉 라운지 이용법" />
+                <meta property="og:title" content="정자 기모노룸 테마 라운지 가이드 | 정자역 이색 체험" />
                 <meta property="og:description" content="테마 라운지 문화 이해 | 컨셉 비교 | 이용 가이드" />
                 <meta property="og:image" content="https://jeongja.vip/og-kimono-room.jpg" />
                 <meta property="og:image:width" content="1200" />
@@ -205,6 +205,33 @@ const KimonoRoom = () => {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                             {venues.kimonoRoom.map(venue => <VenueCard key={venue.id} venue={venue} />)}
+                        </div>
+
+                        {/* Gallery Section */}
+                        <div className="mt-16">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <Sparkles className="text-rose-500" /> 정자 기모노룸 갤러리
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {[
+                                    { src: '/partner/km-gallery-01.webp', alt: '정자 기모노룸 전통 의상 매니저 - 정자동 테마룸' },
+                                    { src: '/partner/km-gallery-02.webp', alt: '정자 기모노룸 프리미엄 서비스 - 정자 유카타 컨셉' },
+                                    { src: '/partner/km-gallery-03.webp', alt: '정자 기모노룸 VIP 파트너 - 분당 정자역 이색 체험' },
+                                    { src: '/partner/km-gallery-04.webp', alt: '정자 기모노룸 최고급 매니저 - 정자동 일본풍 테마' },
+                                ].map((img, idx) => (
+                                    <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-rose-500/50 transition-all duration-300 group">
+                                        <img
+                                            src={img.src}
+                                            alt={img.alt}
+                                            title="정자 기모노룸 프리미엄 매니저"
+                                            loading="lazy"
+                                            width="300"
+                                            height="400"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 

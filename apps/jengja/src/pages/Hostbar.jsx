@@ -142,10 +142,10 @@ const Hostbar = () => {
     return (
         <>
             <Helmet>
-                <title>여성 맞춤형 라운지 선택 가이드 | 정자 호스트바 문화 이해</title>
-                <meta name="description" content="여성 고객을 위한 프리미엄 라운지 문화 이해 | 서비스 형식·분위기·비용·장점 완벽 정복 | 호스트바 이용 에티켓과 팁 | 안전하고 즐거운 경험을 위한 체크리스트" />
-                <meta name="keywords" content="정자 호스트바 가이드, 여성 라운지 문화, 호스트바 이해, 라운지 경험, 여성 친화 클럽, 호스트바 매너, 안전한 라운지, 라운지 에티켓, 비용 기준, 선택 가이드" />
-                <meta property="og:title" content="정자 호스트바 문화 가이드 | 여성 라운지 선택" />
+                <title>정자 호스트바 | 정자역 여성 맞춤형 라운지 완벽 가이드</title>
+                <meta name="description" content="정자역·정자동 여성 고객을 위한 프리미엄 라운지 문화 이해 | 서비스 형식·분위기·비용·장점 완벽 정복 | 호스트바 이용 에티켓과 팁 | 안전하고 즐거운 경험을 위한 체크리스트" />
+                <meta name="keywords" content="정자역 호스트바, 정자역 호빠, 정자 호스트바 가이드, 여성 라운지 문화, 호스트바 이해, 라운지 경험, 여성 친화 클럽, 호스트바 매너, 안전한 라운지, 라운지 에티켓, 비용 기준, 선택 가이드" />
+                <meta property="og:title" content="정자 호스트바 | 정자역 여성 맞춤형 라운지 완벽 가이드" />
                 <meta property="og:description" content="호스트바 문화 이해 | 안전한 이용 가이드 | 에티켓과 팁" />
                 <meta property="og:image" content="https://jeongja.vip/og-hostbar.jpg" />
                 <meta property="og:image:width" content="1200" />

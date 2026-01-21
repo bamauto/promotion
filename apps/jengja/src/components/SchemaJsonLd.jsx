@@ -52,11 +52,11 @@ export const generateLocalBusinessSchema = () => ({
     ],
     "priceRange": "$$",
     "areaServed": [
-        { "@type": "City", "name": "Jeongja" },
-        { "@type": "City", "name": "Jeongja-dong" },
-        { "@type": "City", "name": "Bundang" },
-        { "@type": "City", "name": "Pangyo" },
-        { "@type": "City", "name": "Maetan-dong" }
+        { "@type": "City", "name": "정자" },
+        { "@type": "Place", "name": "정자역" },
+        { "@type": "Place", "name": "정자동" },
+        { "@type": "City", "name": "분당" },
+        { "@type": "City", "name": "판교" }
     ]
 });
 

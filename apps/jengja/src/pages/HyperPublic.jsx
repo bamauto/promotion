@@ -143,10 +143,10 @@ const HyperPublic = () => {
     return (
         <>
             <Helmet>
-                <title>정자 하이퍼블릭 선택 가이드 2024 | 지역별 가격·시설·분위기 비교</title>
-                <meta name="description" content="정자 프라이빗 펍 TOP 5 지역별 완전정복 | 정자동 프리미엄 vs 분당 대형 vs 판교 비즈니스 스타일 비교 | 초심자부터 숙련 고객까지 선택 기준 제시 | 숨겨진 명소 리스트" />
-                <meta name="keywords" content="정자 프라이빗 펍, 하이퍼블릭 문화, 펍 선택 가이드, 정자동 펍, 분당 라운지, 판교 바, 프라이빗 룸, 펍 문화 이해, 라운지 분위기 비교, 정자 술집 문화, 펍 에티켓, 초보자 가이드" />
-                <meta property="og:title" content="정자 하이퍼블릭 선택 가이드 | 지역별·분위기별 비교" />
+                <title>정자역 하이퍼블릭 선택 가이드 2025 | 지역별 특징 비교</title>
+                <meta name="description" content="정자역·정자동 프라이빗 펍 TOP 5 지역별 완전정복 | 정자동 프리미엄 vs 분당 대형 vs 판교 비즈니스 스타일 비교 | 초심자부터 숙련 고객까지 선택 기준 제시 | 숨겨진 명소 리스트" />
+                <meta name="keywords" content="정자역 하이퍼블릭, 정자역 프라이빗펍, 정자역 술집, 정자 프라이빗 펍, 하이퍼블릭 문화, 펍 선택 가이드, 정자동 펍, 분당 라운지, 판교 바, 프라이빗 룸, 펍 문화 이해, 라운지 분위기 비교, 정자 술집 문화, 펍 에티켓, 초보자 가이드" />
+                <meta property="og:title" content="정자역 하이퍼블릭 선택 가이드 | 지역별·분위기별 비교" />
                 <meta property="og:description" content="프라이빗 펍 문화 이해부터 선택까지 | 정자동·분당·판교 비교 | 초보자 가이드" />
                 <meta property="og:image" content="https://jeongja.vip/og-highpub.jpg" />
                 <meta property="og:image:width" content="1200" />
@@ -213,6 +213,33 @@ const HyperPublic = () => {
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                             {venues.hyperPublic.map(venue => <VenueCard key={venue.id} venue={venue} />)}
+                        </div>
+
+                        {/* Gallery Section */}
+                        <div className="mt-16">
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                                <Sparkles className="text-amber-500" /> 정자 하이퍼블릭 갤러리
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                {[
+                                    { src: '/partner/hp-gallery-01.webp', alt: '정자 하이퍼블릭 프리미엄 인테리어 - 정자동 럭셔리 룸' },
+                                    { src: '/partner/hp-gallery-02.webp', alt: '정자 하이퍼블릭 VIP 매니저 - 정자 서우실장 추천' },
+                                    { src: '/partner/hp-gallery-03.webp', alt: '정자 하이퍼블릭 최고급 파트너 - 분당 정자역 인근' },
+                                    { src: '/partner/hp-gallery-04.webp', alt: '정자 하이퍼블릭 프리미엄 서비스 - 정자동 24시간' },
+                                ].map((img, idx) => (
+                                    <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 group">
+                                        <img
+                                            src={img.src}
+                                            alt={img.alt}
+                                            title="정자 하이퍼블릭 프리미엄 매니저"
+                                            loading="lazy"
+                                            width="300"
+                                            height="400"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 

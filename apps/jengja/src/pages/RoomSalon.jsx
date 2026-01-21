@@ -140,10 +140,10 @@ const RoomSalon = () => {
     return (
         <>
             <Helmet>
-                <title>정자 룸살롱 비즈니스 접대 가이드 | 효과적인 선택과 매너</title>
-                <meta name="description" content="정자 고급 룸살롱 선택 기준 및 효과적 활용법 | 바이어 접대·클라이언트 관계 구축 전략 | 비즈니스 파트너 선정 가이드 | 접대 매너·에티켓·비용 효율화 팁" />
-                <meta name="keywords" content="정자 룸살롱 가이드, 비즈니스 접대 전략, 라운지 문화, 접대 매너, 접대 에티켓, 클라이언트 접대, 바이어 관계 구축, 비용 효율화, 정자동 라운지, 분당 고급 라운지" />
-                <meta property="og:title" content="정자 룸살롱 비즈니스 접대 가이드 | 선택과 매너" />
+                <title>정자역 룸살롱 비즈니스 접대 가이드 | 완벽 매너</title>
+                <meta name="description" content="정자역·정자동 고급 룸살롱 선택 기준 및 효과적 활용법 | 바이어 접대·클라이언트 관계 구축 전략 | 비즈니스 파트너 선정 가이드 | 접대 매너·에티켓·비용 효율화 팁" />
+                <meta name="keywords" content="정자역 룸살롱, 정자역 접대, 정자 룸살롱 가이드, 비즈니스 접대 전략, 라운지 문화, 접대 매너, 접대 에티켓, 클라이언트 접대, 바이어 관계 구축, 비용 효율화, 정자동 라운지, 분당 고급 라운지" />
+                <meta property="og:title" content="정자역 룸살롱 비즈니스 접대 가이드 | 완벽 매너" />
                 <meta property="og:description" content="효과적인 접대 전략 | 라운지 선택 기준 | 에티켓 안내 | 비용 효율화" />
                 <meta property="og:image" content="https://jeongja.vip/og-room-salon.jpg" />
                 <meta property="og:image:width" content="1200" />

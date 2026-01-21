@@ -55,10 +55,10 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>정자 유흥 완벽 가이드 | 하이퍼블릭·가라오케·쩜오·셔츠룸 비교분석</title>
-                <meta name="description" content="정자 프라이빗 펍·가라오케·라운지 종합 비교 가이드 | 정자동·분당·판교 지역별 특징 분석 | 용도별·예산별 선택 기준 제시 | 초보자를 위한 이용 가이드 및 에티켓" />
-                <meta name="keywords" content="정자 프라이빗 펍, 정자 가라오케 비교, 정자 라운지 가이드, 정자동 펍, 분당 라운지, 판교 바, 정자 유흥 문화, 정자 술집 추천, 펍 선택 가이드, 가라오케 이용법, 라운지 에티켓, 정자 밤문화" />
-                <meta property="og:title" content="정자 유흥 완벽 가이드 | 프라이빗 펍·가라오케·라운지 비교" />
+                <title>정자역 하이퍼블릭·가라오케 완벽 비교 | 정자동 유흥 가이드</title>
+                <meta name="description" content="정자역·정자동 프라이빗 펍·가라오케·라운지 선택 완벽 정복. 지역별·용도별 비교분석. 초보자부터 숙련 고객까지 선택 기준 제시. ☎ 010-2626-4833" />
+                <meta name="keywords" content="정자역 하이퍼블릭, 정자역 가라오케, 정자역 유흥, 정자 프라이빗 펍, 정자 가라오케 비교, 정자 라운지 가이드, 정자동 펍, 분당 라운지, 판교 바, 정자 유흥 문화, 정자 술집 추천, 펍 선택 가이드, 가라오케 이용법, 라운지 에티켓, 정자 밤문화" />
+                <meta property="og:title" content="정자역 하이퍼블릭·가라오케 완벽 비교 | 정자동 유흥 가이드" />
                 <meta property="og:description" content="정자 지역 유흥문화 종합 가이드 | 지역별·용도별 선택 기준 | 초보자 이용 팁" />
                 <meta property="og:image" content="https://jeongja.vip/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
@@ -151,13 +151,28 @@ const Home = () => {
                 <div className="relative flex overflow-hidden">
                     <div className="flex animate-infinite-scroll whitespace-nowrap group hover:[animation-play-state:paused]">
                         {/* Double the images for seamless loop */}
-                        {[1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7].map((num, idx) => (
+                        {[
+                            { src: '/partner/partner-01.webp', alt: '정자 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
+                            { src: '/partner/partner-02.webp', alt: '정자 하이퍼블릭 최고급 매니저 - 정자동 서우실장 추천' },
+                            { src: '/partner/partner-03.webp', alt: '정자 가라오케 VIP 매니저 - 분당 정자 서우실장' },
+                            { src: '/partner/partner-04.webp', alt: '정자 하이퍼블릭 프리미엄 파트너 - 정자역 서우실장' },
+                            { src: '/partner/partner-05.webp', alt: '정자 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
+                            { src: '/partner/partner-06.webp', alt: '정자 하이퍼블릭 엄선 매니저 - 정자 서우실장' },
+                            { src: '/partner/partner-07.webp', alt: '정자 가라오케 TOP 매니저 - 정자동 서우실장 추천' },
+                            { src: '/partner/partner-01.webp', alt: '정자 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
+                            { src: '/partner/partner-02.webp', alt: '정자 하이퍼블릭 최고급 매니저 - 정자동 서우실장 추천' },
+                            { src: '/partner/partner-03.webp', alt: '정자 가라오케 VIP 매니저 - 분당 정자 서우실장' },
+                            { src: '/partner/partner-04.webp', alt: '정자 하이퍼블릭 프리미엄 파트너 - 정자역 서우실장' },
+                            { src: '/partner/partner-05.webp', alt: '정자 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
+                            { src: '/partner/partner-06.webp', alt: '정자 하이퍼블릭 엄선 매니저 - 정자 서우실장' },
+                            { src: '/partner/partner-07.webp', alt: '정자 가라오케 TOP 매니저 - 정자동 서우실장 추천' },
+                        ].map((img, idx) => (
                             <div key={idx} className="inline-block px-4">
                                 <div className="w-[300px] h-[450px] md:w-[400px] md:h-[600px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group/card">
                                     <img
-                                        src={`/seewoo_${num}.webp`}
-                                        alt={`정자 하이퍼블릭 프리미엄 매니저 - 정자동 서우실장 추천 ${num}번`}
-                                        title="정자 하이퍼블릭 최상급 매니저"
+                                        src={img.src}
+                                        alt={img.alt}
+                                        title="정자 가라오케 최상급 매니저"
                                         loading="lazy"
                                         width="400"
                                         height="600"

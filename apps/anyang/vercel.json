@@ -1,4 +1,5 @@
 {
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/_astro/:path*",
@@ -25,7 +26,7 @@
       "destination": "https://blog-seven-gilt-10.vercel.app/anyang/sitemap.xml"
     },
     {
-      "source": "/((?!blog|sitemap-blog|anyang|_astro).*)",
+      "source": "/((?!blog(?:/|$)|sitemap-blog|anyang(?:/|$)|_astro(?:/|$)).*)",
       "destination": "/index.html"
     }
   ]

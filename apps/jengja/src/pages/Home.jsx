@@ -60,7 +60,7 @@ const Home = () => {
                 <meta name="keywords" content="정자역 하이퍼블릭, 정자역 가라오케, 정자역 유흥, 정자 프라이빗 펍, 정자 가라오케 비교, 정자 라운지 가이드, 정자동 펍, 분당 라운지, 판교 바, 정자 유흥 문화, 정자 술집 추천, 펍 선택 가이드, 가라오케 이용법, 라운지 에티켓, 정자 밤문화" />
                 <meta property="og:title" content="정자역 하이퍼블릭·가라오케 완벽 비교 | 정자동 유흥 가이드" />
                 <meta property="og:description" content="정자 지역 유흥문화 종합 가이드 | 지역별·용도별 선택 기준 | 초보자 이용 팁" />
-                <meta property="og:image" content="https://jeongja.vip/og-home.jpg" />
+                <meta property="og:image" content="https://www.jengjakaraoke.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="정자 유흥 문화 종합 가이드" />
@@ -70,8 +70,8 @@ const Home = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="정자 유흥 완벽 가이드 | 프라이빗 펍·가라오케" />
                 <meta property="twitter:description" content="지역별·용도별 선택 가이드 | 초보자 이용 팁 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://jeongja.vip/og-home.jpg" />
-                <link rel="canonical" href="https://jeongja.vip" />
+                <meta property="twitter:image" content="https://www.jengjakaraoke.com/og-home.jpg" />
+                <link rel="canonical" href="https://www.jengjakaraoke.com" />
             </Helmet>
             <SchemaJsonLd data={[generateLocalBusinessSchema(), generateOrganizationSchema()]} />
 

@@ -39,6 +39,22 @@ export const REGIONS = {
     keyword: '가라오케',
     description: '인계동 가라오케 하이퍼블릭 정보',
   },
+  gwanggyo: {
+    id: 'gwanggyo',
+    name: '광교',
+    nameEn: 'Gwanggyo',
+    domain: 'gwanggyokaraoke.com',
+    keyword: '가라오케',
+    description: '광교·광교중앙역·상현역 가라오케·하이퍼블릭 가이드',
+  },
+  yeongtong: {
+    id: 'yeongtong',
+    name: '영통',
+    nameEn: 'Yeongtong',
+    domain: 'yeongtongkaraoke.com',
+    keyword: '가라오케',
+    description: '영통 가라오케 하이퍼블릭 정보',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;

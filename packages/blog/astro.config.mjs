@@ -9,6 +9,8 @@ const REGION_DOMAINS = {
   dongtan: 'https://dongtankaraoke.net',
   jengja: 'https://jengjakaraoke.com',
   ingedong: 'https://ingedongkaraoke.com',
+  gwanggyo: 'https://gwanggyokaraoke.com',
+  yeongtong: 'https://yeongtongkaraoke.com',
 };
 
 export default defineConfig({

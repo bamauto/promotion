@@ -1,0 +1,32 @@
+{
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/gwanggyo"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/gwanggyo/:path*"
+    },
+    {
+      "source": "/gwanggyo",
+      "destination": "https://blog-seven-gilt-10.vercel.app/gwanggyo"
+    },
+    {
+      "source": "/gwanggyo/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/gwanggyo/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/gwanggyo/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog|sitemap-blog|gwanggyo|_astro).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

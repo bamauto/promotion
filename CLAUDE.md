@@ -130,25 +130,49 @@ git commit -m "feat({새지역ID}): Add new {지역명} site"
 git push https://{GITHUB_TOKEN}@github.com/bamauto/promotion.git main
 ```
 
-### 8단계: Vercel 배포
+### 8단계: Vercel 초기 배포
 ```bash
 cd apps/{새지역ID}
 vercel --prod --yes
+# 프롬프트가 나오면:
+# - Set up and deploy? Y
+# - Which scope? ymimis-projects
+# - Link to existing project? N
+# - Project name? {새지역ID}
+# - In which directory is your code? ./
+# - Want to modify settings? N
 ```
 
-### 9단계: Vercel 설정
-1. **Git 연결**: https://vercel.com/new → Import → `bamauto/promotion` → Root Directory: `apps/{새지역ID}`
-2. **SSO Protection 해제** (API 사용):
-```bash
-# 프로젝트 ID 확인
-vercel project inspect {새지역ID}
+### 9단계: Vercel 프로젝트 설정 (중요!)
+Git 연결 후 **반드시 API로 설정 수정** (대시보드에서 하면 공백 문제 발생):
 
-# Protection 해제
+```bash
+# 1. 프로젝트 ID 확인
+vercel project inspect {새지역ID}
+# → ID: prj_xxxxxxxxxxxx 확인
+
+# 2. 필수 설정 일괄 적용 (SSO해제 + npm사용 + Root Directory)
 curl -X PATCH \
   -H "Authorization: Bearer {VERCEL_TOKEN}" \
   -H "Content-Type: application/json" \
-  -d '{"ssoProtection": null}' \
-  "https://api.vercel.com/v9/projects/{PROJECT_ID}"
+  -d '{
+    "ssoProtection": null,
+    "installCommand": "npm install",
+    "rootDirectory": "apps/{새지역ID}"
+  }' \
+  "https://api.vercel.com/v9/projects/{PROJECT_ID}?teamId=ymimis-projects"
+```
+
+### 9-1단계: Git 연결 (대시보드)
+1. https://vercel.com/ymimis-projects/{새지역ID}/settings/git
+2. Connected Git Repository → `bamauto/promotion` 연결
+3. Production Branch: `main`
+
+### 9-2단계: 재배포 트리거
+```bash
+# Git 연결 후 빈 커밋으로 재배포
+git commit --allow-empty -m "chore({새지역ID}): trigger initial deploy"
+git push https://{GITHUB_TOKEN}@github.com/bamauto/promotion.git main
 ```
 
 ### 10단계: 도메인 연결
@@ -180,3 +204,97 @@ DNS 설정 (도메인 제공업체에서):
 - sitemap.xml, robots.txt의 도메인 철자 정확히 확인
 - pnpm-lock.yaml 반드시 커밋 (안 하면 Vercel 빌드 실패)
 - 블로그 regions.ts 수정 후 블로그도 자동 재배포됨
+- 새 지역 추가 시 `packages/blog/src/components/LocalBusinessSchema.astro`에도 지역 정보 추가 필수
+
+---
+
+## Vercel 배포 트러블슈팅
+
+### 문제 1: pnpm ERR_INVALID_THIS 에러
+
+**증상:**
+```
+ERR_PNPM_META_FETCH_FAIL GET https://registry.npmjs.org/turbo: Value of "this" must be of type URLSearchParams
+WARN GET https://registry.npmjs.org/react error (ERR_INVALID_THIS)
+Error: Command "pnpm install" exited with 1
+```
+
+**원인:** Vercel 빌드 환경의 pnpm + Node.js 버전 호환성 문제 (간헐적 발생)
+
+**해결:**
+```bash
+# 1. 프로젝트 ID 확인
+vercel project inspect {프로젝트명}
+
+# 2. install command를 npm으로 변경
+curl -X PATCH \
+  -H "Authorization: Bearer {VERCEL_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d '{"installCommand":"npm install"}' \
+  "https://api.vercel.com/v9/projects/{PROJECT_ID}?teamId=ymimis-projects"
+
+# 3. 빈 커밋으로 재배포 트리거
+git commit --allow-empty -m "chore: trigger redeploy"
+git push https://{GITHUB_TOKEN}@github.com/bamauto/promotion.git main
+```
+
+### 문제 2: Root Directory 공백 에러
+
+**증상:**
+```
+The specified Root Directory "apps/gwanggyo  " does not exist.
+```
+
+**원인:** Vercel 대시보드에서 Root Directory 설정 시 공백이 포함됨
+
+**해결:**
+```bash
+# API로 Root Directory 수정 (공백 제거)
+curl -X PATCH \
+  -H "Authorization: Bearer {VERCEL_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d '{"rootDirectory":"apps/{지역ID}"}' \
+  "https://api.vercel.com/v9/projects/{PROJECT_ID}?teamId=ymimis-projects"
+```
+
+### 문제 3: 블로그 Internal Server Error
+
+**증상:** `https://{domain}/blog` 접속 시 "Internal server error"
+
+**원인:** `packages/blog/src/components/LocalBusinessSchema.astro`에 해당 지역 정보 누락
+
+**해결:**
+```typescript
+// LocalBusinessSchema.astro의 businessInfo에 지역 추가
+{새지역ID}: {
+  address: '경기도 {시} {구} {동}',
+  areaServed: '{지역명}, {인근지역}',
+  geo: { lat: {위도}, lng: {경도} }
+},
+```
+
+### Vercel API 빠른 참조
+
+```bash
+# 토큰 위치
+cat ~/Library/Application\ Support/com.vercel.cli/auth.json
+
+# 프로젝트 목록
+vercel project ls
+
+# 프로젝트 상세
+vercel project inspect {프로젝트명}
+
+# 배포 목록
+vercel ls {프로젝트명}
+
+# 배포 로그 확인
+vercel inspect {배포URL} --logs
+
+# API로 배포 트리거
+curl -X POST \
+  -H "Authorization: Bearer {VERCEL_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d '{"name":"{프로젝트명}","target":"production","gitSource":{"type":"github","org":"bamauto","repo":"promotion","ref":"main"}}' \
+  "https://api.vercel.com/v13/deployments?teamId=ymimis-projects"
+```

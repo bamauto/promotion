@@ -131,7 +131,7 @@ const RoomSalon = () => {
     const serviceSchema = generateServiceSchema(
         "Jeongja Room Salon",
         "정자 최고급 정통 룸살롱 예약 및 비즈니스 접대 가이드.",
-        "https://jeongja.vip/jeongja-room-salon-guide",
+        "https://www.jengjakaraoke.com/jeongja-room-salon-guide",
         "200000"
     );
 
@@ -145,7 +145,7 @@ const RoomSalon = () => {
                 <meta name="keywords" content="정자역 룸살롱, 정자역 접대, 정자 룸살롱 가이드, 비즈니스 접대 전략, 라운지 문화, 접대 매너, 접대 에티켓, 클라이언트 접대, 바이어 관계 구축, 비용 효율화, 정자동 라운지, 분당 고급 라운지" />
                 <meta property="og:title" content="정자역 룸살롱 비즈니스 접대 가이드 | 완벽 매너" />
                 <meta property="og:description" content="효과적인 접대 전략 | 라운지 선택 기준 | 에티켓 안내 | 비용 효율화" />
-                <meta property="og:image" content="https://jeongja.vip/og-room-salon.jpg" />
+                <meta property="og:image" content="https://www.jengjakaraoke.com/og-room-salon.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="정자 룸살롱 비즈니스 접대 가이드" />
@@ -154,8 +154,8 @@ const RoomSalon = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="정자 룸살롱 접대 가이드" />
                 <meta property="twitter:description" content="비즈니스 접대 전략 | 라운지 선택 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://jeongja.vip/og-room-salon.jpg" />
-                <link rel="canonical" href="https://jeongja.vip/jeongja-room-salon-guide" />
+                <meta property="twitter:image" content="https://www.jengjakaraoke.com/og-room-salon.jpg" />
+                <link rel="canonical" href="https://www.jengjakaraoke.com/jeongja-room-salon-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

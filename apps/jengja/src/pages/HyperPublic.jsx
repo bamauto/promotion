@@ -134,7 +134,7 @@ const HyperPublic = () => {
     const serviceSchema = generateServiceSchema(
         "HyperPublic Club",
         "정자 하이퍼블릭 예약 및 가격 안내. 24시간 픽업 서비스 및 최신 시설 완비.",
-        "https://jeongja.vip/jeongja-highpub-guide",
+        "https://www.jengjakaraoke.com/jeongja-highpub-guide",
         "130000"
     );
 
@@ -148,7 +148,7 @@ const HyperPublic = () => {
                 <meta name="keywords" content="정자역 하이퍼블릭, 정자역 프라이빗펍, 정자역 술집, 정자 프라이빗 펍, 하이퍼블릭 문화, 펍 선택 가이드, 정자동 펍, 분당 라운지, 판교 바, 프라이빗 룸, 펍 문화 이해, 라운지 분위기 비교, 정자 술집 문화, 펍 에티켓, 초보자 가이드" />
                 <meta property="og:title" content="정자역 하이퍼블릭 선택 가이드 | 지역별·분위기별 비교" />
                 <meta property="og:description" content="프라이빗 펍 문화 이해부터 선택까지 | 정자동·분당·판교 비교 | 초보자 가이드" />
-                <meta property="og:image" content="https://jeongja.vip/og-highpub.jpg" />
+                <meta property="og:image" content="https://www.jengjakaraoke.com/og-highpub.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:image:alt" content="정자 하이퍼블릭 선택 가이드" />
@@ -157,8 +157,8 @@ const HyperPublic = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="정자 하이퍼블릭 선택 가이드 2024" />
                 <meta property="twitter:description" content="지역별·분위기별 비교 | 초보자 가이드 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://jeongja.vip/og-highpub.jpg" />
-                <link rel="canonical" href="https://jeongja.vip/jeongja-highpub-guide" />
+                <meta property="twitter:image" content="https://www.jengjakaraoke.com/og-highpub.jpg" />
+                <link rel="canonical" href="https://www.jengjakaraoke.com/jeongja-highpub-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

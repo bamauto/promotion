@@ -133,7 +133,7 @@ const KimonoRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Kimono Room",
         "정자 기모노룸 예약 및 가격. 기모노 의상 테마의 이색 프리미엄 룸살롱.",
-        "https://jeongja.vip/jeongja-kimono-room-guide",
+        "https://www.jengjakaraoke.com/jeongja-kimono-room-guide",
         "160000"
     );
 
@@ -147,7 +147,7 @@ const KimonoRoom = () => {
                 <meta name="keywords" content="정자역 기모노룸, 정자역 테마라운지, 정자 기모노룸, 테마 라운지, 문화 경험, 특색 있는 바, 이색 체험, 라운지 컨셉, 테마별 라운지, 새로운 경험, 라운지 선택, 특별한 밤, 컨셉 라운지 이용법" />
                 <meta property="og:title" content="정자 기모노룸 테마 라운지 가이드 | 정자역 이색 체험" />
                 <meta property="og:description" content="테마 라운지 문화 이해 | 컨셉 비교 | 이용 가이드" />
-                <meta property="og:image" content="https://jeongja.vip/og-kimono-room.jpg" />
+                <meta property="og:image" content="https://www.jengjakaraoke.com/og-kimono-room.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
@@ -155,8 +155,8 @@ const KimonoRoom = () => {
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="기모노 라운지 문화 가이드" />
                 <meta property="twitter:description" content="테마 라운지 경험 | 컨셉 이해 | 이용 팁" />
-                <meta property="twitter:image" content="https://jeongja.vip/og-kimono-room.jpg" />
-                <link rel="canonical" href="https://jeongja.vip/jeongja-kimono-room-guide" />
+                <meta property="twitter:image" content="https://www.jengjakaraoke.com/og-kimono-room.jpg" />
+                <link rel="canonical" href="https://www.jengjakaraoke.com/jeongja-kimono-room-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

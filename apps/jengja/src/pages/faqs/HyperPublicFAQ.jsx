@@ -69,7 +69,7 @@ const HyperPublicFAQ = () => {
                 <title>정자 하이퍼블릭 FAQ | 비용, 초이스, 혼술 등 자주 묻는 질문 10선</title>
                 <meta name="description" content="정자 하이퍼블릭 이용 전 필독! 가격, 초이스 방식, 혼자 방문(독고), 2차 여부 등 고객님들이 가장 궁금해하시는 10가지 질문에 대해 서우실장이 솔직하게 답변해 드립니다." />
                 <meta name="keywords" content="정자 하이퍼블릭 FAQ, 정자 하이퍼블릭 가격, 하이퍼블릭 혼자, 하이퍼블릭 초이스, 하이퍼블릭 2차" />
-                <link rel="canonical" href="https://jeongja.vip/jeongja-highpub-guide/faq" />
+                <link rel="canonical" href="https://www.jengjakaraoke.com/jeongja-highpub-guide/faq" />
             </Helmet>
             <SchemaJsonLd data={faqSchema} />
 

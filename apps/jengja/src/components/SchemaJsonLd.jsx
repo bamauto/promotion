@@ -20,9 +20,9 @@ export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
     "name": "정자 하이퍼블릭 서우실장",
-    "image": "https://jeongja.vip/og-image.jpg",
+    "image": "https://www.jengjakaraoke.com/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://jeongja.vip/",
+    "url": "https://www.jengjakaraoke.com/",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "정자동",
@@ -68,7 +68,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "provider": {
         "@type": "LocalBusiness",
         "name": "정자 하이퍼블릭 서우실장",
-        "image": "https://jeongja.vip/og-image.jpg",
+        "image": "https://www.jengjakaraoke.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -114,9 +114,9 @@ export const generateOrganizationSchema = () => ({
     "@type": "Organization",
     "name": "서우실장 정자 하이퍼블릭",
     "alternateName": "정자 서우실장",
-    "url": "https://jeongja.vip",
-    "logo": "https://jeongja.vip/logo.png",
-    "image": "https://jeongja.vip/og-home.jpg",
+    "url": "https://www.jengjakaraoke.com",
+    "logo": "https://www.jengjakaraoke.com/logo.png",
+    "image": "https://www.jengjakaraoke.com/og-home.jpg",
     "description": "정자 최고급 하이퍼블릭, 가라오케, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [

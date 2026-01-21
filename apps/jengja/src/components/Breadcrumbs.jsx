@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://jeongja.vip/"
+            "item": "https://www.jengjakaraoke.com/"
         }
     ];
 
@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": index + 2,
             "name": routeName,
-            "item": `https://jeongja.vip${routeTo}`
+            "item": `https://www.jengjakaraoke.com${routeTo}`
         });
     });
 

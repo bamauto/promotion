@@ -37,6 +37,7 @@ curl -X POST -H "Authorization: Bearer SSxhOnGY9JbbPEEgkg85poIE" -H "Content-Typ
 | 영통 | yeongtong | yeongtongkaraoke.com |
 | 수원 | suwon | suwon.vip |
 | 안양 | anyang | anyangkaraoke.com |
+| 수지 | suji | sujikaraoke.com |
 
 ## 프로젝트 구조
 
@@ -49,7 +50,8 @@ promotion/
 │   ├── ingedong/    # 인계동 사이트
 │   ├── jengja/      # 정자 사이트
 │   ├── yeongtong/   # 영통 사이트
-│   └── suwon/       # 수원 사이트
+│   ├── suwon/       # 수원 사이트
+│   └── suji/        # 수지 사이트
 ├── packages/
 │   └── blog/        # 공유 블로그 시스템 (Astro)
 └── supabase/

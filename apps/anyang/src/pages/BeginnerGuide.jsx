@@ -15,35 +15,35 @@ const BeginnerGuide = () => {
             {
                 "@type": "HowToStep",
                 "name": "전화 예약 및 견적 문의",
-                "text": "방문 전 담당 실장에게 전화를 걸어 인원수, 방문 시간, 원하는 스타일(업종)을 말하고 견적을 확인합니다.", (안양 상권 기준)
+                "text": "방문 전 담당 실장에게 전화를 걸어 인원수, 방문 시간, 원하는 스타일(업종)을 말하고 견적을 확인합니다.",
                 "image": "https://anyangkaraoke.com/step1-call.jpg",
                 "url": "https://anyangkaraoke.com/anyang-entertainment-beginner-guide#step1"
             },
             {
                 "@type": "HowToStep",
                 "name": "업소 방문 및 룸 배정",
-                "text": "약속된 시간에 업소에 도착하여 담당 실장을 찾습니다. 인원에 맞는 룸으로 안내받습니다.", (안양 상권 기준)
+                "text": "약속된 시간에 업소에 도착하여 담당 실장을 찾습니다. 인원에 맞는 룸으로 안내받습니다.",
                 "image": "https://anyangkaraoke.com/step2-room.jpg",
                 "url": "https://anyangkaraoke.com/anyang-entertainment-beginner-guide#step2"
             },
             {
                 "@type": "HowToStep",
                 "name": "초이스(Choice) 진행",
-                "text": "담당 실장이 매니저들을 보여드립니다(매직미러 또는 조별 입장). 마음에 드는 파트너를 선택합니다.", (안양 상권 기준)
+                "text": "담당 실장이 매니저들을 보여드립니다(매직미러 또는 조별 입장). 마음에 드는 파트너를 선택합니다.",
                 "image": "https://anyangkaraoke.com/step3-choice.jpg",
                 "url": "https://anyangkaraoke.com/anyang-entertainment-beginner-guide#step3"
             },
             {
                 "@type": "HowToStep",
                 "name": "음주가무 및 파트너 케어",
-                "text": "정해진 시간 동안 술과 노래를 즐기며 파트너와 즐거운 시간을 보냅니다.", (안양 상권 기준)
+                "text": "정해진 시간 동안 술과 노래를 즐기며 파트너와 즐거운 시간을 보냅니다.",
                 "image": "https://anyangkaraoke.com/step4-party.jpg",
                 "url": "https://anyangkaraoke.com/anyang-entertainment-beginner-guide#step4"
             },
             {
                 "@type": "HowToStep",
                 "name": "계산 및 귀가",
-                "text": "시간이 종료되면 계산서를 확인하고 결제합니다. 대리운전이나 픽업 차량을 요청하여 안전하게 귀가합니다.", (안양 상권 기준)
+                "text": "시간이 종료되면 계산서를 확인하고 결제합니다. 대리운전이나 픽업 차량을 요청하여 안전하게 귀가합니다.",
                 "image": "https://anyangkaraoke.com/step5-pay.jpg",
                 "url": "https://anyangkaraoke.com/anyang-entertainment-beginner-guide#step5"
             }
@@ -90,7 +90,7 @@ const BeginnerGuide = () => {
                             <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950"></div>
                             <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                                 <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                                    <span className="text-cyan-400">Step 01.</span> 예약 및 문의 (안양 상권 기준)
+                                    <span className="text-cyan-400">Step 01.</span> 예약 및 문의
                                 </h2>
                                 <div className="flex flex-col md:flex-row gap-6 items-start">
                                     <div className="bg-slate-800 p-4 rounded-xl text-cyan-400">
@@ -98,7 +98,7 @@ const BeginnerGuide = () => {
                                     </div>
                                     <div>
                                         <p className="text-slate-300 leading-relaxed mb-4">
-                                            가장 중요한 단계입니다. 무작정 찾아가기(워킹) 보다는 전화를 하세요. (안양 상권 기준)
+                                            가장 중요한 단계입니다. 무작정 찾아가기(워킹) 보다는 전화를 하세요.
                                             <strong className="text-white"> 안양은 평촌역·범계역·인덕원역 3개 역</strong>이 있으니 어느 역에서 출발하시는지 알려주세요.
                                         </p>
                                         <div className="bg-slate-950 p-4 rounded-lg border border-slate-700 text-sm md:text-base mb-3">
@@ -119,7 +119,7 @@ const BeginnerGuide = () => {
                             <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950"></div>
                             <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                                 <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                                    <span className="text-cyan-400">Step 02.</span> 입장 및 초이스 (안양 상권 기준)
+                                    <span className="text-cyan-400">Step 02.</span> 입장 및 초이스
                                 </h2>
                                 <div className="flex flex-col md:flex-row gap-6 items-start">
                                     <div className="bg-slate-800 p-4 rounded-xl text-cyan-400">
@@ -127,12 +127,12 @@ const BeginnerGuide = () => {
                                     </div>
                                     <div>
                                         <p className="text-slate-300 leading-relaxed mb-4">
-                                            룸에 안내받으면 매니저들이 들어옵니다. 내 스타일인 친구를 고르세요. (안양 상권 기준)
-                                            너무 고민되면 담당 실장에게 "청순한 스타일 추천해주세요"라고 도움을 요청하세요. (안양 상권 기준)
+                                            룸에 안내받으면 매니저들이 들어옵니다. 내 스타일인 친구를 고르세요.
+                                            너무 고민되면 담당 실장에게 "청순한 스타일 추천해주세요"라고 도움을 요청하세요.
                                         </p>
                                         <ul className="space-y-2 text-sm text-slate-400">
-                                            <li className="flex items-center gap-2"><CheckCircle size={14} className="text-cyan-500" /> 마음에 들면 번호를 부르거나 손을 드세요. (안양 상권 기준)</li>
-                                            <li className="flex items-center gap-2"><CheckCircle size={14} className="text-cyan-500" /> 마음에 드는 아가씨가 없다면 "다음 조 볼게"라고 하세요. (안양 상권 기준)</li>
+                                            <li className="flex items-center gap-2"><CheckCircle size={14} className="text-cyan-500" /> 마음에 들면 번호를 부르거나 손을 드세요.</li>
+                                            <li className="flex items-center gap-2"><CheckCircle size={14} className="text-cyan-500" /> 마음에 드는 아가씨가 없다면 "다음 조 볼게"라고 하세요.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@ const BeginnerGuide = () => {
                             <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950"></div>
                             <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                                 <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                                    <span className="text-cyan-400">Step 03.</span> 즐기기 (Table Time) (안양 상권 기준)
+                                    <span className="text-cyan-400">Step 03.</span> 즐기기 (Table Time)
                                 </h2>
                                 <div className="flex flex-col md:flex-row gap-6 items-start">
                                     <div className="bg-slate-800 p-4 rounded-xl text-cyan-400">
@@ -153,10 +153,10 @@ const BeginnerGuide = () => {
                                     <div>
                                         <p className="text-slate-300 leading-relaxed mb-4">
                                             파트너가 옆에 앉으면 가볍게 인사하고 술을 한 잔 권하세요.
-                                            <br />매너 있는 손님이 대우받습니다. 기본적인 스킨십은 자연스럽게 가능하지만, 무리한 요구는 분위기를 망칩니다. (안양 상권 기준)
+                                            <br />매너 있는 손님이 대우받습니다. 기본적인 스킨십은 자연스럽게 가능하지만, 무리한 요구는 분위기를 망칩니다.
                                         </p>
                                         <div className="bg-amber-900/20 p-3 rounded border border-amber-600/30 text-amber-200 text-sm">
-                                            ⚠️ <strong>주의:</strong> 담당 실장 몰래 '2차' 등을 제안하는 것은 금물입니다. 문제 발생 시 책임지지 않습니다. (안양 상권 기준)
+                                            ⚠️ <strong>주의:</strong> 담당 실장 몰래 '2차' 등을 제안하는 것은 금물입니다. 문제 발생 시 책임지지 않습니다.
                                         </div>
                                     </div>
                                 </div>
@@ -168,7 +168,7 @@ const BeginnerGuide = () => {
                             <div className="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950"></div>
                             <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
                                 <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                                    <span className="text-cyan-400">Step 04.</span> 계산 및 마무리 (안양 상권 기준)
+                                    <span className="text-cyan-400">Step 04.</span> 계산 및 마무리
                                 </h2>
                                 <div className="flex flex-col md:flex-row gap-6 items-start">
                                     <div className="bg-slate-800 p-4 rounded-xl text-cyan-400">
@@ -177,7 +177,7 @@ const BeginnerGuide = () => {
                                     <div>
                                         <p className="text-slate-300 leading-relaxed mb-4">
                                             시간이 끝나가면 웨이터나 실장이 알려줍니다. 안양 상권 기준에 맞춰 연장할지 마무리할지 결정하세요.
-                                            계산서는 꼼꼼히 확인하시고, 술 취해서 지갑이나 휴대폰을 두고 가지 않도록 챙기세요. (안양 상권 기준)
+                                            계산서는 꼼꼼히 확인하시고, 술 취해서 지갑이나 휴대폰을 두고 가지 않도록 챙기세요.
                                         </p>
                                     </div>
                                 </div>
@@ -187,7 +187,7 @@ const BeginnerGuide = () => {
                     </div>
 
                     <div className="mt-20 text-center">
-                        <h2 className="text-2xl font-bold text-white mb-8">이제 실전입니다! (안양 상권 기준)</h2>
+                        <h2 className="text-2xl font-bold text-white mb-8">이제 실전입니다!</h2>
                         <button onClick={() => window.location.href = 'tel:01026264833'} className="bg-white text-slate-900 hover:bg-slate-200 font-bold py-5 px-16 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center gap-3 mx-auto text-xl animate-pulse">
                             <Phone fill="currentColor" size={24} /> 서우실장에게 전화하기
                         </button>

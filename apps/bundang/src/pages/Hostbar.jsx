@@ -71,7 +71,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-rose-600 text-white hover:text-white py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">선수 프로필 문의 (분당 상권 기준)</span>
+                <span className="tracking-widest text-sm">선수 프로필 문의</span>
             </button>
         </div>
     </article>
@@ -140,7 +140,7 @@ const Hostbar = () => {
     },
     {
         question: "분당 호빠 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (분당 상권 기준)"
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
     }
 ];
 
@@ -196,11 +196,11 @@ const Hostbar = () => {
                     <ContentBlock id="definition" title="1. 분당 호빠 시스템">
                         <p>
                             분당 호스트바는 오직 여성 고객님들만을 위한 프라이빗 유흥 공간입니다.
-                            서울 강남의 '정빠', '퍼블릭' 퀄리티를 유지하면서도 주대는 훨씬 합리적인 것이 장점입니다. (분당 상권 기준)
+                            서울 강남의 '정빠', '퍼블릭' 퀄리티를 유지하면서도 주대는 훨씬 합리적인 것이 장점입니다.
                         </p>
                         <p>
-                            다양한 스타일의 선수(모델, 아이돌, 짐승남, 연하남 등)들이 항시 대기 중이며, (분당 상권 기준)
-                            고객님의 취향에 맞는 파트너를 찾을 때까지 <strong>무한 초이스</strong>가 가능합니다. (분당 상권 기준)
+                            다양한 스타일의 선수(모델, 아이돌, 짐승남, 연하남 등)들이 항시 대기 중이며,
+                            고객님의 취향에 맞는 파트너를 찾을 때까지 <strong>무한 초이스</strong>가 가능합니다.
                             단순한 술자리를 넘어 친구, 연인 같은 감성적인 교감을 중요하게 생각합니다.
                         </p>
                     </ContentBlock>
@@ -217,19 +217,19 @@ const Hostbar = () => {
                     </div>
 
                     {/* 3. System Guide */}
-                    <ContentBlock id="system" title="3. 이용 시스템 및 초이스 가이드 (분당 상권 기준)">
-                        <h4 className="text-xl font-bold text-white mb-4">A. 초이스 (Choice) (분당 상권 기준)</h4>
+                    <ContentBlock id="system" title="3. 이용 시스템 및 초이스 가이드">
+                        <h4 className="text-xl font-bold text-white mb-4">A. 초이스 (Choice)</h4>
                         <p className="mb-4">
-                            룸에 입장하시면 담당 실장이 5~10조의 선수들을 차례로 보여드립니다. (분당 상권 기준)
-                            마음에 드는 선수가 있다면 주저말고 <strong>"초이스"</strong> 해주세요. (분당 상권 기준)
-                            <br />만약 마음에 드는 선수가 없다면 <strong>"패스"</strong> 하셔도 전혀 무방합니다. 고객님의 이상형을 찾을 때까지 최선을 다해 보여드립니다. (분당 상권 기준)
+                            룸에 입장하시면 담당 실장이 5~10조의 선수들을 차례로 보여드립니다.
+                            마음에 드는 선수가 있다면 주저말고 <strong>"초이스"</strong> 해주세요.
+                            <br />만약 마음에 드는 선수가 없다면 <strong>"패스"</strong> 하셔도 전혀 무방합니다. 고객님의 이상형을 찾을 때까지 최선을 다해 보여드립니다.
                         </p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 타임(Time) & 연장 (분당 상권 기준)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 타임(Time) & 연장</h4>
                         <ul className="list-disc pl-5 space-y-2 marker:text-rose-500">
-                            <li>기본 타임은 <strong>1시간 ~ 1시간 30분</strong> 기준입니다. (업소별 상이) (분당 상권 기준)</li>
-                            <li>타임 종료 10분 전, 연장 여부를 여쭤봅니다. 즐거우셨다면 연장하여 계속 즐기시면 됩니다. (분당 상권 기준)</li>
-                            <li><strong>풀티(Full-T)</strong>: 오늘 하루 이 선수를 지정하여 마감 때까지 함께 노는 시스템입니다. (별도 문의) (분당 상권 기준)</li>
+                            <li>기본 타임은 <strong>1시간 ~ 1시간 30분</strong> 기준입니다. (업소별 상이)</li>
+                            <li>타임 종료 10분 전, 연장 여부를 여쭤봅니다. 즐거우셨다면 연장하여 계속 즐기시면 됩니다.</li>
+                            <li><strong>풀티(Full-T)</strong>: 오늘 하루 이 선수를 지정하여 마감 때까지 함께 노는 시스템입니다. (별도 문의)</li>
                         </ul>
                     </ContentBlock>
 
@@ -237,23 +237,23 @@ const Hostbar = () => {
                     <div id="faq" className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
                         <div className="bg-slate-900/50 p-8 rounded-2xl border border-slate-800">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <Gift className="text-rose-500" /> 특별한 날을 위한 팁 (분당 상권 기준)
+                                <Gift className="text-rose-500" /> 특별한 날을 위한 팁
                             </h3>
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-rose-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>생일 파티</strong>: 미리 예약하시면 룸 데코레이션 및 축하 공연 이벤트를 준비해 드립니다. 인생샷을 남겨보세요. (분당 상권 기준)</span>
+                                    <span><strong>생일 파티</strong>: 미리 예약하시면 룸 데코레이션 및 축하 공연 이벤트를 준비해 드립니다. 인생샷을 남겨보세요.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-rose-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>스트레스 해소</strong>: 조용히 대화만 나누고 싶은 날, 미친듯이 춤추고 놀고 싶은 날. 예약 시 '오늘의 기분'을 말씀해 주시면 딱 맞는 선수를 추천해 드립니다. (분당 상권 기준)</span>
+                                    <span><strong>스트레스 해소</strong>: 조용히 대화만 나누고 싶은 날, 미친듯이 춤추고 놀고 싶은 날. 예약 시 '오늘의 기분'을 말씀해 주시면 딱 맞는 선수를 추천해 드립니다.</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-rose-900/10 p-8 rounded-2xl border border-rose-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-rose-500" /> 자주 묻는 질문 (FAQ) (분당 상권 기준)
+                                <HelpCircle className="text-rose-500" /> 자주 묻는 질문 (FAQ)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (

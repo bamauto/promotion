@@ -97,7 +97,7 @@ const Home = () => {
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
                                 <span className="relative flex items-center justify-center gap-2">
-                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기 (영통 상권 기준)
+                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기
                                 </span>
                             </button>
                             <Link
@@ -119,11 +119,11 @@ const Home = () => {
             {/* Features */}
             <section id="features" className="py-24 bg-slate-950 container mx-auto px-4 relative">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
-                <SectionTitle title="왜 전문 컨설팅인가?" subtitle="차별화된 가치" /> (영통 상권 기준)
+                <SectionTitle title="왜 전문 컨설팅인가?" subtitle="차별화된 가치" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <FeatureItem icon={ShieldCheck} title="투명한 가격 구조" desc="사전에 명확한 비용 안내로 예상치 못한 추가금을 방지합니다." delay={0} /> (영통 상권 기준)
-                    <FeatureItem icon={Users} title="취향 기반 매칭" desc="고객 성향과 니즈를 분석하여 최적의 파트너를 연결해 드립니다." delay={100} /> (영통 상권 기준)
-                    <FeatureItem icon={Crown} title="15년 업계 경험" desc="오랜 경험과 네트워크를 바탕으로 신뢰할 수 있는 정보를 제공합니다." delay={200} /> (영통 상권 기준)
+                    <FeatureItem icon={ShieldCheck} title="투명한 가격 구조" desc="사전에 명확한 비용 안내로 예상치 못한 추가금을 방지합니다." delay={0} />
+                    <FeatureItem icon={Users} title="취향 기반 매칭" desc="고객 성향과 니즈를 분석하여 최적의 파트너를 연결해 드립니다." delay={100} />
+                    <FeatureItem icon={Crown} title="15년 업계 경험" desc="오랜 경험과 네트워크를 바탕으로 신뢰할 수 있는 정보를 제공합니다." delay={200} />
                     <FeatureItem icon={Car} title="편리한 이동 지원" desc="영통 전 지역 이동 편의를 위한 픽업 서비스를 운영합니다." delay={300} />
                 </div>
             </section>
@@ -131,16 +131,16 @@ const Home = () => {
             {/* New Interactive Gallery Section */}
             <section className="py-24 bg-slate-950 overflow-hidden">
                 <div className="container mx-auto px-4 mb-16 text-center">
-                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">프리미엄 파트너 라인업 (영통 상권 기준)</span>
+                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">프리미엄 파트너 라인업</span>
                     <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight break-keep">
                         다양한 스타일의 <br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">매력적인 파트너</span> 상시 대기 (영통 상권 기준)
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">매력적인 파트너</span> 상시 대기
                     </h2>
                     <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed break-keep">
                         영통 지역 최고 수준의 네트워크를 바탕으로<br />
-                        다양한 스타일의 파트너를 보유하고 있습니다.<br className="hidden md:block" /><br /> (영통 상권 기준)
+                        다양한 스타일의 파트너를 보유하고 있습니다.<br className="hidden md:block" /><br />
                         고객님의 취향과 성향을 세심하게 파악하여<br />
-                        <strong className="text-white">최적의 파트너십을 경험하실 수 있도록</strong><br className="md:hidden" /> 맞춤형 매칭을 제공합니다. (영통 상권 기준)
+                        <strong className="text-white">최적의 파트너십을 경험하실 수 있도록</strong><br className="md:hidden" /> 맞춤형 매칭을 제공합니다.
                     </p>
                     <div className="w-24 h-1 bg-amber-500 mx-auto mt-10"></div>
                 </div>
@@ -192,26 +192,26 @@ const Home = () => {
                 <div className="absolute inset-0 bg-slate-950/90"></div>
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16 relative z-10">
                     <div className="md:w-1/2 order-2 md:order-1">
-                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 방문 가이드 (영통 상권 기준)</span>
+                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 방문 가이드</span>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                             혼자 방문해도<br />편안합니다
                         </h3>
                         <div className="space-y-6 text-slate-300 text-lg font-light leading-relaxed">
                             <p>
-                                최근 <strong className="text-white">1인 방문 고객이 40% 이상</strong>을 차지합니다.<br /> (영통 상권 기준)
+                                최근 <strong className="text-white">1인 방문 고객이 40% 이상</strong>을 차지합니다.<br />
                                 혼자 오시는 분들도 어색하지 않도록 1:1 맞춤형 세팅과<br />
                                 프라이빗한 환경을 제공해 드립니다.
                             </p>
                             <p>
                                 조용히 대화를 나누고 싶은 날, 화끈하게 놀고 싶은 날,<br />
                                 원하시는 분위기만 말씀해 주세요. 고객님의 성향을 파악하여<br />
-                                가장 어울리는 파트너와 <strong className="text-amber-500">최적의 시간</strong>을 설계해 드립니다. (영통 상권 기준)
+                                가장 어울리는 파트너와 <strong className="text-amber-500">최적의 시간</strong>을 설계해 드립니다.
                             </p>
                         </div>
 
                         <div className="mt-10 grid grid-cols-2 gap-4">
                             {[
-                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천" (영통 상권 기준)
+                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천"
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-center gap-3 text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
                                     <CheckCircle size={18} className="text-amber-500 flex-shrink-0" />
@@ -227,8 +227,8 @@ const Home = () => {
                                 <div className="absolute inset-0 bg-[url('/private_room_bg_v2.jpg')] bg-cover bg-[center_20%] opacity-90"></div>
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-0 p-8">
-                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸 (영통 상권 기준)</h3>
-                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿 (영통 상권 기준)</p>
+                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸</h3>
+                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿</p>
                                 </div>
                             </div>
                         </div>
@@ -368,7 +368,7 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="text-amber-400 font-bold tracking-wider uppercase text-sm mb-2 block">24 Hours Service</span>
-                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의 (영통 상권 기준)</h2>
+                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -379,7 +379,7 @@ const Home = () => {
                                     <Phone size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold text-lg">전화 문의 (영통 상권 기준)</h3>
+                                    <h3 className="text-white font-bold text-lg">전화 문의</h3>
                                     <p className="text-slate-400 text-sm">010-2626-4833</p>
                                 </div>
                             </div>

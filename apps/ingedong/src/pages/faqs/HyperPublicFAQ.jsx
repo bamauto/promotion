@@ -33,15 +33,15 @@ const HyperPublicFAQ = () => {
     },
     {
         question: "주대와 TC 기준이 궁금합니다.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 바랍니다. (인계동 상권 기준)"
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 바랍니다."
     },
     {
         question: "예약은 꼭 필요한가요?",
-        answer: "피크 타임에는 대기 가능성이 있어 예약을 권장합니다. 사전 예약 시 동선과 룸 타입을 미리 맞춰드립니다. (인계동 상권 기준)"
+        answer: "피크 타임에는 대기 가능성이 있어 예약을 권장합니다. 사전 예약 시 동선과 룸 타입을 미리 맞춰드립니다."
     },
     {
         question: "복장 제한이 있나요?",
-        answer: "강제 드레스 코드는 없지만 깔끔한 캐주얼을 추천합니다. 비즈니스 목적이라면 포멀한 복장이 좋습니다. (인계동 상권 기준)"
+        answer: "강제 드레스 코드는 없지만 깔끔한 캐주얼을 추천합니다. 비즈니스 목적이라면 포멀한 복장이 좋습니다."
     }
 ];
 
@@ -75,7 +75,7 @@ const HyperPublicFAQ = () => {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <p className="text-slate-400 mb-6">더 궁금한 점이 있으신가요? 24시간 언제든 물어보세요. (인계동 상권 기준)</p>
+                        <p className="text-slate-400 mb-6">더 궁금한 점이 있으신가요? 24시간 언제든 물어보세요.</p>
                         <div className="flex flex-col md:flex-row justify-center gap-4">
                             <button onClick={() => window.location.href = 'tel:01026264833'} className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all">
                                 <Phone size={20} /> 전화로 물어보기

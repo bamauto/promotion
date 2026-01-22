@@ -72,7 +72,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-amber-600 text-white hover:text-black py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">상세 견적 문의 (수원 상권 기준)</span>
+                <span className="tracking-widest text-sm">상세 견적 문의</span>
             </button>
         </div>
     </article>
@@ -117,7 +117,7 @@ const RoomSalon = () => {
     },
     {
         question: "수원 룸살롱 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (수원 상권 기준)"
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
     }
 ];
 
@@ -161,7 +161,7 @@ const RoomSalon = () => {
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">
-                    <SectionTitle title="효과적인 비즈니스 접대: 라운지 선택 가이드" subtitle="전략과 매너" /> (수원 상권 기준)
+                    <SectionTitle title="효과적인 비즈니스 접대: 라운지 선택 가이드" subtitle="전략과 매너" />
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
@@ -173,25 +173,25 @@ const RoomSalon = () => {
                     {/* 1. Definition */}
                     <ContentBlock id="definition" title="1. 수원 룸살롱이란? (Introduction)">
                         <p>
-                            <strong>정통 룸살롱</strong>은 하이퍼블릭이나 가라오케보다 한 차원 높은 서비스와 수질을 제공하는 (수원 상권 기준)
+                            <strong>정통 룸살롱</strong>은 하이퍼블릭이나 가라오케보다 한 차원 높은 서비스와 수질을 제공하는
                             <strong> 프라이빗 비즈니스 클럽</strong>입니다.
                         </p>
                         <p>
-                            단순한 유흥을 넘어, 바이어 접대나 중요한 계약 성사 등을 위한 조용하고 품격 있는 분위기를 중시합니다. (수원 상권 기준)
-                            철저한 회원제 운영과 예약제를 통해 외부 시선으로부터 자유로운 프라이빗 공간을 보장합니다. (수원 상권 기준)
+                            단순한 유흥을 넘어, 바이어 접대나 중요한 계약 성사 등을 위한 조용하고 품격 있는 분위기를 중시합니다.
+                            철저한 회원제 운영과 예약제를 통해 외부 시선으로부터 자유로운 프라이빗 공간을 보장합니다.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
                                 <Crown className="mx-auto text-amber-500 mb-2" />
-                                <div className="font-bold text-white">VVIP 접대 특화 (수원 상권 기준)</div>
+                                <div className="font-bold text-white">VVIP 접대 특화</div>
                             </div>
                             <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
                                 <Shield className="mx-auto text-amber-500 mb-2" />
-                                <div className="font-bold text-white">철저한 보안/프라이빗 (수원 상권 기준)</div>
+                                <div className="font-bold text-white">철저한 보안/프라이빗</div>
                             </div>
                             <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
                                 <Star className="mx-auto text-amber-500 mb-2" />
-                                <div className="font-bold text-white">최상위 매니저 (수원 상권 기준)</div>
+                                <div className="font-bold text-white">최상위 매니저</div>
                             </div>
                         </div>
                     </ContentBlock>
@@ -200,7 +200,7 @@ const RoomSalon = () => {
                     <div id="recommendation" className="mb-24">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-1.5 h-8 bg-amber-500 rounded-full"></div>
-                            <h2 className="text-3xl font-bold text-white">2. 추천 업소 (Recommendations) (수원 상권 기준)</h2>
+                            <h2 className="text-3xl font-bold text-white">2. 추천 업소 (Recommendations)</h2>
                         </div>
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -235,22 +235,22 @@ const RoomSalon = () => {
                     </div>
 
                     {/* 3. System Guide */}
-                    <ContentBlock id="system" title="3. 이용 시스템 및 특징 (수원 상권 기준)">
+                    <ContentBlock id="system" title="3. 이용 시스템 및 특징">
                         <p>
                             룸살롱은 일반 업소와는 차별화된 시스템으로 운영됩니다.
                         </p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 예약 및 입장 (수원 상권 기준)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 예약 및 입장</h4>
                         <ul className="list-disc pl-5 space-y-2 marker:text-amber-500">
-                            <li><strong>100% 예약제</strong>: 워킹 방문은 입장이 제한될 수 있습니다. 반드시 서우 실장을 통해 사전 예약해 주세요. (수원 상권 기준)</li>
-                            <li><strong>맞춤형 세팅</strong>: 방문 목적(비즈니스, 회식, 개인 모임 등)을 미리 말씀해 주시면 그에 맞는 룸과 주류, 안주를 세팅해 드립니다. (수원 상권 기준)</li>
+                            <li><strong>100% 예약제</strong>: 워킹 방문은 입장이 제한될 수 있습니다. 반드시 서우 실장을 통해 사전 예약해 주세요.</li>
+                            <li><strong>맞춤형 세팅</strong>: 방문 목적(비즈니스, 회식, 개인 모임 등)을 미리 말씀해 주시면 그에 맞는 룸과 주류, 안주를 세팅해 드립니다.</li>
                         </ul>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 초이스 및 서비스 (수원 상권 기준)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 초이스 및 서비스</h4>
                         <ul className="list-disc pl-5 space-y-2 marker:text-amber-500">
-                            <li><strong>정통 초이스</strong>: 마담의 인솔 하에 룸에서 직접 초이스가 이루어집니다. (수원 상권 기준)</li>
-                            <li><strong>지명제 운영</strong>: 마음에 드는 매니저를 사전에 지명하여 예약하실 수 있습니다. (수원 상권 기준)</li>
-                            <li><strong>애프터 케어</strong>: 비즈니스 성공을 위해 담당 매니저가 끝까지 최선을 다해 케어합니다. (수원 상권 기준)</li>
+                            <li><strong>정통 초이스</strong>: 마담의 인솔 하에 룸에서 직접 초이스가 이루어집니다.</li>
+                            <li><strong>지명제 운영</strong>: 마음에 드는 매니저를 사전에 지명하여 예약하실 수 있습니다.</li>
+                            <li><strong>애프터 케어</strong>: 비즈니스 성공을 위해 담당 매니저가 끝까지 최선을 다해 케어합니다.</li>
                         </ul>
                     </ContentBlock>
 
@@ -263,7 +263,7 @@ const RoomSalon = () => {
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-amber-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>사전 정보 공유</strong>: 접대하시는 손님의 취향(술, 스타일 등)을 미리 알려주시면 성공률 200%의 맞춤형 서비스를 준비합니다. (수원 상권 기준)</span>
+                                    <span><strong>사전 정보 공유</strong>: 접대하시는 손님의 취향(술, 스타일 등)을 미리 알려주시면 성공률 200%의 맞춤형 서비스를 준비합니다.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-amber-500 w-5 h-5 flex-shrink-0" />
@@ -274,7 +274,7 @@ const RoomSalon = () => {
 
                         <div className="bg-amber-900/10 p-8 rounded-2xl border border-amber-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-amber-500" /> 자주 묻는 질문 (FAQ) (수원 상권 기준)
+                                <HelpCircle className="text-amber-500" /> 자주 묻는 질문 (FAQ)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (

@@ -71,7 +71,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-red-600 text-white hover:text-white py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">코스튬 예약 문의 (안양 상권 기준)</span>
+                <span className="tracking-widest text-sm">코스튬 예약 문의</span>
             </button>
         </div>
     </article>
@@ -116,7 +116,7 @@ const KimonoRoom = () => {
     },
     {
         question: "안양 기모노룸 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (안양 상권 기준)"
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
     }
 ];
 
@@ -224,13 +224,13 @@ const KimonoRoom = () => {
                     </div>
 
                     {/* 3. System & Pricing */}
-                    <ContentBlock id="system" title="3. 이용 시스템 및 서비스 (안양 상권 기준)">
+                    <ContentBlock id="system" title="3. 이용 시스템 및 서비스">
                         <p>
-                            기본적인 시스템은 퍼블릭과 유사하나, <strong>'의전 서비스'</strong>에 더욱 특화되어 있습니다. (안양 상권 기준)
-                            술을 따르는 예법이나 대화를 이끌어가는 매너 등에서 일본 특유의 섬세한 접대 문화를 느끼실 수 있습니다. (안양 상권 기준)
+                            기본적인 시스템은 퍼블릭과 유사하나, <strong>'의전 서비스'</strong>에 더욱 특화되어 있습니다.
+                            술을 따르는 예법이나 대화를 이끌어가는 매너 등에서 일본 특유의 섬세한 접대 문화를 느끼실 수 있습니다.
                         </p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 주대 안내 (Pricing) (안양 상권 기준)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 주대 안내 (Pricing)</h4>
                         <div className="overflow-x-auto">
                             <table className="w-full text-left border-collapse mt-2">
                                 <thead>
@@ -242,28 +242,28 @@ const KimonoRoom = () => {
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">기본 양주 SET (안양 상권 기준)</td>
-                                        <td className="py-3 px-4">주대 18만원 이상 (안양 상권 기준)</td>
-                                        <td className="py-3 px-4">임페리얼/골든블루 + 과일안주 + 음료 (안양 상권 기준)</td>
+                                        <td className="py-3 px-4 font-bold text-white">기본 양주 SET</td>
+                                        <td className="py-3 px-4">주대 18만원 이상</td>
+                                        <td className="py-3 px-4">임페리얼/골든블루 + 과일안주 + 음료</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">사케 SET (안양 상권 기준)</td>
+                                        <td className="py-3 px-4 font-bold text-white">사케 SET</td>
                                         <td className="py-3 px-4">별도 문의</td>
-                                        <td className="py-3 px-4">준마이, 다이긴죠 등 고급 사케 구비 (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">준마이, 다이긴죠 등 고급 사케 구비</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">TC (매니저) (안양 상권 기준)</td>
-                                        <td className="py-3 px-4">TC 10만원 이상 (안양 상권 기준) (안양 상권 기준)</td>
-                                        <td className="py-3 px-4">기모노 착용 및 스타일링 비용 포함 (안양 상권 기준)</td>
+                                        <td className="py-3 px-4 font-bold text-white">TC (매니저)</td>
+                                        <td className="py-3 px-4">TC 10만원 이상</td>
+                                        <td className="py-3 px-4">기모노 착용 및 스타일링 비용 포함</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 특별 서비스 (안양 상권 기준)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 특별 서비스</h4>
                         <ul className="list-disc pl-5 space-y-2 marker:text-red-500">
-                            <li><strong>기모노 쇼</strong>: 중간 타임에 간단한 인사 및 포토 타임이 진행될 수 있습니다. (업소 상황에 따라 다름) (안양 상권 기준)</li>
-                            <li><strong>러브샷 이벤트</strong>: 분위기를 띄우기 위한 기모노룸만의 특별한 술자리 게임이 준비되어 있습니다. (안양 상권 기준)</li>
+                            <li><strong>기모노 쇼</strong>: 중간 타임에 간단한 인사 및 포토 타임이 진행될 수 있습니다. (업소 상황에 따라 다름)</li>
+                            <li><strong>러브샷 이벤트</strong>: 분위기를 띄우기 위한 기모노룸만의 특별한 술자리 게임이 준비되어 있습니다.</li>
                         </ul>
                     </ContentBlock>
 
@@ -276,18 +276,18 @@ const KimonoRoom = () => {
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>접대 장소로 추천</strong>: 이색적인 분위기 덕분에 접대 성공률이 매우 높습니다. 뻔한 곳이 지겨운 바이어 분들에게 강력 추천합니다. (안양 상권 기준)</span>
+                                    <span><strong>접대 장소로 추천</strong>: 이색적인 분위기 덕분에 접대 성공률이 매우 높습니다. 뻔한 곳이 지겨운 바이어 분들에게 강력 추천합니다.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>예약 필수</strong>: 기모노 복장 특성상 환복 및 준비 시간이 필요하므로, 최소 1시간 전 예약을 해주시면 더욱 완벽하게 모실 수 있습니다. (안양 상권 기준)</span>
+                                    <span><strong>예약 필수</strong>: 기모노 복장 특성상 환복 및 준비 시간이 필요하므로, 최소 1시간 전 예약을 해주시면 더욱 완벽하게 모실 수 있습니다.</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-red-900/10 p-8 rounded-2xl border border-red-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-red-500" /> 자주 묻는 질문 (FAQ) (안양 상권 기준)
+                                <HelpCircle className="text-red-500" /> 자주 묻는 질문 (FAQ)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (

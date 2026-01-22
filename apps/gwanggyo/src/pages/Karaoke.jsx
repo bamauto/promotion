@@ -72,7 +72,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-purple-600 text-white hover:text-white py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">실시간 예약 문의 (광교 상권 기준)</span>
+                <span className="tracking-widest text-sm">실시간 예약 문의</span>
             </button>
         </div>
     </article>
@@ -120,13 +120,13 @@ const Karaoke = () => {
     },
     {
         question: "광교 가라오케 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (광교 상권 기준)"
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
     }
 ];
 
     const sections = [
         { id: "features", title: "1. 광교 가라오케 특징" },
-        { id: "recommendation", title: "2. 추천 업소 TOP 6" }, (광교 상권 기준)
+        { id: "recommendation", title: "2. 추천 업소 TOP 6" },
         { id: "pricing", title: "3. 이용 가격 및 시스템" },
         { id: "faq", title: "4. 이용 꿀팁 및 FAQ" }
     ];
@@ -186,28 +186,28 @@ const Karaoke = () => {
                     <ContentBlock id="features" title="1. 광교 가라오케의 특징">
                         <p>
                             <strong>광교 가라오케</strong>는 단순한 노래방을 넘어선 <strong>'토탈 엔터테인먼트 공간'</strong>을 지향합니다. 강남의 고급 가라오케 시스템을 그대로 도입하여,
-                            웨이터의 격식 있는 서빙과 호텔 셰프 수준의 고급 안주, 그리고 무엇보다 <strong>콘서트장을 방불케 하는 하이엔드 음향 시설</strong>을 갖추고 있습니다. (광교 상권 기준)
+                            웨이터의 격식 있는 서빙과 호텔 셰프 수준의 고급 안주, 그리고 무엇보다 <strong>콘서트장을 방불케 하는 하이엔드 음향 시설</strong>을 갖추고 있습니다.
                             광교중앙역 가라오케와 광교동 가라오케 모두 최고 수준의 시설을 자랑합니다.
                         </p>
                         <p>
-                            비즈니스 접대로도 손색없는 고급스러운 인테리어 룸부터, 2030 세대를 위한 힙한 감성의 파티룸까지 다양한 컨셉의 룸을 보유하고 있어 방문 목적에 맞게 선택하실 수 있습니다. (광교 상권 기준)
+                            비즈니스 접대로도 손색없는 고급스러운 인테리어 룸부터, 2030 세대를 위한 힙한 감성의 파티룸까지 다양한 컨셉의 룸을 보유하고 있어 방문 목적에 맞게 선택하실 수 있습니다.
                             광교 가라오케는 회식, 생일파티, 데이트 등 다양한 용도로 이용 가능합니다.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
                                 <Mic2 className="w-6 h-6 text-purple-500 mx-auto mb-2" />
                                 <span className="block text-white font-bold mb-1">High-End Sound</span>
-                                <span className="text-xs text-slate-400">최고급 음향 시스템 (광교 상권 기준)</span>
+                                <span className="text-xs text-slate-400">최고급 음향 시스템</span>
                             </div>
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
                                 <Users className="w-6 h-6 text-purple-500 mx-auto mb-2" />
                                 <span className="block text-white font-bold mb-1">Party & Biz</span>
-                                <span className="text-xs text-slate-400">모임 목적별 맞춤 룸 (광교 상권 기준)</span>
+                                <span className="text-xs text-slate-400">모임 목적별 맞춤 룸</span>
                             </div>
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
                                 <GlassWater className="w-6 h-6 text-purple-500 mx-auto mb-2" />
                                 <span className="block text-white font-bold mb-1">Premium F&B</span>
-                                <span className="text-xs text-slate-400">호텔급 안주 & 주류 (광교 상권 기준)</span>
+                                <span className="text-xs text-slate-400">호텔급 안주 & 주류</span>
                             </div>
                         </div>
                     </ContentBlock>
@@ -251,7 +251,7 @@ const Karaoke = () => {
                     </div>
 
                     {/* 3. Pricing & System */}
-                    <ContentBlock id="pricing" title="3. 이용 가격 및 시스템 안내 (광교 상권 기준)">
+                    <ContentBlock id="pricing" title="3. 이용 가격 및 시스템 안내">
                         <p>
                             광교 가라오케는 투명한 정찰제로 운영됩니다.
                             <strong>양주 SET</strong> 문의가 많으며, 광교중앙역·호수공원 라인 기준으로 인원/시간에 따라 추가 안내됩니다.
@@ -269,30 +269,30 @@ const Karaoke = () => {
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">양주 A SET (광교 상권 기준)</td>
-                                        <td className="py-3 px-4">12년산 (골든블루 등) + 과일 + 마른안주 + 음료 (광교 상권 기준)</td>
-                                        <td className="py-3 px-4">주대 18만원 이상 (광교 상권 기준)</td>
+                                        <td className="py-3 px-4 font-bold text-white">양주 A SET</td>
+                                        <td className="py-3 px-4">12년산 (골든블루 등) + 과일 + 마른안주 + 음료</td>
+                                        <td className="py-3 px-4">주대 18만원 이상</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">양주 B SET (광교 상권 기준)</td>
-                                        <td className="py-3 px-4">17년산 프리미엄 + 특선 과일 + 모듬 안주 + 음료 (광교 상권 기준)</td>
-                                        <td className="py-3 px-4">주대 18만원 이상 (광교 상권 기준)</td>
+                                        <td className="py-3 px-4 font-bold text-white">양주 B SET</td>
+                                        <td className="py-3 px-4">17년산 프리미엄 + 특선 과일 + 모듬 안주 + 음료</td>
+                                        <td className="py-3 px-4">주대 18만원 이상</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">맥주 SET (광교 상권 기준)</td>
-                                        <td className="py-3 px-4">맥주 기본 + 기본 안주 (평일/이른 시간 전용) (광교 상권 기준)</td>
+                                        <td className="py-3 px-4 font-bold text-white">맥주 SET</td>
+                                        <td className="py-3 px-4">맥주 기본 + 기본 안주 (평일/이른 시간 전용)</td>
                                         <td className="py-3 px-4">문의</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-xs text-slate-500 mt-2">* 위 가격은 평균적인 시세이며, 업소 상황 및 이벤트에 따라 변동될 수 있습니다. 정확한 견적은 전화 문의 바랍니다. (광교 상권 기준)</p>
+                        <p className="text-xs text-slate-500 mt-2">* 위 가격은 평균적인 시세이며, 업소 상황 및 이벤트에 따라 변동될 수 있습니다. 정확한 견적은 전화 문의 바랍니다.</p>
 
                         <h3 className="text-xl font-bold text-white mt-8 mb-4">B. 광교 가라오케 운영 정책</h3>
                         <ul className="list-disc pl-5 space-y-2 marker:text-purple-500">
-                            <li><strong>영업 시간</strong>: 365일 연중무휴 (보통 저녁 6시 ~ 다음날 점심까지 운영) (광교 상권 기준)</li>
-                            <li><strong>노래 시간</strong>: 기본 2~3시간 제공, 뒤에 대기 손님이 없을 경우 서비스 시간 팍팍 드립니다. (광교 상권 기준)</li>
-                            <li><strong>매니저</strong>: 가라오케도 매니저 호출이 가능합니다. (TC 별도 문의) (광교 상권 기준)</li>
+                            <li><strong>영업 시간</strong>: 365일 연중무휴 (보통 저녁 6시 ~ 다음날 점심까지 운영)</li>
+                            <li><strong>노래 시간</strong>: 기본 2~3시간 제공, 뒤에 대기 손님이 없을 경우 서비스 시간 팍팍 드립니다.</li>
+                            <li><strong>매니저</strong>: 가라오케도 매니저 호출이 가능합니다. (TC 별도 문의)</li>
                         </ul>
                     </ContentBlock>
 
@@ -305,18 +305,18 @@ const Karaoke = () => {
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>생일 파티 혜택</strong>: 생일이신 고객님께는 샴페인 1병 서비스 또는 특별 안주 서비스를 제공해 드립니다. 예약 시 꼭 말씀해 주세요! (광교 상권 기준)</span>
+                                    <span><strong>생일 파티 혜택</strong>: 생일이신 고객님께는 샴페인 1병 서비스 또는 특별 안주 서비스를 제공해 드립니다. 예약 시 꼭 말씀해 주세요!</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>단체 회식</strong>: 10인 이상 대형 룸도 완비되어 있습니다. 단체 방문 시 픽업 서비스 차량 2대 배차 등 편의를 제공합니다. (광교 상권 기준)</span>
+                                    <span><strong>단체 회식</strong>: 10인 이상 대형 룸도 완비되어 있습니다. 단체 방문 시 픽업 서비스 차량 2대 배차 등 편의를 제공합니다.</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-purple-900/10 p-8 rounded-2xl border border-purple-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-purple-500" /> 자주 묻는 질문 (FAQ) (광교 상권 기준)
+                                <HelpCircle className="text-purple-500" /> 자주 묻는 질문 (FAQ)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (

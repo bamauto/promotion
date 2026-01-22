@@ -87,6 +87,17 @@ export const REGIONS = {
     hyperpubSlug: 'highpub',
     pricePrefix: 'entertainment-',
   },
+  suji: {
+    id: 'suji',
+    name: '수지',
+    nameEn: 'Suji',
+    domain: 'sujikaraoke.com',
+    keyword: '가라오케',
+    description: '수지 가라오케 하이퍼블릭 정보',
+    urlPrefix: 'suji',
+    hyperpubSlug: 'highpub',
+    pricePrefix: 'entertainment-',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;

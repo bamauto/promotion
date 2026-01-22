@@ -244,8 +244,8 @@ const Home = () => {
 
                 <div className="relative flex overflow-hidden">
                     <div className="flex animate-infinite-scroll whitespace-nowrap group hover:[animation-play-state:paused]">
-                        {/* Double the images for seamless loop */}
-                        {[1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7].map((num, idx) => (
+                        {/* Double the images for seamless loop - casual 6, cosplay 1, kimono 1, shirt 2 */}
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num, idx) => (
                             <div key={idx} className="inline-block px-4">
                                 <div className="w-[300px] h-[450px] md:w-[400px] md:h-[600px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group/card">
                                     <img

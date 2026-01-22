@@ -19,16 +19,15 @@ const SchemaJsonLd = ({ data }) => {
 export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "정자 하이퍼블릭 서우실장",
-    "image": "https://www.jengjakaraoke.com/og-image.jpg",
+    "name": "정자 하이퍼블릭·가라오케 서우실장",
+    "image": "https://jengjakaraoke.com/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://www.jengjakaraoke.com/",
+    "url": "https://jengjakaraoke.com/",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "정자동",
+        "streetAddress": "정자 카페거리 인근",
         "addressLocality": "Seongnam-si",
         "addressRegion": "Gyeonggi-do",
-        "postalCode": "16517",
         "addressCountry": "KR"
     },
     "geo": {
@@ -52,11 +51,12 @@ export const generateLocalBusinessSchema = () => ({
     ],
     "priceRange": "$$",
     "areaServed": [
-        { "@type": "City", "name": "정자" },
-        { "@type": "Place", "name": "정자역" },
-        { "@type": "Place", "name": "정자동" },
-        { "@type": "City", "name": "분당" },
-        { "@type": "City", "name": "판교" }
+        { "@type": "City", "name": "Bundang-gu" },
+        { "@type": "Place", "name": "Jeongja Station" },
+        { "@type": "Place", "name": "Jeongja Cafe Street" },
+        { "@type": "Place", "name": "Pangyo Techno Valley" },
+        { "@type": "Place", "name": "Migeum Station" },
+        { "@type": "Place", "name": "Seohyeon Station" }
     ]
 });
 
@@ -67,8 +67,8 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "정자 하이퍼블릭 서우실장",
-        "image": "https://www.jengjakaraoke.com/og-image.jpg",
+        "name": "정자 하이퍼블릭·가라오케 서우실장",
+        "image": "https://jengjakaraoke.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -80,7 +80,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "offers": {
         "@type": "Offer",
         "priceCurrency": "KRW",
-        "price": offerPrice || "130000",
+        "price": offerPrice || "180000",
         "availability": "https://schema.org/InStock"
     }
 });
@@ -112,12 +112,12 @@ export const generateBreadcrumbSchema = (items) => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "서우실장 정자 하이퍼블릭",
+    "name": "서우실장 정자 하이퍼블릭·가라오케",
     "alternateName": "정자 서우실장",
-    "url": "https://www.jengjakaraoke.com",
-    "logo": "https://www.jengjakaraoke.com/logo.png",
-    "image": "https://www.jengjakaraoke.com/og-home.jpg",
-    "description": "정자 최고급 하이퍼블릭, 가라오케, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
+    "url": "https://jengjakaraoke.com",
+    "logo": "https://jengjakaraoke.com/logo.png",
+    "image": "https://jengjakaraoke.com/og-home.jpg",
+    "description": "정자 하이퍼블릭·가라오케·룸살롱 프리미엄 가이드. 정자역·판교테크노밸리 중심 상권 맞춤 안내, 24시간 예약.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [
         "https://t.me/pbsewoo",
@@ -138,10 +138,9 @@ export const generateOrganizationSchema = () => ({
     },
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "정자동",
+        "streetAddress": "정자 카페거리 인근",
         "addressLocality": "성남시",
         "addressRegion": "경기도",
-        "postalCode": "16517",
         "addressCountry": "KR"
     }
 });

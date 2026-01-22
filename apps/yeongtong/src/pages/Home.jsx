@@ -30,12 +30,12 @@ const Home = () => {
     const [activeVenue, setActiveVenue] = React.useState(0);
 
     const venues = [
-        { id: 'yeongtong-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '트렌디한 분위기와 감각적인 서비스' },
-        { id: 'yeongtong-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '최신 음향 시설과 프라이빗 룸' },
-        { id: 'yeongtong-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '색다른 컨셉의 이색적인 경험' },
-        { id: 'yeongtong-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '매혹적인 일본 전통 의상 테마' },
-        { id: 'yeongtong-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '성공적인 비즈니스를 위한 격조 높은 공간' },
-        { id: 'yeongtong-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '여성 고객을 위한 품격있는 서비스' }
+        { id: 'yeongtong-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '영통역 중심 프라이빗 라운지' },
+        { id: 'yeongtong-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '망포역 파티/모임 룸' },
+        { id: 'yeongtong-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '삼성디지털시티 빠른 초이스' },
+        { id: 'yeongtong-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '매탄동 상권 테마 포인트' },
+        { id: 'yeongtong-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '영통역 비즈니스 라인' },
+        { id: 'yeongtong-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '망포역 여성전용 라운지' }
     ];
 
     const scrollToSection = (id) => {
@@ -55,21 +55,21 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>영통 유흥·가라오케·하이퍼블릭 | 서우실장</title>
-                <meta name="description" content="영통역·영통동 프리미엄 가라오케·하이퍼블릭·셔츠룸·룸살롱 완벽 가이드. 서우실장이 추천하는 맞춤형 유흥 컨설팅. 100% 정찰제, 24시간 예약. ☎ 010-2626-4833" />
-                <meta name="keywords" content="영통역 하이퍼블릭, 영통역 가라오케, 영통역 유흥, 영통 프라이빗 펍, 영통 가라오케 비교, 영통 라운지 가이드, 영통동 펍, 수원 라운지, 광교 바, 영통 유흥 문화, 영통 술집 추천, 펍 선택 가이드, 가라오케 이용법, 라운지 에티켓, 영통 밤문화" />
-                <meta property="og:title" content="영통 유흥·가라오케·하이퍼블릭 | 서우실장" />
-                <meta property="og:description" content="영통 지역 유흥문화 종합 가이드 | 지역별·용도별 선택 기준 | 초보자 이용 팁" />
+                <title>영통 가라오케·하이퍼블릭 예약 | 영통역·망포역 서우실장</title>
+                <meta name="description" content="영통 가라오케·영통 하이퍼블릭 메인 가이드. 영통역·망포역 중심 상권에서 삼성디지털시티 직장인 맞춤 코스를 안내합니다. 영통 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <meta name="keywords" content="영통 가라오케, 영통 하이퍼블릭, 영통 셔츠룸, 영통 호빠, 영통 기모노룸, 영통 룸살롱, 영통역 가라오케, 망포역 하이퍼블릭" />
+                <meta property="og:title" content="영통 가라오케·하이퍼블릭 예약 | 영통역·망포역 서우실장" />
+                <meta property="og:description" content="영통 가라오케·영통 하이퍼블릭 메인 가이드. 영통역·망포역 중심 상권에서 삼성디지털시티 직장인 맞춤 코스를 안내합니다. 영통 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
                 <meta property="og:image" content="https://yeongtongkaraoke.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content="영통 유흥 문화 종합 가이드" />
+                <meta property="og:image:alt" content="영통 하이퍼블릭·가라오케 메인 가이드" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="og:site_name" content="영통 유흥 가이드" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="영통 유흥 완벽 가이드 | 프라이빗 펍·가라오케" />
-                <meta property="twitter:description" content="지역별·용도별 선택 가이드 | 초보자 이용 팁 | 에티켓 안내" />
+                <meta property="twitter:title" content="영통 가라오케·하이퍼블릭 예약 | 영통역·망포역 서우실장" />
+                <meta property="twitter:description" content="영통 가라오케·영통 하이퍼블릭 메인 가이드. 영통역·망포역 중심 상권에서 삼성디지털시티 직장인 맞춤 코스를 안내합니다. 영통 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
                 <meta property="twitter:image" content="https://yeongtongkaraoke.com/og-home.jpg" />
                 <link rel="canonical" href="https://yeongtongkaraoke.com" />
             </Helmet>
@@ -89,10 +89,7 @@ const Home = () => {
                             영통 가라오케 & 하이퍼블릭<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">서우실장 추천 가이드</span>
                         </h1>
-                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                            하이퍼블릭, 가라오케, 쩜오, 셔츠룸, 호빠.<br className="md:hidden" /> 단순한 장소 추천이 아닌<br />
-                            <strong className="text-white font-medium">당신만을 위한 맞춤형 밤 문화 설계</strong>를 제안합니다.
-                        </p>
+                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">영통 가라오케·영통 하이퍼블릭 중심으로 영통역·망포역 라인을 소개합니다.<br />셔츠룸·호빠·기모노룸·룸살롱까지 목적별로 매칭해 드립니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 문의 부탁드립니다.</p>
                         <div className="flex flex-col sm:flex-row gap-5 justify-center">
                             <button
                                 onClick={() => window.location.href = 'tel:01026264833'}
@@ -100,7 +97,7 @@ const Home = () => {
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
                                 <span className="relative flex items-center justify-center gap-2">
-                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기
+                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기 (영통 상권 기준)
                                 </span>
                             </button>
                             <Link
@@ -122,11 +119,11 @@ const Home = () => {
             {/* Features */}
             <section id="features" className="py-24 bg-slate-950 container mx-auto px-4 relative">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
-                <SectionTitle title="왜 전문 컨설팅인가?" subtitle="차별화된 가치" />
+                <SectionTitle title="왜 전문 컨설팅인가?" subtitle="차별화된 가치" /> (영통 상권 기준)
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <FeatureItem icon={ShieldCheck} title="투명한 가격 구조" desc="사전에 명확한 비용 안내로 예상치 못한 추가금을 방지합니다." delay={0} />
-                    <FeatureItem icon={Users} title="취향 기반 매칭" desc="고객 성향과 니즈를 분석하여 최적의 파트너를 연결해 드립니다." delay={100} />
-                    <FeatureItem icon={Crown} title="15년 업계 경험" desc="오랜 경험과 네트워크를 바탕으로 신뢰할 수 있는 정보를 제공합니다." delay={200} />
+                    <FeatureItem icon={ShieldCheck} title="투명한 가격 구조" desc="사전에 명확한 비용 안내로 예상치 못한 추가금을 방지합니다." delay={0} /> (영통 상권 기준)
+                    <FeatureItem icon={Users} title="취향 기반 매칭" desc="고객 성향과 니즈를 분석하여 최적의 파트너를 연결해 드립니다." delay={100} /> (영통 상권 기준)
+                    <FeatureItem icon={Crown} title="15년 업계 경험" desc="오랜 경험과 네트워크를 바탕으로 신뢰할 수 있는 정보를 제공합니다." delay={200} /> (영통 상권 기준)
                     <FeatureItem icon={Car} title="편리한 이동 지원" desc="영통 전 지역 이동 편의를 위한 픽업 서비스를 운영합니다." delay={300} />
                 </div>
             </section>
@@ -134,16 +131,16 @@ const Home = () => {
             {/* New Interactive Gallery Section */}
             <section className="py-24 bg-slate-950 overflow-hidden">
                 <div className="container mx-auto px-4 mb-16 text-center">
-                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">프리미엄 파트너 라인업</span>
+                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">프리미엄 파트너 라인업 (영통 상권 기준)</span>
                     <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight break-keep">
                         다양한 스타일의 <br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">매력적인 파트너</span> 상시 대기
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">매력적인 파트너</span> 상시 대기 (영통 상권 기준)
                     </h2>
                     <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed break-keep">
                         영통 지역 최고 수준의 네트워크를 바탕으로<br />
-                        다양한 스타일의 파트너를 보유하고 있습니다.<br className="hidden md:block" /><br />
+                        다양한 스타일의 파트너를 보유하고 있습니다.<br className="hidden md:block" /><br /> (영통 상권 기준)
                         고객님의 취향과 성향을 세심하게 파악하여<br />
-                        <strong className="text-white">최적의 파트너십을 경험하실 수 있도록</strong><br className="md:hidden" /> 맞춤형 매칭을 제공합니다.
+                        <strong className="text-white">최적의 파트너십을 경험하실 수 있도록</strong><br className="md:hidden" /> 맞춤형 매칭을 제공합니다. (영통 상권 기준)
                     </p>
                     <div className="w-24 h-1 bg-amber-500 mx-auto mt-10"></div>
                 </div>
@@ -154,14 +151,14 @@ const Home = () => {
                         {[
                             { src: '/partner/partner-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
                             { src: '/partner/partner-02.webp', alt: '영통 하이퍼블릭 최고급 매니저 - 영통동 서우실장 추천' },
-                            { src: '/partner/partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원 영통 서우실장' },
+                            { src: '/partner/partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 영통역 프리미엄' },
                             { src: '/partner/partner-04.webp', alt: '영통 하이퍼블릭 프리미엄 파트너 - 영통역 서우실장' },
                             { src: '/partner/partner-05.webp', alt: '영통 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
                             { src: '/partner/partner-06.webp', alt: '영통 하이퍼블릭 엄선 매니저 - 영통 서우실장' },
                             { src: '/partner/partner-07.webp', alt: '영통 가라오케 TOP 매니저 - 영통동 서우실장 추천' },
                             { src: '/partner/partner-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 서우실장 엄선 파트너' },
                             { src: '/partner/partner-02.webp', alt: '영통 하이퍼블릭 최고급 매니저 - 영통동 서우실장 추천' },
-                            { src: '/partner/partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원 영통 서우실장' },
+                            { src: '/partner/partner-03.webp', alt: '영통 가라오케 VIP 매니저 - 망포역 인근' },
                             { src: '/partner/partner-04.webp', alt: '영통 하이퍼블릭 프리미엄 파트너 - 영통역 서우실장' },
                             { src: '/partner/partner-05.webp', alt: '영통 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
                             { src: '/partner/partner-06.webp', alt: '영통 하이퍼블릭 엄선 매니저 - 영통 서우실장' },
@@ -195,26 +192,26 @@ const Home = () => {
                 <div className="absolute inset-0 bg-slate-950/90"></div>
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16 relative z-10">
                     <div className="md:w-1/2 order-2 md:order-1">
-                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 방문 가이드</span>
+                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 방문 가이드 (영통 상권 기준)</span>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                             혼자 방문해도<br />편안합니다
                         </h3>
                         <div className="space-y-6 text-slate-300 text-lg font-light leading-relaxed">
                             <p>
-                                최근 <strong className="text-white">1인 방문 고객이 40% 이상</strong>을 차지합니다.<br />
+                                최근 <strong className="text-white">1인 방문 고객이 40% 이상</strong>을 차지합니다.<br /> (영통 상권 기준)
                                 혼자 오시는 분들도 어색하지 않도록 1:1 맞춤형 세팅과<br />
                                 프라이빗한 환경을 제공해 드립니다.
                             </p>
                             <p>
                                 조용히 대화를 나누고 싶은 날, 화끈하게 놀고 싶은 날,<br />
                                 원하시는 분위기만 말씀해 주세요. 고객님의 성향을 파악하여<br />
-                                가장 어울리는 파트너와 <strong className="text-amber-500">최적의 시간</strong>을 설계해 드립니다.
+                                가장 어울리는 파트너와 <strong className="text-amber-500">최적의 시간</strong>을 설계해 드립니다. (영통 상권 기준)
                             </p>
                         </div>
 
                         <div className="mt-10 grid grid-cols-2 gap-4">
                             {[
-                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천"
+                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천" (영통 상권 기준)
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-center gap-3 text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
                                     <CheckCircle size={18} className="text-amber-500 flex-shrink-0" />
@@ -230,8 +227,8 @@ const Home = () => {
                                 <div className="absolute inset-0 bg-[url('/private_room_bg_v2.jpg')] bg-cover bg-[center_20%] opacity-90"></div>
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-0 p-8">
-                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸</h3>
-                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿</p>
+                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸 (영통 상권 기준)</h3>
+                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿 (영통 상권 기준)</p>
                                 </div>
                             </div>
                         </div>
@@ -260,18 +257,18 @@ const Home = () => {
                             </p>
                         </article>
 
-                        {/* 분당선 접근성 */}
+                        {/* 영통역 접근성 */}
                         <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
                                     <MapPin className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">분당선 영통역 도보권</h3>
+                                <h3 className="text-xl font-bold text-white">영통역 도보권</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">분당선 영통역</strong>에서 도보 5분 거리에
+                                <strong className="text-amber-400">영통역</strong>에서 도보 5분 거리에
                                 유흥 상권이 형성되어 있습니다.
-                                수원역·분당·광교까지 <strong className="text-white">환승 없이 직통</strong>으로
+                                영통역·망포역까지 <strong className="text-white">환승 없이 직통</strong>으로
                                 광역 고객층의 접근이 편리합니다.
                             </p>
                         </article>
@@ -300,7 +297,7 @@ const Home = () => {
                                 <h3 className="text-xl font-bold text-white">합리적 가격의 프리미엄</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                분당·강남 대비 <strong className="text-amber-400">20~30% 저렴</strong>한 가격에
+                                상권 기준 합리적인 구성으로
                                 동급 서비스를 제공합니다.
                                 <strong className="text-white">100% 정찰제</strong>로 운영되어
                                 가격 부담 없이 프리미엄을 경험하세요.
@@ -371,7 +368,7 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="text-amber-400 font-bold tracking-wider uppercase text-sm mb-2 block">24 Hours Service</span>
-                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의</h2>
+                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의 (영통 상권 기준)</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -382,7 +379,7 @@ const Home = () => {
                                     <Phone size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold text-lg">전화 문의</h3>
+                                    <h3 className="text-white font-bold text-lg">전화 문의 (영통 상권 기준)</h3>
                                     <p className="text-slate-400 text-sm">010-2626-4833</p>
                                 </div>
                             </div>

@@ -71,7 +71,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-blue-600 text-white hover:text-white py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">가격 & 예약 문의</span>
+                <span className="tracking-widest text-sm">가격 & 예약 문의 (안양 상권 기준)</span>
             </button>
         </div>
     </article>
@@ -83,64 +83,64 @@ const venues = {
             id: 's-1',
             name: '안양 셔츠룸 A점',
             type: 'Original Shirts',
-            location: '인덕원·만안구 인근 1번 출구',
-            price: '룸티 30,000원 ~',
-            desc: '정통 셔츠룸의 강자. "셔츠는 핏이다"라는 슬로건 아래 체계적인 사이즈 관리와 스타일링 서비스를 제공합니다. 안양 최대 규모로 언제 가도 대기 없이 즐기실 수 있습니다.',
-            features: ['전원 화이트 셔츠', '20대 초중반', '안양 최대 규모', '주차 100%'],
+            location: '범계역 인근',
+            price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
+            desc: '범계역 인근 클래식 셔츠룸. 깔끔한 응대와 흐트러짐 없는 동선.',
+            features: ['클래식 무드', '빠른 세팅', '범계역 접근', '기본에 충실'],
             img: '/anyang-karaoke-2.webp',
-            imgAlt: '안양 셔츠룸 A점 프리미엄 룸'
+            imgAlt: '안양 셔츠룸 범계역 추천',
         },
         {
             id: 's-2',
             name: '안양 셔츠룸 B점',
             type: 'Model Line',
-            location: '평촌 신도시 로데오거리',
-            price: '룸티 40,000원 ~',
-            desc: '모델 출신 매니저들로 구성된 프리미엄 라인. 170cm 이상의 늘씬한 비주얼 군단이 압도적인 퍼포먼스와 서비스를 선사합니다.',
-            features: ['평균 신장 168cm', '모델 출신', '런웨이 쇼', '예약 필수'],
+            location: '평촌역 인근',
+            price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
+            desc: '평촌역 중심 모던 셔츠룸. 정돈된 인테리어와 빠른 초이스.',
+            features: ['모던 인테리어', '초이스 중심', '평촌역 중심', '경쾌한 분위기'],
             img: '/anyang-highpublic-1.webp',
-            imgAlt: '안양 셔츠룸 B점 모델 라인업'
+            imgAlt: '안양 셔츠룸 평촌역 추천',
         },
         {
             id: 's-3',
             name: '안양 셔츠룸 C점',
             type: 'Business Casual',
-            location: '평촌동·범계동 인근',
-            price: '룸티 35,000원 ~',
-            desc: '안양 직장인을 위한 비즈니스 최적화 룸. 깔끔하고 쾌적한 인테리어에서 편안하게 접대하거나 회식을 즐길 수 있습니다.',
-            features: ['조용한 분위기', '비즈니스 접대', '단체석 완비', '법카 환영'],
+            location: '인덕원역 인근',
+            price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
+            desc: '인덕원역 주변 프라이빗 타입. 대화 중심으로 차분하게 즐기는 코스.',
+            features: ['프라이빗 룸', '대화 중심', '인덕원역 인근', '차분한 코스'],
             img: '/anyang-nightlife-2.webp',
-            imgAlt: '안양 셔츠룸 C점 비즈니스 룸'
+            imgAlt: '안양 셔츠룸 인덕원역 추천',
         },
         {
             id: 's-4',
             name: '안양 셔츠룸 D점',
             type: 'Hard Core',
-            location: '평촌역·범계역 인근 중심상가',
-            price: '문의 필요',
-            desc: '화끈한 분위기를 원하시는 분들을 위한 곳. 셔츠룸의 기본을 넘어서는 과감한 터치와 마인드로 잊지 못할 밤을 만들어 드립니다.',
-            features: ['수위 보장', '무제한 터치', '하드코어', '풀살롱 시스템'],
+            location: '안양역·안양1번가 인근',
+            price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
+            desc: '안양역·안양1번가 근처 캐주얼 라인. 가볍게 시작하고 싶은 분께 추천.',
+            features: ['캐주얼 라인', '유연한 타임', '안양역·안양1번가 근처', '가벼운 시작'],
             img: '/anyang-hostbar-2.webp',
-            imgAlt: '안양 셔츠룸 D점 하드코어 룸'
+            imgAlt: '안양 셔츠룸 안양역·안양1번가 추천',
         }
     ]
 };
 
 const ShirtsRoom = () => {
     const faqList = [
-        {
-            question: "셔츠룸과 하이퍼블릭의 차이는?",
-            answer: "하이퍼블릭은 외모 퀄리티가 조금 더 높고, 셔츠룸은 수위와 마인드(터치 등)가 훨씬 높습니다. 노는 분위기를 원하시면 셔츠룸이 좋습니다."
-        },
-        {
-            question: "복장은 셔츠만 입나요?",
-            answer: "네, 기본적으로 흰색 와이셔츠만 착용하는 '하의실종' 컨셉입니다. 이것이 셔츠룸만의 시그니처입니다."
-        },
-        {
-            question: "1인 방문도 가능한가요?",
-            answer: "네, 혼자 오셔서 편안하게 즐기시는 분들도 많습니다. 어색하지 않게 케어해 드립니다."
-        }
-    ];
+    {
+        question: "안양 셔츠룸 1인 방문도 가능한가요?",
+        answer: "네, 가능합니다. 안양 상권은 평촌·범계 직장인 이용이 많아 정돈된 응대로 1:1 시작도 부담 없이 안내합니다."
+    },
+    {
+        question: "안양 셔츠룸 픽업은 어디까지 지원되나요?",
+        answer: "픽업은 범계역, 평촌역, 인덕원역, 안양역·안양1번가 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+    },
+    {
+        question: "안양 셔츠룸 주대/TC 기준이 궁금해요.",
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (안양 상권 기준)"
+    }
+];
 
     const sections = [
         { id: "definition", title: "1. 셔츠룸이란?" },
@@ -151,9 +151,9 @@ const ShirtsRoom = () => {
 
     const serviceSchema = generateServiceSchema(
         "Shirts Room Club",
-        "안양 셔츠룸 가격 및 시스템 안내. 비즈니스 접대에 최적화된 화이트 셔츠 컨셉.",
+        "안양 셔츠룸 예약 안내. 평촌역·안양역·안양1번가 중심, 주대 18만원 이상/TC 10만원 이상.",
         "https://anyangkaraoke.com/anyang-shirtsroom-guide",
-        "130000"
+        "180000"
     );
 
     const faqSchema = generateFAQSchema(faqList);
@@ -161,19 +161,19 @@ const ShirtsRoom = () => {
     return (
         <>
             <Helmet>
-                <title>안양 셔츠룸·화이트셔츠 완벽가이드 | 비즈니스·회식 BEST 4곳</title>
-                <meta name="description" content="안양 셔츠룸 초보자가이드. 화이트셔츠 컨셉·이색감성·높은수위. 평촌역·범계역·평촌 신도시·평촌동·범계동 4개업소 추천. 안양 전문직 직장인 비즈니스접대·화끈한회식·친구모임 맞춤. 투명한정찰제 | 24시간 ☎ 010-2626-4833" />
-                <meta name="keywords" content="안양 셔츠룸, 안양 셔츠룸 가격, 안양 화이트셔츠, 안양 비즈니스 셔츠룸, 평촌역·범계역 셔츠룸, 평촌 신도시 셔츠룸, 평촌동·범계동 셔츠룸, 안양 젊은층 셔츠룸, 안양 모델급 셔츠룸" />
-                <meta property="og:title" content="안양 셔츠룸·화이트셔츠 완벽가이드 | 서우실장" />
-                <meta property="og:description" content="화이트셔츠 컨셉·이색감성. 전문직·직장인 비즈니스접대·회식 맞춤. 투명한정찰제" />
+                <title>안양 셔츠룸 예약 | 평촌역·안양역·안양1번가 추천</title>
+                <meta name="description" content="안양 셔츠룸 가이드. 평촌역·안양역·안양1번가 중심 정돈된 분위기, 프라이빗 룸 안내. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta name="keywords" content="안양 셔츠룸, 안양 셔츠룸 예약, 안양 셔츠룸 가격, 안양 하이퍼블릭" />
+                <meta property="og:title" content="안양 셔츠룸 예약 | 평촌역·안양역·안양1번가 추천" />
+                <meta property="og:description" content="안양 셔츠룸 가이드. 평촌역·안양역·안양1번가 중심 정돈된 분위기, 프라이빗 룸 안내. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
                 <meta property="og:image" content="https://anyangkaraoke.com/og-shirtsroom.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="안양 셔츠룸 | NO.1 서우실장" />
-                <meta property="twitter:description" content="화이트셔츠 이색 컨셉 | 프라이빗 룸 | 24시간 예약" />
+                <meta property="twitter:title" content="안양 셔츠룸 예약 | 평촌역·안양역·안양1번가 추천" />
+                <meta property="twitter:description" content="안양 셔츠룸 가이드. 평촌역·안양역·안양1번가 중심 정돈된 분위기, 프라이빗 룸 안내. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
                 <meta property="twitter:image" content="https://anyangkaraoke.com/og-shirtsroom.jpg" />
                 <link rel="canonical" href="https://anyangkaraoke.com/anyang-shirtsroom-guide" />
             </Helmet>
@@ -185,11 +185,7 @@ const ShirtsRoom = () => {
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
-                        <p className="text-xl text-slate-300 leading-relaxed font-light">
-                            남자의 로망, <strong className="text-white">화이트 셔츠</strong>.<br />
-                            섹시함과 청순함이 공존하는 안양 셔츠룸에서<br />
-                            지친 하루의 비즈니스 스트레스를 완벽하게 해소하세요.
-                        </p>
+                        <p className="text-xl text-slate-300 leading-relaxed font-light">안양 셔츠룸은 평촌역·안양역·안양1번가 중심 라인업으로 구성됩니다.<br />정돈된 분위기와 빠른 초이스를 선호하시는 분께 적합합니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 견적은 문의 부탁드립니다.</p>
                     </div>
 
                     <TableOfContents sections={sections} />
@@ -197,8 +193,8 @@ const ShirtsRoom = () => {
                     {/* 1. Definition & Concept */}
                     <ContentBlock id="definition" title="1. 안양 셔츠룸의 트렌드">
                         <p>
-                            셔츠룸은 일반적인 룸싸롱의 홀복 대신, <strong>흰색 와이셔츠</strong>만을 입은 매니저들이 서빙하는 컨셉 룸입니다.
-                            초이스 후 룸 안에서 셔츠로 환복하는 퍼포먼스(인사 타임)가 시그니처이며, 핏된 셔츠 라인이 주는 시각적인 즐거움이 특징입니다.
+                            셔츠룸은 일반적인 룸싸롱의 홀복 대신, <strong>흰색 와이셔츠</strong>만을 입은 매니저들이 서빙하는 컨셉 룸입니다. (안양 상권 기준)
+                            초이스 후 룸 안에서 셔츠로 환복하는 퍼포먼스(인사 타임)가 시그니처이며, 핏된 셔츠 라인이 주는 시각적인 즐거움이 특징입니다. (안양 상권 기준)
                         </p>
                         <p>
                             <strong className="text-blue-400">안양 셔츠룸 특이점</strong>: 최근 <strong className="text-white">여성 고객 40% 증가</strong> 추세!
@@ -254,13 +250,13 @@ const ShirtsRoom = () => {
                     </div>
 
                     {/* 3. System & Pricing */}
-                    <ContentBlock id="system" title="3. 이용 시스템 및 가격 안내">
+                    <ContentBlock id="system" title="3. 이용 시스템 및 가격 안내 (안양 상권 기준)">
                         <p>
                             셔츠룸의 가장 큰 장점은 **'투명한 정찰제 가격'**입니다.
-                            강남권보다 저렴하면서도 서비스 퀄리티는 유지하여 가성비를 중요시하는 분들께 인기가 많습니다.
+                            강남권보다 저렴하면서도 서비스 퀄리티는 유지하여 가성비를 중요시하는 분들께 인기가 많습니다. (안양 상권 기준)
                         </p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 주대 및 TC (예상)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 주대 및 TC (예상) (안양 상권 기준)</h4>
                         <div className="overflow-x-auto">
                             <table className="w-full text-left border-collapse mt-2">
                                 <thead>
@@ -272,29 +268,29 @@ const ShirtsRoom = () => {
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">기본 주대</td>
-                                        <td className="py-3 px-4">130,000원 ~ 160,000원</td>
-                                        <td className="py-3 px-4">12년산 양주 + 과일/마른안주 + 음료</td>
+                                        <td className="py-3 px-4 font-bold text-white">기본 주대 (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">주대 18만원 이상 (안양 상권 기준) (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">12년산 양주 + 과일/마른안주 + 음료 (안양 상권 기준)</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">매니저 TC</td>
-                                        <td className="py-3 px-4">130,000원 (1시간 ~ 80분)</td>
-                                        <td className="py-3 px-4">업소 및 시간 타임별 상이</td>
+                                        <td className="py-3 px-4 font-bold text-white">매니저 TC (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">TC 10만원 이상 (안양 상권 기준) (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">업소 및 시간 타임별 상이 (안양 상권 기준)</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">룸 티 (RT)</td>
-                                        <td className="py-3 px-4">30,000원 ~ 50,000원</td>
-                                        <td className="py-3 px-4">룸 이용료 및 웨이터 봉사료 포함</td>
+                                        <td className="py-3 px-4 font-bold text-white">룸 티 (RT) (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">현장 안내 (안양 상권 기준) (안양 상권 기준)</td>
+                                        <td className="py-3 px-4">룸 이용료 및 웨이터 봉사료 포함 (안양 상권 기준)</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 진행 순서</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 진행 순서 (안양 상권 기준)</h4>
                         <ol className="list-decimal pl-5 space-y-2 marker:text-blue-500">
-                            <li><strong>초이스</strong>: 미러 초이스 또는 룸 초이스로 파트너를 선택합니다.</li>
-                            <li><strong>인사 (Greeting)</strong>: 파트너가 룸에 입장하여 셔츠로 환복하며 인사 시간을 갖습니다. (셔츠룸의 하이라이트)</li>
-                            <li><strong>음주가무</strong>: 파트너 옆에 착석하여 1시간~1시간 30분 동안 즐거운 술자리를 갖습니다. 터치 마인드가 매우 오픈되어 있습니다.</li>
+                            <li><strong>초이스</strong>: 미러 초이스 또는 룸 초이스로 파트너를 선택합니다. (안양 상권 기준)</li>
+                            <li><strong>인사 (Greeting)</strong>: 파트너가 룸에 입장하여 셔츠로 환복하며 인사 시간을 갖습니다. (셔츠룸의 하이라이트) (안양 상권 기준)</li>
+                            <li><strong>음주가무</strong>: 파트너 옆에 착석하여 1시간~1시간 30분 동안 즐거운 술자리를 갖습니다. 터치 마인드가 매우 오픈되어 있습니다. (안양 상권 기준)</li>
                         </ol>
                     </ContentBlock>
 
@@ -307,18 +303,18 @@ const ShirtsRoom = () => {
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-blue-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>이른 시간 방문</strong>: 저녁 7시~9시 사이에 방문하시면 '주대 할인 이벤트'가 적용되는 경우가 많습니다. 가성비를 노리신다면 일찍 오세요!</span>
+                                    <span><strong>이른 시간 방문</strong>: 저녁 7시~9시 사이에 방문하시면 '주대 할인 이벤트'가 적용되는 경우가 많습니다. 가성비를 노리신다면 일찍 오세요! (안양 상권 기준)</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-blue-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>비즈니스 접대</strong>: 미리 "중요한 손님이다"라고 언질만 주시면, 에이스급 매니저들을 최우선으로 배정하여 분위기를 확실하게 띄워드립니다.</span>
+                                    <span><strong>비즈니스 접대</strong>: 미리 "중요한 손님이다"라고 언질만 주시면, 에이스급 매니저들을 최우선으로 배정하여 분위기를 확실하게 띄워드립니다. (안양 상권 기준)</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-blue-900/10 p-8 rounded-2xl border border-blue-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-blue-500" /> 자주 묻는 질문 (FAQ)
+                                <HelpCircle className="text-blue-500" /> 자주 묻는 질문 (FAQ) (안양 상권 기준)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (
@@ -334,7 +330,7 @@ const ShirtsRoom = () => {
                     {/* CTA */}
                     <div className="bg-gradient-to-r from-blue-800 to-cyan-900 rounded-3xl p-10 text-center relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 relative z-10">성공 비즈니스의 확실한 파트너</h2>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 relative z-10">안양 비즈니스의 확실한 파트너</h2>
                         <p className="text-blue-100 mb-8 max-w-2xl mx-auto relative z-10">
                             접대 자리 때문에 고민하지 마세요.<br />
                             서우실장이 센스 있게 준비해 놓겠습니다.

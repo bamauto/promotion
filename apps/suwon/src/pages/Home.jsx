@@ -30,12 +30,12 @@ const Home = () => {
     const [activeVenue, setActiveVenue] = React.useState(0);
 
     const venues = [
-        { id: 'suwon-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '트렌디한 분위기와 감각적인 서비스' },
-        { id: 'suwon-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '최신 음향 시설과 프라이빗 룸' },
-        { id: 'suwon-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '색다른 컨셉의 이색적인 경험' },
-        { id: 'suwon-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '매혹적인 일본 전통 의상 테마' },
-        { id: 'suwon-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '성공적인 비즈니스를 위한 격조 높은 공간' },
-        { id: 'suwon-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '여성 고객을 위한 품격있는 서비스' }
+        { id: 'suwon-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '수원역 중심 프라이빗 라운지' },
+        { id: 'suwon-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '수원시청역 파티/모임 룸' },
+        { id: 'suwon-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '팔달문 빠른 초이스' },
+        { id: 'suwon-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '행궁동 테마 포인트' },
+        { id: 'suwon-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '수원역 비즈니스 라인' },
+        { id: 'suwon-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '수원시청역 여성전용 라운지' }
     ];
 
     const scrollToSection = (id) => {
@@ -55,23 +55,23 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>수원 유흥 완벽 가이드 | 하이퍼블릭·가라오케·쩜오·셔츠룸 비교분석</title>
-                <meta name="description" content="수원 프라이빗 펍·가라오케·라운지 종합 비교 가이드 | 인계동·영통·광교 지역별 특징 분석 | 용도별·예산별 선택 기준 제시 | 초보자를 위한 이용 가이드 및 에티켓" />
-                <meta name="keywords" content="수원 프라이빗 펍, 수원 가라오케 비교, 수원 라운지 가이드, 인계동 펍, 영통 라운지, 광교 바, 수원 유흥 문화, 수원 술집 추천, 펍 선택 가이드, 가라오케 이용법, 라운지 에티켓, 수원 밤문화" />
-                <meta property="og:title" content="수원 유흥 완벽 가이드 | 프라이빗 펍·가라오케·라운지 비교" />
-                <meta property="og:description" content="수원 지역 유흥문화 종합 가이드 | 지역별·용도별 선택 기준 | 초보자 이용 팁" />
-                <meta property="og:image" content="https://www.suwon.vip/og-home.jpg" />
+                <title>수원 가라오케·하이퍼블릭 예약 | 수원역·수원시청역 서우실장</title>
+                <meta name="description" content="수원 가라오케·수원 하이퍼블릭 메인 가이드. 수원역·수원시청역 중심 상권에서 도심 비즈니스 방문객 맞춤 코스를 안내합니다. 수원 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <meta name="keywords" content="수원 가라오케, 수원 하이퍼블릭, 수원 셔츠룸, 수원 호빠, 수원 기모노룸, 수원 룸살롱, 수원역 가라오케, 수원시청역 하이퍼블릭" />
+                <meta property="og:title" content="수원 가라오케·하이퍼블릭 예약 | 수원역·수원시청역 서우실장" />
+                <meta property="og:description" content="수원 가라오케·수원 하이퍼블릭 메인 가이드. 수원역·수원시청역 중심 상권에서 도심 비즈니스 방문객 맞춤 코스를 안내합니다. 수원 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <meta property="og:image" content="https://suwon.vip/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content="수원 유흥 문화 종합 가이드" />
+                <meta property="og:image:alt" content="수원 하이퍼블릭·가라오케 메인 가이드" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="og:site_name" content="수원 유흥 가이드" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="수원 유흥 완벽 가이드 | 프라이빗 펍·가라오케" />
-                <meta property="twitter:description" content="지역별·용도별 선택 가이드 | 초보자 이용 팁 | 에티켓 안내" />
-                <meta property="twitter:image" content="https://www.suwon.vip/og-home.jpg" />
-                <link rel="canonical" href="https://www.suwon.vip" />
+                <meta property="twitter:title" content="수원 가라오케·하이퍼블릭 예약 | 수원역·수원시청역 서우실장" />
+                <meta property="twitter:description" content="수원 가라오케·수원 하이퍼블릭 메인 가이드. 수원역·수원시청역 중심 상권에서 도심 비즈니스 방문객 맞춤 코스를 안내합니다. 수원 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <meta property="twitter:image" content="https://suwon.vip/og-home.jpg" />
+                <link rel="canonical" href="https://suwon.vip" />
             </Helmet>
             <SchemaJsonLd data={[generateLocalBusinessSchema(), generateOrganizationSchema()]} />
 
@@ -86,13 +86,10 @@ const Home = () => {
                             <Crown size={12} fill="currentColor" /> 수원 유흥 컨설팅 전문
                         </span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight drop-shadow-2xl">
-                            수원 프라이빗 펍 & 라운지<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">경험을 디자인하다</span>
+                            수원 가라오케 & 하이퍼블릭<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">도시 감성을 담다</span>
                         </h1>
-                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                            하이퍼블릭, 가라오케, 쩜오, 셔츠룸, 호빠.<br className="md:hidden" /> 단순한 장소 추천이 아닌<br />
-                            <strong className="text-white font-medium">당신만을 위한 맞춤형 밤 문화 설계</strong>를 제안합니다.
-                        </p>
+                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">수원 가라오케·수원 하이퍼블릭 중심으로 수원역·수원시청역 라인을 소개합니다.<br />셔츠룸·호빠·기모노룸·룸살롱까지 목적별로 매칭해 드립니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 문의 부탁드립니다.</p>
                         <div className="flex flex-col sm:flex-row gap-5 justify-center">
                             <button
                                 onClick={() => window.location.href = 'tel:01026264833'}
@@ -100,7 +97,7 @@ const Home = () => {
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
                                 <span className="relative flex items-center justify-center gap-2">
-                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기
+                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기 (수원 상권 기준)
                                 </span>
                             </button>
                             <Link
@@ -122,11 +119,11 @@ const Home = () => {
             {/* Features */}
             <section id="features" className="py-24 bg-slate-950 container mx-auto px-4 relative">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
-                <SectionTitle title="왜 전문 컨설팅인가?" subtitle="차별화된 가치" />
+                <SectionTitle title="왜 전문 컨설팅인가?" subtitle="차별화된 가치" /> (수원 상권 기준)
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <FeatureItem icon={ShieldCheck} title="투명한 가격 구조" desc="사전에 명확한 비용 안내로 예상치 못한 추가금을 방지합니다." delay={0} />
-                    <FeatureItem icon={Users} title="취향 기반 매칭" desc="고객 성향과 니즈를 분석하여 최적의 파트너를 연결해 드립니다." delay={100} />
-                    <FeatureItem icon={Crown} title="15년 업계 경험" desc="오랜 경험과 네트워크를 바탕으로 신뢰할 수 있는 정보를 제공합니다." delay={200} />
+                    <FeatureItem icon={ShieldCheck} title="투명한 가격 구조" desc="사전에 명확한 비용 안내로 예상치 못한 추가금을 방지합니다." delay={0} /> (수원 상권 기준)
+                    <FeatureItem icon={Users} title="취향 기반 매칭" desc="고객 성향과 니즈를 분석하여 최적의 파트너를 연결해 드립니다." delay={100} /> (수원 상권 기준)
+                    <FeatureItem icon={Crown} title="15년 업계 경험" desc="오랜 경험과 네트워크를 바탕으로 신뢰할 수 있는 정보를 제공합니다." delay={200} /> (수원 상권 기준)
                     <FeatureItem icon={Car} title="편리한 이동 지원" desc="수원 전 지역 이동 편의를 위한 픽업 서비스를 운영합니다." delay={300} />
                 </div>
             </section>
@@ -134,16 +131,16 @@ const Home = () => {
             {/* New Interactive Gallery Section */}
             <section className="py-24 bg-slate-950 overflow-hidden">
                 <div className="container mx-auto px-4 mb-16 text-center">
-                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">프리미엄 파트너 라인업</span>
+                    <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">프리미엄 파트너 라인업 (수원 상권 기준)</span>
                     <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight break-keep">
                         다양한 스타일의 <br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">매력적인 파트너</span> 상시 대기
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">매력적인 파트너</span> 상시 대기 (수원 상권 기준)
                     </h2>
                     <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed break-keep">
                         수원 지역 최고 수준의 네트워크를 바탕으로<br />
-                        다양한 스타일의 파트너를 보유하고 있습니다.<br className="hidden md:block" /><br />
+                        다양한 스타일의 파트너를 보유하고 있습니다.<br className="hidden md:block" /><br /> (수원 상권 기준)
                         고객님의 취향과 성향을 세심하게 파악하여<br />
-                        <strong className="text-white">최적의 파트너십을 경험하실 수 있도록</strong><br className="md:hidden" /> 맞춤형 매칭을 제공합니다.
+                        <strong className="text-white">최적의 파트너십을 경험하실 수 있도록</strong><br className="md:hidden" /> 맞춤형 매칭을 제공합니다. (수원 상권 기준)
                     </p>
                     <div className="w-24 h-1 bg-amber-500 mx-auto mt-10"></div>
                 </div>
@@ -156,7 +153,7 @@ const Home = () => {
                                 <div className="w-[300px] h-[450px] md:w-[400px] md:h-[600px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group/card">
                                     <img
                                         src={`/seewoo_${num}.webp`}
-                                        alt={`수원 하이퍼블릭 프리미엄 매니저 - 인계동 서우실장 추천 ${num}번`}
+                                        alt={`수원 하이퍼블릭 프리미엄 매니저 - 수원시청역 추천 ${num}번`}
                                         title="수원 하이퍼블릭 최상급 매니저"
                                         loading="lazy"
                                         width="400"
@@ -180,26 +177,26 @@ const Home = () => {
                 <div className="absolute inset-0 bg-slate-950/90"></div>
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16 relative z-10">
                     <div className="md:w-1/2 order-2 md:order-1">
-                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 방문 가이드</span>
+                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 방문 가이드 (수원 상권 기준)</span>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                             혼자 방문해도<br />편안합니다
                         </h3>
                         <div className="space-y-6 text-slate-300 text-lg font-light leading-relaxed">
                             <p>
-                                최근 <strong className="text-white">1인 방문 고객이 40% 이상</strong>을 차지합니다.<br />
+                                최근 <strong className="text-white">1인 방문 고객이 40% 이상</strong>을 차지합니다.<br /> (수원 상권 기준)
                                 혼자 오시는 분들도 어색하지 않도록 1:1 맞춤형 세팅과<br />
                                 프라이빗한 환경을 제공해 드립니다.
                             </p>
                             <p>
                                 조용히 대화를 나누고 싶은 날, 화끈하게 놀고 싶은 날,<br />
                                 원하시는 분위기만 말씀해 주세요. 고객님의 성향을 파악하여<br />
-                                가장 어울리는 파트너와 <strong className="text-amber-500">최적의 시간</strong>을 설계해 드립니다.
+                                가장 어울리는 파트너와 <strong className="text-amber-500">최적의 시간</strong>을 설계해 드립니다. (수원 상권 기준)
                             </p>
                         </div>
 
                         <div className="mt-10 grid grid-cols-2 gap-4">
                             {[
-                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천"
+                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천" (수원 상권 기준)
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-center gap-3 text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
                                     <CheckCircle size={18} className="text-amber-500 flex-shrink-0" />
@@ -215,8 +212,8 @@ const Home = () => {
                                 <div className="absolute inset-0 bg-[url('/private_room_bg_v2.jpg')] bg-cover bg-[center_20%] opacity-90"></div>
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-0 p-8">
-                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸</h3>
-                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿</p>
+                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸 (수원 상권 기준)</h3>
+                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿 (수원 상권 기준)</p>
                                 </div>
                             </div>
                         </div>
@@ -239,8 +236,8 @@ const Home = () => {
                                 <h3 className="text-xl font-bold text-white">경기남부 130만 중심도시</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                인구 <strong className="text-amber-400">130만 경기남부 최대 도시</strong> 수원은
-                                인계동·영통·광교 등 다양한 유흥 상권이 발달해 있습니다.
+                                경기남부 중심도시 수원은
+                                <strong className="text-amber-400">수원역·수원시청역·팔달문</strong> 일대 상권이 촘촘하게 발달해 있습니다.
                                 <strong className="text-white">취향과 예산에 맞는 선택지</strong>가 풍부합니다.
                             </p>
                         </article>
@@ -254,9 +251,9 @@ const Home = () => {
                                 <h3 className="text-xl font-bold text-white">수원역 5개 노선 환승</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">1호선·분당선·수인선·KTX·GTX-C</strong> 5개 노선이 만나는
-                                수원역은 경기남부 최대 교통 허브입니다.
-                                <strong className="text-white">안양·평택·용인</strong>에서도 쉽게 접근 가능합니다.
+                                <strong className="text-amber-400">광역 노선</strong>이 만나는
+                                수원역은 경기남부 대표 교통 허브입니다.
+                                광역 이동이 편해 <strong className="text-white">야간 동선 설계</strong>가 수월합니다.
                             </p>
                         </article>
 
@@ -269,9 +266,9 @@ const Home = () => {
                                 <h3 className="text-xl font-bold text-white">삼성전자 배후도시</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                삼성전자 <strong className="text-amber-400">수원·화성·평택 캠퍼스</strong> 10만 임직원의
-                                배후 도시로서 고소득 직장인 수요가 집중됩니다.
-                                <strong className="text-white">법인카드 접대 문화</strong>가 발달한 프리미엄 시장입니다.
+                                <strong className="text-amber-400">삼성디지털시티</strong> 등 대형 사업장이 있어
+                                고소득 직장인 수요가 집중됩니다.
+                                <strong className="text-white">조용한 비즈니스 접대</strong>에 맞춘 프리미엄 시장이 형성되어 있습니다.
                             </p>
                         </article>
 
@@ -284,7 +281,7 @@ const Home = () => {
                                 <h3 className="text-xl font-bold text-white">예산별 맞춤 추천</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">인계동 가성비</strong>부터 <strong className="text-amber-400">광교 프리미엄</strong>까지
+                                <strong className="text-amber-400">수원역 실속형</strong>부터 <strong className="text-amber-400">수원시청역 프리미엄</strong>까지
                                 예산과 취향에 맞는 다양한 선택지를 제안합니다.
                                 서우실장이 <strong className="text-white">최적의 장소</strong>를 매칭해 드립니다.
                             </p>
@@ -354,7 +351,7 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="text-amber-400 font-bold tracking-wider uppercase text-sm mb-2 block">24 Hours Service</span>
-                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의</h2>
+                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의 (수원 상권 기준)</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -365,7 +362,7 @@ const Home = () => {
                                     <Phone size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold text-lg">전화 문의</h3>
+                                    <h3 className="text-white font-bold text-lg">전화 문의 (수원 상권 기준)</h3>
                                     <p className="text-slate-400 text-sm">010-2626-4833</p>
                                 </div>
                             </div>

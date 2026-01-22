@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.ingedongkaraoke.com/"
+            "item": "https://ingedongkaraoke.com/"
         }
     ];
 
@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": index + 2,
             "name": routeName,
-            "item": `https://www.ingedongkaraoke.com${routeTo}`
+            "item": `https://ingedongkaraoke.com${routeTo}`
         });
     });
 

@@ -19,16 +19,15 @@ const SchemaJsonLd = ({ data }) => {
 export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "동탄 가라오케 서우실장",
-    "image": "https://www.dongtankaraoke.net/og-image.jpg",
+    "name": "동탄 하이퍼블릭·가라오케 서우실장",
+    "image": "https://dongtankaraoke.net/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://www.dongtankaraoke.net/",
+    "url": "https://dongtankaraoke.net/",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "동탄대로",
+        "streetAddress": "동탄역 일대",
         "addressLocality": "Hwaseong-si",
         "addressRegion": "Gyeonggi-do",
-        "postalCode": "18454",
         "addressCountry": "KR"
     },
     "geo": {
@@ -53,10 +52,11 @@ export const generateLocalBusinessSchema = () => ({
     "priceRange": "$$",
     "areaServed": [
         { "@type": "City", "name": "Dongtan" },
-        { "@type": "City", "name": "Dongtan2" },
-        { "@type": "City", "name": "Bansong-dong" },
-        { "@type": "City", "name": "Yeongcheon-dong" },
-        { "@type": "City", "name": "Neungdong" }
+        { "@type": "Place", "name": "Dongtan Station" },
+        { "@type": "Place", "name": "Dongtan Lake Park" },
+        { "@type": "Place", "name": "Bansong-dong" },
+        { "@type": "Place", "name": "Yeongcheon-dong" },
+        { "@type": "Place", "name": "Metapolis" }
     ]
 });
 
@@ -67,8 +67,8 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "동탄 가라오케 서우실장",
-        "image": "https://www.dongtankaraoke.net/og-image.jpg",
+        "name": "동탄 하이퍼블릭·가라오케 서우실장",
+        "image": "https://dongtankaraoke.net/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -80,7 +80,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "offers": {
         "@type": "Offer",
         "priceCurrency": "KRW",
-        "price": offerPrice || "130000",
+        "price": offerPrice || "180000",
         "availability": "https://schema.org/InStock"
     }
 });
@@ -112,12 +112,12 @@ export const generateBreadcrumbSchema = (items) => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "서우실장 동탄 가라오케",
+    "name": "서우실장 동탄 하이퍼블릭·가라오케",
     "alternateName": "동탄 서우실장",
-    "url": "https://www.dongtankaraoke.net",
-    "logo": "https://www.dongtankaraoke.net/logo.png",
-    "image": "https://www.dongtankaraoke.net/og-home.jpg",
-    "description": "동탄 최고급 가라오케, 하이퍼블릭, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
+    "url": "https://dongtankaraoke.net",
+    "logo": "https://dongtankaraoke.net/logo.png",
+    "image": "https://dongtankaraoke.net/og-home.jpg",
+    "description": "동탄 하이퍼블릭·가라오케·룸살롱 프리미엄 가이드. 동탄역·호수공원 중심 상권 맞춤 안내, 24시간 예약.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [
         "https://t.me/pbsewoo",
@@ -138,10 +138,9 @@ export const generateOrganizationSchema = () => ({
     },
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "동탄대로",
+        "streetAddress": "동탄역 일대",
         "addressLocality": "화성시",
         "addressRegion": "경기도",
-        "postalCode": "18454",
         "addressCountry": "KR"
     }
 });

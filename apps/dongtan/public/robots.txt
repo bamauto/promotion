@@ -6,8 +6,8 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.dongtankaraoke.net/sitemap.xml
-Sitemap: https://www.dongtankaraoke.net/sitemap-blog.xml
+Sitemap: https://dongtankaraoke.net/sitemap.xml
+Sitemap: https://dongtankaraoke.net/sitemap-blog.xml
 
 # Disallow sensitive paths (none currently)
 # Disallow: /api/

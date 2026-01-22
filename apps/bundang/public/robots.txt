@@ -6,8 +6,8 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.bundanghipublic.com/sitemap.xml
-Sitemap: https://www.bundanghipublic.com/sitemap-blog.xml
+Sitemap: https://bundanghipublic.com/sitemap.xml
+Sitemap: https://bundanghipublic.com/sitemap-blog.xml
 
 # Disallow sensitive paths (none currently)
 # Disallow: /api/

@@ -30,12 +30,12 @@ const Home = () => {
     const [activeVenue, setActiveVenue] = React.useState(0);
 
     const venues = [
-        { id: 'anyang-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '트렌디한 분위기와 감각적인 서비스' },
-        { id: 'anyang-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '최신 음향 시설과 프라이빗 룸' },
-        { id: 'anyang-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '색다른 컨셉의 이색적인 경험' },
-        { id: 'anyang-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '매혹적인 일본 전통 의상 테마' },
-        { id: 'anyang-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '성공적인 비즈니스를 위한 격조 높은 공간' },
-        { id: 'anyang-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '여성 고객을 위한 품격있는 서비스' }
+        { id: 'anyang-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '범계역 중심 프라이빗 라운지' },
+        { id: 'anyang-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '평촌역 파티/모임 룸' },
+        { id: 'anyang-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '인덕원역 빠른 초이스' },
+        { id: 'anyang-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '안양역·안양1번가 테마 포인트' },
+        { id: 'anyang-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '범계역 비즈니스 라인' },
+        { id: 'anyang-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '평촌역 여성전용 라운지' }
     ];
 
     const scrollToSection = (id) => {
@@ -55,21 +55,21 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>안양 가라오케·하이퍼블릭·호빠 완벽 가이드 | 평촌·범계·인덕원 BEST 7 유흥</title>
-                <meta name="description" content="안양 1기 신도시 직장인·가족 맞춤 유흥가이드. 평촌역·범계역·인덕원역 4호선 최강 접근성, 로데오거리·평촌학원가 인근 프리미엄 서비스. 100% 정찰제 | 24시간 픽업 ☎ 010-2626-4833" />
-                <meta name="keywords" content="안양 가라오케, 안양 하이퍼블릭, 안양 룸살롱, 평촌 가라오케, 범계 하이퍼블릭, 인덕원 유흥, 동안구 룸살롱, 안양 호빠, 안양 셔츠룸, 안양 직장인 회식, 평촌역 가라오케, 범계역 하이퍼블릭, 만안구 유흥, 안양역 가라오케" />
-                <meta property="og:title" content="안양 가라오케·하이퍼블릭·호빠 완벽 가이드 | 서우실장" />
-                <meta property="og:description" content="안양 1기 신도시 직장인·가족 맞춤 유흥. 4호선 평촌·범계·인덕원역 접근성, 로데오거리 프리미엄 업소. 100% 정찰제 | 24시간 픽업" />
+                <title>안양 가라오케·하이퍼블릭 예약 | 범계역·평촌역 서우실장</title>
+                <meta name="description" content="안양 가라오케·안양 하이퍼블릭 메인 가이드. 범계역·평촌역 중심 상권에서 평촌·범계 직장인 맞춤 코스를 안내합니다. 안양 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <meta name="keywords" content="안양 가라오케, 안양 하이퍼블릭, 안양 셔츠룸, 안양 호빠, 안양 기모노룸, 안양 룸살롱, 범계역 가라오케, 평촌역 하이퍼블릭" />
+                <meta property="og:title" content="안양 가라오케·하이퍼블릭 예약 | 범계역·평촌역 서우실장" />
+                <meta property="og:description" content="안양 가라오케·안양 하이퍼블릭 메인 가이드. 범계역·평촌역 중심 상권에서 평촌·범계 직장인 맞춤 코스를 안내합니다. 안양 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
                 <meta property="og:image" content="https://anyangkaraoke.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content="안양 가라오케 서우실장 - 프리미엄 유흥 가이드" />
+                <meta property="og:image:alt" content="안양 하이퍼블릭·가라오케 메인 가이드" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="og:site_name" content="안양 서우실장" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="안양 가라오케 하이퍼블릭 | NO.1 서우실장" />
-                <meta property="twitter:description" content="100% 정찰제 | 평촌·범계·인덕원 전지역 픽업 | 24시간 예약" />
+                <meta property="twitter:title" content="안양 가라오케·하이퍼블릭 예약 | 범계역·평촌역 서우실장" />
+                <meta property="twitter:description" content="안양 가라오케·안양 하이퍼블릭 메인 가이드. 범계역·평촌역 중심 상권에서 평촌·범계 직장인 맞춤 코스를 안내합니다. 안양 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
                 <meta property="twitter:image" content="https://anyangkaraoke.com/og-home.jpg" />
                 <link rel="canonical" href="https://anyangkaraoke.com" />
             </Helmet>
@@ -84,16 +84,13 @@ const Home = () => {
                 <div className="relative z-10 container mx-auto px-4 text-center mt-10">
                     <div className="animate-fade-in-up">
                         <span className="inline-flex items-center gap-2 border border-amber-500/30 bg-amber-900/10 backdrop-blur-md text-amber-400 px-6 py-2 rounded-full text-xs font-bold tracking-[0.2em] mb-8 uppercase hover:bg-amber-900/20 transition-colors cursor-default">
-                            <Crown size={12} fill="currentColor" /> 프리미엄 하이퍼블릭 서비스
+                            <Crown size={12} fill="currentColor" /> 프리미엄 하이퍼블릭 서비스 (안양 상권 기준)
                         </span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight drop-shadow-2xl">
                             안양 가라오케 & 하이퍼블릭<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">서우실장 추천 가이드</span>
                         </h1>
-                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                            하이퍼블릭, 가라오케, 셔츠룸, 기모노룸, 호빠.<br className="md:hidden" /> 당신의 품격에 걸맞은<br />
-                            <strong className="text-white font-medium">최상위 라인업과 프라이빗 서비스</strong>를 약속합니다.
-                        </p>
+                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">안양 가라오케·안양 하이퍼블릭 중심으로 범계역·평촌역 라인을 소개합니다.<br />셔츠룸·호빠·기모노룸·룸살롱까지 목적별로 매칭해 드립니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 문의 부탁드립니다.</p>
                         <div className="flex flex-col sm:flex-row gap-5 justify-center">
                             <button
                                 onClick={() => window.location.href = 'tel:01026264833'}
@@ -101,7 +98,7 @@ const Home = () => {
                             >
                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
                                 <span className="relative flex items-center justify-center gap-2">
-                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기
+                                    <Phone size={20} className="group-hover:animate-bounce" /> VIP 예약하기 (안양 상권 기준)
                                 </span>
                             </button>
                             <Link
@@ -144,10 +141,10 @@ const Home = () => {
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
                                     <Crown className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">1기 신도시 프리미엄</h3>
+                                <h3 className="text-xl font-bold text-white">1기 신도시 프리미엄 (안양 상권 기준)</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">평촌 신도시</strong>는 분당·일산과 함께 대한민국 1기 신도시의 상징입니다.
+                                <strong className="text-amber-400">평촌 신도시</strong>는 대한민국 1기 신도시를 대표하는 생활권입니다.
                                 고소득 전문직·자영업자 중심의 안정적인 거주 인구와
                                 <strong className="text-white"> 높은 교육열</strong>로 유명한 지역입니다.
                                 성숙한 문화와 합리적인 소비 성향이 특징입니다.
@@ -192,7 +189,7 @@ const Home = () => {
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
                                     <Star className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">여성 친화적 호빠 문화</h3>
+                                <h3 className="text-xl font-bold text-white">여성 친화적 호빠 문화 (안양 상권 기준)</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
                                 안양의 <strong className="text-amber-400">20~40대 여성층</strong>은
@@ -214,7 +211,7 @@ const Home = () => {
                             </div>
                             <div className="text-center p-4 bg-slate-900/50 rounded-xl">
                                 <div className="text-amber-500 font-bold mb-2">범계역</div>
-                                <div className="text-slate-400 text-sm">로데오거리<br/>젊은층·트렌디</div>
+                                <div className="text-slate-400 text-sm">로데오거리<br/>젊은층·트렌디 (안양 상권 기준)</div>
                             </div>
                             <div className="text-center p-4 bg-slate-900/50 rounded-xl">
                                 <div className="text-amber-500 font-bold mb-2">인덕원역</div>
@@ -235,13 +232,13 @@ const Home = () => {
                     <span className="text-amber-500 font-bold tracking-[0.3em] uppercase mb-4 block animate-pulse">서우실장 프리미엄 컬렉션</span>
                     <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-tight break-keep">
                         전국 1% <br className="md:hidden" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">수질 아가씨</span> 항시 대기
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">수질 아가씨</span> 항시 대기 (안양 상권 기준)
                     </h2>
                     <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed break-keep">
                         전국 유흥 업계 최대 규모의 인프라를 바탕으로<br />
-                        가장 많은 아가씨를 보유하고 있습니다.<br className="hidden md:block" /><br />
+                        가장 많은 아가씨를 보유하고 있습니다.<br className="hidden md:block" /><br /> (안양 상권 기준)
                         고객님 한 분 한 분의 스타일과 취향을 분석하여<br />
-                        <strong className="text-white">100% 만족하실 수 있도록</strong><br className="md:hidden" /> 완벽하게 매칭해 드립니다.
+                        <strong className="text-white">100% 만족하실 수 있도록</strong><br className="md:hidden" /> 완벽하게 매칭해 드립니다. (안양 상권 기준)
                     </p>
                     <div className="w-24 h-1 bg-amber-500 mx-auto mt-10"></div>
                 </div>
@@ -278,26 +275,26 @@ const Home = () => {
                 <div className="absolute inset-0 bg-slate-950/90"></div>
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16 relative z-10">
                     <div className="md:w-1/2 order-2 md:order-1">
-                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 고객 맞춤 케어</span>
+                        <span className="text-amber-500 font-bold tracking-widest uppercase mb-2 block">1인 고객 맞춤 케어 (안양 상권 기준)</span>
                         <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
                             혼자여서<br />망설이시나요?
                         </h3>
                         <div className="space-y-6 text-slate-300 text-lg font-light leading-relaxed">
                             <p>
-                                오직 한 분만을 위한 <strong className="text-white">특별한 VIP 케어</strong>가 준비되어 있습니다.<br />
+                                오직 한 분만을 위한 <strong className="text-white">특별한 VIP 케어</strong>가 준비되어 있습니다.<br /> (안양 상권 기준)
                                 서우 실장은 혼자 오시는 고객님이 어색함 없이 최고의 시간을<br />
                                 보내실 수 있도록 더욱 세심하고 은밀하게 밀착 케어해 드립니다.
                             </p>
                             <p>
                                 단 둘만의 프라이빗하고 오붓한 시간부터 화끈한 파티 분위기까지,<br />
                                 원하시는 스타일만 말씀해 주세요. 격이 다른 서비스와 세팅을 통해<br />
-                                귀하의 소중한 밤을 <strong className="text-amber-500">완벽하게 디자인</strong>해 드리겠습니다.
+                                귀하의 소중한 밤을 <strong className="text-amber-500">완벽하게 디자인</strong>해 드리겠습니다. (안양 상권 기준)
                             </p>
                         </div>
 
                         <div className="mt-10 grid grid-cols-2 gap-4">
                             {[
-                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천"
+                                "1인 방문 절대 환영", "24시간 항시 대기", "프라이빗 룸 완비", "맞춤형 파트너 추천" (안양 상권 기준)
                             ].map((item, idx) => (
                                 <div key={idx} className="flex items-center gap-3 text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
                                     <CheckCircle size={18} className="text-amber-500 flex-shrink-0" />
@@ -313,8 +310,8 @@ const Home = () => {
                                 <div className="absolute inset-0 bg-[url('/private_room_bg_v2.jpg')] bg-cover bg-[center_20%] opacity-90"></div>
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                                 <div className="absolute bottom-0 p-8">
-                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸</h3>
-                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿</p>
+                                    <h3 className="text-3xl font-bold text-white">프라이빗 룸 (안양 상권 기준)</h3>
+                                    <p className="text-amber-500 font-bold tracking-widest uppercase text-sm">럭셔리 & 시크릿 (안양 상권 기준)</p>
                                 </div>
                             </div>
                         </div>
@@ -383,7 +380,7 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <span className="text-amber-400 font-bold tracking-wider uppercase text-sm mb-2 block">24 Hours Service</span>
-                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의</h2>
+                        <h2 className="text-3xl font-bold text-white">실시간 예약 문의 (안양 상권 기준)</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -394,7 +391,7 @@ const Home = () => {
                                     <Phone size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold text-lg">전화 문의</h3>
+                                    <h3 className="text-white font-bold text-lg">전화 문의 (안양 상권 기준)</h3>
                                     <p className="text-slate-400 text-sm">010-2626-4833</p>
                                 </div>
                             </div>

@@ -19,16 +19,15 @@ const SchemaJsonLd = ({ data }) => {
 export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "영통 하이퍼블릭 서우실장",
+    "name": "영통 하이퍼블릭·가라오케 서우실장",
     "image": "https://yeongtongkaraoke.com/og-image.jpg",
     "telephone": "010-2626-4833",
     "url": "https://yeongtongkaraoke.com/",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "영통동",
+        "streetAddress": "영통역 일대",
         "addressLocality": "Suwon-si",
         "addressRegion": "Gyeonggi-do",
-        "postalCode": "16499",
         "addressCountry": "KR"
     },
     "geo": {
@@ -54,9 +53,10 @@ export const generateLocalBusinessSchema = () => ({
     "areaServed": [
         { "@type": "City", "name": "영통" },
         { "@type": "Place", "name": "영통역" },
-        { "@type": "Place", "name": "영통동" },
-        { "@type": "City", "name": "수원" },
-        { "@type": "City", "name": "광교" }
+        { "@type": "Place", "name": "망포역" },
+        { "@type": "Place", "name": "삼성디지털시티" },
+        { "@type": "Place", "name": "매탄동" },
+        { "@type": "City", "name": "수원" }
     ],
     "aggregateRating": {
         "@type": "AggregateRating",
@@ -74,7 +74,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "영통 하이퍼블릭 서우실장",
+        "name": "영통 하이퍼블릭·가라오케 서우실장",
         "image": "https://yeongtongkaraoke.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
@@ -127,12 +127,12 @@ export const generateBreadcrumbSchema = (items) => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "서우실장 영통 하이퍼블릭",
+    "name": "서우실장 영통 하이퍼블릭·가라오케",
     "alternateName": "영통 서우실장",
     "url": "https://yeongtongkaraoke.com",
     "logo": "https://yeongtongkaraoke.com/logo.png",
     "image": "https://yeongtongkaraoke.com/og-home.jpg",
-    "description": "영통 최고급 하이퍼블릭, 가라오케, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
+    "description": "영통 하이퍼블릭·가라오케·룸살롱 프리미엄 가이드. 영통역·망포역·삼성디지털시티 중심 상권 맞춤 안내, 24시간 예약.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [
         "https://t.me/pbsewoo",
@@ -153,10 +153,9 @@ export const generateOrganizationSchema = () => ({
     },
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "영통동",
+        "streetAddress": "영통역 일대",
         "addressLocality": "수원시",
         "addressRegion": "경기도",
-        "postalCode": "16499",
         "addressCountry": "KR"
     }
 });

@@ -72,7 +72,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-purple-600 text-white hover:text-white py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">실시간 예약 문의</span>
+                <span className="tracking-widest text-sm">실시간 예약 문의 (영통 상권 기준)</span>
             </button>
         </div>
     </article>
@@ -87,55 +87,55 @@ const venues = {
             id: 'k-1',
             name: '영통 프리미엄 가라오케',
             type: 'Mega Party Room',
-            location: '영통 수원역 5번 출구',
-            price: '기본가 180,000원 ~',
-            desc: '수원역의 랜드마크. 최대 30명 수용 가능한 대형 파티룸을 완비하여 피로연이나 동호회 모임에 제격입니다. 최신 사이키 조명과 클럽 사운드 시스템으로 열광적인 분위기를 연출합니다.',
-            features: ['30인 대형룸', '클럽 조명', 'DJ 섭외 가능', '24시간 운영'],
+            location: '영통역 인근',
+            price: '주대 18만원 이상 / TC 10만원 이상 (예약 문의)',
+            desc: '영통역에서 접근 좋은 파티형 가라오케. 삼성디지털시티 직장인 회식/모임에 맞춘 대형 룸.',
+            features: ['대형 룸', '음향 특화', '영통역 접근', '회식 추천'],
             img: venueImg1,
-            imgAlt: '영통 프리미엄 가라오케 인테리어'
+            imgAlt: '영통 가라오케 영통역 추천',
         },
         {
             id: 'k-2',
             name: '영통동 럭셔리 가라오케',
             type: 'Luxury Lounge',
-            location: '영통 영통동 카페거리',
-            price: '기본가 200,000원 ~',
-            desc: '고급스러운 라운지 바 분위기의 가라오케. 조용한 대화와 품격 있는 음주가무를 원하시는 분들께 추천합니다. 호텔 출신 셰프의 고품격 안주를 즐기실 수 있습니다.',
-            features: ['호텔급 인테리어', '고급 안주', '발렛 파킹', '프라이빗'],
+            location: '망포역 인근',
+            price: '주대 18만원 이상 / TC 10만원 이상 (예약 문의)',
+            desc: '망포역 라운지 톤 가라오케. 음향 퀄리티와 조용한 대화 모두 만족.',
+            features: ['라운지 무드', '고급 사운드', '망포역 중심', '프라이빗'],
             img: venueImg2,
-            imgAlt: '영통동 럭셔리 가라오케 인테리어'
+            imgAlt: '영통 가라오케 망포역 추천',
         }
     ]
 };
 
 const Karaoke = () => {
     const faqList = [
-        {
-            question: "영통 가라오케의 음향 시설 수준은 어느 정도인가요?",
-            answer: "대부분 월간 신곡 업데이트 시스템을 갖추고 있습니다. 다만 업소마다 음향 기술자 배치 빈도가 다르니, 예약 시 점검 주기를 확인하는 것이 좋습니다. 고급형(15만 이상)은 월 2회 이상, 중급형은 월 1회 정도 점검이 일반적입니다."
-        },
-        {
-            question: "외부 음료 반입 규정은 어떻게 되나요?",
-            answer: "업소마다 정책이 다릅니다. 주류는 대부분 반입 불가이며, 고가 와인은 콜키지 비용(5~10만원)을 지불하면 반입 가능한 곳도 있습니다. 생일 케이크 등 음식은 일반적으로 허용됩니다. 정확한 규정은 사전에 확인하세요."
-        },
-        {
-            question: "여성 그룹이나 혼성 그룹도 이용 가능한가요?",
-            answer: "물론입니다. 생일파티, 동창 모임 등으로 2030 여성 그룹이나 혼성 그룹도 많이 이용합니다. 안전하고 편안한 분위기의 업소를 선택하면 됩니다. 예약 시 그룹 구성을 말씀해 주시면 적합한 곳을 추천받을 수 있습니다."
-        }
-    ];
+    {
+        question: "영통 가라오케 1인 방문도 가능한가요?",
+        answer: "네, 가능합니다. 영통 상권은 삼성디지털시티 직장인 이용이 많아 실용적인 응대로 1:1 시작도 부담 없이 안내합니다."
+    },
+    {
+        question: "영통 가라오케 픽업은 어디까지 지원되나요?",
+        answer: "픽업은 영통역, 망포역, 삼성디지털시티, 매탄동 상권 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+    },
+    {
+        question: "영통 가라오케 주대/TC 기준이 궁금해요.",
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (영통 상권 기준)"
+    }
+];
 
     const sections = [
         { id: "features", title: "1. 영통 가라오케 특징" },
-        { id: "recommendation", title: "2. 추천 업소 TOP 6" },
+        { id: "recommendation", title: "2. 추천 업소 TOP 6" }, (영통 상권 기준)
         { id: "pricing", title: "3. 이용 가격 및 시스템" },
         { id: "faq", title: "4. 이용 꿀팁 및 FAQ" }
     ];
 
     const serviceSchema = generateServiceSchema(
         "Karaoke",
-        "영통 가라오케 추천 및 가격표. 최신 음향 시설과 대형 룸 완비.",
+        "영통 가라오케 예약 안내. 영통역·삼성디지털시티 중심 파티룸, 주대 18만원 이상/TC 10만원 이상.",
         "https://yeongtongkaraoke.com/yeongtong-karaoke-guide",
-        "100000"
+        "180000"
     );
 
     const faqSchema = generateFAQSchema(faqList);
@@ -143,20 +143,20 @@ const Karaoke = () => {
     return (
         <>
             <Helmet>
-                <title>영통 가라오케 가이드 | 용도별 선택·가격비교</title>
-                <meta name="description" content="영통역·영통동 프리미엄 가라오케 장소 추천 TOP 6 | 회식·생일파티·소규모 데이트·대형 단체 행사별 선택 기준 | 음향 시설·분위기·가격대 비교분석 | 초보자를 위한 기본 예절 및 팁" />
-                <meta name="keywords" content="영통역 가라오케, 영통역 노래방, 영통역 파티룸, 영통 가라오케 비교, 가라오케 선택 가이드, 영통동 노래방, 수원 파티룸, 영통 단체 회식, 가라오케 문화, 노래방 에티켓, 음향시설 비교, 룸 크기별 추천, 생일파티 장소, 가성비 가라오케" />
-                <meta property="og:title" content="영통역 가라오케 선택 가이드 | 용도별 추천" />
-                <meta property="og:description" content="회식·생일파티·데이트별 선택 기준 | 음향·분위기·가격 비교 | 초보자 가이드" />
+                <title>영통 가라오케 예약 | 영통역·삼성디지털시티 추천</title>
+                <meta name="description" content="영통 가라오케 추천 가이드. 영통역·삼성디지털시티 중심 파티/모임 룸, 삼성디지털시티 직장인 회식 맞춤. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta name="keywords" content="영통 가라오케, 영통 가라오케 예약, 영통 가라오케 가격, 영통 하이퍼블릭" />
+                <meta property="og:title" content="영통 가라오케 예약 | 영통역·삼성디지털시티 추천" />
+                <meta property="og:description" content="영통 가라오케 추천 가이드. 영통역·삼성디지털시티 중심 파티/모임 룸, 삼성디지털시티 직장인 회식 맞춤. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
                 <meta property="og:image" content="https://yeongtongkaraoke.com/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content="영통 가라오케 장소 선택 가이드" />
+                <meta property="og:image:alt" content="영통 가라오케 추천 가이드" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="영통 가라오케 선택 가이드" />
-                <meta property="twitter:description" content="용도별·분위기별 추천 | 음향 비교 | 에티켓 안내" />
+                <meta property="twitter:title" content="영통 가라오케 예약 | 영통역·삼성디지털시티 추천" />
+                <meta property="twitter:description" content="영통 가라오케 추천 가이드. 영통역·삼성디지털시티 중심 파티/모임 룸, 삼성디지털시티 직장인 회식 맞춤. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
                 <meta property="twitter:image" content="https://yeongtongkaraoke.com/og-karaoke.jpg" />
                 <link rel="canonical" href="https://yeongtongkaraoke.com/yeongtong-karaoke-guide" />
             </Helmet>
@@ -168,11 +168,7 @@ const Karaoke = () => {
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
-                        <p className="text-xl text-slate-300 leading-relaxed font-light">
-                            회식, 생일파티, 데이트, 친구 모임... <strong className="text-purple-400">목적에 맞는</strong> 가라오케 선택이 중요합니다.<br />
-                            음향 시설, 룸 크기, 분위기, 가격대까지 꼼꼼하게 비교하여<br />
-                            <strong className="text-white">최적의 장소</strong>를 찾을 수 있도록 도와드립니다.
-                        </p>
+                        <p className="text-xl text-slate-300 leading-relaxed font-light">영통 가라오케는 영통역·삼성디지털시티 중심 파티룸 위주 구성입니다.<br />회식/모임에 맞춘 음향 세팅과 유연한 룸 타입을 안내합니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 견적은 문의 부탁드립니다.</p>
                     </div>
 
                     <TableOfContents sections={sections} />
@@ -186,9 +182,9 @@ const Karaoke = () => {
                             <div>
                                 <h2 className="text-xl font-bold text-white mb-3">영통 가라오케 가격은?</h2>
                                 <p className="text-slate-300 leading-relaxed">
-                                    <strong className="text-white">영통 가라오케</strong>는 양주 SET 기준 <strong className="text-purple-400">18만원~35만원</strong> 수준입니다.
-                                    12년산 양주 SET(18만원~), 17년산 SET(25만원~), VIP SET(35만원~)으로 구성됩니다.
-                                    룸 크기와 이용 시간에 따라 추가 비용이 발생할 수 있으며, 100% 정찰제로 운영됩니다.
+                                    <strong className="text-white">영통 가라오케</strong>는 주대 18만원 이상, TC 10만원 이상 기준으로 안내합니다.
+                                    룸 구성과 이용 시간에 따라 변동될 수 있으며, 삼성디지털시티·영통역 라인 기준으로 상세 견적을 안내드립니다.
+                                    자세한 내용은 서우실장에게 문의해 주세요.
                                 </p>
                             </div>
                         </div>
@@ -198,26 +194,26 @@ const Karaoke = () => {
                     <ContentBlock id="features" title="1. 영통 가라오케의 특징">
                         <p>
                             영통 가라오케는 단순한 노래방을 넘어선 <strong>'토탈 엔터테인먼트 공간'</strong>을 지향합니다. 강남의 고급 가라오케 시스템을 그대로 도입하여,
-                            웨이터의 격식 있는 서빙과 호텔 셰프 수준의 고급 안주, 그리고 무엇보다 <strong>콘서트장을 방불케 하는 하이엔드 음향 시설</strong>을 갖추고 있습니다.
+                            웨이터의 격식 있는 서빙과 호텔 셰프 수준의 고급 안주, 그리고 무엇보다 <strong>콘서트장을 방불케 하는 하이엔드 음향 시설</strong>을 갖추고 있습니다. (영통 상권 기준)
                         </p>
                         <p>
-                            비즈니스 접대로도 손색없는 고급스러운 인테리어 룸부터, 2030 세대를 위한 힙한 감성의 파티룸까지 다양한 컨셉의 룸을 보유하고 있어 방문 목적에 맞게 선택하실 수 있습니다.
+                            비즈니스 접대로도 손색없는 고급스러운 인테리어 룸부터, 2030 세대를 위한 힙한 감성의 파티룸까지 다양한 컨셉의 룸을 보유하고 있어 방문 목적에 맞게 선택하실 수 있습니다. (영통 상권 기준)
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
                                 <Mic2 className="w-6 h-6 text-purple-500 mx-auto mb-2" />
                                 <span className="block text-white font-bold mb-1">High-End Sound</span>
-                                <span className="text-xs text-slate-400">최고급 음향 시스템</span>
+                                <span className="text-xs text-slate-400">최고급 음향 시스템 (영통 상권 기준)</span>
                             </div>
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
                                 <Users className="w-6 h-6 text-purple-500 mx-auto mb-2" />
                                 <span className="block text-white font-bold mb-1">Party & Biz</span>
-                                <span className="text-xs text-slate-400">모임 목적별 맞춤 룸</span>
+                                <span className="text-xs text-slate-400">모임 목적별 맞춤 룸 (영통 상권 기준)</span>
                             </div>
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
                                 <GlassWater className="w-6 h-6 text-purple-500 mx-auto mb-2" />
                                 <span className="block text-white font-bold mb-1">Premium F&B</span>
-                                <span className="text-xs text-slate-400">호텔급 안주 & 주류</span>
+                                <span className="text-xs text-slate-400">호텔급 안주 & 주류 (영통 상권 기준)</span>
                             </div>
                         </div>
                     </ContentBlock>
@@ -241,7 +237,7 @@ const Karaoke = () => {
                                 {[
                                     { src: '/partner/kr-gallery-01.webp', alt: '영통 가라오케 프리미엄 매니저 - 영통역 VIP 서비스' },
                                     { src: '/partner/kr-gallery-02.webp', alt: '영통 가라오케 최고급 파트너 - 영통동 럭셔리 룸' },
-                                    { src: '/partner/kr-gallery-03.webp', alt: '영통 가라오케 VIP 매니저 - 수원시 프리미엄' },
+                                    { src: '/partner/kr-gallery-03.webp', alt: '영통 가라오케 VIP 매니저 - 영통구 프리미엄' },
                                     { src: '/partner/kr-gallery-04.webp', alt: '영통 가라오케 프리미엄 서비스 - 망포역 24시간' },
                                 ].map((img, idx) => (
                                     <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group">
@@ -261,48 +257,48 @@ const Karaoke = () => {
                     </div>
 
                     {/* 3. Pricing & System */}
-                    <ContentBlock id="pricing" title="3. 이용 가격 및 시스템 안내">
+                    <ContentBlock id="pricing" title="3. 이용 가격 및 시스템 안내 (영통 상권 기준)">
                         <p>
                             영통 가라오케는 투명한 정찰제로 운영됩니다.
-                            <strong>양주 SET</strong>가 가장 인기 있는 기본 메뉴이며, 인원수와 시간에 따라 추가 비용이 발생할 수 있습니다.
+                            <strong>양주 SET</strong> 문의가 많으며, 영통역·망포역 라인 기준으로 인원/시간에 따라 추가 안내됩니다.
                         </p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 기본 주대 가이드</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 기본 주대 가이드 (영통 상권 기준)</h4>
                         <div className="overflow-x-auto">
                             <table className="w-full text-left border-collapse mt-2">
                                 <thead>
                                     <tr className="border-b border-slate-700 text-purple-400">
-                                        <th className="py-3 px-4">세트 메뉴</th>
+                                        <th className="py-3 px-4">세트 메뉴 (영통)</th>
                                         <th className="py-3 px-4">구성</th>
-                                        <th className="py-3 px-4">가격 (예상)</th>
+                                        <th className="py-3 px-4">가격 (예상·영통)</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">양주 A SET</td>
-                                        <td className="py-3 px-4">12년산 (골든블루 등) + 과일 + 마른안주 + 음료</td>
-                                        <td className="py-3 px-4">180,000원 ~</td>
+                                        <td className="py-3 px-4 font-bold text-white">양주 A SET (영통 상권 기준)</td>
+                                        <td className="py-3 px-4">12년산 (골든블루 등) + 과일 + 마른안주 + 음료 (영통 상권 기준)</td>
+                                        <td className="py-3 px-4">주대 18만원 이상 (영통 상권 기준)</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">양주 B SET</td>
-                                        <td className="py-3 px-4">17년산 프리미엄 + 특선 과일 + 모듬 안주 + 음료</td>
-                                        <td className="py-3 px-4">200,000원 ~</td>
+                                        <td className="py-3 px-4 font-bold text-white">양주 B SET (영통 상권 기준)</td>
+                                        <td className="py-3 px-4">17년산 프리미엄 + 특선 과일 + 모듬 안주 + 음료 (영통 상권 기준)</td>
+                                        <td className="py-3 px-4">주대 18만원 이상 (영통 상권 기준)</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">맥주 SET</td>
-                                        <td className="py-3 px-4">맥주 기본 + 기본 안주 (평일/이른 시간 전용)</td>
+                                        <td className="py-3 px-4 font-bold text-white">맥주 SET (영통 상권 기준)</td>
+                                        <td className="py-3 px-4">맥주 기본 + 기본 안주 (평일/이른 시간 전용) (영통 상권 기준)</td>
                                         <td className="py-3 px-4">문의</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-xs text-slate-500 mt-2">* 위 가격은 평균적인 시세이며, 업소 상황 및 이벤트에 따라 변동될 수 있습니다. 정확한 견적은 전화 문의 바랍니다.</p>
+                        <p className="text-xs text-slate-500 mt-2">* 위 가격은 평균적인 시세이며, 업소 상황 및 이벤트에 따라 변동될 수 있습니다. 정확한 견적은 전화 문의 바랍니다. (영통 상권 기준)</p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 운영 정책</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 운영 정책 (영통 상권 기준)</h4>
                         <ul className="list-disc pl-5 space-y-2 marker:text-purple-500">
-                            <li><strong>영업 시간</strong>: 365일 연중무휴 (보통 저녁 6시 ~ 다음날 점심까지 운영)</li>
-                            <li><strong>노래 시간</strong>: 기본 2~3시간 제공, 뒤에 대기 손님이 없을 경우 서비스 시간 팍팍 드립니다.</li>
-                            <li><strong>매니저</strong>: 가라오케도 매니저 호출이 가능합니다. (TC 별도 문의)</li>
+                            <li><strong>영업 시간</strong>: 365일 연중무휴 (보통 저녁 6시 ~ 다음날 점심까지 운영) (영통 상권 기준)</li>
+                            <li><strong>노래 시간</strong>: 기본 2~3시간 제공, 뒤에 대기 손님이 없을 경우 서비스 시간 팍팍 드립니다. (영통 상권 기준)</li>
+                            <li><strong>매니저</strong>: 가라오케도 매니저 호출이 가능합니다. (TC 별도 문의) (영통 상권 기준)</li>
                         </ul>
                     </ContentBlock>
 
@@ -315,18 +311,18 @@ const Karaoke = () => {
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>생일 파티 혜택</strong>: 생일이신 고객님께는 샴페인 1병 서비스 또는 특별 안주 서비스를 제공해 드립니다. 예약 시 꼭 말씀해 주세요!</span>
+                                    <span><strong>생일 파티 혜택</strong>: 생일이신 고객님께는 샴페인 1병 서비스 또는 특별 안주 서비스를 제공해 드립니다. 예약 시 꼭 말씀해 주세요! (영통 상권 기준)</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>단체 회식</strong>: 10인 이상 대형 룸도 완비되어 있습니다. 단체 방문 시 픽업 서비스 차량 2대 배차 등 편의를 제공합니다.</span>
+                                    <span><strong>단체 회식</strong>: 10인 이상 대형 룸도 완비되어 있습니다. 단체 방문 시 픽업 서비스 차량 2대 배차 등 편의를 제공합니다. (영통 상권 기준)</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-purple-900/10 p-8 rounded-2xl border border-purple-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-purple-500" /> 자주 묻는 질문 (FAQ)
+                                <HelpCircle className="text-purple-500" /> 자주 묻는 질문 (FAQ) (영통 상권 기준)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (
@@ -338,7 +334,7 @@ const Karaoke = () => {
                             </div>
                             <div className="mt-6 text-center">
                                 <Link to="/yeongtong-karaoke-guide/faq" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-bold transition-colors">
-                                    더 많은 질문과 답변 보기 <ChevronRight size={18} />
+                                    영통 더 많은 질문과 답변 보기 <ChevronRight size={18} />
                                 </Link>
                             </div>
                         </div>
@@ -347,9 +343,9 @@ const Karaoke = () => {
                     {/* CTA */}
                     <div className="bg-gradient-to-r from-purple-800 to-indigo-900 rounded-3xl p-10 text-center relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30"></div>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 relative z-10">오늘 밤, 당신이 무대의 주인공입니다</h2>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 relative z-10">오늘 밤, 영통에서 당신이 무대의 주인공입니다</h2>
                         <p className="text-purple-100 mb-8 max-w-2xl mx-auto relative z-10">
-                            최고의 시설에서 터질 듯한 사운드와 함께 스트레스를 풀어보세요.<br />
+                            영통 최고의 시설에서 터질 듯한 사운드와 함께 스트레스를 풀어보세요.<br />
                             영통 1등 가라오케 예약은 서우실장이 가장 빠르고 저렴합니다.
                         </p>
                         <button onClick={() => window.location.href = 'tel:01026264833'} className="bg-white text-purple-900 font-bold py-4 px-12 rounded-full shadow-lg hover:scale-105 transition-transform relative z-10 flex items-center gap-2 mx-auto">

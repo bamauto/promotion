@@ -19,16 +19,15 @@ const SchemaJsonLd = ({ data }) => {
 export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "안양 가라오케 하이퍼블릭 서우실장",
+    "name": "안양 하이퍼블릭·가라오케 서우실장",
     "image": "https://anyangkaraoke.com/og-home.jpg",
     "telephone": "010-2626-4833",
     "url": "https://anyangkaraoke.com/",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "평촌대로",
-        "addressLocality": "안양시",
+        "streetAddress": "범계역 일대",
+        "addressLocality": "Anyang-si",
         "addressRegion": "경기도",
-        "postalCode": "14000",
         "addressCountry": "KR"
     },
     "geo": {
@@ -52,12 +51,12 @@ export const generateLocalBusinessSchema = () => ({
     ],
     "priceRange": "$$",
     "areaServed": [
-        { "@type": "City", "name": "안양" },
-        { "@type": "City", "name": "평촌" },
-        { "@type": "City", "name": "범계" },
-        { "@type": "City", "name": "인덕원" },
-        { "@type": "City", "name": "만안구" },
-        { "@type": "City", "name": "동안구" }
+        { "@type": "City", "name": "Anyang-si" },
+        { "@type": "Place", "name": "Anyang Station" },
+        { "@type": "Place", "name": "Beomgye Station" },
+        { "@type": "Place", "name": "Pyeongchon Station" },
+        { "@type": "Place", "name": "Indeogwon Station" },
+        { "@type": "Place", "name": "Anyang 1st Street" }
     ]
 });
 
@@ -68,7 +67,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "안양 가라오케 하이퍼블릭 서우실장",
+        "name": "안양 하이퍼블릭·가라오케 서우실장",
         "image": "https://anyangkaraoke.com/og-home.jpg",
         "telephone": "010-2626-4833"
     },
@@ -81,7 +80,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "offers": {
         "@type": "Offer",
         "priceCurrency": "KRW",
-        "price": offerPrice || "130000",
+        "price": offerPrice || "180000",
         "availability": "https://schema.org/InStock"
     }
 });
@@ -113,12 +112,12 @@ export const generateBreadcrumbSchema = (items) => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "서우실장 안양 가라오케",
+    "name": "서우실장 안양 하이퍼블릭·가라오케",
     "alternateName": "안양 서우실장",
     "url": "https://anyangkaraoke.com",
     "logo": "https://anyangkaraoke.com/logo.png",
     "image": "https://anyangkaraoke.com/og-home.jpg",
-    "description": "안양 최고급 가라오케, 하이퍼블릭, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
+    "description": "안양 하이퍼블릭·가라오케·룸살롱 프리미엄 가이드. 범계·평촌·인덕원 상권 맞춤 안내, 24시간 예약.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [
         "https://t.me/pbsewoo",
@@ -139,10 +138,9 @@ export const generateOrganizationSchema = () => ({
     },
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "평촌대로",
+        "streetAddress": "범계역 일대",
         "addressLocality": "안양시",
         "addressRegion": "경기도",
-        "postalCode": "14000",
         "addressCountry": "KR"
     }
 });

@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jengjakaraoke.com/sitemap.xml
-Sitemap: https://www.jengjakaraoke.com/sitemap-blog.xml
+Sitemap: https://jengjakaraoke.com/sitemap.xml
+Sitemap: https://jengjakaraoke.com/sitemap-blog.xml

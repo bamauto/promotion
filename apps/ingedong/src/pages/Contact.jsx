@@ -41,29 +41,29 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>24시간 실시간 예약 | 인계동 서우실장 전화·카톡·텔레그램</title>
-                <meta name="description" content="인계동 가라오케·하이퍼블릭 24시간 실시간 예약 | 전화 010-2626-4833 | 카카오톡·텔레그램 @pbsewoo | 1분 내 빠른 답변 | 맞춤형 코스 추천 | 정찰제 가격 안내" />
-                <meta name="keywords" content="인계동 예약, 인계동 상담, 인계동 가라오케 예약, 서우실장 연락처, 인계동 유흥 문의, 인계동 예약 문의" />
-                <meta property="og:title" content="24시간 실시간 예약 | 인계동 서우실장 ☎ 010-2626-4833" />
-                <meta property="og:description" content="인계동 가라오케·하이퍼블릭 | 1분 내 빠른 답변 | 전화·카톡·텔레그램" />
-                <meta property="og:image" content="https://www.ingedongkaraoke.com/og-contact.jpg" />
+                <title>인계동 예약 문의 | 전화·카톡·텔레그램 서우실장</title>
+                <meta name="description" content="인계동 하이퍼블릭·가라오케 예약 문의. 전화/카톡/텔레그램 24시간 상담, 수원시청역·인계로데오거리 픽업 안내." />
+                <meta name="keywords" content="인계동 예약, 인계동 상담, 인계동 하이퍼블릭 예약, 서우실장 연락처" />
+                <meta property="og:title" content="인계동 예약 문의 | 전화·카톡·텔레그램 서우실장" />
+                <meta property="og:description" content="인계동 하이퍼블릭·가라오케 예약 문의. 전화/카톡/텔레그램 24시간 상담, 수원시청역·인계로데오거리 픽업 안내." />
+                <meta property="og:image" content="https://ingedongkaraoke.com/og-contact.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content="인계동 서우실장 24시간 예약 상담" />
+                <meta property="og:image:alt" content="인계동 예약 상담 안내" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="24시간 예약 | 인계동 서우실장" />
-                <meta property="twitter:description" content="1분 내 빠른 답변 | 전화·카톡·텔레그램 @pbsewoo" />
-                <meta property="twitter:image" content="https://www.ingedongkaraoke.com/og-contact.jpg" />
-                <link rel="canonical" href="https://www.ingedongkaraoke.com/contact" />
+                <meta property="twitter:title" content="인계동 예약 문의 | 전화·카톡·텔레그램 서우실장" />
+                <meta property="twitter:description" content="인계동 하이퍼블릭·가라오케 예약 문의. 전화/카톡/텔레그램 24시간 상담, 수원시청역·인계로데오거리 픽업 안내." />
+                <meta property="twitter:image" content="https://ingedongkaraoke.com/og-contact.jpg" />
+                <link rel="canonical" href="https://ingedongkaraoke.com/contact" />
             </Helmet>
             <SchemaJsonLd data={{
                 "@context": "https://schema.org",
                 "@type": "ContactPage",
                 "name": "인계동 서우실장 예약 문의",
-                "description": "24시간 실시간 예약 및 견적 상담",
-                "url": "https://www.ingedongkaraoke.com/contact"
+                "description": "인계동 24시간 실시간 예약 및 견적 상담",
+                "url": "https://ingedongkaraoke.com/contact"
             }} />
 
             <div className="pt-28 md:pt-36 min-h-screen bg-slate-950 relative overflow-hidden">
@@ -79,12 +79,9 @@ const Contact = () => {
                             <Clock size={16} /> 24 Hours Service
                         </span>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 animate-fade-in-up delay-100">
-                            실시간 예약 & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">문의하기</span>
+                            실시간 예약 & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">문의하기 (인계동 상권 기준)</span>
                         </h1>
-                        <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-                            원하시는 채널로 편하게 연락주세요.<br />
-                            <strong className="text-white">서우실장</strong>이 1분 이내로 빠르게 답변해 드립니다.
-                        </p>
+                        <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">인계동 상권 기준 빠른 예약/상담을 도와드립니다.<br />수원시청역·인계로데오거리 픽업 포함, 24시간 연결됩니다.</p>
                     </div>
 
                     {/* Contact Cards Grid */}
@@ -97,7 +94,7 @@ const Contact = () => {
                             link={`tel:${contactInfo.phone.replace(/-/g, '')}`}
                             colorClass="text-amber-500"
                             btnText="전화 걸기"
-                            subText="가장 빠르고 정확한 상담이 가능합니다. 터치하시면 바로 연결됩니다."
+                            subText="가장 빠르고 정확한 상담이 가능합니다. 터치하시면 바로 연결됩니다." (인계동 상권 기준)
                             delay="animate-fade-in-up delay-300"
                         />
 
@@ -109,7 +106,7 @@ const Contact = () => {
                             link={contactInfo.kakaoLink}
                             colorClass="text-yellow-400"
                             btnText="카톡 상담하기"
-                            subText="부담 없는 1:1 채팅 상담. QR코드 또는 아이디로 친구 추가하세요."
+                            subText="부담 없는 1:1 채팅 상담. QR코드 또는 아이디로 친구 추가하세요." (인계동 상권 기준)
                             delay="animate-fade-in-up delay-400"
                         />
 
@@ -121,7 +118,7 @@ const Contact = () => {
                             link={contactInfo.telegramLink}
                             colorClass="text-sky-500"
                             btnText="텔레그램 보내기"
-                            subText="비밀 대화가 필요하실 때 이용해주세요. 강력한 보안을 보장합니다."
+                            subText="비밀 대화가 필요하실 때 이용해주세요. 강력한 보안을 보장합니다." (인계동 상권 기준)
                             delay="animate-fade-in-up delay-500"
                         />
                     </div>
@@ -130,18 +127,18 @@ const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center border-t border-slate-800 pt-16">
                         <div className="p-6">
                             <ShieldCheck className="w-12 h-12 text-slate-600 mx-auto mb-4" />
-                            <h4 className="text-white font-bold mb-2">100% 예약제 운영</h4>
-                            <p className="text-slate-500 text-sm">프라이빗한 이용을 위해<br />사전 예약제로 운영됩니다.</p>
+                            <h4 className="text-white font-bold mb-2">100% 예약제 운영 (인계동 상권 기준)</h4>
+                            <p className="text-slate-500 text-sm">프라이빗한 이용을 위해<br />사전 예약제로 운영됩니다. (인계동 상권 기준)</p>
                         </div>
                         <div className="p-6">
                             <Star className="w-12 h-12 text-slate-600 mx-auto mb-4" />
-                            <h4 className="text-white font-bold mb-2">정찰제 가격 준수</h4>
-                            <p className="text-slate-500 text-sm">투명한 가격 공개로<br />내상 없는 술자리를 약속합니다.</p>
+                            <h4 className="text-white font-bold mb-2">정찰제 가격 준수 (인계동 상권 기준)</h4>
+                            <p className="text-slate-500 text-sm">투명한 가격 공개로<br />내상 없는 술자리를 약속합니다. (인계동 상권 기준)</p>
                         </div>
                         <div className="p-6">
                             <Users className="w-12 h-12 text-slate-600 mx-auto mb-4" />
-                            <h4 className="text-white font-bold mb-2">맞춤형 케어</h4>
-                            <p className="text-slate-500 text-sm">방문 목적에 맞는<br />최적의 코스를 안내해 드립니다.</p>
+                            <h4 className="text-white font-bold mb-2">맞춤형 케어 (인계동 상권 기준)</h4>
+                            <p className="text-slate-500 text-sm">방문 목적에 맞는<br />최적의 코스를 안내해 드립니다. (인계동 상권 기준)</p>
                         </div>
                     </div>
 

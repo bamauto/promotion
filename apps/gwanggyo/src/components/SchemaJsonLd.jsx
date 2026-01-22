@@ -19,16 +19,15 @@ const SchemaJsonLd = ({ data }) => {
 export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "광교 가라오케 서우실장",
+    "name": "광교 하이퍼블릭·가라오케 서우실장",
     "image": "https://gwanggyokaraoke.com/og-image.jpg",
     "telephone": "010-2626-4833",
     "url": "https://gwanggyokaraoke.com/",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "광교동",
+        "streetAddress": "광교중앙역 일대",
         "addressLocality": "Suwon-si",
         "addressRegion": "Gyeonggi-do",
-        "postalCode": "16508",
         "addressCountry": "KR"
     },
     "geo": {
@@ -53,10 +52,11 @@ export const generateLocalBusinessSchema = () => ({
     "priceRange": "$$",
     "areaServed": [
         { "@type": "City", "name": "광교" },
-        { "@type": "Place", "name": "광교중앙역" },
-        { "@type": "Place", "name": "상현역" },
-        { "@type": "City", "name": "수원" },
-        { "@type": "City", "name": "영통" }
+        { "@type": "Place", "name": "광교중앙역(아주대)" },
+        { "@type": "Place", "name": "광교호수공원" },
+        { "@type": "Place", "name": "수원컨벤션센터" },
+        { "@type": "Place", "name": "갤러리아 광교" },
+        { "@type": "Place", "name": "아주대학교" }
     ]
 });
 
@@ -67,7 +67,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "광교 가라오케 서우실장",
+        "name": "광교 하이퍼블릭·가라오케 서우실장",
         "image": "https://gwanggyokaraoke.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
@@ -80,7 +80,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "offers": {
         "@type": "Offer",
         "priceCurrency": "KRW",
-        "price": offerPrice || "130000",
+        "price": offerPrice || "180000",
         "availability": "https://schema.org/InStock"
     }
 });
@@ -112,12 +112,12 @@ export const generateBreadcrumbSchema = (items) => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "서우실장 광교 가라오케",
+    "name": "서우실장 광교 하이퍼블릭·가라오케",
     "alternateName": "광교 서우실장",
     "url": "https://gwanggyokaraoke.com",
     "logo": "https://gwanggyokaraoke.com/logo.png",
     "image": "https://gwanggyokaraoke.com/og-home.jpg",
-    "description": "광교 최고급 가라오케, 하이퍼블릭, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
+    "description": "광교 하이퍼블릭·가라오케·룸살롱 프리미엄 가이드. 광교중앙역·호수공원 중심 상권 맞춤 안내, 24시간 예약.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [
         "https://t.me/pbsewoo",
@@ -138,10 +138,9 @@ export const generateOrganizationSchema = () => ({
     },
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "광교동",
+        "streetAddress": "광교중앙역 일대",
         "addressLocality": "수원시",
         "addressRegion": "경기도",
-        "postalCode": "16508",
         "addressCountry": "KR"
     }
 });
@@ -150,8 +149,8 @@ export const generateOrganizationSchema = () => ({
 export const generateWebSiteSchema = () => ({
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "광교 가라오케 서우실장",
-    "alternateName": ["광교 하이퍼블릭", "광교 유흥", "광교 룸살롱"],
+    "name": "광교 하이퍼블릭·가라오케 서우실장",
+    "alternateName": ["광교 하이퍼블릭", "광교 가라오케", "광교 룸살롱"],
     "url": "https://gwanggyokaraoke.com",
     "potentialAction": {
         "@type": "SearchAction",
@@ -193,7 +192,7 @@ export const generateServiceWithPriceSchema = (serviceName, description, url, pr
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "광교 가라오케 서우실장",
+        "name": "광교 하이퍼블릭·가라오케 서우실장",
         "image": "https://gwanggyokaraoke.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },

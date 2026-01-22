@@ -19,16 +19,15 @@ const SchemaJsonLd = ({ data }) => {
 export const generateLocalBusinessSchema = () => ({
     "@context": "https://schema.org",
     "@type": "EntertainmentBusiness",
-    "name": "분당 하이퍼블릭 서우실장",
-    "image": "https://www.bundanghipublic.com/og-image.jpg",
+    "name": "분당 하이퍼블릭·가라오케 서우실장",
+    "image": "https://bundanghipublic.com/og-image.jpg",
     "telephone": "010-2626-4833",
-    "url": "https://www.bundanghipublic.com/",
+    "url": "https://bundanghipublic.com/",
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "분당구 황새울로",
+        "streetAddress": "서현역·야탑역 일대",
         "addressLocality": "Seongnam-si",
         "addressRegion": "Gyeonggi-do",
-        "postalCode": "13591",
         "addressCountry": "KR"
     },
     "geo": {
@@ -53,10 +52,10 @@ export const generateLocalBusinessSchema = () => ({
     "priceRange": "$$",
     "areaServed": [
         { "@type": "City", "name": "Bundang-gu" },
-        { "@type": "City", "name": "Pangyo" },
-        { "@type": "City", "name": "Seohyun" },
-        { "@type": "City", "name": "Jeongja" },
-        { "@type": "City", "name": "Yatap" }
+        { "@type": "Place", "name": "Seohyeon Station" },
+        { "@type": "Place", "name": "Yatap Station" },
+        { "@type": "Place", "name": "Pangyo Techno Valley" },
+        { "@type": "Place", "name": "Migeum Station" }
     ]
 });
 
@@ -67,8 +66,8 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "serviceType": serviceName,
     "provider": {
         "@type": "LocalBusiness",
-        "name": "분당 하이퍼블릭 서우실장",
-        "image": "https://www.bundanghipublic.com/og-image.jpg",
+        "name": "분당 하이퍼블릭·가라오케 서우실장",
+        "image": "https://bundanghipublic.com/og-image.jpg",
         "telephone": "010-2626-4833"
     },
     "areaServed": {
@@ -80,7 +79,7 @@ export const generateServiceSchema = (serviceName, description, url, offerPrice)
     "offers": {
         "@type": "Offer",
         "priceCurrency": "KRW",
-        "price": offerPrice || "130000",
+        "price": offerPrice || "180000",
         "availability": "https://schema.org/InStock"
     }
 });
@@ -112,12 +111,12 @@ export const generateBreadcrumbSchema = (items) => ({
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "서우실장 분당 하이퍼블릭",
+    "name": "서우실장 분당 하이퍼블릭·가라오케",
     "alternateName": "분당 서우실장",
-    "url": "https://www.bundanghipublic.com",
-    "logo": "https://www.bundanghipublic.com/logo.png",
-    "image": "https://www.bundanghipublic.com/og-home.jpg",
-    "description": "분당 최고급 하이퍼블릭, 가라오케, 룸살롱 프리미엄 가이드. 투명한 정찰제, 24시간 예약 가능.",
+    "url": "https://bundanghipublic.com",
+    "logo": "https://bundanghipublic.com/logo.png",
+    "image": "https://bundanghipublic.com/og-home.jpg",
+    "description": "분당 하이퍼블릭·가라오케·룸살롱 프리미엄 가이드. 서현·야탑·판교 중심 상권 맞춤 안내, 24시간 예약.",
     "telephone": "+82-10-2626-4833",
     "sameAs": [
         "https://t.me/pbsewoo",
@@ -138,10 +137,9 @@ export const generateOrganizationSchema = () => ({
     },
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "분당구 황새울로",
+        "streetAddress": "서현역·야탑역 일대",
         "addressLocality": "성남시",
         "addressRegion": "경기도",
-        "postalCode": "13591",
         "addressCountry": "KR"
     }
 });

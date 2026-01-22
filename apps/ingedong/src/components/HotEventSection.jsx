@@ -41,7 +41,7 @@ const HotEventSection = () => {
     // 3. Fake "Recent Booking" Notifications
     useEffect(() => {
         const names = ['김O수', '이O진', '박O훈', '최O영', '정O우'];
-        const actions = ['VIP룸 예약완료', '초이스 문의중', '가라오케 입장', '이벤트 참여'];
+        const actions = ['인계로데오 예약완료', '수원시청 라인 문의중', '인계동 가라오케 입장', '인계동 이벤트 참여'];
 
         const spawnNotification = () => {
             const id = Date.now();
@@ -136,8 +136,8 @@ const HotEventSection = () => {
                             </h2>
 
                             <p className="text-lg text-slate-300 font-light leading-relaxed">
-                                오늘 밤 방문하시는 VIP 고객님을 위한 단독 혜택.<br />
-                                프리미엄 양주 세트 할인 및 고급 안주 서비스가 포함됩니다.
+                                오늘 밤 인계동 로데오 라인 방문 고객을 위한 단독 혜택.<br />
+                                프리미엄 양주 세트 할인과 대기 시간 단축 혜택을 제공합니다.
                             </p>
 
                             <div className="flex items-center justify-center md:justify-start gap-4 pt-4">

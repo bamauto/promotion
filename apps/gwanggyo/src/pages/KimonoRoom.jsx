@@ -71,7 +71,7 @@ const VenueCard = ({ venue }) => (
                 className="w-full bg-slate-800 hover:bg-red-600 text-white hover:text-white py-4 rounded-xl font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn"
             >
                 <Phone size={18} className="group-hover/btn:animate-bounce" />
-                <span className="tracking-widest text-sm">코스튬 예약 문의</span>
+                <span className="tracking-widest text-sm">코스튬 예약 문의 (광교 상권 기준)</span>
             </button>
         </div>
     </article>
@@ -86,42 +86,42 @@ const venues = {
             id: 'km-1',
             name: '광교 프리미엄 기모노룸',
             type: 'Kimono Costume',
-            location: '광교 분당동역 2번 출구',
-            price: '코스 요리 포함',
-            desc: '화려한 기모노와 유카타를 입은 매니저들의 이색적인 서비스를 경험할 수 있는 테마 룸살롱. 정갈한 사케와 함께 기억에 남는 특별한 시간을 선사합니다.',
-            features: ['기모노 의상', '사케 소믈리에', '프리미엄 안주', '의전 서비스'],
+            location: '광교중앙역 인근',
+            price: '주대 18만원 이상, TC 10만원 이상 (코스별 상이)',
+            desc: '광교중앙역 테마형 기모노룸. 일본풍 무드와 포토 포인트.',
+            features: ['테마 의상', '포토존', '광교중앙역 접근', '이색 무드'],
             img: venueImg1,
-            imgAlt: '광교 프리미엄 기모노룸 인테리어'
+            imgAlt: '광교 기모노룸 광교중앙역 추천',
         },
         {
             id: 'km-2',
             name: '광교동 퓨전 기모노룸',
             type: 'Modern Fusion',
-            location: '광교 광교중앙역 5번 출구',
-            price: '사케 무제한',
-            desc: '현대적인 감각으로 재해석한 퓨전 기모노 바. 트렌디한 인테리어와 개량 기모노를 입은 매니저들의 활기찬 서비스를 즐길 수 있습니다. 젊은 층에게 인기가 높습니다.',
-            features: ['퓨전 인테리어', '이자카야 안주', '개량 기모노', '네온 사인 포토존'],
+            location: '광교호수공원 인근',
+            price: '주대 18만원 이상, TC 10만원 이상 (코스별 상이)',
+            desc: '광교호수공원 인근 모던 기모노룸. 고급스러운 무드와 세련된 연출.',
+            features: ['모던 테마', '감각 연출', '광교호수공원 중심', '프라이빗'],
             img: venueImg2,
-            imgAlt: '광교동 퓨전 기모노룸 인테리어'
+            imgAlt: '광교 기모노룸 광교호수공원 추천',
         }
     ]
 };
 
 const KimonoRoom = () => {
     const faqList = [
-        {
-            question: "옷이 불편해서 잘 못 놀지 않나요?",
-            answer: "걱정하지 마세요. 개량된 퓨전 기모노라 활동성이 좋으며, 오히려 살짝 노출된 라인이 더욱 매혹적입니다."
-        },
-        {
-            question: "일본어를 해야 하나요?",
-            answer: "아닙니다. (웃음) 컨셉만 일본풍일 뿐, 전원 한국인 매니저이며 의사소통에 전혀 문제 없습니다."
-        },
-        {
-            question: "안주는 일식만 나오나요?",
-            answer: "기본 과일안주 외에도 튀김, 탕 등 간단한 안주가 준비되어 있으며, 배달 음식도 허용됩니다."
-        }
-    ];
+    {
+        question: "광교 기모노룸 1인 방문도 가능한가요?",
+        answer: "네, 가능합니다. 광교 상권은 컨벤션·연구 직군 이용이 많아 클래식한 응대로 1:1 시작도 부담 없이 안내합니다."
+    },
+    {
+        question: "광교 기모노룸 픽업은 어디까지 지원되나요?",
+        answer: "픽업은 광교중앙역, 광교호수공원, 수원컨벤션센터, 갤러리아 광교 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+    },
+    {
+        question: "광교 기모노룸 주대/TC 기준이 궁금해요.",
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다. (광교 상권 기준)"
+    }
+];
 
     const sections = [
         { id: "definition", title: "1. 기모노룸의 매력" },
@@ -132,9 +132,9 @@ const KimonoRoom = () => {
 
     const serviceSchema = generateServiceSchema(
         "Kimono Room",
-        "광교 기모노룸 예약 및 가격. 기모노 의상 테마의 이색 프리미엄 룸살롱.",
+        "광교 기모노룸 예약 안내. 광교중앙역·수원컨벤션센터 테마, 주대 18만원 이상/TC 10만원 이상.",
         "https://gwanggyokaraoke.com/gwanggyo-kimono-room-guide",
-        "160000"
+        "180000"
     );
 
     const faqSchema = generateFAQSchema(faqList);
@@ -142,19 +142,19 @@ const KimonoRoom = () => {
     return (
         <>
             <Helmet>
-                <title>광교 기모노룸 | 일본 테마 이색 경험</title>
-                <meta name="description" content="광교 프리미엄 광교 기모노룸 추천. 화려한 일본 전통 의상 테마 경험. 광교 기모노룸 우아한 분위기, 특별한 서비스. 광교중앙역 기모노룸 예약 ☎ 010-2626-4833" />
-                <meta name="keywords" content="광교 기모노룸, 광교중앙역 기모노룸, 광교동 기모노룸, 광교 기모노 테마, 광교 일본풍 라운지, 광교 기모노룸 가격, 광교 이색 체험, 광교 테마룸, 상현역 기모노룸" />
-                <meta property="og:title" content="광교 기모노룸 | 일본 테마 이색 경험" />
-                <meta property="og:description" content="광교 프리미엄 기모노룸 추천. 화려한 일본 전통 의상 테마 경험. 우아한 분위기, 특별한 서비스." />
+                <title>광교 기모노룸 예약 | 광교중앙역·수원컨벤션센터 테마</title>
+                <meta name="description" content="광교 기모노룸 테마 가이드. 광교중앙역·수원컨벤션센터 중심 이색 무드와 포토 포인트. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta name="keywords" content="광교 기모노룸, 광교 기모노룸 예약, 광교 룸살롱, 광교 하이퍼블릭" />
+                <meta property="og:title" content="광교 기모노룸 예약 | 광교중앙역·수원컨벤션센터 테마" />
+                <meta property="og:description" content="광교 기모노룸 테마 가이드. 광교중앙역·수원컨벤션센터 중심 이색 무드와 포토 포인트. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
                 <meta property="og:image" content="https://gwanggyokaraoke.com/og-kimono-room.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="기모노 라운지 문화 가이드" />
-                <meta property="twitter:description" content="테마 라운지 경험 | 컨셉 이해 | 이용 팁" />
+                <meta property="twitter:title" content="광교 기모노룸 예약 | 광교중앙역·수원컨벤션센터 테마" />
+                <meta property="twitter:description" content="광교 기모노룸 테마 가이드. 광교중앙역·수원컨벤션센터 중심 이색 무드와 포토 포인트. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
                 <meta property="twitter:image" content="https://gwanggyokaraoke.com/og-kimono-room.jpg" />
                 <link rel="canonical" href="https://gwanggyokaraoke.com/gwanggyo-kimono-room-guide" />
             </Helmet>
@@ -166,33 +166,29 @@ const KimonoRoom = () => {
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
-                        <p className="text-xl text-slate-300 leading-relaxed font-light">
-                            광교 도심 속에서 만나는 <strong className="text-rose-400">작은 일본</strong>.<br />
-                            화려한 기모노와 유카타를 입은 매니저들이 선사하는<br />
-                            이색적인 서비스로 특별한 추억을 만들어 보세요.
-                        </p>
+                        <p className="text-xl text-slate-300 leading-relaxed font-light">광교 기모노룸은 광교중앙역·수원컨벤션센터 테마 중심으로 이색 무드를 제공합니다.<br />포토 포인트와 테마 연출을 함께 즐기실 수 있습니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 견적은 문의 부탁드립니다.</p>
                     </div>
 
                     <TableOfContents sections={sections} />
 
                     {/* 1. Definition */}
-                    <ContentBlock id="definition" title="1. 기모노룸의 매력">
+                    <ContentBlock id="definition" title="1. 기모노룸의 매력 (광교 상권 기준)">
                         <p>
-                            기모노룸은 <span className="text-rose-400 font-bold">일본 전통 의상</span>을 테마로 한 이색 룸살롱입니다.
-                            매니저들이 화려한 기모노와 유카타를 착용하고 서비스를 제공하여, 일상에서 벗어난 특별한 분위기를 연출합니다.
+                            기모노룸은 <span className="text-rose-400 font-bold">일본 전통 의상</span>을 테마로 한 이색 룸살롱입니다. (광교 상권 기준)
+                            매니저들이 화려한 기모노와 유카타를 착용하고 서비스를 제공하여, 일상에서 벗어난 특별한 분위기를 연출합니다. (광교 상권 기준)
                         </p>
                         <p>
-                            가장 큰 차별점은 역시 <strong>의상(Costume)</strong>입니다. 매니저들이 화려한 색감의 기모노나 유카타를 입고 의전 서비스를 제공하며,
+                            가장 큰 차별점은 역시 <strong>의상(Costume)</strong>입니다. 매니저들이 화려한 색감의 기모노나 유카타를 입고 의전 서비스를 제공하며, (광교 상권 기준)
                             마치 일본 여행을 온 듯한 착각을 불러일으킵니다. 중요 바이어 접대나 기억에 남는 파티 장소로 강력 추천하는 <strong>광교의 히든 플레이스</strong>입니다.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center justify-center gap-3">
                                 <span className="text-rose-500 font-bold text-lg">Theme</span>
-                                <span className="text-slate-300">기모노 & 유카타 의상</span>
+                                <span className="text-slate-300">기모노 & 유카타 의상 (광교 상권 기준)</span>
                             </div>
                             <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center justify-center gap-3">
                                 <span className="text-rose-500 font-bold text-lg">Costume</span>
-                                <span className="text-slate-300">기모노 & 유카타 착용</span>
+                                <span className="text-slate-300">기모노 & 유카타 착용 (광교 상권 기준)</span>
                             </div>
                         </div>
                     </ContentBlock>
@@ -216,8 +212,8 @@ const KimonoRoom = () => {
                                 {[
                                     { src: '/partner/km-gallery-01.webp', alt: '광교 기모노룸 전통 의상 매니저 - 광교중앙역 테마룸' },
                                     { src: '/partner/km-gallery-02.webp', alt: '광교 기모노룸 프리미엄 서비스 - 광교호수공원 유카타 컨셉' },
-                                    { src: '/partner/km-gallery-03.webp', alt: '광교 기모노룸 VIP 파트너 - 수원시 이색 체험' },
-                                    { src: '/partner/km-gallery-04.webp', alt: '광교 기모노룸 최고급 매니저 - 영통구 일본풍 테마' },
+                                    { src: '/partner/km-gallery-03.webp', alt: '광교 기모노룸 VIP 파트너 - 광교호수공원 이색 체험' },
+                                    { src: '/partner/km-gallery-04.webp', alt: '광교 기모노룸 최고급 매니저 - 광교중앙역 일본풍 테마' },
                                     { src: '/partner/km-gallery-05.webp', alt: '광교 기모노룸 럭셔리 서비스 - 광교 프리미엄' },
                                 ].map((img, idx) => (
                                     <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-rose-500/50 transition-all duration-300 group">
@@ -237,10 +233,10 @@ const KimonoRoom = () => {
                     </div>
 
                     {/* 3. System & Pricing */}
-                    <ContentBlock id="system" title="3. 이용 시스템 및 서비스">
+                    <ContentBlock id="system" title="3. 이용 시스템 및 서비스 (광교 상권 기준)">
                         <p>
-                            기본적인 시스템은 퍼블릭과 유사하나, <strong>'의전 서비스'</strong>에 더욱 특화되어 있습니다.
-                            술을 따르는 예법이나 대화를 이끌어가는 매너 등에서 일본 특유의 섬세한 접대 문화를 느끼실 수 있습니다.
+                            기본적인 시스템은 퍼블릭과 유사하나, <strong>'의전 서비스'</strong>에 더욱 특화되어 있습니다. (광교 상권 기준)
+                            술을 따르는 예법이나 대화를 이끌어가는 매너 등에서 일본 특유의 섬세한 접대 문화를 느끼실 수 있습니다. (광교 상권 기준)
                         </p>
 
                         <h3 className="text-xl font-bold text-white mt-8 mb-4">A. 광교 기모노룸 주대 안내</h3>
@@ -255,19 +251,19 @@ const KimonoRoom = () => {
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">기본 양주 SET</td>
-                                        <td className="py-3 px-4">160,000원 ~</td>
-                                        <td className="py-3 px-4">임페리얼/골든블루 + 과일안주 + 음료</td>
+                                        <td className="py-3 px-4 font-bold text-white">기본 양주 SET (광교 상권 기준)</td>
+                                        <td className="py-3 px-4">주대 18만원 이상 (광교 상권 기준)</td>
+                                        <td className="py-3 px-4">임페리얼/골든블루 + 과일안주 + 음료 (광교 상권 기준)</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">사케 SET</td>
+                                        <td className="py-3 px-4 font-bold text-white">사케 SET (광교 상권 기준)</td>
                                         <td className="py-3 px-4">별도 문의</td>
-                                        <td className="py-3 px-4">준마이, 다이긴죠 등 고급 사케 구비</td>
+                                        <td className="py-3 px-4">준마이, 다이긴죠 등 고급 사케 구비 (광교 상권 기준)</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
-                                        <td className="py-3 px-4 font-bold text-white">TC (매니저)</td>
-                                        <td className="py-3 px-4">130,000원 (80분)</td>
-                                        <td className="py-3 px-4">기모노 착용 및 스타일링 비용 포함</td>
+                                        <td className="py-3 px-4 font-bold text-white">TC (매니저) (광교 상권 기준)</td>
+                                        <td className="py-3 px-4">TC 10만원 이상 (광교 상권 기준) (광교 상권 기준)</td>
+                                        <td className="py-3 px-4">기모노 착용 및 스타일링 비용 포함 (광교 상권 기준)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -275,8 +271,8 @@ const KimonoRoom = () => {
 
                         <h3 className="text-xl font-bold text-white mt-8 mb-4">B. 광교 기모노룸 특별 서비스</h3>
                         <ul className="list-disc pl-5 space-y-2 marker:text-red-500">
-                            <li><strong>기모노 쇼</strong>: 중간 타임에 간단한 인사 및 포토 타임이 진행될 수 있습니다. (업소 상황에 따라 다름)</li>
-                            <li><strong>러브샷 이벤트</strong>: 분위기를 띄우기 위한 기모노룸만의 특별한 술자리 게임이 준비되어 있습니다.</li>
+                            <li><strong>기모노 쇼</strong>: 중간 타임에 간단한 인사 및 포토 타임이 진행될 수 있습니다. (업소 상황에 따라 다름) (광교 상권 기준)</li>
+                            <li><strong>러브샷 이벤트</strong>: 분위기를 띄우기 위한 기모노룸만의 특별한 술자리 게임이 준비되어 있습니다. (광교 상권 기준)</li>
                         </ul>
                     </ContentBlock>
 
@@ -289,18 +285,18 @@ const KimonoRoom = () => {
                             <ul className="space-y-4 text-slate-300 font-light">
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>접대 장소로 추천</strong>: 이색적인 분위기 덕분에 접대 성공률이 매우 높습니다. 뻔한 곳이 지겨운 바이어 분들에게 강력 추천합니다.</span>
+                                    <span><strong>접대 장소로 추천</strong>: 이색적인 분위기 덕분에 접대 성공률이 매우 높습니다. 뻔한 곳이 지겨운 바이어 분들에게 강력 추천합니다. (광교 상권 기준)</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <CheckCircle className="text-red-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>예약 필수</strong>: 기모노 복장 특성상 환복 및 준비 시간이 필요하므로, 최소 1시간 전 예약을 해주시면 더욱 완벽하게 모실 수 있습니다.</span>
+                                    <span><strong>예약 필수</strong>: 기모노 복장 특성상 환복 및 준비 시간이 필요하므로, 최소 1시간 전 예약을 해주시면 더욱 완벽하게 모실 수 있습니다. (광교 상권 기준)</span>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="bg-red-900/10 p-8 rounded-2xl border border-red-500/20">
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                                <HelpCircle className="text-red-500" /> 자주 묻는 질문 (FAQ)
+                                <HelpCircle className="text-red-500" /> 자주 묻는 질문 (FAQ) (광교 상권 기준)
                             </h3>
                             <div className="space-y-6">
                                 {faqList.map((faq, index) => (
@@ -316,7 +312,7 @@ const KimonoRoom = () => {
                     {/* CTA */}
                     <div className="bg-gradient-to-r from-red-800 to-orange-900 rounded-3xl p-10 text-center relative overflow-hidden shadow-2xl">
                         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/shattered-island.png')] opacity-30"></div>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 relative z-10">지루한 일상에 색다른 파격을</h2>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 relative z-10">광교에서 지루한 일상에 색다른 파격을</h2>
                         <p className="text-red-100 mb-8 max-w-2xl mx-auto relative z-10">
                             경험해보지 못한 새로운 즐거움.<br />
                             광교 기모노룸에서 잊지 못할 추억을 만들어 드립니다.

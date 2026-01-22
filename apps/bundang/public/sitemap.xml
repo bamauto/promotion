@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://www.bundanghipublic.com/</loc>
+    <loc>https://bundanghipublic.com/</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,37 +10,37 @@
 
   <!-- Service Pages -->
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-hyperpub-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-hyperpub-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-karaoke-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-karaoke-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-shirtsroom-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-shirtsroom-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-kimono-room-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-kimono-room-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-room-salon-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-room-salon-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-hostbar-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-hostbar-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -48,19 +48,19 @@
 
   <!-- FAQ Pages -->
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-hyperpub-guide/faq</loc>
+    <loc>https://bundanghipublic.com/bundang-hyperpub-guide/faq</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-karaoke-guide/faq</loc>
+    <loc>https://bundanghipublic.com/bundang-karaoke-guide/faq</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-room-salon-guide/faq</loc>
+    <loc>https://bundanghipublic.com/bundang-room-salon-guide/faq</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -68,13 +68,13 @@
 
   <!-- Guide Pages -->
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-entertainment-price-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-entertainment-price-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/bundang-entertainment-beginner-guide</loc>
+    <loc>https://bundanghipublic.com/bundang-entertainment-beginner-guide</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -82,7 +82,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://www.bundanghipublic.com/contact</loc>
+    <loc>https://bundanghipublic.com/contact</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -90,13 +90,13 @@
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://www.bundanghipublic.com/terms</loc>
+    <loc>https://bundanghipublic.com/terms</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.bundanghipublic.com/privacy</loc>
+    <loc>https://bundanghipublic.com/privacy</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

@@ -1,0 +1,20 @@
+{
+  "name": "인계동 가라오케 · 하이퍼블릭 예약 가이드",
+  "short_name": "인계동 서우실장",
+  "description": "인계동 가라오케·인계동 하이퍼블릭 메인 가이드. 인계동역·수원역 중심 상권 가라오케·셔츠룸·호빠·기모노룸·룸살롱",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "categories": ["entertainment", "lifestyle"],
+  "icons": [
+    { "src": "/favicon-16x16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/favicon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/favicon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "prefer_related_applications": false
+}

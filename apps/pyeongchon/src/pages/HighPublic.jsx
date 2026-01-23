@@ -110,7 +110,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '인덕원역 주변 비즈니스 타입. 대화 중심 세팅과 방음 룸으로 차분한 자리.',
             features: ['방음 룸', '라운지 톤', '인덕원역 인근', '대화 중심'],
-            img: '/anyang-nightlife-2.webp',
+            img: '/pyeongchon-nightlife-2.webp',
             imgAlt: '평촌 하이퍼블릭 인덕원역 추천',
         },
         {
@@ -121,7 +121,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '평촌역·평촌1번가 근처 캐주얼 라인. 가볍게 즐기는 분위기와 유연한 동선.',
             features: ['캐주얼 무드', '유연한 코스', '평촌역·평촌1번가 근처', '가벼운 모임'],
-            img: '/anyang-roomsalon-1.webp',
+            img: '/pyeongchon-roomsalon-1.webp',
             imgAlt: '평촌 하이퍼블릭 평촌역·평촌1번가 추천',
         }
     ]
@@ -130,16 +130,20 @@ const venues = {
 const HighPublic = () => {
     const faqList = [
     {
-        question: "평촌 하이퍼블릭 1인 방문도 가능한가요?",
-        answer: "네, 가능합니다. 평촌 상권은 평촌·범계 직장인 이용이 많아 정돈된 응대로 1:1 시작도 부담 없이 안내합니다."
+        question: "범계 로데오거리에서 하이퍼블릭 찾기 어렵지 않나요?",
+        answer: "범계역 3번 출구에서 도보 2분 거리에 제휴 업소가 밀집해 있습니다. 첫 방문이시면 출구에서 픽업해 드리며, 로데오거리 내 이동도 안내합니다."
     },
     {
-        question: "평촌 하이퍼블릭 픽업은 어디까지 지원되나요?",
-        answer: "픽업은 범계역, 평촌역, 인덕원역, 평촌역·평촌1번가 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+        question: "강남 하이퍼블릭과 범계 하이퍼블릭 차이가 있나요?",
+        answer: "수질은 동급입니다. 강남 출신 매니저들이 범계로 많이 이동했고, 가격은 30% 정도 저렴합니다. MZ세대 취향의 트렌디한 인테리어가 특징입니다."
     },
     {
-        question: "평촌 하이퍼블릭 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
+        question: "평촌학원가에서 범계 로데오까지 얼마나 걸리나요?",
+        answer: "평촌역에서 범계역까지 4호선 1정거장(3분), 도보로는 15분 거리입니다. 학원가에서 전화주시면 평촌역 픽업도 가능합니다."
+    },
+    {
+        question: "주말 저녁 예약 없이 방문해도 되나요?",
+        answer: "금·토요일 9시~12시는 피크타임으로 대기가 길 수 있습니다. 최소 2시간 전 예약을 권장하며, 예약 시 원하는 매니저 스타일도 미리 세팅해 드립니다."
     }
 ];
 
@@ -183,7 +187,7 @@ const HighPublic = () => {
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">
-                    <SectionTitle title="범계 로데오거리 & 평촌 하이퍼블릭" subtitle="Anyang Premium" />
+                    <SectionTitle title="범계 로데오거리 & 평촌 하이퍼블릭" subtitle="Pyeongchon Premium" />
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">

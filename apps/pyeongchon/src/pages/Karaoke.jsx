@@ -110,7 +110,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '인덕원역 인근 실속형 가라오케. 부담 낮추고 즐기는 캐주얼 코스.',
             features: ['실속 구성', '부담 낮음', '인덕원역 인근', '캐주얼'],
-            img: '/anyang-roomsalon-2.webp',
+            img: '/pyeongchon-roomsalon-2.webp',
             imgAlt: '평촌 가라오케 인덕원역 추천',
         },
         {
@@ -121,7 +121,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '평촌역·평촌1번가 근처 프라이빗 VIP 룸. 조용한 자리나 소규모 모임에 적합.',
             features: ['VIP 룸', '조용한 대화', '평촌역·평촌1번가 근처', '소규모'],
-            img: '/anyang-nightlife-1.webp',
+            img: '/pyeongchon-nightlife-1.webp',
             imgAlt: '평촌 가라오케 평촌역·평촌1번가 추천',
         },
         {

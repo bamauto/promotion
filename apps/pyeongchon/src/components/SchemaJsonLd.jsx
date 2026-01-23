@@ -26,7 +26,7 @@ export const generateLocalBusinessSchema = () => ({
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "평촌역 일대",
-        "addressLocality": "Anyang-si",
+        "addressLocality": "Dongan-gu",
         "addressRegion": "경기도",
         "addressCountry": "KR"
     },
@@ -51,7 +51,7 @@ export const generateLocalBusinessSchema = () => ({
     ],
     "priceRange": "$$",
     "areaServed": [
-        { "@type": "City", "name": "Anyang-si" },
+        { "@type": "City", "name": "Dongan-gu" },
         { "@type": "Place", "name": "Pyeongchon Station" },
         { "@type": "Place", "name": "Beomgye Station" },
         { "@type": "Place", "name": "Pyeongchon New Town" },
@@ -139,7 +139,7 @@ export const generateOrganizationSchema = () => ({
     "address": {
         "@type": "PostalAddress",
         "streetAddress": "평촌역 일대",
-        "addressLocality": "안양시",
+        "addressLocality": "동안구",
         "addressRegion": "경기도",
         "addressCountry": "KR"
     }

@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 
 const SUPABASE_URL = 'https://rrzeapykmyrsiqmkwjcf.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJyemVhcHlrbXlyc2lxbWt3amNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5MDI0MzIsImV4cCI6MjA4NDQ3ODQzMn0.1syiV186n8K4pJnCqMXNBR4N4fr0BHnSba5sBrtMjGk';
-const REGION = 'anyang';
+const REGION = 'pyeongchon';
 const STORAGE_URL = `${SUPABASE_URL}/storage/v1/object/public/blog-images`;
 
 const BlogSection = () => {

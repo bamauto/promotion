@@ -87,7 +87,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '범계역 테마형 기모노룸. 일본풍 무드와 포토 포인트.',
             features: ['테마 의상', '포토존', '범계역 접근', '이색 무드'],
-            img: '/anyang-nightlife-1.webp',
+            img: '/pyeongchon-nightlife-1.webp',
             imgAlt: '평촌 기모노룸 범계역 추천',
         },
         {

@@ -117,109 +117,146 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Features */}
+            {/* Features - 평촌 특화 */}
             <section id="features" className="py-24 bg-slate-950 container mx-auto px-4 relative">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
-                <SectionTitle title="왜 서우실장인가?" subtitle="특별한 서비스" />
+                <SectionTitle title="범계 로데오의 No.1 가이드" subtitle="서우실장만의 강점" />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <FeatureItem icon={MapPin} title="4호선 트리플 역세권" desc="평촌역·범계역·인덕원역 3개 역 5분 거리 픽업. 서울 사당 15분, 강남 30분 접근성." delay={0} />
-                    <FeatureItem icon={Crown} title="범계 로데오거리 네트워크" desc="경기 남부 최대 상권 제휴 업소 12곳. 트렌디한 분위기부터 프리미엄 VIP까지." delay={100} />
-                    <FeatureItem icon={Users} title="1기 신도시 고소득층 맞춤" desc="평촌 신도시 전문직·자영업자 취향 분석. 성숙한 문화와 합리적 소비 성향 반영." delay={200} />
-                    <FeatureItem icon={ShieldCheck} title="100% 정찰제 + 가성비" desc="강남 대비 20% 저렴한 가격, 동일한 수질. 바가지 ZERO 투명 정책." delay={300} />
+                    <FeatureItem icon={MapPin} title="로데오거리 800m 올인원" desc="범계역 3·4번 출구부터 펼쳐지는 경기 남부 최대 유흥 상권. 도보 10분 내 모든 업종 집결." delay={0} />
+                    <FeatureItem icon={Crown} title="MZ세대 핫플 집중 분포" desc="2030 취향 저격 네온 인테리어·트렌디 펍·신개념 하이퍼블릭이 밀집한 젊은 상권." delay={100} />
+                    <FeatureItem icon={Users} title="평촌학원가 직장인 특화" desc="대치동 버금가는 학원가 인접. 고소득 학부모·전문직 대상 프라이빗 비즈니스 세팅." delay={200} />
+                    <FeatureItem icon={ShieldCheck} title="강남 대비 30% 절감" desc="동일 수질, 확연한 가격 차이. 범계 로데오에서 가성비와 퀄리티 두 마리 토끼를." delay={300} />
                 </div>
             </section>
 
-            {/* 평촌 특화 콘텐츠 섹션 - SEO 최적화 */}
+            {/* 평촌·범계 특화 콘텐츠 섹션 - SEO 최적화 (완전 차별화) */}
             <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
                 <div className="container mx-auto px-4">
-                    <SectionTitle title="왜 평촌인가?" subtitle="지역 특화 분석" />
+                    <SectionTitle title="범계 로데오거리의 모든 것" subtitle="동안구 프리미엄 상권" />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                        {/* 1기 신도시 프리미엄 */}
+                    {/* 범계 로데오거리 메인 소개 */}
+                    <div className="max-w-4xl mx-auto mb-16 bg-gradient-to-r from-amber-900/20 to-slate-900/50 p-8 rounded-2xl border border-amber-500/30">
+                        <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                            <Zap className="text-amber-500" /> 범계 로데오거리란?
+                        </h3>
+                        <p className="text-slate-300 leading-relaxed text-lg">
+                            <strong className="text-amber-400">범계역 3·4번 출구</strong>에서 시작되는 약 <strong className="text-white">800m 길이</strong>의
+                            경기 남부권 최대 유흥·상업 복합 거리입니다. 2000년대 초반 형성되어 20년 넘게 성장한
+                            <strong className="text-amber-400"> MZ세대 핫플레이스</strong>로, 평일 저녁이면 퇴근 직장인,
+                            주말엔 서울 강남·분당에서도 원정 오는 명실상부 수도권 남부의 유흥 1번지입니다.
+                            서우실장 제휴 업소 <strong className="text-white">12곳</strong>이 이 거리에 집중 분포합니다.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        {/* 동안구 프리미엄 */}
                         <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
                                     <Crown className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">1기 신도시 프리미엄</h3>
+                                <h3 className="text-xl font-bold text-white">동안구 = 소득 상위 10%</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">평촌 신도시</strong>는 대한민국 1기 신도시를 대표하는 생활권입니다.
-                                고소득 전문직·자영업자 중심의 안정적인 거주 인구와
-                                <strong className="text-white"> 높은 교육열</strong>로 유명한 지역입니다.
-                                성숙한 문화와 합리적인 소비 성향이 특징입니다.
+                                평촌·범계가 속한 <strong className="text-amber-400">안양시 동안구</strong>는
+                                경기도 내 가구소득 상위 지역입니다. 의사·변호사·IT전문직 거주 비율이 높아
+                                <strong className="text-white"> 프리미엄 서비스</strong>에 대한 수요와 지불 의향이 높습니다.
                             </p>
                         </article>
 
-                        {/* 4호선 교통 허브 */}
+                        {/* 평촌학원가 연계 */}
                         <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
-                                    <MapPin className="text-amber-500" size={24} />
+                                    <Users className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">4호선 트리플 역세권</h3>
+                                <h3 className="text-xl font-bold text-white">평촌학원가 학부모 상권</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">평촌역·범계역·인덕원역</strong> 3개 역이 밀집된 최강 접근성.
-                                서울 사당역까지 단 15분, 강남까지 30분대 접근 가능.
-                                수도권 광역 고객층이 쉽게 방문할 수 있어
-                                <strong className="text-white"> 프리미엄 업소</strong>가 집중되어 있습니다.
+                                <strong className="text-amber-400">대치동 버금가는 학원 밀집 지역</strong>.
+                                자녀 학원 대기 시간을 활용한 학부모 모임, 여성 전용 호빠·라운지 수요가
+                                <strong className="text-white"> 꾸준히 증가</strong> 중입니다. 40대 여성 고객 비율 경기 남부 1위.
                             </p>
                         </article>
 
-                        {/* 로데오 상권 */}
+                        {/* 강남 대체 상권 */}
                         <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
-                                    <Zap className="text-amber-500" size={24} />
+                                    <ShieldCheck className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">범계 로데오거리 상권</h3>
+                                <h3 className="text-xl font-bold text-white">강남 대체 상권으로 부상</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                경기 남부권 최대 상권 <strong className="text-amber-400">범계 로데오거리</strong>.
-                                젊은층부터 직장인까지 다양한 연령대가 모이는 핫플레이스입니다.
-                                트렌디한 분위기의 <strong className="text-white">신개념 하이퍼블릭·가라오케</strong>가
-                                밀집해 있어 선택의 폭이 넓습니다.
-                            </p>
-                        </article>
-
-                        {/* 여성 친화 호빠 문화 */}
-                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
-                                    <Star className="text-amber-500" size={24} />
-                                </div>
-                                <h3 className="text-xl font-bold text-white">여성 친화적 호빠 문화</h3>
-                            </div>
-                            <p className="text-slate-300 leading-relaxed">
-                                평촌의 <strong className="text-amber-400">20~40대 여성층</strong>은
-                                높은 구매력과 자체 소비력을 갖추고 있습니다.
-                                평촌 학원가 학부모·직장 여성 모임 수요가 급증하며
-                                <strong className="text-white"> 호빠·여성 전용 클럽</strong> 시장이
-                                건강하게 성장 중입니다.
+                                강남 유흥 가격 폭등으로 <strong className="text-amber-400">범계 로데오</strong>가 대안으로 급부상.
+                                동일 수질 매니저, <strong className="text-white">30% 저렴한 가격</strong>.
+                                강남역에서 4호선 직통 25분, 분당선 환승으로 판교·정자 20분 거리.
                             </p>
                         </article>
                     </div>
 
-                    {/* 평촌 상권 지도 */}
+                    {/* 범계 vs 타 지역 비교표 */}
                     <div className="mt-16 max-w-4xl mx-auto bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
-                        <h3 className="text-2xl font-bold text-white text-center mb-8">평촌 4대 유흥 상권</h3>
+                        <h3 className="text-2xl font-bold text-white text-center mb-8">범계 로데오 vs 타 지역 비교</h3>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left">
+                                <thead>
+                                    <tr className="border-b border-slate-700 text-amber-400">
+                                        <th className="py-3 px-4">항목</th>
+                                        <th className="py-3 px-4">범계 로데오</th>
+                                        <th className="py-3 px-4">강남</th>
+                                        <th className="py-3 px-4">수원</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-sm text-slate-300">
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">평균 주대</td>
+                                        <td className="py-3 px-4 text-amber-400">18~25만원</td>
+                                        <td className="py-3 px-4">30~50만원</td>
+                                        <td className="py-3 px-4">15~20만원</td>
+                                    </tr>
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">매니저 수질</td>
+                                        <td className="py-3 px-4 text-amber-400">★★★★★</td>
+                                        <td className="py-3 px-4">★★★★★</td>
+                                        <td className="py-3 px-4">★★★☆☆</td>
+                                    </tr>
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">업소 밀집도</td>
+                                        <td className="py-3 px-4 text-amber-400">800m 내 50+</td>
+                                        <td className="py-3 px-4">분산</td>
+                                        <td className="py-3 px-4">인계동 집중</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="py-3 px-4 font-bold text-white">분위기</td>
+                                        <td className="py-3 px-4 text-amber-400">MZ 트렌디</td>
+                                        <td className="py-3 px-4">고급·정통</td>
+                                        <td className="py-3 px-4">실속형</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/* 범계역 중심 상권 지도 */}
+                    <div className="mt-12 max-w-4xl mx-auto bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                        <h3 className="text-2xl font-bold text-white text-center mb-8">범계역 중심 도보 거리</h3>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div className="text-center p-4 bg-slate-900/50 rounded-xl">
-                                <div className="text-amber-500 font-bold mb-2">평촌역</div>
-                                <div className="text-slate-400 text-sm">학원가 인접<br/>고소득 전문직</div>
+                            <div className="text-center p-4 bg-amber-500/10 rounded-xl border border-amber-500/30">
+                                <div className="text-amber-500 font-bold mb-2">로데오거리</div>
+                                <div className="text-white text-sm">도보 1분<br/>하이퍼블릭 밀집</div>
                             </div>
                             <div className="text-center p-4 bg-slate-900/50 rounded-xl">
-                                <div className="text-amber-500 font-bold mb-2">범계역</div>
-                                <div className="text-slate-400 text-sm">로데오거리<br/>젊은층·트렌디</div>
+                                <div className="text-amber-500 font-bold mb-2">평촌역</div>
+                                <div className="text-slate-400 text-sm">도보 12분<br/>학원가·직장인</div>
                             </div>
                             <div className="text-center p-4 bg-slate-900/50 rounded-xl">
                                 <div className="text-amber-500 font-bold mb-2">인덕원역</div>
-                                <div className="text-slate-400 text-sm">IT·과학단지<br/>조용한 비즈니스</div>
+                                <div className="text-slate-400 text-sm">4호선 1정거장<br/>IT단지·조용함</div>
                             </div>
                             <div className="text-center p-4 bg-slate-900/50 rounded-xl">
-                                <div className="text-amber-500 font-bold mb-2">평촌역</div>
-                                <div className="text-slate-400 text-sm">전통 상권<br/>실속형·직장인</div>
+                                <div className="text-amber-500 font-bold mb-2">사당역</div>
+                                <div className="text-slate-400 text-sm">4호선 15분<br/>서울 진입로</div>
                             </div>
                         </div>
                     </div>

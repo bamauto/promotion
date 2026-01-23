@@ -109,7 +109,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '인덕원역 주변 프라이빗 타입. 대화 중심으로 차분하게 즐기는 코스.',
             features: ['프라이빗 룸', '대화 중심', '인덕원역 인근', '차분한 코스'],
-            img: '/anyang-nightlife-2.webp',
+            img: '/pyeongchon-nightlife-2.webp',
             imgAlt: '평촌 셔츠룸 인덕원역 추천',
         },
         {

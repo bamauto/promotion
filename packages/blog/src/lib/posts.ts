@@ -191,6 +191,75 @@ export async function getAllSlugsForRegion(region: RegionId): Promise<string[]> 
 }
 
 /**
+ * Get all posts with images for sitemap (for Google Image indexing)
+ */
+export interface SitemapPost {
+  slug: string;
+  title: string;
+  published_at: string | null;
+  featuredImage: {
+    url: string;
+    alt: string;
+  } | null;
+}
+
+export async function getPostsWithImagesForSitemap(region: RegionId): Promise<SitemapPost[]> {
+  const now = new Date().toISOString();
+
+  const { data: posts, error } = await supabase
+    .from('blog_posts')
+    .select('id, slug, title, published_at')
+    .contains('regions', [region])
+    .eq('status', 'published')
+    .lte('published_at', now)
+    .order('published_at', { ascending: false });
+
+  if (error) {
+    console.error('Error fetching posts for sitemap:', error);
+    return [];
+  }
+
+  const typedPosts = (posts || []) as Array<{ id: string; slug: string; title: string; published_at: string | null }>;
+
+  if (typedPosts.length === 0) {
+    return [];
+  }
+
+  // Batch fetch all featured images
+  const postIds = typedPosts.map(p => p.id);
+  const { data: allImages } = await supabase
+    .from('blog_images')
+    .select('post_id, storage_path, alt_text, region')
+    .in('post_id', postIds)
+    .eq('image_type', 'featured')
+    .in('region', [region, 'shared']);
+
+  // Create image lookup map
+  const imageMap = new Map<string, { storage_path: string; alt_text: string | null }>();
+  for (const img of (allImages || []) as Array<{ post_id: string; storage_path: string; alt_text: string | null; region: string }>) {
+    const existing = imageMap.get(img.post_id);
+    if (!existing || img.region === region) {
+      imageMap.set(img.post_id, img);
+    }
+  }
+
+  return typedPosts.map((post) => {
+    const image = imageMap.get(post.id);
+    return {
+      slug: post.slug,
+      title: post.title,
+      published_at: post.published_at,
+      featuredImage: image
+        ? {
+            url: getStorageUrl(image.storage_path),
+            alt: image.alt_text || post.title,
+          }
+        : null,
+    };
+  });
+}
+
+/**
  * Get all published posts with their regions (for sitemap generation)
  */
 export async function getAllPublishedPosts(): Promise<Array<{ slug: string; regions: string[]; published_at: string | null }>> {

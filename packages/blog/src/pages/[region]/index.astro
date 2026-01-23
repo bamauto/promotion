@@ -18,9 +18,18 @@ const posts = await getPostsForRegion(regionId);
 
 const title = `${regionData.name} ${regionData.keyword} 블로그 | ${regionData.name} 가라오케`;
 const description = `${regionData.name} ${regionData.keyword}, 가라오케, 유흥 가이드 정보를 제공하는 블로그입니다.`;
+
+// Use first post's featured image as og:image for better SEO
+const firstPostImage = posts.length > 0 && posts[0].featuredImage ? posts[0].featuredImage.url : undefined;
 ---
 
-<BlogLayout title={title} description={description} region={regionId} canonicalPath="/blog">
+<BlogLayout
+  title={title}
+  description={description}
+  region={regionId}
+  canonicalPath="/blog"
+  ogImage={firstPostImage}
+>
   <div class="blog-container">
     <header class="blog-header">
       <h1>{regionData.name} 블로그</h1>

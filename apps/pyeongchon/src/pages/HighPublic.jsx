@@ -88,7 +88,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '범계역 중심의 정돈된 하이퍼블릭. 평촌·범계 직장인의 조용한 접대/술자리에 맞춘 프라이빗 라운지.',
             features: ['프라이빗 예약', '조용한 라운지', '범계역 접근', '비즈니스 동선'],
-            img: '/pyeongchon-shirtsroom-2.webp',
+            img: '/partner/hp-gallery-01.webp',
             imgAlt: '평촌 하이퍼블릭 범계역 추천',
         },
         {
@@ -99,7 +99,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '평촌역 인근 대형 구성. 1기 신도시 무드 분위기와 파티형 세팅으로 단체 모임에 적합.',
             features: ['대형 룸', '파티 조명', '평촌역 중심', '단체 환영'],
-            img: '/pyeongchon-karaoke-1.webp',
+            img: '/partner/hp-gallery-02.webp',
             imgAlt: '평촌 하이퍼블릭 평촌역 추천',
         },
         {
@@ -110,7 +110,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '인덕원역 주변 비즈니스 타입. 대화 중심 세팅과 방음 룸으로 차분한 자리.',
             features: ['방음 룸', '라운지 톤', '인덕원역 인근', '대화 중심'],
-            img: '/pyeongchon-nightlife-2.webp',
+            img: '/partner/hp-gallery-03.webp',
             imgAlt: '평촌 하이퍼블릭 인덕원역 추천',
         },
         {
@@ -121,7 +121,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '평촌역·평촌1번가 근처 캐주얼 라인. 가볍게 즐기는 분위기와 유연한 동선.',
             features: ['캐주얼 무드', '유연한 코스', '평촌역·평촌1번가 근처', '가벼운 모임'],
-            img: '/pyeongchon-roomsalon-1.webp',
+            img: '/partner/hp-gallery-04.webp',
             imgAlt: '평촌 하이퍼블릭 평촌역·평촌1번가 추천',
         }
     ]

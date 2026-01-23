@@ -88,7 +88,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '범계역 인근 비즈니스 룸살롱. 평촌·범계 직장인 접대/회의에 맞춘 세팅.',
             features: ['비즈니스 세팅', '조용한 룸', '범계역 접근', '접대 중심'],
-            img: '/pyeongchon-shirtsroom-hero.webp',
+            img: '/partner/rs-gallery-01.webp',
             imgAlt: '평촌 룸살롱 범계역 추천',
         },
         {
@@ -99,7 +99,7 @@ const venues = {
             price: '주대 18만원 이상 · TC 10만원 이상 (자세한 상담)',
             desc: '평촌역 중심 하이엔드 룸살롱. 품격 있는 서비스와 프라이빗 룸.',
             features: ['하이엔드 서비스', '프라이빗 룸', '평촌역 중심', '품격'],
-            img: '/pyeongchon-karaoke-1.webp',
+            img: '/partner/rs-gallery-02.webp',
             imgAlt: '평촌 룸살롱 평촌역 추천',
         }
     ]
@@ -108,16 +108,20 @@ const venues = {
 const RoomSalon = () => {
     const faqList = [
     {
-        question: "평촌 룸살롱 1인 방문도 가능한가요?",
-        answer: "네, 가능합니다. 평촌 상권은 평촌·범계 직장인 이용이 많아 정돈된 응대로 1:1 시작도 부담 없이 안내합니다."
+        question: "인덕원 IT단지 임원급 접대에 적합한 곳인가요?",
+        answer: "인덕원 IT·과학단지 임원급 바이어 접대에 최적화되어 있습니다. 법인카드·세금계산서 처리가 가능하며, 철저한 회원제로 완벽한 프라이버시를 보장합니다."
     },
     {
-        question: "평촌 룸살롱 픽업은 어디까지 지원되나요?",
-        answer: "픽업은 범계역, 평촌역, 인덕원역, 평촌역·평촌1번가 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+        question: "평촌 학원가 원장님 계약잔치 자리로 적합한가요?",
+        answer: "평촌 학원가 원장님·강사진 계약잔치 단골 업소입니다. 조용한 VIP룸에서 품격 있는 비즈니스 미팅이 가능하며, 단체 예약 시 특별 할인이 적용됩니다."
     },
     {
-        question: "평촌 룸살롱 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
+        question: "1기 신도시 고객 특화 서비스가 있나요?",
+        answer: "평촌 신도시 전문직·자영업자 중심의 성숙한 고객층에 맞춰 프리미엄 서비스를 제공합니다. 고급 양주 라인업과 호텔급 안주, 그리고 철저한 예약제 시스템이 특징입니다."
+    },
+    {
+        question: "강남 룸살롱 대비 장점이 있나요?",
+        answer: "동일한 프리미엄 서비스를 30% 저렴하게 이용하실 수 있습니다. 또한 강남 대비 주차가 편리하고, 4호선 범계역·평촌역·인덕원역 모두 도보권이라 접근성이 뛰어납니다."
     }
 ];
 
@@ -129,7 +133,7 @@ const RoomSalon = () => {
     ];
 
     const serviceSchema = generateServiceSchema(
-        "Dongtan Room Salon",
+        "Pyeongchon Room Salon",
         "평촌 룸살롱 예약 안내. 범계역·평촌역 비즈니스 라인, 주대 18만원 이상/TC 10만원 이상.",
         "https://pc-karaoke.com/pyeongchon-room-salon-guide",
         "200000"

@@ -33,6 +33,7 @@ const canonical = canonicalPath ? `${baseUrl}${canonicalPath}` : Astro.url.href;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title={`${regionData.name} ${regionData.keyword} 블로그 RSS`} href="/blog/rss.xml" />
     <SEOHead
       title={title}
       description={description}

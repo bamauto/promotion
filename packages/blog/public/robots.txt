@@ -4,12 +4,29 @@
 User-agent: *
 Allow: /
 
-# Sitemaps for each region
+# Sitemaps for each region (10 regions)
 Sitemap: https://bundanghipublic.com/blog/sitemap.xml
 Sitemap: https://dongtankaraoke.net/blog/sitemap.xml
 Sitemap: https://ingedongkaraoke.com/blog/sitemap.xml
 Sitemap: https://jengjakaraoke.com/blog/sitemap.xml
+Sitemap: https://gwanggyokaraoke.com/blog/sitemap.xml
+Sitemap: https://yeongtongkaraoke.com/blog/sitemap.xml
 Sitemap: https://suwon.vip/blog/sitemap.xml
+Sitemap: https://anyangkaraoke.com/blog/sitemap.xml
+Sitemap: https://sujikaraoke.com/blog/sitemap.xml
+Sitemap: https://pc-karaoke.com/blog/sitemap.xml
+
+# RSS feeds for each region
+Sitemap: https://bundanghipublic.com/blog/rss.xml
+Sitemap: https://dongtankaraoke.net/blog/rss.xml
+Sitemap: https://ingedongkaraoke.com/blog/rss.xml
+Sitemap: https://jengjakaraoke.com/blog/rss.xml
+Sitemap: https://gwanggyokaraoke.com/blog/rss.xml
+Sitemap: https://yeongtongkaraoke.com/blog/rss.xml
+Sitemap: https://suwon.vip/blog/rss.xml
+Sitemap: https://anyangkaraoke.com/blog/rss.xml
+Sitemap: https://sujikaraoke.com/blog/rss.xml
+Sitemap: https://pc-karaoke.com/blog/rss.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

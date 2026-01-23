@@ -1,5 +1,17 @@
+# Robots.txt for gwanggyokaraoke.com
+# Generated: 2026-01-23
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://gwanggyokaraoke.com/sitemap.xml
 Sitemap: https://gwanggyokaraoke.com/sitemap-blog.xml
+
+# Disallow sensitive paths (none currently)
+# Disallow: /api/
+# Disallow: /admin/
+
+# Crawl delay for politeness (optional)
+# Crawl-delay: 1

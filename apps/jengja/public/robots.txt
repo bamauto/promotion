@@ -1,5 +1,17 @@
+# Robots.txt for jengjakaraoke.com
+# Generated: 2026-01-23
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://jengjakaraoke.com/sitemap.xml
 Sitemap: https://jengjakaraoke.com/sitemap-blog.xml
+
+# Disallow sensitive paths (none currently)
+# Disallow: /api/
+# Disallow: /admin/
+
+# Crawl delay for politeness (optional)
+# Crawl-delay: 1

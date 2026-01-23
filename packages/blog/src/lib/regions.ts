@@ -98,6 +98,17 @@ export const REGIONS = {
     hyperpubSlug: 'highpub',
     pricePrefix: 'entertainment-',
   },
+  pyeongchon: {
+    id: 'pyeongchon',
+    name: '평촌',
+    nameEn: 'Pyeongchon',
+    domain: 'pc-karaoke.com',
+    keyword: '가라오케',
+    description: '평촌 가라오케 하이퍼블릭 정보',
+    urlPrefix: 'pyeongchon',
+    hyperpubSlug: 'highpub',
+    pricePrefix: 'entertainment-',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;

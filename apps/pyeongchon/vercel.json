@@ -1,0 +1,33 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongchon"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongchon/:path*"
+    },
+    {
+      "source": "/pyeongchon",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongchon"
+    },
+    {
+      "source": "/pyeongchon/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongchon/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongchon/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog(?:/|$)|sitemap-blog|pyeongchon(?:/|$)|_astro(?:/|$)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

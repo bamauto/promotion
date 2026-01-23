@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
                 <div className="container mx-auto px-6 flex items-center justify-between">
                     <Link to="/" className="flex items-center gap-2 cursor-pointer group">
                         <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-110 transition-transform overflow-hidden">
-                            <img src="/favicon.png" alt="서우실장 로고" className="w-full h-full object-contain" />
+                            <img src="/logo.webp" alt="서우실장 로고" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex flex-col">
                             <span className="text-xs text-amber-500 font-bold tracking-widest uppercase">프리미엄 라운지</span>
@@ -114,7 +114,7 @@ const Layout = ({ children }) => {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-center items-center gap-2 mb-6">
                         <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center border border-slate-800 shadow-lg transition-transform hover:scale-110">
-                            <img src="/favicon.png" alt="서우실장 로고" className="w-5 h-5 grayscale-0 brightness-110" />
+                            <img src="/logo.webp" alt="서우실장 로고" className="w-5 h-5 grayscale-0 brightness-110" />
                         </div>
                         <span className="text-xl font-bold text-white tracking-tight">서우실장</span>
                     </div>

@@ -40,7 +40,7 @@ export const GET: APIRoute = async ({ params }) => {
     .map(
       (post) => `
   <url>
-    <loc>${baseUrl}/blog/${post.slug}</loc>
+    <loc>${escapeXml(`${baseUrl}/blog/${post.slug}`)}</loc>
     <lastmod>${post.published_at || now}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>${

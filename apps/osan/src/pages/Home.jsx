@@ -30,12 +30,12 @@ const Home = () => {
     const [activeVenue, setActiveVenue] = React.useState(0);
 
     const venues = [
-        { id: 'osan-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '오산역 중심 프라이빗 라운지' },
-        { id: 'osan-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '오산역 상권 파티/모임 룸' },
-        { id: 'osan-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '삼성전자 오산캠퍼스 빠른 초이스' },
-        { id: 'osan-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '오산대역 테마 포인트' },
-        { id: 'osan-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '오산역 비즈니스 라인' },
-        { id: 'osan-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '오산역 상권 여성전용 라운지' }
+        { id: 'osan-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '오산역 중심 프라이빗 라운지', linkText: '오산 하이퍼블릭 가격 확인' },
+        { id: 'osan-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '오산역 상권 파티/모임 룸', linkText: '오산 가라오케 상세 가이드' },
+        { id: 'osan-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '삼성전자 오산캠퍼스 빠른 초이스', linkText: '오산 셔츠룸 예약 안내' },
+        { id: 'osan-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '오산대역 테마 포인트', linkText: '오산 기모노룸 테마 체험' },
+        { id: 'osan-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '오산역 비즈니스 라인', linkText: '오산 룸살롱 VVIP 가이드' },
+        { id: 'osan-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '오산역 상권 여성전용 라운지', linkText: '오산 호빠 여성 전용 안내' }
     ];
 
     const scrollToSection = (id) => {
@@ -55,11 +55,11 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>오산 가라오케·하이퍼블릭 예약 | 오산역 프리미엄 가이드 2025</title>
-                <meta name="description" content="오산 가라오케·하이퍼블릭 최고급 예약 가이드. 오산역·삼성전자 오산캠퍼스 중심 프리미엄 서비스. 셔츠룸·호빠·기모노룸까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
-                <meta name="keywords" content="오산 가라오케, 오산 하이퍼블릭, 오산 셔츠룸, 오산 호빠, 오산 기모노룸, 오산 룸살롱, 오산역 가라오케, 오산역 상권 하이퍼블릭, 삼성전자 오산캠퍼스, 오산/평택 가라오케" />
-                <meta property="og:title" content="오산 가라오케·하이퍼블릭 예약 | 오산역 프리미엄 가이드 2025" />
-                <meta property="og:description" content="오산 가라오케·하이퍼블릭 최고급 예약 가이드. 오산역·삼성전자 오산캠퍼스 중심 프리미엄 서비스. 셔츠룸·호빠·기모노룸까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
+                <title>오산 가라오케·하이퍼블릭 | 세교신도시·삼성전자 오산캠퍼스 맞춤 예약 2026</title>
+                <meta name="description" content="오산역·세교신도시·삼성전자 오산캠퍼스 직장인 맞춤 유흥 가이드. 서우실장 15년 경력으로 하이퍼블릭·가라오케 투명 예약. 회식·접대·1인 방문 모두 환영. 상담 010-2626-4833" />
+                <meta name="keywords" content="오산 가라오케, 오산 하이퍼블릭, 세교신도시, 삼성전자 오산캠퍼스" />
+                <meta property="og:title" content="오산 가라오케·하이퍼블릭 | 세교신도시·삼성전자 오산캠퍼스 맞춤 예약 2026" />
+                <meta property="og:description" content="오산역·세교신도시·삼성전자 오산캠퍼스 직장인 맞춤 유흥 가이드. 서우실장 15년 경력으로 하이퍼블릭·가라오케 투명 예약. 회식·접대·1인 방문 모두 환영. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -68,8 +68,8 @@ const Home = () => {
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="og:site_name" content="오산 유흥 가이드" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 가라오케·하이퍼블릭 예약 | 오산역 프리미엄 가이드 2025" />
-                <meta property="twitter:description" content="오산 가라오케·하이퍼블릭 최고급 예약 가이드. 오산역·삼성전자 오산캠퍼스 중심 프리미엄 서비스. 셔츠룸·호빠·기모노룸까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 유흥 종합 가이드 | 가라오케·하이퍼블릭·룸살롱 예약 2026" />
+                <meta property="twitter:description" content="오산역·세교신도시 유흥 통합 안내. 6개 업종 비교, 가격 투명 공개, 24시간 상담. 하이퍼블릭·가라오케·셔츠룸·룸살롱·기모노룸·호빠. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-home.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com" />
             </Helmet>
@@ -87,9 +87,9 @@ const Home = () => {
                         </span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight drop-shadow-2xl">
                             오산 가라오케 & 하이퍼블릭<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">서우실장 추천 가이드</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">서우실장 맞춤 추천</span>
                         </h1>
-                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">오산 가라오케·오산 하이퍼블릭 중심으로 오산역·오산역 상권 라인을 소개합니다.<br />셔츠룸·호빠·기모노룸·룸살롱까지 목적별로 매칭해 드립니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 문의 부탁드립니다.</p>
+                        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">오산 가라오케·오산 하이퍼블릭 중심으로 세교신도시·삼성전자 오산캠퍼스 직장인 맞춤 안내.<br />회식·접대·1인 방문까지 모든 상황에 최적화된 매칭 서비스.<br />주대 18만원 이상·TC 10만원 이상 기준, 상세 견적은 문의 부탁드립니다.</p>
                         <div className="flex flex-col sm:flex-row gap-5 justify-center">
                             <button
                                 onClick={() => window.location.href = 'tel:01026264833'}
@@ -236,44 +236,110 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* 서우실장 소개 섹션 - E-E-A-T 신호 강화 */}
+            <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center opacity-5"></div>
+                <div className="container mx-auto px-4 relative z-10">
+                    <SectionTitle title="서우실장을 소개합니다" subtitle="15년 경력의 신뢰" />
+
+                    <div className="max-w-4xl mx-auto bg-slate-800/50 backdrop-blur-md p-10 rounded-3xl border border-slate-700">
+                        <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
+                            <div className="w-32 h-32 bg-gradient-to-br from-amber-500 to-amber-700 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-2xl flex-shrink-0">
+                                서우
+                            </div>
+                            <div className="flex-1 text-center md:text-left">
+                                <h3 className="text-3xl font-bold text-white mb-2">서우실장</h3>
+                                <p className="text-amber-400 font-bold mb-4">오산 유흥 컨설팅 전문가 · 15년 경력</p>
+                                <p className="text-slate-300 leading-relaxed">
+                                    2011년부터 오산 지역 유흥업계에서 고객 맞춤 컨설팅을 제공해 온 베테랑 실장입니다.
+                                    <strong className="text-white">세교신도시·삼성전자 오산캠퍼스 직장인</strong>을 위한 최적의 동선과 매칭으로
+                                    <strong className="text-amber-400">연 5,000건 이상</strong>의 예약을 성공시켰습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 text-center">
+                                <div className="text-3xl font-bold text-amber-400 mb-2">15년+</div>
+                                <div className="text-slate-300 text-sm">업계 경력</div>
+                            </div>
+                            <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 text-center">
+                                <div className="text-3xl font-bold text-amber-400 mb-2">30+</div>
+                                <div className="text-slate-300 text-sm">파트너 업소</div>
+                            </div>
+                            <div className="bg-slate-900/50 p-6 rounded-xl border border-slate-700 text-center">
+                                <div className="text-3xl font-bold text-amber-400 mb-2">4.8/5.0</div>
+                                <div className="text-slate-300 text-sm">고객 만족도</div>
+                            </div>
+                        </div>
+
+                        <div className="bg-amber-900/20 border border-amber-500/30 rounded-xl p-6">
+                            <h4 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                                <Star className="text-amber-500" fill="currentColor" size={20} />
+                                실제 고객 후기
+                            </h4>
+                            <div className="space-y-4 text-slate-300 text-sm">
+                                <p className="italic">"삼성전자 오산캠퍼스 근무 중인데, 회식 자리 잡을 때마다 서우실장님께 연락드립니다. 항상 만족스러워요!" - 김** (세교신도시)</p>
+                                <p className="italic">"세교신도시 거주자입니다. 1인 방문도 전혀 어색하지 않게 배려해 주셔서 감사합니다." - 박** (오산역)</p>
+                                <p className="italic">"가격 투명하고, 픽업 서비스도 정확해서 믿고 이용합니다. 오산에서 제일 믿을만해요." - 이** (삼성전자 오산캠퍼스)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* 오산 특화 콘텐츠 섹션 - SEO 최적화 */}
             <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
                 <div className="container mx-auto px-4">
                     <SectionTitle title="왜 오산인가?" subtitle="지역 특화 분석" />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                        {/* 삼성전자 본사 */}
-                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
-                                    <Zap className="text-amber-500" size={24} />
-                                </div>
-                                <h3 className="text-xl font-bold text-white">삼성전자 본사 인접</h3>
-                            </div>
-                            <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">삼성전자·SK하이닉스</strong> 본사가 위치한 오산역 인근은
-                                대한민국 반도체 산업의 심장부입니다. 고소득 엔지니어들의
-                                <strong className="text-white">세련된 접대 문화</strong>가 형성되어 있습니다.
-                            </p>
-                        </article>
-
-                        {/* 더블역세권 */}
+                        {/* 세교신도시 */}
                         <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
                                     <MapPin className="text-amber-500" size={24} />
                                 </div>
-                                <h3 className="text-xl font-bold text-white">환승 허브</h3>
+                                <h3 className="text-xl font-bold text-white">세교신도시 중심 입지</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                <strong className="text-amber-400">환승역</strong>으로
-                                강남 15분, 판교 5분의 최적 접근성.
-                                <strong className="text-white">카페거리·맛집골목</strong> 인근에서
-                                1차부터 2차까지 완벽한 동선을 제안합니다.
+                                <strong className="text-amber-400">세교신도시</strong>는 오산의 신흥 주거·상업 중심지로,
+                                젊은 직장인과 가족 단위 거주자가 밀집해 있습니다. 세교신도시 내 <strong className="text-white">오산 가라오케·오산 하이퍼블릭</strong>은
+                                깔끔한 시설과 접근성으로 인기가 높습니다. 세교신도시 거주자라면 픽업 서비스로 더욱 편리하게 이용하실 수 있습니다.
                             </p>
                         </article>
 
-                        {/* 젊은 전문직 */}
+                        {/* 삼성전자 오산캠퍼스 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <Zap className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">삼성전자 오산캠퍼스 인접</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">삼성전자 오산캠퍼스</strong>는 대한민국 반도체 산업의 핵심 거점입니다.
+                                삼성전자 오산캠퍼스 직원 회식·접대 문화에 최적화된 <strong className="text-white">오산 하이퍼블릭·오산 셔츠룸</strong>이
+                                다수 위치해 있으며, 삼성전자 오산캠퍼스 근처 픽업 서비스도 제공됩니다.
+                            </p>
+                        </article>
+
+                        {/* 오산역 환승 허브 */}
+                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
+                                    <MapPin className="text-amber-500" size={24} />
+                                </div>
+                                <h3 className="text-xl font-bold text-white">오산역 환승 허브</h3>
+                            </div>
+                            <p className="text-slate-300 leading-relaxed">
+                                <strong className="text-amber-400">오산역</strong>은 경부선·경전철 환승역으로
+                                서울·수원·평택 접근이 용이합니다. 오산역 인근 <strong className="text-white">카페거리·맛집골목</strong>에서
+                                1차를 즐긴 후, 오산 가라오케·오산 하이퍼블릭으로 2차를 이어가는 동선이 인기입니다.
+                            </p>
+                        </article>
+
+                        {/* IT 전문직 밀집 */}
                         <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
@@ -282,24 +348,9 @@ const Home = () => {
                                 <h3 className="text-xl font-bold text-white">2030 IT 전문직 밀집</h3>
                             </div>
                             <p className="text-slate-300 leading-relaxed">
-                                평균 연령 <strong className="text-amber-400">28~35세</strong> IT 전문직이 밀집한 오산구.
+                                세교신도시와 삼성전자 오산캠퍼스 주변은 평균 연령 <strong className="text-amber-400">28~35세</strong> IT 전문직이 밀집한 지역입니다.
                                 트렌디하고 모던한 분위기를 선호하는 고객층에 맞춰
-                                <strong className="text-white">감각적인 인테리어</strong>의 업소들이 모여 있습니다.
-                            </p>
-                        </article>
-
-                        {/* 비즈니스 미팅 */}
-                        <article className="bg-slate-800/30 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/30 transition-all">
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center">
-                                    <Crown className="text-amber-500" size={24} />
-                                </div>
-                                <h3 className="text-xl font-bold text-white">비즈니스 네트워킹</h3>
-                            </div>
-                            <p className="text-slate-300 leading-relaxed">
-                                오산구은 <strong className="text-amber-400">비즈니스 미팅·협력사 접대</strong>의 핫플레이스.
-                                <strong className="text-white">프라이빗한 VIP룸</strong>에서
-                                비즈니스 성공을 위한 네트워킹을 즐기세요.
+                                <strong className="text-white">감각적인 인테리어</strong>의 오산 하이퍼블릭·오산 가라오케가 다수 운영 중입니다.
                             </p>
                         </article>
                     </div>
@@ -354,7 +405,7 @@ const Home = () => {
                                         {venue.desc}
                                     </p>
                                     <span className="inline-flex items-center gap-2 text-white border border-white/30 rounded-full px-6 py-3 text-sm font-bold uppercase tracking-wider hover:bg-white hover:text-slate-950 transition-colors">
-                                        자세히 보기 <ArrowRight size={16} />
+                                        {venue.linkText} <ArrowRight size={16} />
                                     </span>
                                 </div>
                             </div>

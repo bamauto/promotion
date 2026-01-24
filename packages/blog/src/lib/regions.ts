@@ -1,3 +1,4 @@
+// Supported regions for blog - Last updated: 2026-01-25
 export const REGIONS = {
   bundang: {
     id: 'bundang',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
+import SchemaJsonLd, { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
 import { Star, Clock, GlassWater, Users, Sparkles, CheckCircle, Phone, MapPin, DollarSign, HelpCircle, Heart, Gift } from 'lucide-react';
@@ -77,7 +77,7 @@ const VenueCard = ({ venue }) => (
     </article>
 );
 
-import venueImg1 from '../assets/osan-hostbar-1.webp';
+import venueImg1 from '../assets/giheung-hostbar-1.webp';
 import venueImg2 from '../assets/ingye-hostbar-2.webp';
 
 const venues = {
@@ -142,23 +142,30 @@ const Hostbar = () => {
     return (
         <>
             <Helmet>
-                <title>오산 호빠 | 오산역 여성 전용 라운지 완벽 가이드</title>
-                <meta name="description" content="오산 호빠 완전 가이드. 오산역·삼성전자 오산캠퍼스 여성 전용 프리미엄 라운지. 오산·오산/평택 여성 직장인 힐링·네트워킹 맞춤. 안정적·편안한 분위기. 상담 010-2626-4833" />
+                <title>오산 호빠 | 여성 전용 프리미엄 라운지 가이드 2026</title>
+                <meta name="description" content="오산 호빠 여성 전용 프리미엄 라운지 가이드. 무한 초이스·다양한 스타일 선수·생일파티 이벤트. 철저한 비밀 보장. 주대 18만원~. 상담 010-2626-4833" />
                 <meta name="keywords" content="오산 호빠, 오산 호스트바, 오산 호빠 예약, 오산 가라오케" />
-                <meta property="og:title" content="오산 호빠 | 오산역 여성 전용 라운지 완벽 가이드" />
-                <meta property="og:description" content="오산 호빠 완전 가이드. 오산역·삼성전자 오산캠퍼스 여성 전용 프리미엄 라운지. 오산·오산/평택 여성 직장인 힐링·네트워킹 맞춤. 안정적·편안한 분위기. 상담 010-2626-4833" />
+                <meta property="og:title" content="오산 호빠 | 여성 전용 프리미엄 라운지 가이드 2026" />
+                <meta property="og:description" content="오산 호빠 여성 전용 프리미엄 라운지 가이드. 무한 초이스·다양한 스타일 선수·생일파티 이벤트. 철저한 비밀 보장. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-hostbar.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 호빠 | 오산역 여성 전용 라운지 완벽 가이드" />
-                <meta property="twitter:description" content="오산 호빠 완전 가이드. 오산역·삼성전자 오산캠퍼스 여성 전용 프리미엄 라운지. 오산·오산/평택 여성 직장인 힐링·네트워킹 맞춤. 안정적·편안한 분위기. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 호빠 | 여성 전용 프리미엄 라운지 가이드 2026" />
+                <meta property="twitter:description" content="오산 호빠 여성 전용 프리미엄 라운지 가이드. 무한 초이스·다양한 스타일 선수·생일파티 이벤트. 철저한 비밀 보장. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-hostbar.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-hostbar-guide" />
             </Helmet>
-            <SchemaJsonLd data={[serviceSchema, faqSchema]} />
+            <SchemaJsonLd data={[
+                generateBreadcrumbSchema([
+                    { name: "홈", url: "https://osankaraoke.com" },
+                    { name: "오산 호빠", url: "https://osankaraoke.com/osan-hostbar-guide" }
+                ]),
+                serviceSchema,
+                faqSchema
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">

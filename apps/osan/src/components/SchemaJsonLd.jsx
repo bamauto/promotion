@@ -57,7 +57,14 @@ export const generateLocalBusinessSchema = () => ({
         { "@type": "Place", "name": "Segyo New City" },
         { "@type": "Place", "name": "Dongtan" },
         { "@type": "Place", "name": "Pyeongtaek" }
-    ]
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "247",
+        "bestRating": "5",
+        "worstRating": "1"
+    }
 });
 
 export const generateServiceSchema = (serviceName, description, url, offerPrice) => ({
@@ -180,6 +187,43 @@ export const generateOrganizationSchema = () => ({
         "addressRegion": "경기도",
         "addressCountry": "KR"
     }
+});
+
+export const generateArticleSchema = (title, description, url, datePublished) => ({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "url": url,
+    "datePublished": datePublished,
+    "dateModified": datePublished,
+    "author": {
+        "@type": "Person",
+        "name": "서우실장"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "오산 서우실장",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://osankaraoke.com/logo.png"
+        }
+    }
+});
+
+export const generateItemListSchema = (items) => ({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": items.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.name,
+        "offers": {
+            "@type": "Offer",
+            "priceCurrency": "KRW",
+            "price": item.price
+        }
+    }))
 });
 
 export default SchemaJsonLd;

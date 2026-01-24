@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { DollarSign, CheckCircle, AlertTriangle, Phone } from 'lucide-react';
+import SchemaJsonLd, { generateArticleSchema, generateFAQSchema, generateItemListSchema } from '../components/SchemaJsonLd';
 
 const PriceGuide = () => {
     return (
@@ -24,6 +25,36 @@ const PriceGuide = () => {
                 <meta property="twitter:image" content="https://osankaraoke.com/og-price.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-entertainment-price-guide" />
             </Helmet>
+
+            <SchemaJsonLd data={[
+                generateArticleSchema(
+                    "오산 유흥 가격 가이드 | 주대 18만원 이상 기준",
+                    "오산 하이퍼블릭·가라오케·룸살롱·셔츠룸 가격 기준 완벽 정리",
+                    "https://osankaraoke.com/osan-entertainment-price-guide",
+                    "2026-01-25"
+                ),
+                generateFAQSchema([
+                    {
+                        question: "오산 하이퍼블릭 주대는 얼마인가요?",
+                        answer: "오산 하이퍼블릭 기본 주대는 18만원 이상이며, 매니저 봉사료(TC)는 10만원 이상입니다."
+                    },
+                    {
+                        question: "오산 가라오케는 주대가 다른가요?",
+                        answer: "오산 가라오케도 기본 주대 18만원 이상, TC 10만원 이상 동일하며 인원/시간에 따라 조정됩니다."
+                    },
+                    {
+                        question: "오산에서 가장 저렴한 업종은?",
+                        answer: "오산역 기준 모든 업종이 주대 18만원 이상, TC 10만원 이상으로 비슷하며, 상세 견적은 문의 바랍니다."
+                    }
+                ]),
+                generateItemListSchema([
+                    { name: "오산 하이퍼블릭", price: "180000" },
+                    { name: "오산 가라오케", price: "180000" },
+                    { name: "오산 셔츠룸", price: "180000" },
+                    { name: "오산 룸살롱", price: "180000" },
+                    { name: "오산 호빠", price: "180000" }
+                ])
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950 px-4 pb-20">
                 <div className="container mx-auto max-w-5xl">

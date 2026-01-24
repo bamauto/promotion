@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
+import SchemaJsonLd, { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
 import { Star, Clock, GlassWater, Users, Sparkles, CheckCircle, Phone, MapPin, DollarSign, HelpCircle, Zap, Shield, Crown, ChevronRight } from 'lucide-react';
@@ -140,11 +140,11 @@ const RoomSalon = () => {
     return (
         <>
             <Helmet>
-                <title>오산 룸살롱 | 비즈니스 접대 전문 프라이빗 가이드</title>
-                <meta name="description" content="오산 룸살롱 프라이빗 가이드. 오산역 중심 정통 비즈니스 접대 전문. 조용한 룸·VVIP 매니저·철저한 보안. 중요한 미팅은 서우실장과 함께. 상담 010-2626-4833" />
+                <title>오산 룸살롱 | VVIP 비즈니스 프라이빗 가이드 2026</title>
+                <meta name="description" content="오산 룸살롱 VVIP 전용 가이드. 정통 비즈니스 접대·철저한 보안·최상위 매니저. 회원제 운영으로 완벽한 프라이버시 보장. 주대 20만원~. 상담 010-2626-4833" />
                 <meta name="keywords" content="오산 룸살롱, 오산 룸살롱 예약, 오산 하이퍼블릭, 오산 가라오케" />
-                <meta property="og:title" content="오산 룸살롱 | 비즈니스 접대 전문 프라이빗 가이드" />
-                <meta property="og:description" content="오산 룸살롱 프라이빗 가이드. 오산역 중심 정통 비즈니스 접대 전문. 조용한 룸·VVIP 매니저·철저한 보안. 중요한 미팅은 서우실장과 함께. 상담 010-2626-4833" />
+                <meta property="og:title" content="오산 룸살롱 | VVIP 비즈니스 프라이빗 가이드 2026" />
+                <meta property="og:description" content="오산 룸살롱 VVIP 전용 가이드. 정통 비즈니스 접대·철저한 보안·최상위 매니저. 회원제 운영으로 완벽한 프라이버시 보장. 주대 20만원~. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-room-salon.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -152,12 +152,19 @@ const RoomSalon = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 룸살롱 | 비즈니스 접대 전문 프라이빗 가이드" />
-                <meta property="twitter:description" content="오산 룸살롱 프라이빗 가이드. 오산역 중심 정통 비즈니스 접대 전문. 조용한 룸·VVIP 매니저·철저한 보안. 중요한 미팅은 서우실장과 함께. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 룸살롱 | VVIP 비즈니스 프라이빗 가이드 2026" />
+                <meta property="twitter:description" content="오산 룸살롱 VVIP 전용 가이드. 정통 비즈니스 접대·철저한 보안·최상위 매니저. 회원제 운영으로 완벽한 프라이버시 보장. 주대 20만원~. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-room-salon.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-room-salon-guide" />
             </Helmet>
-            <SchemaJsonLd data={[serviceSchema, faqSchema]} />
+            <SchemaJsonLd data={[
+                generateBreadcrumbSchema([
+                    { name: "홈", url: "https://osankaraoke.com" },
+                    { name: "오산 룸살롱", url: "https://osankaraoke.com/osan-room-salon-guide" }
+                ]),
+                serviceSchema,
+                faqSchema
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">

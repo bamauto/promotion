@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
+import SchemaJsonLd, { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
 import { Star, Clock, GlassWater, Users, Sparkles, CheckCircle, Phone, MapPin, DollarSign, HelpCircle, Zap, ChevronRight } from 'lucide-react';
@@ -87,21 +87,21 @@ const venues = {
             id: 'hp-1',
             name: '오산 하이퍼블릭 프리미엄',
             type: 'Premium High-End',
-            location: '오산역 인근',
+            location: '오산역·세교신도시 인근',
             price: '주대 18만원 이상 · TC 10만원 이상, 상담 후 확정',
-            desc: '오산역 중심의 감각적인 하이퍼블릭. 오산·오산/평택 테크 직장인의 조용한 접대/술자리에 맞춘 프라이빗 라운지.',
-            features: ['프라이빗 예약', '조용한 라운지', '오산역 접근', '비즈니스 동선'],
+            desc: '오산역·세교신도시 중심의 감각적인 하이퍼블릭. 삼성전자 오산캠퍼스 직장인 조용한 접대/술자리 맞춤 프라이빗 라운지.',
+            features: ['세교신도시 픽업', '조용한 라운지', '오산역 접근', '삼성전자 오산캠퍼스 근처'],
             img: venueImg1,
             imgAlt: '오산 하이퍼블릭 오산역 추천',
         },
         {
             id: 'hp-2',
-            name: '오산구 하이퍼블릭 라운지',
+            name: '세교신도시 하이퍼블릭 라운지',
             type: 'Mega Size',
-            location: '오산역 상권 인근',
+            location: '세교신도시·삼성전자 오산캠퍼스 인근',
             price: '주대 18만원 이상 · TC 10만원 이상, 상담 후 확정',
-            desc: '오산역 상권 인근 대형 구성. 카페거리 무드 분위기와 파티형 세팅으로 단체 모임에 적합.',
-            features: ['대형 룸', '파티 조명', '오산역 상권 중심', '단체 환영'],
+            desc: '세교신도시·삼성전자 오산캠퍼스 인근 대형 구성. 카페거리 무드 분위기와 파티형 세팅으로 단체 회식에 적합.',
+            features: ['대형 룸', '삼성전자 오산캠퍼스 픽업', '세교신도시 중심', '단체 회식 환영'],
             img: venueImg2,
             imgAlt: '오산 하이퍼블릭 오산역 상권 추천',
         }
@@ -112,15 +112,35 @@ const HyperPublic = () => {
     const faqList = [
     {
         question: "오산 하이퍼블릭 1인 방문도 가능한가요?",
-        answer: "네, 가능합니다. 오산 상권은 오산·오산/평택 테크 직장인 이용이 많아 감각적인 응대로 1:1 시작도 부담 없이 안내합니다."
+        answer: "네, 가능합니다. 오산 하이퍼블릭은 세교신도시·삼성전자 오산캠퍼스 직장인 1인 방문이 많아 전혀 어색하지 않습니다. 1:1 맞춤 세팅으로 편안하게 안내해 드립니다."
     },
     {
         question: "오산 하이퍼블릭 픽업은 어디까지 지원되나요?",
-        answer: "픽업은 오산역, 오산역 상권, 삼성전자 오산캠퍼스, 오산대역 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+        answer: "픽업은 오산역, 세교신도시, 삼성전자 오산캠퍼스, 오산대역 중심으로 운영됩니다. 세교신도시 아파트 단지 앞까지도 픽업 가능하며, 정확한 동선은 예약 시 조율해 드립니다."
     },
     {
         question: "오산 하이퍼블릭 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 세교신도시·삼성전자 오산캠퍼스 직장인 대상 이벤트도 수시로 진행되니 상세는 문의 부탁드립니다."
+    },
+    {
+        question: "세교신도시에서 가까운 오산 하이퍼블릭이 있나요?",
+        answer: "네, 세교신도시에서 차량으로 5~10분 거리에 여러 프리미엄 하이퍼블릭이 위치해 있습니다. 세교신도시 거주자 픽업 서비스도 제공됩니다."
+    },
+    {
+        question: "삼성전자 오산캠퍼스 직원 회식 예약도 가능한가요?",
+        answer: "물론입니다. 삼성전자 오산캠퍼스 직원 회식·팀 모임을 위한 단체 예약이 가능하며, 대형 룸과 특별 할인 혜택을 제공합니다. 삼성전자 오산캠퍼스 근처 픽업도 지원됩니다."
+    },
+    {
+        question: "오산 하이퍼블릭 매직미러 초이스가 뭔가요?",
+        answer: "매직미러 초이스는 룸 안에서 유리(매직미러)를 통해 매니저들을 보며 선택하는 시스템입니다. 매니저는 고객을 볼 수 없어 편안하게 이상형을 고르실 수 있습니다."
+    },
+    {
+        question: "오산 하이퍼블릭 예약 없이 방문 가능한가요?",
+        answer: "워킹(예약 없이 방문)도 가능하지만, 피크타임(밤 10시~12시)에는 대기 시간이 길어질 수 있습니다. 사전 예약 시 좋은 방 배정과 매니저 선택 폭이 넓어집니다."
+    },
+    {
+        question: "오산 하이퍼블릭 이용 시간은 얼마나 되나요?",
+        answer: "기본 타임은 80~90분 기준이며, 연장(T/C) 시 1시간 단위로 추가됩니다. 하이퍼블릭은 고정(묶음)도 가능하여 파트너가 끝까지 고객님만 케어하도록 할 수 있습니다."
     }
 ];
 
@@ -143,11 +163,11 @@ const HyperPublic = () => {
     return (
         <>
             <Helmet>
-                <title>오산 하이퍼블릭 | 오산역 프라이빗 라운지 완벽 가이드</title>
-                <meta name="description" content="오산 하이퍼블릭 완전 가이드. 오산역 중심 프라이빗 프리미엄 라운지. 오산·오산/평택 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
+                <title>오산 하이퍼블릭 | 초이스 시스템 & 가격 완벽 가이드 2026</title>
+                <meta name="description" content="오산 하이퍼블릭 초이스 시스템 완전 해설. 매직미러·조별·무한 초이스 비교. 오산역 프라이빗 라운지 가격 투명 공개. 주대 18만원~. 상담 010-2626-4833" />
                 <meta name="keywords" content="오산 하이퍼블릭, 오산 하이퍼블릭 예약, 오산 하이퍼블릭 가격, 오산 가라오케, 오산 룸살롱" />
-                <meta property="og:title" content="오산 하이퍼블릭 | 오산역 프라이빗 라운지 완벽 가이드" />
-                <meta property="og:description" content="오산 하이퍼블릭 완전 가이드. 오산역 중심 프라이빗 프리미엄 라운지. 오산·오산/평택 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
+                <meta property="og:title" content="오산 하이퍼블릭 | 초이스 시스템 & 가격 완벽 가이드 2026" />
+                <meta property="og:description" content="오산 하이퍼블릭 초이스 시스템 완전 해설. 매직미러·조별·무한 초이스 비교. 오산역 프라이빗 라운지 가격 투명 공개. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-highpub.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -155,12 +175,19 @@ const HyperPublic = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 하이퍼블릭 | 오산역 프라이빗 라운지 완벽 가이드" />
-                <meta property="twitter:description" content="오산 하이퍼블릭 완전 가이드. 오산역 중심 프라이빗 프리미엄 라운지. 오산·오산/평택 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 하이퍼블릭 | 초이스 시스템 & 가격 완벽 가이드 2026" />
+                <meta property="twitter:description" content="오산 하이퍼블릭 초이스 시스템 완전 해설. 매직미러·조별·무한 초이스 비교. 오산역 프라이빗 라운지 가격 투명 공개. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-highpub.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-highpub-guide" />
             </Helmet>
-            <SchemaJsonLd data={[serviceSchema, faqSchema]} />
+            <SchemaJsonLd data={[
+                generateBreadcrumbSchema([
+                    { name: "홈", url: "https://osankaraoke.com" },
+                    { name: "오산 하이퍼블릭", url: "https://osankaraoke.com/osan-highpub-guide" }
+                ]),
+                serviceSchema,
+                faqSchema
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">
@@ -168,13 +195,20 @@ const HyperPublic = () => {
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
-                        <p className="text-xl text-slate-300 leading-relaxed font-light">오산 하이퍼블릭은 오산역·오산역 상권 중심으로 오산·오산/평택 테크 직장인 맞춤 코스를 제공합니다.<br />감각적인 무드의 프라이빗 룸과 안정적인 동선, 주대 18만원 이상·TC 10만원 이상 기준으로 안내합니다.<br />상세 견적은 문의 부탁드립니다.</p>
+                        <p className="text-xl text-slate-300 leading-relaxed font-light">오산 하이퍼블릭은 오산역·세교신도시·삼성전자 오산캠퍼스 중심으로 직장인 맞춤 프라이빗 라운지를 제공합니다.<br />세교신도시 거주자와 삼성전자 오산캠퍼스 직원을 위한 편리한 픽업 서비스, 감각적인 무드의 프라이빗 룸 완비.<br />주대 18만원 이상·TC 10만원 이상 기준, 상세 견적은 문의 부탁드립니다.</p>
                     </div>
 
                     <TableOfContents sections={sections} />
 
                     {/* 1. Definition & Features */}
                     <ContentBlock id="definition" title="1. 프라이빗 펍 문화 이해하기">
+                        <div className="bg-slate-800/30 p-6 rounded-xl border-l-4 border-amber-500 mb-6">
+                            <p className="text-lg font-medium text-white leading-relaxed">
+                                <strong>오산 하이퍼블릭</strong>은 프라이빗 룸에서 매니저를 선택(초이스)하여
+                                술과 대화를 즐기는 오산역·세교신도시 중심의 유흥 문화입니다.
+                                매직미러 초이스 시스템이 특징이며 주대 18만원 이상 기준입니다.
+                            </p>
+                        </div>
                         <p>
                             <strong>프라이빗 펍(Private Pub)</strong> 또는 하이퍼블릭은 2010년대 중반 강남에서 시작된
                             새로운 유형의 <strong>프라이빗 라운지 문화</strong>를 지칭합니다.
@@ -292,6 +326,37 @@ const HyperPublic = () => {
                             </table>
                         </div>
                     </ContentBlock>
+
+                    {/* 예약 방법 (How-To Snippet) */}
+                    <div className="mb-12 bg-slate-900/30 p-8 rounded-2xl border border-slate-800">
+                        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                            <div className="w-1.5 h-8 bg-amber-500 rounded-full"></div>
+                            오산 하이퍼블릭 예약 방법
+                        </h3>
+                        <ol className="space-y-6">
+                            <li className="flex gap-4">
+                                <div className="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold flex-shrink-0">1</div>
+                                <div>
+                                    <h4 className="text-white font-bold mb-2">전화 또는 카카오톡 문의</h4>
+                                    <p className="text-slate-300">010-2626-4833으로 전화하거나 카카오톡 @pbsewoo로 문의합니다.</p>
+                                </div>
+                            </li>
+                            <li className="flex gap-4">
+                                <div className="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold flex-shrink-0">2</div>
+                                <div>
+                                    <h4 className="text-white font-bold mb-2">희망 날짜/시간/인원 전달</h4>
+                                    <p className="text-slate-300">방문 희망 날짜, 시간, 인원수를 알려주세요. 취향(조용한/화끈한)도 말씀해주시면 매칭에 도움됩니다.</p>
+                                </div>
+                            </li>
+                            <li className="flex gap-4">
+                                <div className="w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center text-black font-bold flex-shrink-0">3</div>
+                                <div>
+                                    <h4 className="text-white font-bold mb-2">예약 확정 및 픽업</h4>
+                                    <p className="text-slate-300">서우실장이 오산역·세교신도시 최적의 업소와 룸을 매칭해 예약을 확정하고 픽업 장소를 안내합니다.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
 
                     {/* 4. Tips & FAQ */}
                     <div id="faq" className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">

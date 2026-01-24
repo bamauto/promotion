@@ -6,7 +6,8 @@ const services = [
     {
         id: 'highpublic',
         name: '하이퍼블릭',
-        desc: '합리적인 가격의 프리미엄',
+        linkText: '오산 하이퍼블릭 초이스 시스템·가격 가이드',
+        desc: '매직미러·조별·무한 초이스 비교',
         path: '/osan-highpub-guide',
         icon: Star,
         color: 'text-amber-400'
@@ -14,7 +15,8 @@ const services = [
     {
         id: 'karaoke',
         name: '가라오케',
-        desc: '최신 음향 시설 완비',
+        linkText: '오산 가라오케 회식·파티룸 예약 가이드',
+        desc: '음향 특화 대형룸·삼성전자 오산캠퍼스 픽업',
         path: '/osan-karaoke-guide',
         icon: Mic2,
         color: 'text-purple-400'
@@ -22,7 +24,8 @@ const services = [
     {
         id: 'shirtsroom',
         name: '셔츠룸',
-        desc: '화이트 셔츠의 매력',
+        linkText: '오산 셔츠룸 빠른 초이스·가격 안내',
+        desc: '비즈니스 접대·화이트셔츠 컨셉',
         path: '/osan-shirtsroom-guide',
         icon: Shirt,
         color: 'text-white'
@@ -30,7 +33,8 @@ const services = [
     {
         id: 'kimonoroom',
         name: '기모노룸',
-        desc: '이색적인 코스튬 테마',
+        linkText: '오산 기모노룸 이색 테마 체험 가이드',
+        desc: '코스프레·테마 파티 전문',
         path: '/osan-kimono-room-guide',
         icon: Flower2,
         color: 'text-pink-400'
@@ -38,7 +42,8 @@ const services = [
     {
         id: 'roomsalon',
         name: '룸살롱',
-        desc: '비즈니스 접대의 정석',
+        linkText: '오산 룸살롱 비즈니스 접대 VVIP 가이드',
+        desc: '프라이빗 룸·고급 접대',
         path: '/osan-room-salon-guide',
         icon: Crown,
         color: 'text-amber-500'
@@ -46,7 +51,8 @@ const services = [
     {
         id: 'hostbar',
         name: '호빠',
-        desc: '여성 전용 프리미엄',
+        linkText: '오산 호빠 여성 전용 프리미엄 라운지',
+        desc: '오산대역 여성 고객 맞춤',
         path: '/osan-hostbar-guide',
         icon: GlassWater,
         color: 'text-blue-400'
@@ -80,7 +86,7 @@ const RelatedServices = () => {
                                     <service.icon size={24} />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-bold text-white group-hover:text-amber-400 transition-colors">오산 {service.name}</h4>
+                                    <h4 className="font-bold text-white group-hover:text-amber-400 transition-colors">{service.linkText}</h4>
                                     <p className="text-xs text-slate-400">{service.desc}</p>
                                 </div>
                             </div>

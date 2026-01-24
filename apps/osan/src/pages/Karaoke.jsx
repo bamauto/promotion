@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
+import SchemaJsonLd, { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
 import { Music, Clock, GlassWater, Users, Sparkles, CheckCircle, Phone, MapPin, DollarSign, Star, HelpCircle, Mic2, ChevronRight } from 'lucide-react';
@@ -87,21 +87,21 @@ const venues = {
             id: 'k-1',
             name: '오산 프리미엄 가라오케',
             type: 'Mega Party Room',
-            location: '오산역 인근',
+            location: '오산역·삼성전자 오산캠퍼스 인근',
             price: '주대 18만원 이상 · TC 10만원 이상, 상담 후 확정',
-            desc: '오산역에서 접근 좋은 파티형 가라오케. 오산·오산/평택 테크 직장인 회식/모임에 맞춘 대형 룸.',
-            features: ['대형 룸', '음향 특화', '오산역 접근', '회식 추천'],
+            desc: '오산역·삼성전자 오산캠퍼스에서 접근 좋은 파티형 가라오케. 삼성전자 오산캠퍼스 직원 회식·단체 모임에 최적화된 대형 룸.',
+            features: ['대형 룸 10인+', '삼성전자 오산캠퍼스 픽업', '회식 특화', '단체 할인'],
             img: venueImg1,
             imgAlt: '오산 가라오케 오산역 추천',
         },
         {
             id: 'k-2',
-            name: '오산구 럭셔리 가라오케',
+            name: '세교신도시 럭셔리 가라오케',
             type: 'Luxury Lounge',
-            location: '오산역 상권 인근',
+            location: '세교신도시·오산역 인근',
             price: '주대 18만원 이상 · TC 10만원 이상, 상담 후 확정',
-            desc: '오산역 상권 라운지 톤 가라오케. 음향 퀄리티와 조용한 대화 모두 만족.',
-            features: ['라운지 무드', '고급 사운드', '오산역 상권 중심', '프라이빗'],
+            desc: '세교신도시·오산역 라운지 톤 가라오케. 세교신도시 거주자와 직장인 모임에 최적화. 음향 퀄리티와 조용한 대화 모두 만족.',
+            features: ['세교신도시 픽업', '고급 사운드', '프라이빗 룸', '회식·모임 환영'],
             img: venueImg2,
             imgAlt: '오산 가라오케 오산역 상권 추천',
         }
@@ -112,15 +112,27 @@ const Karaoke = () => {
     const faqList = [
     {
         question: "오산 가라오케 1인 방문도 가능한가요?",
-        answer: "네, 가능합니다. 오산 상권은 오산·오산/평택 테크 직장인 이용이 많아 감각적인 응대로 1:1 시작도 부담 없이 안내합니다."
+        answer: "네, 가능합니다. 오산 가라오케는 세교신도시·삼성전자 오산캠퍼스 직장인 1인 방문도 많아 전혀 어색하지 않습니다. 1:1 맞춤 세팅과 매니저 배정으로 편안하게 즐기실 수 있습니다."
     },
     {
         question: "오산 가라오케 픽업은 어디까지 지원되나요?",
-        answer: "픽업은 오산역, 오산역 상권, 삼성전자 오산캠퍼스, 오산대역 중심으로 운영됩니다. 정확한 동선은 예약 시 조율해 드립니다."
+        answer: "픽업은 오산역, 세교신도시, 삼성전자 오산캠퍼스, 오산대역 중심으로 운영됩니다. 세교신도시 아파트 단지와 삼성전자 오산캠퍼스 정문 앞까지도 픽업 가능합니다."
     },
     {
         question: "오산 가라오케 주대/TC 기준이 궁금해요.",
-        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 상세는 문의 부탁드립니다."
+        answer: "주대 18만원 이상, TC 10만원 이상 기준이며 시간·코스·인원에 따라 달라질 수 있습니다. 삼성전자 오산캠퍼스 직원 단체 회식 시 할인 혜택도 제공되니 문의 부탁드립니다."
+    },
+    {
+        question: "삼성전자 오산캠퍼스 직원 단체 회식 예약도 가능한가요?",
+        answer: "물론입니다. 오산 가라오케는 삼성전자 오산캠퍼스 직원 회식·팀 빌딩을 위한 10인 이상 대형 룸을 완비하고 있습니다. 단체 예약 시 특별 할인과 픽업 서비스(차량 2대 이상 배차)를 제공합니다."
+    },
+    {
+        question: "세교신도시에서 가까운 오산 가라오케는 어디인가요?",
+        answer: "세교신도시에서 차량으로 5~10분 거리에 여러 프리미엄 가라오케가 있습니다. 세교신도시 거주자 픽업 서비스도 제공되며, 오산역 인근 카페거리에서 1차 후 2차로 이동하기에도 편리합니다."
+    },
+    {
+        question: "오산 가라오케 회식 메뉴 추천해 주세요.",
+        answer: "회식이라면 양주 A SET(12년산 + 과일 + 안주)가 기본이며, 예산이 충분하다면 양주 B SET(17년산 프리미엄)을 추천합니다. 단체 인원이 많을 경우 맥주 SET도 가능하니 문의해 주세요."
     }
 ];
 
@@ -143,11 +155,11 @@ const Karaoke = () => {
     return (
         <>
             <Helmet>
-                <title>오산 가라오케 TOP 추천 | 오산역·오산/평택 테크 직장인 필수</title>
-                <meta name="description" content="오산 가라오케 추천 가이드. 오산역·삼성전자 오산캠퍼스 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
+                <title>오산 가라오케 TOP 추천 | 음향 특화 파티룸 가이드 2026</title>
+                <meta name="description" content="오산 가라오케 음향 특화 파티룸 완벽 가이드. 하이엔드 사운드 시스템·호텔급 안주·대형룸 완비. 회식·생일파티 맞춤. 주대 18만원~. 상담 010-2626-4833" />
                 <meta name="keywords" content="오산 가라오케, 오산 가라오케 예약, 오산 가라오케 가격, 오산 하이퍼블릭" />
-                <meta property="og:title" content="오산 가라오케 TOP 추천 | 오산역·오산/평택 테크 직장인 필수" />
-                <meta property="og:description" content="오산 가라오케 추천 가이드. 오산역·삼성전자 오산캠퍼스 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
+                <meta property="og:title" content="오산 가라오케 TOP 추천 | 음향 특화 파티룸 가이드 2026" />
+                <meta property="og:description" content="오산 가라오케 음향 특화 파티룸 완벽 가이드. 하이엔드 사운드 시스템·호텔급 안주·대형룸 완비. 회식·생일파티 맞춤. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -155,12 +167,19 @@ const Karaoke = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 가라오케 TOP 추천 | 오산역·오산/평택 테크 직장인 필수" />
-                <meta property="twitter:description" content="오산 가라오케 추천 가이드. 오산역·삼성전자 오산캠퍼스 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 가라오케 TOP 추천 | 음향 특화 파티룸 가이드 2026" />
+                <meta property="twitter:description" content="오산 가라오케 음향 특화 파티룸 완벽 가이드. 하이엔드 사운드 시스템·호텔급 안주·대형룸 완비. 회식·생일파티 맞춤. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-karaoke.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-karaoke-guide" />
             </Helmet>
-            <SchemaJsonLd data={[serviceSchema, faqSchema]} />
+            <SchemaJsonLd data={[
+                generateBreadcrumbSchema([
+                    { name: "홈", url: "https://osankaraoke.com" },
+                    { name: "오산 가라오케", url: "https://osankaraoke.com/osan-karaoke-guide" }
+                ]),
+                serviceSchema,
+                faqSchema
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">
@@ -168,7 +187,7 @@ const Karaoke = () => {
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
-                        <p className="text-xl text-slate-300 leading-relaxed font-light">오산 가라오케는 오산역·삼성전자 오산캠퍼스 중심 파티룸 위주 구성입니다.<br />회식/모임에 맞춘 음향 세팅과 유연한 룸 타입을 안내합니다.<br />주대 18만원 이상·TC 10만원 이상 기준이며 상세 견적은 문의 부탁드립니다.</p>
+                        <p className="text-xl text-slate-300 leading-relaxed font-light">오산 가라오케는 오산역·세교신도시·삼성전자 오산캠퍼스 중심 파티룸 위주 구성입니다.<br />삼성전자 오산캠퍼스 직원 회식·세교신도시 거주자 모임에 맞춘 음향 세팅과 대형 룸 완비.<br />주대 18만원 이상·TC 10만원 이상 기준, 단체 회식 할인 혜택 제공. 상세 견적은 문의 부탁드립니다.</p>
                     </div>
 
                     <TableOfContents sections={sections} />
@@ -294,16 +313,12 @@ const Karaoke = () => {
                             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
                                 <Star className="text-purple-500" /> 서우실장의 가라오케 Tip
                             </h3>
-                            <ul className="space-y-4 text-slate-300 font-light">
-                                <li className="flex gap-3">
-                                    <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>생일 파티 혜택</strong>: 생일이신 고객님께는 샴페인 1병 서비스 또는 특별 안주 서비스를 제공해 드립니다. 예약 시 꼭 말씀해 주세요!</span>
-                                </li>
-                                <li className="flex gap-3">
-                                    <CheckCircle className="text-purple-500 w-5 h-5 flex-shrink-0" />
-                                    <span><strong>단체 회식</strong>: 10인 이상 대형 룸도 완비되어 있습니다. 단체 방문 시 픽업 서비스 차량 2대 배차 등 편의를 제공합니다.</span>
-                                </li>
-                            </ul>
+                            <ol className="list-decimal pl-5 space-y-4 text-slate-300 marker:text-purple-500">
+                                <li><strong>생일 파티 혜택</strong>: 생일이신 고객님께는 샴페인 1병 서비스 또는 특별 안주 서비스를 제공해 드립니다. 예약 시 꼭 말씀해 주세요!</li>
+                                <li><strong>단체 회식</strong>: 10인 이상 대형 룸 우선 배정과 픽업 서비스 차량 2대 이상 배차합니다. 회식 후 귀가 시에도 안전하게 모셔다 드립니다.</li>
+                                <li><strong>삼성전자 오산캠퍼스 직원</strong>: 야근 후 스트레스 해소에 최적! 삼성전자 오산캠퍼스 정문 앞 픽업 서비스 가능합니다.</li>
+                                <li><strong>세교신도시 픽업</strong>: 세교신도시 거주자는 아파트 단지 앞 픽업 서비스를 무료로 제공합니다. 세교신도시에서 가장 가까운 가라오케로 안내해 드립니다.</li>
+                            </ol>
                         </div>
 
                         <div className="bg-purple-900/10 p-8 rounded-2xl border border-purple-500/20">

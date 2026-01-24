@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
+import SchemaJsonLd, { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
 import { Sparkles, CheckCircle, Phone, MapPin, DollarSign, CloudRain, Star, HelpCircle, Utensils, Flower2 } from 'lucide-react';
@@ -142,23 +142,30 @@ const KimonoRoom = () => {
     return (
         <>
             <Helmet>
-                <title>오산 기모노룸 | 오산역 테마 포인트 완벽 가이드</title>
-                <meta name="description" content="오산 기모노룸 완전 가이드. 오산역 테마 의상·포토존 전문. 오산·오산/평택 테크 직장인 이색 경험·특별한 날 맞춤. 테마·퓨전·모던 무드 선택. 상담 010-2626-4833" />
+                <title>오산 기모노룸 | 테마 코스튬 이색 체험 가이드 2026</title>
+                <meta name="description" content="오산 기모노룸 이색 테마 체험 가이드. 전통 기모노·유카타 코스튬·포토존 완비. 바이어 접대·특별한 날 맞춤. 사케 SET 별도 구비. 상담 010-2626-4833" />
                 <meta name="keywords" content="오산 기모노룸, 오산 기모노룸 예약, 오산 룸살롱, 오산 하이퍼블릭" />
-                <meta property="og:title" content="오산 기모노룸 | 오산역 테마 포인트 완벽 가이드" />
-                <meta property="og:description" content="오산 기모노룸 완전 가이드. 오산역 테마 의상·포토존 전문. 오산·오산/평택 테크 직장인 이색 경험·특별한 날 맞춤. 테마·퓨전·모던 무드 선택. 상담 010-2626-4833" />
+                <meta property="og:title" content="오산 기모노룸 | 테마 코스튬 이색 체험 가이드 2026" />
+                <meta property="og:description" content="오산 기모노룸 이색 테마 체험 가이드. 전통 기모노·유카타 코스튬·포토존 완비. 바이어 접대·특별한 날 맞춤. 사케 SET 별도 구비. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-kimono-room.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 기모노룸 | 오산역 테마 포인트 완벽 가이드" />
-                <meta property="twitter:description" content="오산 기모노룸 완전 가이드. 오산역 테마 의상·포토존 전문. 오산·오산/평택 테크 직장인 이색 경험·특별한 날 맞춤. 테마·퓨전·모던 무드 선택. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 기모노룸 | 테마 코스튬 이색 체험 가이드 2026" />
+                <meta property="twitter:description" content="오산 기모노룸 이색 테마 체험 가이드. 전통 기모노·유카타 코스튬·포토존 완비. 바이어 접대·특별한 날 맞춤. 사케 SET 별도 구비. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-kimono-room.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-kimono-room-guide" />
             </Helmet>
-            <SchemaJsonLd data={[serviceSchema, faqSchema]} />
+            <SchemaJsonLd data={[
+                generateBreadcrumbSchema([
+                    { name: "홈", url: "https://osankaraoke.com" },
+                    { name: "오산 기모노룸", url: "https://osankaraoke.com/osan-kimono-room-guide" }
+                ]),
+                serviceSchema,
+                faqSchema
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
+import SchemaJsonLd, { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
 import { Sparkles, CheckCircle, Phone, MapPin, DollarSign, Briefcase, Shirt, Info, Star, HelpCircle } from 'lucide-react';
@@ -142,23 +142,30 @@ const ShirtsRoom = () => {
     return (
         <>
             <Helmet>
-                <title>오산 셔츠룸 예약 가이드 | 오산역 빠른 초이스 추천</title>
-                <meta name="description" content="오산 셔츠룸 완전 가이드. 오산역·삼성전자 오산캠퍼스 중심 빠른 초이스·깔끔한 동선. 오산·오산/평택 테크 직장인 회식·모임 추천. 주대 18만원 이상. 상담 010-2626-4833" />
+                <title>오산 셔츠룸 예약 | 비즈니스 접대 전문 가이드 2026</title>
+                <meta name="description" content="오산 셔츠룸 비즈니스 접대 특화 가이드. 화이트셔츠 컨셉·빠른 초이스·깔끔한 동선. 접대 성공률 200% 맞춤 세팅. 주대 18만원~. 상담 010-2626-4833" />
                 <meta name="keywords" content="오산 셔츠룸, 오산 셔츠룸 예약, 오산 셔츠룸 가격, 오산 하이퍼블릭" />
-                <meta property="og:title" content="오산 셔츠룸 예약 가이드 | 오산역 빠른 초이스 추천" />
-                <meta property="og:description" content="오산 셔츠룸 완전 가이드. 오산역·삼성전자 오산캠퍼스 중심 빠른 초이스·깔끔한 동선. 오산·오산/평택 테크 직장인 회식·모임 추천. 주대 18만원 이상. 상담 010-2626-4833" />
+                <meta property="og:title" content="오산 셔츠룸 예약 | 비즈니스 접대 전문 가이드 2026" />
+                <meta property="og:description" content="오산 셔츠룸 비즈니스 접대 특화 가이드. 화이트셔츠 컨셉·빠른 초이스·깔끔한 동선. 접대 성공률 200% 맞춤 세팅. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://osankaraoke.com/og-shirtsroom.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="오산 셔츠룸 예약 가이드 | 오산역 빠른 초이스 추천" />
-                <meta property="twitter:description" content="오산 셔츠룸 완전 가이드. 오산역·삼성전자 오산캠퍼스 중심 빠른 초이스·깔끔한 동선. 오산·오산/평택 테크 직장인 회식·모임 추천. 주대 18만원 이상. 상담 010-2626-4833" />
+                <meta property="twitter:title" content="오산 셔츠룸 예약 | 비즈니스 접대 전문 가이드 2026" />
+                <meta property="twitter:description" content="오산 셔츠룸 비즈니스 접대 특화 가이드. 화이트셔츠 컨셉·빠른 초이스·깔끔한 동선. 접대 성공률 200% 맞춤 세팅. 주대 18만원~. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://osankaraoke.com/og-shirtsroom.jpg" />
                 <link rel="canonical" href="https://osankaraoke.com/osan-shirtsroom-guide" />
             </Helmet>
-            <SchemaJsonLd data={[serviceSchema, faqSchema]} />
+            <SchemaJsonLd data={[
+                generateBreadcrumbSchema([
+                    { name: "홈", url: "https://osankaraoke.com" },
+                    { name: "오산 셔츠룸", url: "https://osankaraoke.com/osan-shirtsroom-guide" }
+                ]),
+                serviceSchema,
+                faqSchema
+            ]} />
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">

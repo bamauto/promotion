@@ -27,6 +27,8 @@
     "build:anyang": "turbo run build --filter=@promotion/anyang",
     "dev:pyeongchon": "turbo run dev --filter=@promotion/pyeongchon",
     "build:pyeongchon": "turbo run build --filter=@promotion/pyeongchon",
+    "dev:giheung": "turbo run dev --filter=@promotion/giheung",
+    "build:giheung": "turbo run build --filter=@promotion/giheung",
     "generate": "pnpm --filter @promotion/content-generator generate",
     "generate:dry": "pnpm --filter @promotion/content-generator generate -- --dry-run",
     "generator:status": "pnpm --filter @promotion/content-generator dev status",

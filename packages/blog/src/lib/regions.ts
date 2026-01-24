@@ -109,6 +109,17 @@ export const REGIONS = {
     hyperpubSlug: 'highpub',
     pricePrefix: 'entertainment-',
   },
+  giheung: {
+    id: 'giheung',
+    name: '기흥',
+    nameEn: 'Giheung',
+    domain: 'giheungkaraoke.com',
+    keyword: '가라오케',
+    description: '기흥 가라오케 하이퍼블릭 정보',
+    urlPrefix: 'giheung',
+    hyperpubSlug: 'highpub',
+    pricePrefix: 'entertainment-',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;

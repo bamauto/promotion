@@ -1,0 +1,33 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/giheung"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/giheung/:path*"
+    },
+    {
+      "source": "/giheung",
+      "destination": "https://blog-seven-gilt-10.vercel.app/giheung"
+    },
+    {
+      "source": "/giheung/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/giheung/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/giheung/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog(?:/|$)|sitemap-blog|giheung(?:/|$)|_astro(?:/|$)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

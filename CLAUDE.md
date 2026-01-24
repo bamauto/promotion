@@ -39,6 +39,8 @@ curl -X POST -H "Authorization: Bearer SSxhOnGY9JbbPEEgkg85poIE" -H "Content-Typ
 | 안양 | anyang | anyangkaraoke.com |
 | 수지 | suji | sujikaraoke.com |
 | 평촌 | pyeongchon | pc-karaoke.com |
+| 기흥 | giheung | giheungkaraoke.com |
+| 오산 | osan | osankaraoke.com |
 
 ## 프로젝트 구조
 
@@ -54,7 +56,9 @@ promotion/
 │   ├── suwon/       # 수원 사이트
 │   ├── suji/        # 수지 사이트
 │   ├── anyang/      # 안양 사이트
-│   └── pyeongchon/  # 평촌 사이트
+│   ├── pyeongchon/  # 평촌 사이트
+│   ├── giheung/     # 기흥 사이트
+│   └── osan/        # 오산 사이트
 ├── packages/
 │   └── blog/        # 공유 블로그 시스템 (Astro)
 └── supabase/
@@ -74,6 +78,47 @@ promotion/
 - 테이블: blog_posts, blog_images
 - Storage: blog-images 버킷
 - MCP 설정: `.mcp.json` 파일에 Supabase MCP 서버 구성됨
+
+### 블로그 포스팅 스케줄
+블로그는 **하루 6개 카테고리**가 **2시간 간격**으로 자동 발행되도록 설정됨
+
+| 시간 | 카테고리 |
+|------|---------|
+| 00:00 | 가라오케 |
+| 02:00 | 하이퍼블릭 |
+| 04:00 | 셔츠룸 |
+| 06:00 | 룸살롱 |
+| 08:00 | 호빠 |
+| 10:00 | 기모노룸 |
+
+**포스트 발행 설정 SQL:**
+```sql
+-- 새 지역 블로그 포스트 발행 시간 설정 (예: giheung)
+-- 300개 포스트를 향후 50일에 걸쳐 하루 6개씩 발행
+WITH category_schedule AS (
+  SELECT '가라오케' as category, 0 as hour_offset UNION ALL
+  SELECT '하이퍼블릭', 2 UNION ALL
+  SELECT '셔츠룸', 4 UNION ALL
+  SELECT '룸살롱', 6 UNION ALL
+  SELECT '호빠', 8 UNION ALL
+  SELECT '기모노룸', 10
+),
+ranked_posts AS (
+  SELECT
+    bp.id,
+    bp.category,
+    cs.hour_offset,
+    ROW_NUMBER() OVER (PARTITION BY bp.category ORDER BY bp.created_at) - 1 as day_offset
+  FROM blog_posts bp
+  JOIN category_schedule cs ON bp.category = cs.category
+  WHERE 'giheung' = ANY(bp.regions)
+    AND bp.category IN ('가라오케', '하이퍼블릭', '셔츠룸', '룸살롱', '호빠', '기모노룸')
+)
+UPDATE blog_posts bp
+SET published_at = (CURRENT_DATE + (rp.day_offset || ' days')::INTERVAL + (rp.hour_offset || ' hours')::INTERVAL)
+FROM ranked_posts rp
+WHERE bp.id = rp.id;
+```
 
 ## 스크립트
 

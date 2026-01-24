@@ -55,11 +55,11 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>기흥 가라오케·셔츠룸·호빠 | 하이퍼블릭 예약 안내</title>
-                <meta name="description" content="기흥 가라오케·하이퍼블릭·셔츠룸·호빠·기모노룸 예약. 기흥역·카페거리 프리미엄 클럽. 주대 18만원 이상. 상담 010-2626-4833" />
-                <meta name="keywords" content="기흥 가라오케, 기흥 하이퍼블릭, 기흥 셔츠룸, 기흥 호빠, 기흥 기모노룸, 기흥 룸살롱, 기흥역 가라오케, 기흥역 상권 하이퍼블릭" />
-                <meta property="og:title" content="기흥 가라오케·하이퍼블릭 예약 | 기흥역·기흥역 상권 서우실장" />
-                <meta property="og:description" content="기흥 가라오케·기흥 하이퍼블릭 메인 가이드. 기흥역·기흥역 상권 중심 상권에서 기흥·용인 테크 직장인 맞춤 코스를 안내합니다. 기흥 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <title>기흥 가라오케·하이퍼블릭 예약 | 기흥역 프리미엄 가이드 2025</title>
+                <meta name="description" content="기흥 가라오케·하이퍼블릭 최고급 예약 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 프리미엄 서비스. 셔츠룸·호빠·기모노룸까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
+                <meta name="keywords" content="기흥 가라오케, 기흥 하이퍼블릭, 기흥 셔츠룸, 기흥 호빠, 기흥 기모노룸, 기흥 룸살롱, 기흥역 가라오케, 기흥역 상권 하이퍼블릭, 삼성전자 기흥캠퍼스, 용인 가라오케" />
+                <meta property="og:title" content="기흥 가라오케·하이퍼블릭 예약 | 기흥역 프리미엄 가이드 2025" />
+                <meta property="og:description" content="기흥 가라오케·하이퍼블릭 최고급 예약 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 프리미엄 서비스. 셔츠룸·호빠·기모노룸까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://giheungkaraoke.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -68,8 +68,8 @@ const Home = () => {
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="og:site_name" content="기흥 유흥 가이드" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="기흥 가라오케·하이퍼블릭 예약 | 기흥역·기흥역 상권 서우실장" />
-                <meta property="twitter:description" content="기흥 가라오케·기흥 하이퍼블릭 메인 가이드. 기흥역·기흥역 상권 중심 상권에서 기흥·용인 테크 직장인 맞춤 코스를 안내합니다. 기흥 셔츠룸·호빠·기모노룸·룸살롱까지 한 번에. 주대 18만원 이상, TC 10만원 이상, 상세 문의. 24시간 상담 ☎ 010-2626-4833" />
+                <meta property="twitter:title" content="기흥 가라오케·하이퍼블릭 예약 | 기흥역 프리미엄 가이드 2025" />
+                <meta property="twitter:description" content="기흥 가라오케·하이퍼블릭 최고급 예약 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 프리미엄 서비스. 셔츠룸·호빠·기모노룸까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://giheungkaraoke.com/og-home.jpg" />
                 <link rel="canonical" href="https://giheungkaraoke.com" />
             </Helmet>

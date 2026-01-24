@@ -109,6 +109,43 @@ export const generateBreadcrumbSchema = (items) => ({
     }))
 });
 
+export const generateHowToSchema = () => ({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "기흥 가라오케 예약 방법",
+    "description": "기흥 가라오케 예약하는 방법을 단계별로 안내합니다.",
+    "step": [
+        {
+            "@type": "HowToStep",
+            "name": "전화 또는 카카오톡 문의",
+            "text": "010-2626-4833으로 전화하거나 카카오톡 @pbsewoo로 문의합니다."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "희망 날짜/시간/인원 전달",
+            "text": "방문 희망 날짜, 시간, 인원수를 알려주세요."
+        },
+        {
+            "@type": "HowToStep",
+            "name": "예약 확정",
+            "text": "서우실장이 최적의 업소와 룸을 매칭해 예약을 확정합니다."
+        }
+    ]
+});
+
+export const generateProductSchema = (serviceName, price) => ({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": serviceName,
+    "description": `기흥 ${serviceName} 예약 서비스`,
+    "offers": {
+        "@type": "Offer",
+        "priceCurrency": "KRW",
+        "price": price,
+        "availability": "https://schema.org/InStock"
+    }
+});
+
 export const generateOrganizationSchema = () => ({
     "@context": "https://schema.org",
     "@type": "Organization",

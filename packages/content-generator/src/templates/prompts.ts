@@ -17,11 +17,13 @@ SEO에 최적화된 블로그 콘텐츠를 작성해주세요.
 
 작성 규칙:
 1. 제목은 "${region.name}"과 키워드를 포함하고 흥미롭게 작성
-2. 본문은 최소 ${CONTENT_CONFIG.minContentLength}자 이상, ${CONTENT_CONFIG.targetContentLength}자 내외로 작성
+2. 본문은 최소 1500자 이상, ${CONTENT_CONFIG.targetContentLength}자 내외로 작성 (매우 중요!)
 3. 자연스러운 한국어로 작성
 4. ${region.name} 지역의 특성을 반영
 5. HTML 태그 없이 일반 텍스트로 작성
 6. 문단 구분은 빈 줄로 표시
+7. 구체적인 예시와 설명을 풍부하게 포함
+8. 각 문단은 250자 이상으로 작성
 
 응답 형식 (JSON):
 {

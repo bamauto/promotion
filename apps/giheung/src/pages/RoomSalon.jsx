@@ -10,17 +10,17 @@ const SectionTitle = ({ title, subtitle }) => (
     <div className="text-center mb-16 relative">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl"></div>
         <span className="text-amber-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-3 animate-fade-in-up block">{subtitle}</span>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 animate-fade-in-up delay-100 drop-shadow-sm">{title}</h1>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 animate-fade-in-up delay-100 drop-shadow-sm">{title}</h2>
         <div className="w-1 h-12 bg-gradient-to-b from-amber-500 to-transparent mx-auto mt-6"></div>
     </div>
 );
 
 const ContentBlock = ({ title, children, id }) => (
     <div id={id} className="mb-12 bg-slate-900/30 p-8 rounded-2xl border border-slate-800/50 backdrop-blur-sm hover:border-amber-500/20 transition-colors">
-        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
             <div className="w-1.5 h-8 bg-amber-500 rounded-full"></div>
             {title}
-        </h2>
+        </h3>
         <div className="text-slate-300 leading-relaxed text-lg font-light space-y-4">
             {children}
         </div>
@@ -140,11 +140,11 @@ const RoomSalon = () => {
     return (
         <>
             <Helmet>
-                <title>기흥 룸살롱 예약 | 기흥역·기흥역 상권 비즈니스</title>
-                <meta name="description" content="기흥 룸살롱 프라이빗 가이드. 기흥역·기흥역 상권 중심 비즈니스 접대, 조용한 룸. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <title>기흥 룸살롱 | 비즈니스 접대 전문 프라이빗 가이드</title>
+                <meta name="description" content="기흥 룸살롱 프라이빗 가이드. 기흥역 중심 정통 비즈니스 접대 전문. 조용한 룸·VVIP 매니저·철저한 보안. 중요한 미팅은 서우실장과 함께. 상담 010-2626-4833" />
                 <meta name="keywords" content="기흥 룸살롱, 기흥 룸살롱 예약, 기흥 하이퍼블릭, 기흥 가라오케" />
-                <meta property="og:title" content="기흥 룸살롱 예약 | 기흥역·기흥역 상권 비즈니스" />
-                <meta property="og:description" content="기흥 룸살롱 프라이빗 가이드. 기흥역·기흥역 상권 중심 비즈니스 접대, 조용한 룸. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta property="og:title" content="기흥 룸살롱 | 비즈니스 접대 전문 프라이빗 가이드" />
+                <meta property="og:description" content="기흥 룸살롱 프라이빗 가이드. 기흥역 중심 정통 비즈니스 접대 전문. 조용한 룸·VVIP 매니저·철저한 보안. 중요한 미팅은 서우실장과 함께. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://giheungkaraoke.com/og-room-salon.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -152,8 +152,8 @@ const RoomSalon = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="기흥 룸살롱 예약 | 기흥역·기흥역 상권 비즈니스" />
-                <meta property="twitter:description" content="기흥 룸살롱 프라이빗 가이드. 기흥역·기흥역 상권 중심 비즈니스 접대, 조용한 룸. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta property="twitter:title" content="기흥 룸살롱 | 비즈니스 접대 전문 프라이빗 가이드" />
+                <meta property="twitter:description" content="기흥 룸살롱 프라이빗 가이드. 기흥역 중심 정통 비즈니스 접대 전문. 조용한 룸·VVIP 매니저·철저한 보안. 중요한 미팅은 서우실장과 함께. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://giheungkaraoke.com/og-room-salon.jpg" />
                 <link rel="canonical" href="https://giheungkaraoke.com/giheung-room-salon-guide" />
             </Helmet>

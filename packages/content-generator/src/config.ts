@@ -27,6 +27,16 @@ export const REGIONS: Record<string, Region> = {
     name: '수원',
     domain: 'suwon.vip',
   },
+  giheung: {
+    id: 'giheung',
+    name: '기흥',
+    domain: 'giheungkaraoke.com',
+  },
+  osan: {
+    id: 'osan',
+    name: '오산',
+    domain: 'osankaraoke.com',
+  },
 };
 
 export const ALL_REGIONS = Object.keys(REGIONS);
@@ -34,10 +44,10 @@ export const ALL_REGIONS = Object.keys(REGIONS);
 // Content generation settings
 export const CONTENT_CONFIG = {
   // Minimum content length (characters)
-  minContentLength: 800,
-  
+  minContentLength: 1200,
+
   // Target content length
-  targetContentLength: 1200,
+  targetContentLength: 2500,
   
   // Posts to generate per region per day
   defaultPostsPerRegion: 5,

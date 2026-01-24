@@ -10,17 +10,17 @@ const SectionTitle = ({ title, subtitle }) => (
     <div className="text-center mb-16 relative">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl"></div>
         <span className="text-amber-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-3 animate-fade-in-up block">{subtitle}</span>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 animate-fade-in-up delay-100 drop-shadow-sm">{title}</h1>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 animate-fade-in-up delay-100 drop-shadow-sm">{title}</h2>
         <div className="w-1 h-12 bg-gradient-to-b from-amber-500 to-transparent mx-auto mt-6"></div>
     </div>
 );
 
 const ContentBlock = ({ title, children, id }) => (
     <div id={id} className="mb-12 bg-slate-900/30 p-8 rounded-2xl border border-slate-800/50 backdrop-blur-sm hover:border-amber-500/20 transition-colors">
-        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
             <div className="w-1.5 h-8 bg-amber-500 rounded-full"></div>
             {title}
-        </h2>
+        </h3>
         <div className="text-slate-300 leading-relaxed text-lg font-light space-y-4">
             {children}
         </div>
@@ -143,11 +143,11 @@ const HyperPublic = () => {
     return (
         <>
             <Helmet>
-                <title>기흥 하이퍼블릭 예약·가격 | 기흥역·기흥역 상권 추천</title>
-                <meta name="description" content="기흥 하이퍼블릭 가이드. 기흥역·기흥역 상권 중심 카페거리 무드 상권 추천, 1인 방문·픽업 가능. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <title>기흥 하이퍼블릭 | 기흥역 프라이빗 라운지 완벽 가이드</title>
+                <meta name="description" content="기흥 하이퍼블릭 완전 가이드. 기흥역 중심 프라이빗 프리미엄 라운지. 기흥·용인 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
                 <meta name="keywords" content="기흥 하이퍼블릭, 기흥 하이퍼블릭 예약, 기흥 하이퍼블릭 가격, 기흥 가라오케, 기흥 룸살롱" />
-                <meta property="og:title" content="기흥 하이퍼블릭 예약·가격 | 기흥역·기흥역 상권 추천" />
-                <meta property="og:description" content="기흥 하이퍼블릭 가이드. 기흥역·기흥역 상권 중심 카페거리 무드 상권 추천, 1인 방문·픽업 가능. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta property="og:title" content="기흥 하이퍼블릭 | 기흥역 프라이빗 라운지 완벽 가이드" />
+                <meta property="og:description" content="기흥 하이퍼블릭 완전 가이드. 기흥역 중심 프라이빗 프리미엄 라운지. 기흥·용인 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://giheungkaraoke.com/og-highpub.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -155,8 +155,8 @@ const HyperPublic = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="기흥 하이퍼블릭 예약·가격 | 기흥역·기흥역 상권 추천" />
-                <meta property="twitter:description" content="기흥 하이퍼블릭 가이드. 기흥역·기흥역 상권 중심 카페거리 무드 상권 추천, 1인 방문·픽업 가능. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta property="twitter:title" content="기흥 하이퍼블릭 | 기흥역 프라이빗 라운지 완벽 가이드" />
+                <meta property="twitter:description" content="기흥 하이퍼블릭 완전 가이드. 기흥역 중심 프라이빗 프리미엄 라운지. 기흥·용인 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://giheungkaraoke.com/og-highpub.jpg" />
                 <link rel="canonical" href="https://giheungkaraoke.com/giheung-highpub-guide" />
             </Helmet>
@@ -183,6 +183,9 @@ const HyperPublic = () => {
                             기존 펍(Pub)이 오픈된 바 카운터 중심이었다면, 프라이빗 펍은 독립된 룸 문화를 도입한 것이 특징입니다.
                             모던한 인테리어와 선택형 시스템을 결합하여, 기흥 지역에서는 2015년경부터 급성장했으며
                             현재 기흥역 환승권과 카페거리 일대에 다양한 업소가 운영 중입니다.
+                        </p>
+                        <p>
+                            더 화끈한 분위기를 원하신다면 <Link to="/giheung-karaoke-guide" className="text-amber-400 hover:text-amber-300 underline">기흥 가라오케</Link>를, 비즈니스 접대가 목적이라면 <Link to="/giheung-room-salon-guide" className="text-amber-400 hover:text-amber-300 underline">기흥 룸살롱</Link>을 추천드립니다.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">

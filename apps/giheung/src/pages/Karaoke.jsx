@@ -10,17 +10,17 @@ const SectionTitle = ({ title, subtitle }) => (
     <div className="text-center mb-16 relative">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl"></div>
         <span className="text-amber-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-3 animate-fade-in-up block">{subtitle}</span>
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 animate-fade-in-up delay-100 drop-shadow-sm">{title}</h1>
-        <div className="w-1 h-12 bg-gradient-to-b from-amber-500 to-transparent mx-auto mt-6"></div>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 animate-fade-in-up delay-100 drop-shadow-sm">{title}</h2>
+        <div className="w-1 h-12 bg-gradient-to-b from-purple-500 to-transparent mx-auto mt-6"></div>
     </div>
 );
 
 const ContentBlock = ({ title, children, id }) => (
     <div id={id} className="mb-12 bg-slate-900/30 p-8 rounded-2xl border border-slate-800/50 backdrop-blur-sm hover:border-purple-500/20 transition-colors">
-        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
             <div className="w-1.5 h-8 bg-purple-500 rounded-full"></div>
             {title}
-        </h2>
+        </h3>
         <div className="text-slate-300 leading-relaxed text-lg font-light space-y-4">
             {children}
         </div>
@@ -143,11 +143,11 @@ const Karaoke = () => {
     return (
         <>
             <Helmet>
-                <title>기흥 가라오케 예약 | 기흥역·삼성전자 기흥캠퍼스 추천</title>
-                <meta name="description" content="기흥 가라오케 추천 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 파티/모임 룸, 기흥·용인 테크 직장인 회식 맞춤. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <title>기흥 가라오케 TOP 추천 | 기흥역·용인 테크 직장인 필수</title>
+                <meta name="description" content="기흥 가라오케 추천 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
                 <meta name="keywords" content="기흥 가라오케, 기흥 가라오케 예약, 기흥 가라오케 가격, 기흥 하이퍼블릭" />
-                <meta property="og:title" content="기흥 가라오케 예약 | 기흥역·삼성전자 기흥캠퍼스 추천" />
-                <meta property="og:description" content="기흥 가라오케 추천 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 파티/모임 룸, 기흥·용인 테크 직장인 회식 맞춤. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta property="og:title" content="기흥 가라오케 TOP 추천 | 기흥역·용인 테크 직장인 필수" />
+                <meta property="og:description" content="기흥 가라오케 추천 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://giheungkaraoke.com/og-karaoke.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -155,8 +155,8 @@ const Karaoke = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="기흥 가라오케 예약 | 기흥역·삼성전자 기흥캠퍼스 추천" />
-                <meta property="twitter:description" content="기흥 가라오케 추천 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 파티/모임 룸, 기흥·용인 테크 직장인 회식 맞춤. 주대 18만원 이상, TC 10만원 이상, 상세 문의." />
+                <meta property="twitter:title" content="기흥 가라오케 TOP 추천 | 기흥역·용인 테크 직장인 필수" />
+                <meta property="twitter:description" content="기흥 가라오케 추천 가이드. 기흥역·삼성전자 기흥캠퍼스 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://giheungkaraoke.com/og-karaoke.jpg" />
                 <link rel="canonical" href="https://giheungkaraoke.com/giheung-karaoke-guide" />
             </Helmet>
@@ -181,6 +181,9 @@ const Karaoke = () => {
                         </p>
                         <p>
                             비즈니스 접대로도 손색없는 고급스러운 인테리어 룸부터, 2030 세대를 위한 힙한 감성의 파티룸까지 다양한 컨셉의 룸을 보유하고 있어 방문 목적에 맞게 선택하실 수 있습니다.
+                        </p>
+                        <p>
+                            조용한 분위기를 선호하신다면 <Link to="/giheung-highpub-guide" className="text-purple-400 hover:text-purple-300 underline">기흥 하이퍼블릭</Link>을, 특별한 테마를 원하신다면 <Link to="/giheung-kimono-room-guide" className="text-purple-400 hover:text-purple-300 underline">기흥 기모노룸</Link>을 확인해보세요.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">

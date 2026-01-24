@@ -120,6 +120,17 @@ export const REGIONS = {
     hyperpubSlug: 'highpub',
     pricePrefix: 'entertainment-',
   },
+  osan: {
+    id: 'osan',
+    name: '오산',
+    nameEn: 'Osan',
+    domain: 'osankaraoke.com',
+    keyword: '가라오케',
+    description: '오산 가라오케 하이퍼블릭 정보',
+    urlPrefix: 'osan',
+    hyperpubSlug: 'highpub',
+    pricePrefix: 'entertainment-',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;

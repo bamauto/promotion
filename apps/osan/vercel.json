@@ -1,0 +1,33 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/osan"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/osan/:path*"
+    },
+    {
+      "source": "/osan",
+      "destination": "https://blog-seven-gilt-10.vercel.app/osan"
+    },
+    {
+      "source": "/osan/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/osan/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/osan/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog(?:/|$)|sitemap-blog|osan(?:/|$)|_astro(?:/|$)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

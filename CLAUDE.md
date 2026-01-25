@@ -91,6 +91,19 @@ promotion/
 | 08:00 | 호빠 |
 | 10:00 | 기모노룸 |
 
+### ⚠️ 블로그 포스트 status 규칙 (중요!)
+
+| 조건 | status 값 |
+|------|----------|
+| `published_at <= NOW()` (과거/현재) | `published` |
+| `published_at > NOW()` (미래) | `draft` |
+
+**절대 미래 날짜 글에 status='published' 설정하지 말 것!**
+
+블로그 쿼리는 `status = 'published' AND published_at <= NOW()` 조건으로 글을 가져옴.
+- 미래 글은 반드시 `draft` 상태여야 함
+- 과거 날짜로 글을 소급 발행하지 말 것 (오늘 날짜부터 미래로만 스케줄링)
+
 **포스트 발행 설정 SQL:**
 ```sql
 -- 새 지역 블로그 포스트 발행 시간 설정 (예: giheung)

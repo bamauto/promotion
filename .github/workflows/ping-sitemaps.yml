@@ -26,6 +26,7 @@ jobs:
             "giheungkaraoke.com"
             "osankaraoke.com"
             "suwonshirt.com"
+            "pt-karaoke.com"
           )
 
           for domain in "${DOMAINS[@]}"; do

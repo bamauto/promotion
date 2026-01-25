@@ -1,0 +1,38 @@
+name: Daily Sitemap Ping
+
+on:
+  schedule:
+    # 매일 오전 6시 (KST) = UTC 21:00 전날
+    - cron: '0 21 * * *'
+  workflow_dispatch: # 수동 실행 가능
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Google Sitemaps
+        run: |
+          DOMAINS=(
+            "bundanghipublic.com"
+            "dongtankaraoke.net"
+            "ingedongkaraoke.com"
+            "jengjakaraoke.com"
+            "gwanggyokaraoke.com"
+            "yeongtongkaraoke.com"
+            "suwon.vip"
+            "anyangkaraoke.com"
+            "sujikaraoke.com"
+            "pc-karaoke.com"
+            "giheungkaraoke.com"
+            "osankaraoke.com"
+            "suwonshirt.com"
+          )
+
+          for domain in "${DOMAINS[@]}"; do
+            echo "Pinging $domain..."
+            curl -s "https://www.google.com/ping?sitemap=https://$domain/sitemap.xml" > /dev/null
+            curl -s "https://www.google.com/ping?sitemap=https://$domain/sitemap-blog.xml" > /dev/null
+            echo "✓ $domain done"
+          done
+
+          echo "All sitemaps pinged!"

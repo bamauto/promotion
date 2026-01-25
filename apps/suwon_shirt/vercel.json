@@ -1,0 +1,33 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon_shirt"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon_shirt/:path*"
+    },
+    {
+      "source": "/suwon_shirt",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon_shirt"
+    },
+    {
+      "source": "/suwon_shirt/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon_shirt/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/suwon_shirt/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog(?:/|$)|sitemap-blog|suwon_shirt(?:/|$)|_astro(?:/|$)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

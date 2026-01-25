@@ -132,6 +132,17 @@ export const REGIONS = {
     hyperpubSlug: 'highpub',
     pricePrefix: 'entertainment-',
   },
+  suwon_shirt: {
+    id: 'suwon_shirt',
+    name: '수원 셔츠룸',
+    nameEn: 'Suwon Shirt',
+    domain: 'suwonshirt.com',
+    keyword: '셔츠룸',
+    description: '수원 셔츠룸·인계동 셔츠룸 프리미엄 가이드',
+    urlPrefix: 'suwon-shirt',
+    hyperpubSlug: 'highpub',
+    pricePrefix: '',
+  },
 } as const;
 
 export type RegionId = keyof typeof REGIONS;

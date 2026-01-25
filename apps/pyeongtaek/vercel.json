@@ -1,0 +1,33 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/_astro/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/_astro/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongtaek"
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongtaek/:path*"
+    },
+    {
+      "source": "/pyeongtaek",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongtaek"
+    },
+    {
+      "source": "/pyeongtaek/:path*",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongtaek/:path*"
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "destination": "https://blog-seven-gilt-10.vercel.app/pyeongtaek/sitemap.xml"
+    },
+    {
+      "source": "/((?!blog(?:/|$)|sitemap-blog|pyeongtaek(?:/|$)|_astro(?:/|$)).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

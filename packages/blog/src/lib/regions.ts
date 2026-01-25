@@ -132,6 +132,17 @@ export const REGIONS = {
     hyperpubSlug: 'highpub',
     pricePrefix: 'entertainment-',
   },
+  pyeongtaek: {
+    id: 'pyeongtaek',
+    name: '평택',
+    nameEn: 'Pyeongtaek',
+    domain: 'pt-karaoke.com',
+    keyword: '가라오케',
+    description: '평택 가라오케 하이퍼블릭 정보',
+    urlPrefix: 'pyeongtaek',
+    hyperpubSlug: 'highpub',
+    pricePrefix: 'entertainment-',
+  },
   suwon_shirt: {
     id: 'suwon_shirt',
     name: '수원 셔츠룸',

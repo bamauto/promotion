@@ -164,7 +164,7 @@ const HyperPublic = () => {
 
             <div className="pt-24 md:pt-32 min-h-screen bg-slate-950">
                 <div className="container mx-auto px-4 pb-12 max-w-6xl">
-                    <SectionTitle title="수원 프라이빗 펍 완벽 가이드" subtitle="선택과 이해" />
+                    <SectionTitle title="수원 하이퍼블릭 완벽 가이드" subtitle="선택과 이해" />
 
                     {/* Intro Text */}
                     <div className="mb-20 text-center max-w-4xl mx-auto">
@@ -174,7 +174,7 @@ const HyperPublic = () => {
                     <TableOfContents sections={sections} />
 
                     {/* 1. Definition & Features */}
-                    <ContentBlock id="definition" title="1. 프라이빗 펍 문화 이해하기">
+                    <ContentBlock id="definition" title="1. 하이퍼블릭 문화 이해하기">
                         <p>
                             <strong>프라이빗 펍(Private Pub)</strong> 또는 하이퍼블릭은 2010년대 중반 강남에서 시작된
                             새로운 유형의 <strong>프라이빗 라운지 문화</strong>를 지칭합니다.

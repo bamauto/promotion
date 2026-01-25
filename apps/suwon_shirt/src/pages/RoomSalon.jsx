@@ -212,11 +212,12 @@ const RoomSalon = () => {
                             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                                 <Sparkles className="text-amber-500" /> 수원 룸살롱 갤러리
                             </h3>
-                            <div className="grid grid-cols-3 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                 {[
                                     { src: '/partner/rs-gallery-01.webp', alt: '수원 룸살롱 VIP 매니저 - 수원역 비즈니스 접대' },
                                     { src: '/partner/rs-gallery-02.webp', alt: '수원 룸살롱 최고급 파트너 - 인계동 프리미엄 룸' },
                                     { src: '/partner/rs-gallery-03.webp', alt: '수원 룸살롱 프리미엄 서비스 - 인계동 정통' },
+                                    { src: '/partner/rs-gallery-04.webp', alt: '수원 룸살롱 럭셔리 매니저 - 수원역 VVIP' },
                                 ].map((img, idx) => (
                                     <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition-all duration-300 group">
                                         <img

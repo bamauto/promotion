@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import SchemaJsonLd, { generateServiceSchema, generateFAQSchema } from '../components/SchemaJsonLd';
 import RelatedServices from '../components/RelatedServices';
 import TableOfContents from '../components/TableOfContents';
-import { Sparkles, CheckCircle, Phone, MapPin, DollarSign, Briefcase, Shirt, Info, Star, HelpCircle } from 'lucide-react';
+import { Sparkles, CheckCircle, Phone, MapPin, DollarSign, Briefcase, Shirt, Info, Star, HelpCircle, ChevronRight, Zap, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const SectionTitle = ({ title, subtitle }) => (
     <div className="text-center mb-16 relative">
@@ -171,31 +172,88 @@ const ShirtsRoom = () => {
 
                     <TableOfContents sections={sections} />
 
-                    {/* 1. Definition & Concept */}
+                    {/* 1. Definition & Concept - Featured Snippet Optimized */}
                     <ContentBlock id="definition" title="1. 셔츠룸이란?">
+                        {/* Featured Snippet Target - Definition Box */}
+                        <div className="bg-blue-900/20 p-6 rounded-xl border border-blue-500/30 mb-6">
+                            <p className="text-lg text-white leading-relaxed">
+                                <strong className="text-blue-400">수원 셔츠룸</strong>은 화이트 와이셔츠를 입은 매니저들이 서비스하는 프리미엄 유흥업소입니다.
+                                일반 룸살롱의 홀복 대신 깔끔한 셔츠 룩으로 세련된 분위기를 연출하며,
+                                초이스 후 룸에서 진행되는 셔츠 환복 퍼포먼스가 시그니처입니다.
+                            </p>
+                        </div>
+
                         <p>
-                            셔츠룸은 일반적인 룸싸롱의 홀복 대신, <strong>흰색 와이셔츠</strong>만을 입은 매니저들이 서빙하는 컨셉 룸입니다.
-                            초이스 후 룸 안에서 셔츠로 환복하는 퍼포먼스(인사 타임)가 시그니처이며, 핏된 셔츠 라인이 주는 시각적인 즐거움이 특징입니다.
+                            수원 셔츠룸은 강남의 '란제리', '레깅스' 룸보다 진입 장벽이 낮으면서도,
+                            퍼블릭보다 훨씬 과감하고 화끈한 노는 분위기를 형성합니다.
+                            <span className="text-blue-400 font-bold"> 비즈니스 접대</span>와
+                            <span className="text-blue-400 font-bold"> 화끈한 뒷풀이</span> 양쪽 모두를 만족시키는 최고의 하이브리드 업종입니다.
                         </p>
-                        <p>
-                            수원 셔츠룸은 강남의 '란제리', '레깅스' 룸보다 진입 장벽이 낮으면서도, 퍼블릭보다 훨씬 과감하고 화끈한 노는 분위기를 형성합니다.
-                            <span className="text-blue-400 font-bold">비즈니스 접대</span>와 <span className="text-blue-400 font-bold">화끈한 뒷풀이</span> 양쪽 모두를 만족시키는 최고의 하이브리드 업종입니다.
-                        </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+
+                        {/* 수원 셔츠룸 특징 - LSI 키워드 */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center gap-3">
                                 <Shirt className="text-blue-500 w-8 h-8 flex-shrink-0" />
                                 <div>
                                     <h4 className="text-white font-bold mb-1">Visual Concept</h4>
-                                    <p className="text-sm text-slate-400">남자의 로망, 넉넉한 핏의 화이트 셔츠 룩</p>
+                                    <p className="text-sm text-slate-400">화이트 셔츠 룩의 시각적 임팩트</p>
                                 </div>
                             </div>
                             <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center gap-3">
                                 <Briefcase className="text-blue-500 w-8 h-8 flex-shrink-0" />
                                 <div>
                                     <h4 className="text-white font-bold mb-1">Business Friendly</h4>
-                                    <p className="text-sm text-slate-400">어색한 접대 자리를 순식간에 화기애애하게</p>
+                                    <p className="text-sm text-slate-400">삼성 디지털시티 직장인 접대 최적</p>
                                 </div>
                             </div>
+                            <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center gap-3">
+                                <Zap className="text-blue-500 w-8 h-8 flex-shrink-0" />
+                                <div>
+                                    <h4 className="text-white font-bold mb-1">Open Mood</h4>
+                                    <p className="text-sm text-slate-400">터치 마인드 오픈, 화끈한 분위기</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 수원 셔츠룸 vs 강남 셔츠룸 비교표 */}
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">수원 셔츠룸 vs 강남 셔츠룸 비교</h4>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left border-collapse">
+                                <thead>
+                                    <tr className="border-b border-slate-700 text-blue-400">
+                                        <th className="py-3 px-4">항목</th>
+                                        <th className="py-3 px-4">수원 셔츠룸</th>
+                                        <th className="py-3 px-4">강남 셔츠룸</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-sm">
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">평균 주대</td>
+                                        <td className="py-3 px-4 text-blue-400 font-bold">18만원~25만원</td>
+                                        <td className="py-3 px-4">30만원~50만원</td>
+                                    </tr>
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">TC (봉사료)</td>
+                                        <td className="py-3 px-4 text-blue-400 font-bold">10만원~15만원</td>
+                                        <td className="py-3 px-4">15만원~25만원</td>
+                                    </tr>
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">분위기</td>
+                                        <td className="py-3 px-4">편안하고 자연스러움</td>
+                                        <td className="py-3 px-4">화려하고 고급스러움</td>
+                                    </tr>
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">주 고객층</td>
+                                        <td className="py-3 px-4">IT 직장인, 중소기업 임원</td>
+                                        <td className="py-3 px-4">대기업 임원, 연예인</td>
+                                    </tr>
+                                    <tr className="border-b border-slate-800">
+                                        <td className="py-3 px-4 font-bold text-white">가성비</td>
+                                        <td className="py-3 px-4 text-blue-400 font-bold">매우 우수</td>
+                                        <td className="py-3 px-4">보통</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </ContentBlock>
 
@@ -214,11 +272,12 @@ const ShirtsRoom = () => {
                             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                                 <Sparkles className="text-blue-500" /> 수원 셔츠룸 갤러리
                             </h3>
-                            <div className="grid grid-cols-3 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                 {[
                                     { src: '/partner/sr-gallery-01.webp', alt: '수원 셔츠룸 프리미엄 매니저 - 수원역 VIP 서비스' },
                                     { src: '/partner/sr-gallery-02.webp', alt: '수원 셔츠룸 최고급 파트너 - 인계동 럭셔리 룸' },
                                     { src: '/partner/sr-gallery-03.webp', alt: '수원 셔츠룸 VIP 매니저 - 인계동 프리미엄' },
+                                    { src: '/partner/sr-gallery-04.webp', alt: '수원 셔츠룸 프리미엄 서비스 - 수원역 24시간' },
                                 ].map((img, idx) => (
                                     <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group">
                                         <img
@@ -239,11 +298,11 @@ const ShirtsRoom = () => {
                     {/* 3. System & Pricing */}
                     <ContentBlock id="system" title="3. 이용 시스템 및 가격 안내">
                         <p>
-                            셔츠룸의 가장 큰 장점은 **'투명한 정찰제 가격'**입니다.
+                            수원 셔츠룸의 가장 큰 장점은 <strong className="text-blue-400">'투명한 정찰제 가격'</strong>입니다.
                             강남권보다 저렴하면서도 서비스 퀄리티는 유지하여 가성비를 중요시하는 분들께 인기가 많습니다.
                         </p>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 주대 및 TC (예상)</h4>
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">A. 수원 셔츠룸 주대 및 TC</h4>
                         <div className="overflow-x-auto">
                             <table className="w-full text-left border-collapse mt-2">
                                 <thead>
@@ -256,12 +315,12 @@ const ShirtsRoom = () => {
                                 <tbody className="text-sm">
                                     <tr className="border-b border-slate-800">
                                         <td className="py-3 px-4 font-bold text-white">기본 주대</td>
-                                        <td className="py-3 px-4">주대 18만원 이상</td>
+                                        <td className="py-3 px-4 text-blue-400 font-bold">18만원 이상</td>
                                         <td className="py-3 px-4">12년산 양주 + 과일/마른안주 + 음료</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
                                         <td className="py-3 px-4 font-bold text-white">매니저 TC</td>
-                                        <td className="py-3 px-4">TC 10만원 이상</td>
+                                        <td className="py-3 px-4 text-blue-400 font-bold">10만원 이상</td>
                                         <td className="py-3 px-4">업소 및 시간 타임별 상이</td>
                                     </tr>
                                     <tr className="border-b border-slate-800">
@@ -273,11 +332,53 @@ const ShirtsRoom = () => {
                             </table>
                         </div>
 
-                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 진행 순서</h4>
-                        <ol className="list-decimal pl-5 space-y-2 marker:text-blue-500">
-                            <li><strong>초이스</strong>: 미러 초이스 또는 룸 초이스로 파트너를 선택합니다.</li>
-                            <li><strong>인사 (Greeting)</strong>: 파트너가 룸에 입장하여 셔츠로 환복하며 인사 시간을 갖습니다. (셔츠룸의 하이라이트)</li>
-                            <li><strong>음주가무</strong>: 파트너 옆에 착석하여 1시간~1시간 30분 동안 즐거운 술자리를 갖습니다. 터치 마인드가 매우 오픈되어 있습니다.</li>
+                        {/* 기본 주대 포함 사항 - Featured Snippet Target */}
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">B. 수원 셔츠룸 기본 주대 포함 사항</h4>
+                        <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                            <p className="text-slate-300 mb-4">수원 셔츠룸 기본 주대(18만원~)에는 다음 항목이 포함됩니다:</p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>12년산 프리미엄 양주 1병</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>계절 과일 플래터</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>마른안주 (치즈, 견과류 등)</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>소프트 음료 무제한</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>얼음 및 물 무제한</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>프라이빗 룸 이용</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>노래방 시스템</span>
+                                </div>
+                                <div className="flex items-center gap-2 text-slate-300">
+                                    <CheckCircle size={16} className="text-blue-500 flex-shrink-0" />
+                                    <span>무한 초이스 서비스</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 className="text-xl font-bold text-white mt-8 mb-4">C. 수원 셔츠룸 이용 순서</h4>
+                        <ol className="list-decimal pl-5 space-y-3 marker:text-blue-500">
+                            <li><strong className="text-white">전화 예약</strong>: 인원, 방문 시간, 원하는 스타일을 말씀해 주세요.</li>
+                            <li><strong className="text-white">초이스</strong>: 미러 초이스 또는 룸 초이스로 파트너를 선택합니다.</li>
+                            <li><strong className="text-white">인사 (Greeting)</strong>: 파트너가 룸에 입장하여 셔츠로 환복하며 인사 시간을 갖습니다. (셔츠룸의 하이라이트)</li>
+                            <li><strong className="text-white">음주가무</strong>: 파트너 옆에 착석하여 80분~90분 동안 즐거운 술자리를 갖습니다. 터치 마인드가 매우 오픈되어 있습니다.</li>
+                            <li><strong className="text-white">연장 또는 마무리</strong>: TC 추가로 연장하거나, 계산 후 마무리합니다.</li>
                         </ol>
                     </ContentBlock>
 
@@ -310,6 +411,12 @@ const ShirtsRoom = () => {
                                         <p className="text-slate-300 text-sm">A. {faq.answer}</p>
                                     </div>
                                 ))}
+                            </div>
+
+                            <div className="mt-6 text-center">
+                                <Link to="/suwon-shirt-shirtsroom-guide/faq" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 font-bold transition-colors">
+                                    수원 셔츠룸 FAQ 더 보기 <ChevronRight size={18} />
+                                </Link>
                             </div>
                         </div>
                     </div>

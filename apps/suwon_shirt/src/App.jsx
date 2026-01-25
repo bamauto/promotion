@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound';
 import HyperPublicFAQ from './pages/faqs/HyperPublicFAQ';
 import KaraokeFAQ from './pages/faqs/KaraokeFAQ';
 import RoomSalonFAQ from './pages/faqs/RoomSalonFAQ';
+import ShirtRoomFAQ from './pages/faqs/ShirtRoomFAQ';
 import PriceGuide from './pages/PriceGuide';
 import BeginnerGuide from './pages/BeginnerGuide';
 import Terms from './pages/Terms';
@@ -48,6 +49,7 @@ function App() {
           <Route path="/suwon-shirt-highpub-guide/faq" element={<HyperPublicFAQ />} />
           <Route path="/suwon-shirt-karaoke-guide/faq" element={<KaraokeFAQ />} />
           <Route path="/suwon-shirt-room-salon-guide/faq" element={<RoomSalonFAQ />} />
+          <Route path="/suwon-shirt-shirtsroom-guide/faq" element={<ShirtRoomFAQ />} />
           <Route path="/suwon-shirt-price-guide" element={<PriceGuide />} />
           <Route path="/suwon-shirt-beginner-guide" element={<BeginnerGuide />} />
 

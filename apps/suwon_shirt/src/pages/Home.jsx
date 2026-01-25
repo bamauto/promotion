@@ -55,10 +55,10 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>수원 셔츠룸·인계동 셔츠룸 예약 | 수원역 프리미엄 가이드 2025</title>
+                <title>수원 셔츠룸·인계동 셔츠룸 예약 | 서우실장 완벽 가이드</title>
                 <meta name="description" content="수원 셔츠룸·인계동 셔츠룸 최고급 예약 가이드. 수원역·인계동 상권 중심 프리미엄 서비스. 하이퍼블릭·가라오케·호빠까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
                 <meta name="keywords" content="수원 셔츠룸, 인계동 셔츠룸, 수원역 셔츠룸, 수원 하이퍼블릭, 수원 가라오케, 인계동 가라오케, 수원 호빠, 수원 룸살롱, 인계동 룸살롱, 삼성 디지털시티" />
-                <meta property="og:title" content="수원 셔츠룸·인계동 셔츠룸 예약 | 수원역 프리미엄 가이드 2025" />
+                <meta property="og:title" content="수원 셔츠룸·인계동 셔츠룸 예약 | 서우실장 완벽 가이드" />
                 <meta property="og:description" content="수원 셔츠룸·인계동 셔츠룸 최고급 예약 가이드. 수원역·인계동 상권 중심 프리미엄 서비스. 하이퍼블릭·가라오케·호빠까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
                 <meta property="og:image" content="https://suwonshirt.com/og-home.jpg" />
                 <meta property="og:image:width" content="1200" />
@@ -68,7 +68,7 @@ const Home = () => {
                 <meta property="og:locale" content="ko_KR" />
                 <meta property="og:site_name" content="수원 셔츠룸 가이드" />
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content="수원 셔츠룸·인계동 셔츠룸 예약 | 수원역 프리미엄 가이드 2025" />
+                <meta property="twitter:title" content="수원 셔츠룸·인계동 셔츠룸 예약 | 서우실장 완벽 가이드" />
                 <meta property="twitter:description" content="수원 셔츠룸·인계동 셔츠룸 최고급 예약 가이드. 수원역·인계동 상권 중심 프리미엄 서비스. 하이퍼블릭·가라오케·호빠까지 한 번에. 주대 18만원 이상. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://suwonshirt.com/og-home.jpg" />
                 <link rel="canonical" href="https://suwonshirt.com" />
@@ -147,7 +147,7 @@ const Home = () => {
 
                 <div className="relative flex overflow-hidden">
                     <div className="flex animate-infinite-scroll whitespace-nowrap group hover:[animation-play-state:paused]">
-                        {/* Double the images for seamless loop */}
+                        {/* Double the images for seamless loop - 10 unique images */}
                         {[
                             { src: '/partner/partner-01.webp', alt: '수원 셔츠룸 프리미엄 매니저 - 서우실장 엄선 파트너' },
                             { src: '/partner/partner-02.webp', alt: '인계동 셔츠룸 최고급 매니저 - 수원 서우실장 추천' },
@@ -156,13 +156,19 @@ const Home = () => {
                             { src: '/partner/partner-05.webp', alt: '수원 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
                             { src: '/partner/partner-06.webp', alt: '인계동 셔츠룸 엄선 매니저 - 수원 서우실장' },
                             { src: '/partner/partner-07.webp', alt: '수원 가라오케 TOP 매니저 - 수원역 서우실장 추천' },
+                            { src: '/partner/partner-08.webp', alt: '수원 하이퍼블릭 프리미엄 매니저 - 인계동 추천' },
+                            { src: '/partner/partner-09.webp', alt: '수원 룸살롱 VIP 파트너 - 서우실장 엄선' },
+                            { src: '/partner/partner-10.webp', alt: '인계동 기모노룸 프리미엄 매니저 - 수원역 테마' },
                             { src: '/partner/partner-01.webp', alt: '수원 셔츠룸 프리미엄 매니저 - 서우실장 엄선 파트너' },
                             { src: '/partner/partner-02.webp', alt: '인계동 셔츠룸 최고급 매니저 - 수원 서우실장 추천' },
-                            { src: '/partner/partner-03.webp', alt: '수원 셔츠룸 VIP 매니저 - 수원역 라운지' },
+                            { src: '/partner/partner-03.webp', alt: '수원 셔츠룸 VIP 매니저 - 수원역 프리미엄' },
                             { src: '/partner/partner-04.webp', alt: '인계동 하이퍼블릭 프리미엄 파트너 - 수원역 서우실장' },
                             { src: '/partner/partner-05.webp', alt: '수원 셔츠룸 인기 매니저 - 서우실장 베스트 초이스' },
                             { src: '/partner/partner-06.webp', alt: '인계동 셔츠룸 엄선 매니저 - 수원 서우실장' },
                             { src: '/partner/partner-07.webp', alt: '수원 가라오케 TOP 매니저 - 수원역 서우실장 추천' },
+                            { src: '/partner/partner-08.webp', alt: '수원 하이퍼블릭 프리미엄 매니저 - 인계동 추천' },
+                            { src: '/partner/partner-09.webp', alt: '수원 룸살롱 VIP 파트너 - 서우실장 엄선' },
+                            { src: '/partner/partner-10.webp', alt: '인계동 기모노룸 프리미엄 매니저 - 수원역 테마' },
                         ].map((img, idx) => (
                             <div key={idx} className="inline-block px-4">
                                 <div className="w-[300px] h-[450px] md:w-[400px] md:h-[600px] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl relative group/card">

@@ -25,22 +25,37 @@ curl -X POST -H "Authorization: Bearer SSxhOnGY9JbbPEEgkg85poIE" -H "Content-Typ
   "https://api.vercel.com/v13/deployments?teamId=ymimis-projects"
 ```
 
+## ⚠️ Vercel 프로젝트 네이밍 규칙 (필수!)
+
+**신규 프로젝트 생성 시 반드시 `promotion-` 프리픽스 사용**
+
+```
+promotion-{지역ID}
+```
+
+예시:
+- `promotion-anyang` (O)
+- `promotion-pyeongtaek` (O)
+- `anyang` (X) - 프리픽스 없음
+- `pt-karaoke` (X) - 프리픽스 없음
+
 ## 지역별 도메인
 
-| 지역 | ID | 도메인 |
-|------|-----|--------|
-| 분당 | bundang | bundanghipublic.com |
-| 동탄 | dongtan | dongtankaraoke.net |
-| 인계동 | ingedong | ingedongkaraoke.com |
-| 정자 | jengja | jengjakaraoke.com |
-| 광교 | gwanggyo | gwanggyokaraoke.com |
-| 영통 | yeongtong | yeongtongkaraoke.com |
-| 수원 | suwon | suwon.vip |
-| 안양 | anyang | anyangkaraoke.com |
-| 수지 | suji | sujikaraoke.com |
-| 평촌 | pyeongchon | pc-karaoke.com |
-| 기흥 | giheung | giheungkaraoke.com |
-| 오산 | osan | osankaraoke.com |
+| 지역 | ID | 도메인 | Vercel 프로젝트명 |
+|------|-----|--------|------------------|
+| 분당 | bundang | bundanghipublic.com | promotion-bundang |
+| 동탄 | dongtan | dongtankaraoke.net | promotion-dongtan |
+| 인계동 | ingedong | ingedongkaraoke.com | promotion-ingedong |
+| 정자 | jengja | jengjakaraoke.com | promotion-jengja |
+| 광교 | gwanggyo | gwanggyokaraoke.com | promotion-gwanggyo |
+| 영통 | yeongtong | yeongtongkaraoke.com | promotion-yeongtong |
+| 수원 | suwon | suwon.vip | promotion-suwon |
+| 안양 | anyang | anyangkaraoke.com | promotion-anyang |
+| 수지 | suji | sujikaraoke.com | promotion-suji |
+| 평촌 | pyeongchon | pc-karaoke.com | promotion-pyeongchon |
+| 기흥 | giheung | giheungkaraoke.com | promotion-giheung |
+| 오산 | osan | osankaraoke.com | promotion-osan |
+| 평택 | pyeongtaek | pt-karaoke.com | promotion-pyeongtaek |
 
 ## 프로젝트 구조
 
@@ -241,7 +256,7 @@ git commit -m "feat({새지역ID}): Add new {지역명} site"
 git push https://{GITHUB_TOKEN}@github.com/bamauto/promotion.git main
 ```
 
-### 8단계: Vercel 초기 배포
+### 8단계: Vercel 초기 배포 (⚠️ 프로젝트명 주의!)
 ```bash
 cd apps/{새지역ID}
 vercel --prod --yes
@@ -249,7 +264,7 @@ vercel --prod --yes
 # - Set up and deploy? Y
 # - Which scope? ymimis-projects
 # - Link to existing project? N
-# - Project name? {새지역ID}
+# - Project name? promotion-{새지역ID}  ← ⚠️ 반드시 promotion- 프리픽스!
 # - In which directory is your code? ./
 # - Want to modify settings? N
 ```

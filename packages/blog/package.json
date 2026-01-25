@@ -4,10 +4,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npm run ping-sitemaps",
     "preview": "astro preview",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "ping-sitemaps": "node scripts/ping-google.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",

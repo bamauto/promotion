@@ -129,7 +129,7 @@ const RoomSalon = () => {
     ];
 
     const serviceSchema = generateServiceSchema(
-        "Jeongja Room Salon",
+        "Suwon Room Salon",
         "수원 룸살롱 예약 안내. 수원역·인계동 상권 비즈니스 라인, 주대 18만원 이상/TC 10만원 이상.",
         "https://suwonshirt.com/suwon-shirt-room-salon-guide",
         "200000"

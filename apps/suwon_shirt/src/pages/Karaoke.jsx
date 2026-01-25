@@ -254,9 +254,9 @@ const Karaoke = () => {
                             <table className="w-full text-left border-collapse mt-2">
                                 <thead>
                                     <tr className="border-b border-slate-700 text-purple-400">
-                                        <th className="py-3 px-4">세트 메뉴 (기흥)</th>
+                                        <th className="py-3 px-4">세트 메뉴 (수원)</th>
                                         <th className="py-3 px-4">구성</th>
-                                        <th className="py-3 px-4">가격 (예상·기흥)</th>
+                                        <th className="py-3 px-4">가격 (예상·수원)</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">

@@ -51,7 +51,7 @@ const PriceGuide = () => {
                                 <tbody className="text-slate-300 divide-y divide-slate-800">
                                     <tr className="hover:bg-slate-800/30 transition-colors">
                                         <td className="py-4 px-6 font-bold text-amber-400">
-                                            <Link to="/giheung-hyperpub-guide" className="hover:underline">하이퍼블릭</Link>
+                                            <Link to="/suwon-shirt-highpub-guide" className="hover:underline">하이퍼블릭</Link>
                                         </td>
                                         <td className="py-4 px-6">주대 18만원 이상</td>
                                         <td className="py-4 px-6">TC 10만원 이상</td>

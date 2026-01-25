@@ -179,7 +179,7 @@ const KimonoRoom = () => {
                         </p>
                         <p>
                             가장 큰 차별점은 역시 <strong>의상(Costume)</strong>입니다. 매니저들이 화려한 색감의 기모노나 유카타를 입고 의전 서비스를 제공하며,
-                            마치 일본 여행을 온 듯한 착각을 불러일으킵니다. 중요 바이어 접대나 기억에 남는 파티 장소로 강력 추천하는 <strong>기흥의 히든 플레이스</strong>입니다.
+                            마치 일본 여행을 온 듯한 착각을 불러일으킵니다. 중요 바이어 접대나 기억에 남는 파티 장소로 강력 추천하는 <strong>수원의 히든 플레이스</strong>입니다.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center justify-center gap-3">

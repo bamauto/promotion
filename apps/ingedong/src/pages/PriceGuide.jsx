@@ -36,6 +36,54 @@ const PriceGuide = () => {
                         <p className="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto">인계동 상권 기준 주대/TC 기준을 한눈에 정리했습니다.<br />수원시청역·인계로데오거리 중심 업소 기준으로 안내하며 상세 견적은 문의 부탁드립니다.</p>
                     </div>
 
+                    {/* SEO Content Section */}
+                    <div className="bg-slate-900/30 rounded-2xl p-8 mb-16 border border-slate-800">
+                        <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                            <div className="w-1.5 h-8 bg-amber-500 rounded-full"></div>
+                            인계동 유흥 가격, 어떻게 결정되나요?
+                        </h2>
+
+                        <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
+                            <p>
+                                인계동은 수원시청역과 인계로데오거리를 중심으로 경기남부 최대 유흥 상권을 형성하고 있습니다.
+                                <strong className="text-white">30년 이상의 역사</strong>를 가진 검증된 업소들이 밀집해 있으며,
+                                가라오케·하이퍼블릭·룸살롱·셔츠룸·호빠·기모노룸 등 다양한 업종이 공존합니다.
+                            </p>
+
+                            <p>
+                                인계동 유흥 가격은 <strong className="text-amber-400">주대(SET) + TC(Table Charge) + WT(Waiter Tip)</strong>
+                                구조로 구성됩니다. 주대는 기본 주류 1병과 과일·안주가 포함된 세트 가격이며,
+                                TC는 매니저(아가씨/선수) 봉사료, WT는 웨이터 서비스 비용입니다.
+                            </p>
+
+                            <h3 className="text-xl font-bold text-white mt-8 mb-4">인계동 vs 강남 가격 비교</h3>
+                            <p>
+                                동일한 서비스 수준을 기준으로 했을 때, 인계동은 강남 대비 약 <strong className="text-amber-400">30% 저렴</strong>합니다.
+                                예를 들어 강남에서 주대 25만원·TC 15만원인 하이퍼블릭 코스가
+                                인계동에서는 주대 18만원·TC 10만원 수준으로 이용 가능합니다.
+                            </p>
+
+                            <p>
+                                특히 <strong className="text-white">수원시청역 중심 상권</strong>은 접근성이 뛰어나고
+                                주차 인프라가 잘 갖춰져 있어, 수원·용인·화성 지역 비즈니스 고객들에게
+                                높은 가성비를 제공합니다.
+                            </p>
+
+                            <h3 className="text-xl font-bold text-white mt-8 mb-4">정찰제 가격 운영의 중요성</h3>
+                            <p>
+                                서우실장은 <strong className="text-amber-400">100% 정찰제 가격표</strong>를 사전 공개하고,
+                                예약 시 정확한 견적을 안내해 드립니다. 일부 비양심 업소에서 발생하는
+                                '술병 늘리기', '안 먹은 안주 추가' 같은 바가지요금 문제를 원천 차단합니다.
+                            </p>
+
+                            <p>
+                                인계동에서 15년 이상 활동하며 쌓은 신뢰를 바탕으로,
+                                <strong className="text-white">투명한 계산서</strong>와 합리적인 가격을 약속드립니다.
+                                계산 전 항상 내역을 확인시켜 드리며, 예상치 못한 추가금은 절대 발생하지 않습니다.
+                            </p>
+                        </div>
+                    </div>
+
                     {/* Comparison Table */}
                     <div className="bg-slate-900/50 rounded-2xl border border-slate-800 overflow-hidden mb-16 shadow-xl">
                         <div className="overflow-x-auto">

@@ -118,8 +118,10 @@ const BlogSection = () => {
                   <img
                     src={post.image}
                     alt={post.imageAlt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    width="1200"
+                    height="675"
                     loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-slate-600">

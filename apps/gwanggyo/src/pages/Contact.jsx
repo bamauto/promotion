@@ -79,7 +79,7 @@ const Contact = () => {
                             <Clock size={16} /> 24 Hours Service
                         </span>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 animate-fade-in-up delay-100">
-                            실시간 예약 & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">문의하기</span>
+                            광교 가라오케·하이퍼블릭 광교 가라오케·하이퍼블릭 실시간 예약 & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">문의하기</span>
                         </h1>
                         <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">광교 상권 기준 빠른 예약/상담을 도와드립니다.<br />광교중앙역·광교호수공원 픽업 포함, 24시간 연결됩니다.</p>
                     </div>

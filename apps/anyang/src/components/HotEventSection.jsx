@@ -1,76 +1,98 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Sparkles, Timer, Users, ArrowRight, Zap, Bell, CheckCircle2 } from 'lucide-react';
 
 const HotEventSection = () => {
     // State
     const [visitors, setVisitors] = useState(12840);
-    const [timeLeft, setTimeLeft] = useState({ h: 23, m: 59, s: 59 });
-    const [notifications, setNotifications] = useState([]);
+    const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [activeNotifications, setActiveNotifications] = useState([]);
     const [claimed, setClaimed] = useState(false);
     const cardRef = useRef(null);
 
-    // 1. Live Visitor Effect (Random Fluctuation)
+    const notifications = [
+        '김O수님 안양역 예약완료',
+        '이O진님 평촌역 라인 문의중',
+        '박O훈님 안양 가라오케 입장',
+        '최O영님 안양 이벤트 참여',
+        '정O우님 안양역 예약완료'
+    ];
+
+    // Consolidated animation loop using requestAnimationFrame
     useEffect(() => {
-        const interval = setInterval(() => {
-            setVisitors(prev => prev + Math.floor(Math.random() * 5) - 1);
-        }, 2000);
-        return () => clearInterval(interval);
-    }, []);
+        let lastVisitorUpdate = Date.now();
+        let lastNotification = Date.now();
+        let rafId;
 
-    // 2. Countdown Logic
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(prev => {
-                let { h, m, s } = prev;
-                if (s > 0) s--;
-                else {
-                    s = 59;
-                    if (m > 0) m--;
-                    else {
-                        m = 59;
-                        if (h > 0) h--;
-                        else h = 23;
-                    }
-                }
-                return { h, m, s };
-            });
-        }, 1000);
-        return () => clearInterval(timer);
-    }, []);
+        const update = () => {
+            const now = Date.now();
 
-    // 3. Fake "Recent Booking" Notifications
-    useEffect(() => {
-        const names = ['김O수', '이O진', '박O훈', '최O영', '정O우'];
-        const actions = ['범계 예약완료', '평촌 라인 문의중', '안양 가라오케 입장', '안양 이벤트 참여'];
+            // Countdown (every frame)
+            const endDate = new Date('2026-12-31T23:59:59');
+            const diff = endDate - new Date();
+            if (diff > 0) {
+                setTimeLeft({
+                    days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+                    minutes: Math.floor((diff / 1000 / 60) % 60),
+                    seconds: Math.floor((diff / 1000) % 60),
+                });
+            }
 
-        const spawnNotification = () => {
-            const id = Date.now();
-            const text = `${names[Math.floor(Math.random() * names.length)]}님 ${actions[Math.floor(Math.random() * actions.length)]}`;
-            setNotifications(prev => [...prev.slice(-2), { id, text }]); // Keep last 3
+            // Visitor update (every 5 seconds)
+            if (now - lastVisitorUpdate > 5000) {
+                setVisitors(prev => Math.max(128, prev + Math.floor(Math.random() * 5) - 1));
+                lastVisitorUpdate = now;
+            }
 
-            setTimeout(() => {
-                setNotifications(prev => prev.filter(n => n.id !== id));
-            }, 4000);
+            // Notification spawn (every 5 seconds)
+            if (now - lastNotification > 5000) {
+                const newNotif = {
+                    id: Date.now(),
+                    text: notifications[Math.floor(Math.random() * notifications.length)],
+                };
+                setActiveNotifications(prev => [...prev.slice(-1), newNotif]);
+                lastNotification = now;
+            }
+
+            rafId = requestAnimationFrame(update);
         };
 
-        const interval = setInterval(spawnNotification, 3500);
-        return () => clearInterval(interval);
+        rafId = requestAnimationFrame(update);
+        return () => cancelAnimationFrame(rafId);
     }, []);
 
-    // 4. 3D Tilt Effect
-    const handleMouseMove = (e) => {
-        if (!cardRef.current) return;
-        const card = cardRef.current;
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const rotateX = ((y - centerY) / centerY) * -5; // Max 5deg
-        const rotateY = ((x - centerX) / centerX) * 5;
-
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    // Throttle helper
+    const throttle = (func, delay) => {
+        let lastCall = 0;
+        return (...args) => {
+            const now = Date.now();
+            if (now - lastCall >= delay) {
+                lastCall = now;
+                func(...args);
+            }
+        };
     };
+
+    // Throttled 3D Tilt Effect
+    const handleMouseMove = useCallback(
+        throttle((e) => {
+            const card = e.currentTarget;
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = ((y - centerY) / centerY) * -5;
+            const rotateY = ((x - centerX) / centerX) * 5;
+
+            requestAnimationFrame(() => {
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+            });
+        }, 16), // 60fps
+        []
+    );
 
     const handleMouseLeave = () => {
         if (cardRef.current) {
@@ -106,7 +128,7 @@ const HotEventSection = () => {
 
                 {/* Floating Notifications */}
                 <div className="absolute -top-12 right-0 md:right-10 flex flex-col gap-2 pointer-events-none z-20">
-                    {notifications.map(n => (
+                    {activeNotifications.map(n => (
                         <div key={n.id} className="animate-fade-in-up bg-slate-900/90 border border-amber-500/30 text-white text-xs py-2 px-4 rounded-full shadow-xl flex items-center gap-2 backdrop-blur-md">
                             <Bell size={12} className="text-amber-500 animate-wiggle" />
                             {n.text} <span className="text-slate-500 text-[10px] ml-1">방금 전</span>
@@ -136,8 +158,8 @@ const HotEventSection = () => {
                             </h2>
 
                             <p className="text-lg text-slate-300 font-light leading-relaxed">
-                                오늘 밤 범계·평촌 라인 방문 고객을 위한 단독 혜택.<br />
-                                프리미엄 양주 세트 할인과 일정 맞춤 상담이 포함됩니다.
+                                오늘 밤 안양 평촌역 방문 고객을 위한 단독 혜택.<br />
+                                프리미엄 양주 세트 할인과 대기 시간 단축 혜택을 제공합니다.
                             </p>
 
                             <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
@@ -163,11 +185,11 @@ const HotEventSection = () => {
                             <div className="text-center mb-8">
                                 <h3 className="text-slate-400 text-sm font-bold uppercase tracking-widest mb-4">Limited Time Remaining</h3>
                                 <div className="flex justify-center gap-3">
-                                    <TimeBox val={timeLeft.h} label="HRS" />
+                                    <TimeBox val={timeLeft.hours} label="HRS" />
                                     <span className="text-3xl font-bold text-slate-600 self-center pb-4">:</span>
-                                    <TimeBox val={timeLeft.m} label="MIN" />
+                                    <TimeBox val={timeLeft.minutes} label="MIN" />
                                     <span className="text-3xl font-bold text-slate-600 self-center pb-4">:</span>
-                                    <TimeBox val={timeLeft.s} label="SEC" />
+                                    <TimeBox val={timeLeft.seconds} label="SEC" />
                                 </div>
                             </div>
 

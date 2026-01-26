@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Phone, MessageCircle, Menu, X } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, Send } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 import Breadcrumbs from './Breadcrumbs';

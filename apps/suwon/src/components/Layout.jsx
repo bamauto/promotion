@@ -125,6 +125,35 @@ const Layout = ({ children }) => {
                             수원 유흥의 품격 있는 기준, 믿음직한 파트너로서<br />
                             언제나 정상을 다하는 서우실장이 되겠습니다."
                         </p>
+                        {/* Social Media Links */}
+                        <div className="flex justify-center items-center gap-4 mb-6">
+                            <a
+                                href="https://t.me/pbsewoo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-[#0088cc] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                                aria-label="텔레그램으로 문의하기"
+                            >
+                                <Send size={18} className="text-slate-400 group-hover:text-white transition-colors" />
+                            </a>
+                            <a
+                                href="http://qr.kakao.com/talk/jMlvTnRecn1PgP4S9gqME2itU7g-"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-[#FEE500] flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                                aria-label="카카오톡으로 문의하기"
+                            >
+                                <MessageCircle size={18} className="text-slate-400 group-hover:text-black transition-colors" />
+                            </a>
+                            <a
+                                href="tel:010-2626-4833"
+                                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-amber-500 flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                                aria-label="전화로 문의하기"
+                            >
+                                <Phone size={18} className="text-slate-400 group-hover:text-white transition-colors" />
+                            </a>
+                        </div>
+
                         <div className="h-px w-12 bg-amber-500/30 mx-auto mb-4"></div>
                         <div className="flex justify-center gap-4 text-xs font-medium mb-3">
                             <Link to="/terms" className="text-slate-500 hover:text-amber-500 transition-colors">이용약관</Link>

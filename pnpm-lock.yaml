@@ -63,6 +63,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -176,6 +179,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -231,6 +237,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -286,6 +295,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -399,6 +411,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -454,6 +469,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -509,6 +527,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -564,6 +585,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -619,6 +643,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -674,6 +701,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)
@@ -784,6 +814,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.19(tsx@4.21.0)(yaml@2.8.2)
+      terser:
+        specifier: ^5.46.0
+        version: 5.46.0
       vite:
         specifier: ^5.4.21
         version: 5.4.21(@types/node@22.19.7)(terser@5.46.0)

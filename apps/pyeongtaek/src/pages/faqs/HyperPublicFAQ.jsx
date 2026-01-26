@@ -53,7 +53,7 @@ const HyperPublicFAQ = () => {
                 <title>평택 하이퍼블릭 FAQ | 가격·픽업·예약 안내</title>
                 <meta name="description" content="평택 하이퍼블릭 이용 전 필독 FAQ. 주대/TC 기준, 픽업 범위, 예약 팁을 정리했습니다." />
                 <meta name="keywords" content="평택 하이퍼블릭 FAQ, 평택 하이퍼블릭 가격, 평택 하이퍼블릭 예약" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-highpub-guide/faq" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-highpub-guide/faq" />
             </Helmet>
             <SchemaJsonLd data={faqSchema} />
 
@@ -80,7 +80,7 @@ const HyperPublicFAQ = () => {
                             <button onClick={() => window.location.href = 'tel:01026264833'} className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all">
                                 <Phone size={20} /> 전화로 물어보기
                             </button>
-                            <Link to="/giheung-highpub-guide" className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all">
+                            <Link to="/pyeongtaek-highpub-guide" className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all">
                                 <ChevronRight size={20} /> 평택 하이퍼블릭 메인으로
                             </Link>
                         </div>

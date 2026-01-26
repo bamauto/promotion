@@ -133,7 +133,7 @@ const ShirtsRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Shirts Room Club",
         "평택 셔츠룸 예약 안내. 평택역 상권·구성역 중심, 주대 18만원 이상/TC 10만원 이상.",
-        "https://pt-karaoke.com/giheung-shirtsroom-guide",
+        "https://pt-karaoke.com/pyeongtaek-shirtsroom-guide",
         "180000"
     );
 
@@ -156,7 +156,7 @@ const ShirtsRoom = () => {
                 <meta property="twitter:title" content="평택 셔츠룸 예약 가이드 | 평택역 빠른 초이스 추천" />
                 <meta property="twitter:description" content="평택 셔츠룸 완전 가이드. 평택역·평택 산업단지 중심 빠른 초이스·깔끔한 동선. 평택·평택 테크 직장인 회식·모임 추천. 주대 18만원 이상. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://pt-karaoke.com/og-shirtsroom.jpg" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-shirtsroom-guide" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-shirtsroom-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

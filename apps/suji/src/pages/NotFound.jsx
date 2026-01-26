@@ -7,7 +7,7 @@ const NotFound = () => {
     return (
         <>
             <Helmet>
-                <title>페이지를 찾을 수 없습니다 | 동탄 서우실장</title>
+                <title>페이지를 찾을 수 없습니다 | 수지 서우실장</title>
                 <meta name="robots" content="noindex" />
             </Helmet>
 
@@ -30,7 +30,7 @@ const NotFound = () => {
 
                     <p className="text-slate-400 mb-10 leading-relaxed">
                         요청하신 페이지가 사라졌거나 잘못된 주소입니다.<br />
-                        하지만 걱정 마세요. 오늘 밤 동탄에서 완벽한 장소는 아직 열려있습니다.
+                        하지만 걱정 마세요. 오늘 밤 수지에서 완벽한 장소는 아직 열려있습니다.
                     </p>
 
                     <div className="grid gap-3">

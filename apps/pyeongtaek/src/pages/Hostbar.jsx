@@ -77,7 +77,7 @@ const VenueCard = ({ venue }) => (
     </article>
 );
 
-import venueImg1 from '../assets/giheung-hostbar-1.webp';
+import venueImg1 from '../assets/pyeongtaek-hostbar-1.webp';
 import venueImg2 from '../assets/ingye-hostbar-2.webp';
 
 const venues = {
@@ -133,7 +133,7 @@ const Hostbar = () => {
     const serviceSchema = generateServiceSchema(
         "Host Bar",
         "평택 호빠 예약 안내. 평택역 상권·평택 산업단지 여성전용 라운지, 주대 18만원 이상/TC 10만원 이상.",
-        "https://pt-karaoke.com/giheung-hostbar-guide",
+        "https://pt-karaoke.com/pyeongtaek-hostbar-guide",
         "180000"
     );
 
@@ -156,7 +156,7 @@ const Hostbar = () => {
                 <meta property="twitter:title" content="평택 호빠 | 평택역 여성 전용 라운지 완벽 가이드" />
                 <meta property="twitter:description" content="평택 호빠 완전 가이드. 평택역·평택 산업단지 여성 전용 프리미엄 라운지. 평택·평택 여성 직장인 힐링·네트워킹 맞춤. 안정적·편안한 분위기. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://pt-karaoke.com/og-hostbar.jpg" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-hostbar-guide" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-hostbar-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

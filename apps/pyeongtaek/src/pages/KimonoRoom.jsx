@@ -133,7 +133,7 @@ const KimonoRoom = () => {
     const serviceSchema = generateServiceSchema(
         "Kimono Room",
         "평택 기모노룸 예약 안내. 평택역·평택 산업단지 테마, 주대 18만원 이상/TC 10만원 이상.",
-        "https://pt-karaoke.com/giheung-kimono-room-guide",
+        "https://pt-karaoke.com/pyeongtaek-kimono-room-guide",
         "180000"
     );
 
@@ -156,7 +156,7 @@ const KimonoRoom = () => {
                 <meta property="twitter:title" content="평택 기모노룸 | 평택역 테마 포인트 완벽 가이드" />
                 <meta property="twitter:description" content="평택 기모노룸 완전 가이드. 평택역 테마 의상·포토존 전문. 평택·평택 테크 직장인 이색 경험·특별한 날 맞춤. 테마·퓨전·모던 무드 선택. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://pt-karaoke.com/og-kimono-room.jpg" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-kimono-room-guide" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-kimono-room-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 

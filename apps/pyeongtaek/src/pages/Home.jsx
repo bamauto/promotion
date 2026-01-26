@@ -30,12 +30,12 @@ const Home = () => {
     const [activeVenue, setActiveVenue] = React.useState(0);
 
     const venues = [
-        { id: 'giheung-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '평택역 중심 프라이빗 라운지' },
-        { id: 'giheung-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '평택역 상권 파티/모임 룸' },
-        { id: 'giheung-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '평택 산업단지 빠른 초이스' },
-        { id: 'giheung-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '구성역 테마 포인트' },
+        { id: 'pyeongtaek-highpub-guide', title: '하이퍼블릭', sub: '프라이빗 / 시크릿', img: '/highpublic_main.webp', desc: '평택역 중심 프라이빗 라운지' },
+        { id: 'pyeongtaek-karaoke-guide', title: '가라오케', sub: '프리미엄 / 라운지', img: '/karaoke_main.webp', desc: '평택역 상권 파티/모임 룸' },
+        { id: 'pyeongtaek-shirtsroom-guide', title: '셔츠룸', sub: '초이스 / 화이트셔츠', img: '/shirtsroom_main.webp', desc: '평택 산업단지 빠른 초이스' },
+        { id: 'pyeongtaek-kimono-room-guide', title: '기모노룸', sub: '이색 테마 / 코스프레', img: '/kimonoroom_main.webp', desc: '구성역 테마 포인트' },
         { id: 'pyeongtaek-room-salon-guide', title: '룸살롱', sub: '정통 / 비즈니스', img: '/roomsalon_main.webp', desc: '평택역 비즈니스 라인' },
-        { id: 'giheung-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '평택역 상권 여성전용 라운지' }
+        { id: 'pyeongtaek-hostbar-guide', title: '호빠', sub: '프리미엄 / 여성전용', img: '/hostbar_main.webp', desc: '평택역 상권 여성전용 라운지' }
     ];
 
     const scrollToSection = (id) => {
@@ -101,7 +101,7 @@ const Home = () => {
                                 </span>
                             </button>
                             <Link
-                                to="/giheung-highpub-guide"
+                                to="/pyeongtaek-highpub-guide"
                                 className="px-10 py-5 bg-slate-900/50 backdrop-blur text-white font-bold rounded-xl border border-slate-700 hover:border-amber-500 hover:text-amber-400 transition-all hover:bg-slate-900 flex items-center justify-center gap-2"
                             >
                                 <GlassWater size={20} /> 라운지 투어

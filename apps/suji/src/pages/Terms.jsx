@@ -5,7 +5,7 @@ const Terms = () => {
     return (
         <>
             <Helmet>
-                <title>이용약관 | 동탄 서우실장</title>
+                <title>이용약관 | 수지 서우실장</title>
                 <meta name="robots" content="noindex, follow" />
             </Helmet>
 
@@ -17,14 +17,14 @@ const Terms = () => {
                         <section>
                             <h2 className="text-xl font-bold text-white mb-4">제 1 조 (목적)</h2>
                             <p>
-                                본 약관은 동탄 서우실장(이하 "회사")이 제공하는 웹사이트 및 제반 서비스(이하 "서비스")의 이용과 관련하여 회사와 회원 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+                                본 약관은 수지 서우실장(이하 "회사")이 제공하는 웹사이트 및 제반 서비스(이하 "서비스")의 이용과 관련하여 회사와 회원 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
                             </p>
                         </section>
 
                         <section>
                             <h2 className="text-xl font-bold text-white mb-4">제 2 조 (용어의 정의)</h2>
                             <ul className="list-disc pl-5 space-y-2">
-                                <li>"서비스"라 함은 구현되는 단말기(PC, 휴대형단말기 등)와 상관없이 회원이 이용할 수 있는 동탄 서우실장 관련 제반 서비스를 의미합니다.</li>
+                                <li>"서비스"라 함은 구현되는 단말기(PC, 휴대형단말기 등)와 상관없이 회원이 이용할 수 있는 수지 서우실장 관련 제반 서비스를 의미합니다.</li>
                                 <li>"회원"이라 함은 회사의 서비스에 접속하여 본 약관에 따라 회사와 이용계약을 체결하고 회사가 제공하는 서비스를 이용하는 고객을 말합니다.</li>
                             </ul>
                         </section>

@@ -59,7 +59,7 @@ const PriceGuide = () => {
                                     </tr>
                                     <tr className="hover:bg-slate-800/30 transition-colors">
                                         <td className="py-4 px-6 font-bold text-blue-400">
-                                            <Link to="/giheung-shirtsroom-guide" className="hover:underline">셔츠룸</Link>
+                                            <Link to="/pyeongtaek-shirtsroom-guide" className="hover:underline">셔츠룸</Link>
                                         </td>
                                         <td className="py-4 px-6">주대 18만원 이상</td>
                                         <td className="py-4 px-6">TC 10만원 이상</td>
@@ -67,7 +67,7 @@ const PriceGuide = () => {
                                     </tr>
                                     <tr className="hover:bg-slate-800/30 transition-colors">
                                         <td className="py-4 px-6 font-bold text-purple-400">
-                                            <Link to="/giheung-karaoke-guide" className="hover:underline">가라오케</Link>
+                                            <Link to="/pyeongtaek-karaoke-guide" className="hover:underline">가라오케</Link>
                                         </td>
                                         <td className="py-4 px-6">주대 18만원 이상</td>
                                         <td className="py-4 px-6">TC 10만원 이상</td>
@@ -83,7 +83,7 @@ const PriceGuide = () => {
                                     </tr>
                                     <tr className="hover:bg-slate-800/30 transition-colors">
                                         <td className="py-4 px-6 font-bold text-rose-500">
-                                            <Link to="/giheung-hostbar-guide" className="hover:underline">호스트바 (호빠)</Link>
+                                            <Link to="/pyeongtaek-hostbar-guide" className="hover:underline">호스트바 (호빠)</Link>
                                         </td>
                                         <td className="py-4 px-6">주대 18만원 이상</td>
                                         <td className="py-4 px-6">TC 10만원 이상</td>

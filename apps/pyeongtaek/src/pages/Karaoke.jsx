@@ -134,7 +134,7 @@ const Karaoke = () => {
     const serviceSchema = generateServiceSchema(
         "Karaoke",
         "평택 가라오케 예약 안내. 평택역·평택 산업단지 중심 파티룸, 주대 18만원 이상/TC 10만원 이상.",
-        "https://pt-karaoke.com/giheung-karaoke-guide",
+        "https://pt-karaoke.com/pyeongtaek-karaoke-guide",
         "180000"
     );
 
@@ -158,7 +158,7 @@ const Karaoke = () => {
                 <meta property="twitter:title" content="평택 가라오케 TOP 추천 | 평택역·평택 테크 직장인 필수" />
                 <meta property="twitter:description" content="평택 가라오케 추천 가이드. 평택역·평택 산업단지 중심 프리미엄 파티룸. 고급 음향시스템 & 호텔급 안주. 주대 18만원 이상, TC 10만원 이상. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://pt-karaoke.com/og-karaoke.jpg" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-karaoke-guide" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-karaoke-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 
@@ -183,7 +183,7 @@ const Karaoke = () => {
                             비즈니스 접대로도 손색없는 고급스러운 인테리어 룸부터, 2030 세대를 위한 힙한 감성의 파티룸까지 다양한 컨셉의 룸을 보유하고 있어 방문 목적에 맞게 선택하실 수 있습니다.
                         </p>
                         <p>
-                            조용한 분위기를 선호하신다면 <Link to="/giheung-highpub-guide" className="text-purple-400 hover:text-purple-300 underline">평택 하이퍼블릭</Link>을, 특별한 테마를 원하신다면 <Link to="/giheung-kimono-room-guide" className="text-purple-400 hover:text-purple-300 underline">평택 기모노룸</Link>을 확인해보세요.
+                            조용한 분위기를 선호하신다면 <Link to="/pyeongtaek-highpub-guide" className="text-purple-400 hover:text-purple-300 underline">평택 하이퍼블릭</Link>을, 특별한 테마를 원하신다면 <Link to="/pyeongtaek-kimono-room-guide" className="text-purple-400 hover:text-purple-300 underline">평택 기모노룸</Link>을 확인해보세요.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800 p-4 rounded-xl text-center border border-slate-700">
@@ -319,7 +319,7 @@ const Karaoke = () => {
                                 ))}
                             </div>
                             <div className="mt-6 text-center">
-                                <Link to="/giheung-karaoke-guide/faq" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-bold transition-colors">
+                                <Link to="/pyeongtaek-karaoke-guide/faq" className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-bold transition-colors">
                                     평택 더 많은 질문과 답변 보기 <ChevronRight size={18} />
                                 </Link>
                             </div>

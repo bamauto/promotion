@@ -134,7 +134,7 @@ const HyperPublic = () => {
     const serviceSchema = generateServiceSchema(
         "HyperPublic Club",
         "평택 하이퍼블릭 예약 안내. 평택역·평택역 상권 중심 픽업, 주대 18만원 이상/TC 10만원 이상.",
-        "https://pt-karaoke.com/giheung-highpub-guide",
+        "https://pt-karaoke.com/pyeongtaek-highpub-guide",
         "180000"
     );
 
@@ -158,7 +158,7 @@ const HyperPublic = () => {
                 <meta property="twitter:title" content="평택 하이퍼블릭 | 평택역 프라이빗 라운지 완벽 가이드" />
                 <meta property="twitter:description" content="평택 하이퍼블릭 완전 가이드. 평택역 중심 프라이빗 프리미엄 라운지. 평택·평택 테크 직장인 조용한 접대·비즈니스 술자리 맞춤. 상담 010-2626-4833" />
                 <meta property="twitter:image" content="https://pt-karaoke.com/og-highpub.jpg" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-highpub-guide" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-highpub-guide" />
             </Helmet>
             <SchemaJsonLd data={[serviceSchema, faqSchema]} />
 
@@ -185,7 +185,7 @@ const HyperPublic = () => {
                             현재 평택역 환승권과 카페거리 일대에 다양한 업소가 운영 중입니다.
                         </p>
                         <p>
-                            더 화끈한 분위기를 원하신다면 <Link to="/giheung-karaoke-guide" className="text-amber-400 hover:text-amber-300 underline">평택 가라오케</Link>를, 비즈니스 접대가 목적이라면 <Link to="/pyeongtaek-room-salon-guide" className="text-amber-400 hover:text-amber-300 underline">평택 룸살롱</Link>을 추천드립니다.
+                            더 화끈한 분위기를 원하신다면 <Link to="/pyeongtaek-karaoke-guide" className="text-amber-400 hover:text-amber-300 underline">평택 가라오케</Link>를, 비즈니스 접대가 목적이라면 <Link to="/pyeongtaek-room-salon-guide" className="text-amber-400 hover:text-amber-300 underline">평택 룸살롱</Link>을 추천드립니다.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                             <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 text-center">
@@ -320,7 +320,7 @@ const HyperPublic = () => {
                             </div>
 
                             <div className="mt-6 text-center">
-                                <Link to="/giheung-highpub-guide/faq" className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-400 font-bold transition-colors">
+                                <Link to="/pyeongtaek-highpub-guide/faq" className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-400 font-bold transition-colors">
                                     평택 더 많은 질문과 답변 보기 <ChevronRight size={18} />
                                 </Link>
                             </div>

@@ -4,14 +4,14 @@ import { ChevronRight, Home } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
 const routeNameMap = {
-    'dongtan-highpub-guide': '하이퍼블릭',
-    'dongtan-karaoke-guide': '가라오케',
-    'dongtan-shirtsroom-guide': '셔츠룸',
-    'dongtan-kimono-room-guide': '기모노룸',
-    'dongtan-room-salon-guide': '룸살롱',
-    'dongtan-hostbar-guide': '호빠',
-    'dongtan-entertainment-price-guide': '가격 가이드',
-    'dongtan-entertainment-beginner-guide': '초보자 가이드',
+    'suji-highpub-guide': '하이퍼블릭',
+    'suji-karaoke-guide': '가라오케',
+    'suji-shirtsroom-guide': '셔츠룸',
+    'suji-kimono-room-guide': '기모노룸',
+    'suji-room-salon-guide': '룸살롱',
+    'suji-hostbar-guide': '호빠',
+    'suji-entertainment-price-guide': '가격 가이드',
+    'suji-entertainment-beginner-guide': '초보자 가이드',
     'faq': 'FAQ',
     'contact': '문의하기',
     'terms': '이용약관',
@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dongtankaraoke.net/"
+            "item": "https://sujikaraoke.com/"
         }
     ];
 
@@ -45,7 +45,7 @@ const Breadcrumbs = () => {
             "@type": "ListItem",
             "position": index + 2,
             "name": routeName,
-            "item": `https://dongtankaraoke.net${routeTo}`
+            "item": `https://sujikaraoke.com${routeTo}`
         });
     });
 

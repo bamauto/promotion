@@ -53,7 +53,7 @@ const KaraokeFAQ = () => {
                 <title>평택 가라오케 FAQ | 예약·픽업·이용 안내</title>
                 <meta name="description" content="평택 가라오케 이용 FAQ. 단체/회식, 픽업 범위, 예약 흐름을 안내합니다." />
                 <meta name="keywords" content="평택 가라오케 FAQ, 평택 가라오케 예약, 평택 가라오케 가격" />
-                <link rel="canonical" href="https://pt-karaoke.com/giheung-karaoke-guide/faq" />
+                <link rel="canonical" href="https://pt-karaoke.com/pyeongtaek-karaoke-guide/faq" />
             </Helmet>
             <SchemaJsonLd data={faqSchema} />
 
@@ -82,7 +82,7 @@ const KaraokeFAQ = () => {
                             <button onClick={() => window.location.href = 'tel:01026264833'} className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-purple-500/25">
                                 <Phone size={20} /> 실시간 예약 문의
                             </button>
-                            <Link to="/giheung-karaoke-guide" className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all">
+                            <Link to="/pyeongtaek-karaoke-guide" className="bg-slate-800 hover:bg-slate-700 text-white font-bold py-4 px-8 rounded-xl flex items-center justify-center gap-2 transition-all">
                                 <ChevronRight size={20} /> 가라오케 메인으로
                             </Link>
                         </div>

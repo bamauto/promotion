@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 
 const SUPABASE_URL = 'https://rrzeapykmyrsiqmkwjcf.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJyemVhcHlrbXlyc2lxbWt3amNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5MDI0MzIsImV4cCI6MjA4NDQ3ODQzMn0.1syiV186n8K4pJnCqMXNBR4N4fr0BHnSba5sBrtMjGk';
-const REGION = 'giheung';
+const REGION = 'pyeongtaek';
 const STORAGE_URL = `${SUPABASE_URL}/storage/v1/object/public/blog-images`;
 
 const BlogSection = () => {
@@ -95,10 +95,10 @@ const BlogSection = () => {
         <div className="text-center mb-16 relative">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl"></div>
           <span className="text-amber-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase mb-3 block">
-            기흥 유흥 정보
+            평택 유흥 정보
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 relative z-10 drop-shadow-sm">
-            기흥 하이퍼블릭 블로그
+            평택 하이퍼블릭 블로그
           </h2>
           <div className="w-1 h-12 bg-gradient-to-b from-amber-500 to-transparent mx-auto mt-6"></div>
         </div>

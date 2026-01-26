@@ -7,7 +7,7 @@ const services = [
         id: 'highpublic',
         name: '하이퍼블릭',
         desc: '합리적인 가격의 프리미엄',
-        path: '/dongtan-highpub-guide',
+        path: '/suji-highpub-guide',
         icon: Star,
         color: 'text-amber-400'
     },
@@ -15,7 +15,7 @@ const services = [
         id: 'karaoke',
         name: '가라오케',
         desc: '최신 음향 시설 완비',
-        path: '/dongtan-karaoke-guide',
+        path: '/suji-karaoke-guide',
         icon: Mic2,
         color: 'text-purple-400'
     },
@@ -23,7 +23,7 @@ const services = [
         id: 'shirtsroom',
         name: '셔츠룸',
         desc: '화이트 셔츠의 매력',
-        path: '/dongtan-shirtsroom-guide',
+        path: '/suji-shirtsroom-guide',
         icon: Shirt,
         color: 'text-white'
     },
@@ -31,7 +31,7 @@ const services = [
         id: 'kimonoroom',
         name: '기모노룸',
         desc: '이색적인 코스튬 테마',
-        path: '/dongtan-kimono-room-guide',
+        path: '/suji-kimono-room-guide',
         icon: Flower2,
         color: 'text-pink-400'
     },
@@ -39,7 +39,7 @@ const services = [
         id: 'roomsalon',
         name: '룸살롱',
         desc: '비즈니스 접대의 정석',
-        path: '/dongtan-room-salon-guide',
+        path: '/suji-room-salon-guide',
         icon: Crown,
         color: 'text-amber-500'
     },
@@ -47,7 +47,7 @@ const services = [
         id: 'hostbar',
         name: '호빠',
         desc: '여성 전용 프리미엄',
-        path: '/dongtan-hostbar-guide',
+        path: '/suji-hostbar-guide',
         icon: GlassWater,
         color: 'text-blue-400'
     }
@@ -65,7 +65,7 @@ const RelatedServices = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h3 className="text-2xl font-bold text-white mb-2">다른 서비스 둘러보기</h3>
-                    <p className="text-slate-400">동탄 최고의 밤문화 코스를 확인해보세요.</p>
+                    <p className="text-slate-400">수지 최고의 밤문화 코스를 확인해보세요.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -80,7 +80,7 @@ const RelatedServices = () => {
                                     <service.icon size={24} />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-bold text-white group-hover:text-amber-400 transition-colors">동탄 {service.name}</h4>
+                                    <h4 className="font-bold text-white group-hover:text-amber-400 transition-colors">수지 {service.name}</h4>
                                     <p className="text-xs text-slate-400">{service.desc}</p>
                                 </div>
                             </div>
